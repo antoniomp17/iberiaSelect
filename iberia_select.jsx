@@ -144,6 +144,15 @@ const IDEALISTA_PROVINCE_SLUGS = {
   'León':         'leon',
   'Soria':        'soria',
   'La Rioja':     'la-rioja',
+  // Islas Baleares (todas comparten la provincia de Idealista 'balears-illes')
+  'Mallorca':           'balears-illes',
+  'Menorca':            'balears-illes',
+  'Ibiza':              'balears-illes',
+  // Canarias
+  'S.C. de Tenerife':   'santa-cruz-de-tenerife',
+  'Las Palmas':         'las-palmas',
+  // Zona compartida Galicia
+  'Lugo/Ourense':       'ourense',
 };
 
 const idealistaURL = r => {
