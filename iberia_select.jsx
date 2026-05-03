@@ -54,6 +54,7 @@ const scoreServicios = (fib, hosp, air, dens) => {
 
 
 const scorePlayas = km => {
+  if (km === null) return 1;
   if (km === 0) return 10; if (km <= 5) return 9; if (km <= 15) return 8;
   if (km <= 30) return 7; if (km <= 60) return 6; if (km <= 100) return 5;
   if (km <= 150) return 4; if (km <= 200) return 3; if (km <= 300) return 2;
@@ -202,7 +203,9 @@ const findSimilarCheaper = (region, count = 3) =>
       const climaSim  = 1 - Math.min(1, Math.abs(r.tempAvg   - region.tempAvg)   / 8);
       const solSim    = 1 - Math.min(1, Math.abs(r.sunHours  - region.sunHours)  / 1500);
       const bellezaSim = 1 - Math.abs(r.beauty - region.beauty) / 10;
-      const playaSim  = 1 - Math.min(1, Math.abs(r.beachKm   - region.beachKm)   / 300);
+      const b1 = r.beachKm === null ? 300 : r.beachKm;
+      const b2 = region.beachKm === null ? 300 : region.beachKm;
+      const playaSim  = 1 - Math.min(1, Math.abs(b1 - b2) / 300);
       return { ...r, _sim: (climaSim + solSim + bellezaSim * 1.5 + playaSim) / 4.5 };
     })
     .sort((a, b) => b._sim - a._sim)
@@ -269,7 +272,7 @@ const StatBar = ({ value, max = 10, color, label }) => {
 };
 
 const SimilarRegions = ({ region }) => {
-  const { setCurrentIndex, weights } = useCtx();
+  const { weights, setFilterProvince, setZonaId } = useCtx();
   const { ink, paper, forest } = S;
   const similar = useMemo(() => findSimilarCheaper(region), [region.id]); // eslint-disable-line react-hooks/exhaustive-deps
   if (!similar.length) return null;
@@ -283,7 +286,7 @@ const SimilarRegions = ({ region }) => {
           const discount = Math.round((1 - r.priceM2 / region.priceM2) * 100);
           return (
             <button key={r.id}
-              onClick={() => setCurrentIndex(REGIONS_DATA.findIndex(x => x.id === r.id))}
+              onClick={() => { setFilterProvince('Todas'); setZonaId(r.id); window.scrollTo(0,0); }}
               className="w-full text-left p-3 transition hover:opacity-75"
               style={{ border: `1px solid #D6CFC0`, background: paper }}>
               <div className="flex justify-between items-start gap-2">
@@ -320,7 +323,7 @@ const AppHeader = () => {
           <span className="text-xl" style={{ ...S.fontDisplay, color: ink, fontWeight: 900 }}>Iberia</span>
           <span className="text-xl italic" style={{ ...S.fontDisplay, color: accent, fontWeight: 300 }}>Select</span>
         </button>
-        <nav className="flex gap-3 text-xs uppercase tracking-widest overflow-x-auto" style={S.fontBody}>
+        <nav className="flex flex-wrap gap-x-4 gap-y-2 text-xs uppercase tracking-widest" style={S.fontBody}>
           {[['settings','Pesos'],['game','Explorar'],['ranking','Ranking'],['diary','Diario']].map(([v, l]) => (
             <button key={v} onClick={() => setView(v)} className="relative py-1 shrink-0"
               style={{ color: view === v ? accent : ink, opacity: view === v ? 1 : 0.6 }}>
@@ -544,37 +547,49 @@ const SettingsView = () => {
         </div>
       </div>
 
-      <button disabled={total !== 100}
-        onClick={() => { setCurrentIndex(0); setView('game'); }}
-        className="w-full py-4 text-xs uppercase tracking-wider font-medium transition disabled:opacity-30"
-        style={{ ...S.fontBody, background: ink, color: paper }}>
-        Empezar exploración →
-      </button>
+      <div className="flex gap-3">
+        <button disabled={total !== 100}
+          onClick={() => { setCurrentIndex(0); setView('game'); }}
+          className="flex-1 py-4 text-xs uppercase tracking-wider font-medium transition disabled:opacity-30 hover:opacity-90"
+          style={{ ...S.fontBody, background: ink, color: paper }}>
+          Explorar fichas →
+        </button>
+        <button disabled={total !== 100}
+          onClick={() => { setView('ranking'); }}
+          className="flex-1 py-4 text-xs uppercase tracking-wider font-medium transition disabled:opacity-30 hover:bg-stone-100"
+          style={{ ...S.fontBody, color: ink, border: `1px solid ${ink}` }}>
+          Ver ranking →
+        </button>
+      </div>
     </div>
   );
 };
 
 const GameView = () => {
-  const { filteredRegions, currentIndex, setCurrentIndex, filterCommunity, setFilterCommunity,
-          maxBudget, setMaxBudget, hidePopRisk, setHidePopRisk, weights, setView, communities,
+  const { filteredRegions, currentIndex, setCurrentIndex, filterProvince, setFilterProvince,
+          maxBudget, setMaxBudget, hidePopRisk, setHidePopRisk, weights, setView, provinces,
           diary, setDiary, superficie, reformLevel, useBudgetFilter, totalBudget,
           setUseBudgetFilter, zonaId, setZonaId, shareRegionUrl } = useCtx();
   const { ink, paper, accent, forest } = S;
   const [copied, setCopied] = useState(false);
+  const [mode, setMode] = useState('grid');
+  const [page, setPage] = useState(0);
 
   // Resuelve navegación por URL compartida en cuanto filteredRegions está disponible
   useEffect(() => {
     if (!zonaId) return;
     const idx = filteredRegions.findIndex(r => r.id === zonaId);
-    if (idx !== -1) setCurrentIndex(idx);
+    if (idx !== -1) { setCurrentIndex(idx); setMode('detail'); }
     setZonaId(null);
   }, [zonaId, filteredRegions]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => { setPage(0); }, [filterProvince, maxBudget, hidePopRisk]);
 
   if (!filteredRegions.length) {
     return (
       <div className="max-w-3xl mx-auto px-5 py-20 text-center">
         <p className="text-2xl mb-6" style={{ ...S.fontDisplay, color: ink }}>Sin resultados con estos filtros.</p>
-        <button onClick={() => { setMaxBudget(8500); setHidePopRisk(false); setFilterCommunity('Todas'); }}
+        <button onClick={() => { setMaxBudget(8500); setHidePopRisk(false); setFilterProvince('Todas'); }}
           className="px-6 py-3 text-xs uppercase tracking-wider"
           style={{ ...S.fontBody, background: ink, color: paper }}>
           Restablecer filtros
@@ -588,39 +603,90 @@ const GameView = () => {
   const s = allStats(r);
   const trendColor = r.popTrend > 0 ? forest : r.popTrend < -8 ? S.crimson : S.ochre;
 
+  const itemsPerPage = 12;
+  const totalPages = Math.ceil(filteredRegions.length / itemsPerPage);
+  const paginated = filteredRegions.slice(page * itemsPerPage, (page + 1) * itemsPerPage);
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
-      <div className="flex flex-wrap gap-3 justify-between items-end mb-7 pb-4 border-b" style={{ borderColor: ink }}>
+      <div className="flex flex-wrap gap-4 justify-between items-end mb-7 pb-4 border-b" style={{ borderColor: ink }}>
         <div>
-          <div className="text-xs uppercase tracking-widest mb-1" style={{ ...S.fontBody, color: accent }}>
-            Ficha {safeIndex + 1} / {filteredRegions.length}
+          <div className="flex gap-2 mb-2">
+            <button onClick={() => setMode('grid')} className="text-xs uppercase tracking-widest transition" style={{ ...S.fontBody, color: mode === 'grid' ? accent : ink, opacity: mode === 'grid' ? 1 : 0.4 }}>Catálogo</button>
+            <span style={{ color: ink, opacity: 0.3 }}>|</span>
+            <button onClick={() => setMode('detail')} className="text-xs uppercase tracking-widest transition" style={{ ...S.fontBody, color: mode === 'detail' ? accent : ink, opacity: mode === 'detail' ? 1 : 0.4 }}>Detalle</button>
           </div>
-          <h2 className="text-2xl" style={{ ...S.fontDisplay, color: ink, fontWeight: 700 }}>Explorando regiones</h2>
+          <h2 className="text-2xl" style={{ ...S.fontDisplay, color: ink, fontWeight: 700 }}>
+            {mode === 'grid' ? `Explorando ${filteredRegions.length} regiones` : `Ficha ${safeIndex + 1} de ${filteredRegions.length}`}
+          </h2>
         </div>
         <div className="flex flex-wrap gap-2 items-center">
-          <select value={filterCommunity}
-            onChange={e => { setFilterCommunity(e.target.value); setCurrentIndex(0); }}
-            className="text-xs uppercase tracking-wider px-3 py-2 bg-transparent cursor-pointer"
-            style={{ ...S.fontBody, color: ink, border: `1px solid ${ink}`, minWidth: 140 }}>
-            {communities.map(c => <option key={c} value={c}>{c === 'Todas' ? 'Todas las CCAA' : c}</option>)}
-          </select>
+          <div className="flex items-center gap-2 px-3 py-2 bg-stone-100" style={{ border: `1px solid ${ink}20` }}>
+            <Search size={14} style={{ color: ink, opacity: 0.5 }} />
+            <select value={filterProvince}
+              onChange={e => { setFilterProvince(e.target.value); setCurrentIndex(0); setMode('grid'); }}
+              className="text-xs uppercase tracking-wider bg-transparent cursor-pointer outline-none"
+              style={{ ...S.fontBody, color: ink, minWidth: 140 }}>
+              {provinces.map(c => <option key={c} value={c}>{c === 'Todas' ? 'Todas las provincias' : c}</option>)}
+            </select>
+          </div>
           <div className="flex items-center gap-2 px-3 py-2" style={{ border: `1px solid ${ink}` }}>
             <span className="text-xs uppercase" style={{ ...S.fontBody, color: ink }}>Máx</span>
             <input type="number" value={maxBudget} step="200" min="500" max="9000"
-              onChange={e => { setMaxBudget(parseInt(e.target.value || 9000)); setCurrentIndex(0); }}
+              onChange={e => { setMaxBudget(parseInt(e.target.value || 9000)); setCurrentIndex(0); setMode('grid'); }}
               className="w-16 bg-transparent outline-none tabular-nums" style={{ ...S.fontMono, color: ink }} />
             <span className="text-xs" style={{ ...S.fontBody, color: ink }}>€/m²</span>
           </div>
           <label className="flex items-center gap-2 text-xs uppercase tracking-wider cursor-pointer px-3 py-2"
             style={{ ...S.fontBody, color: ink, border: `1px solid ${ink}` }}>
             <input type="checkbox" checked={hidePopRisk}
-              onChange={e => { setHidePopRisk(e.target.checked); setCurrentIndex(0); }} className="cursor-pointer" />
+              onChange={e => { setHidePopRisk(e.target.checked); setCurrentIndex(0); setMode('grid'); }} className="cursor-pointer" />
             <span>Sin despoblación</span>
           </label>
         </div>
       </div>
 
-      <div key={r.id} className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {mode === 'grid' ? (
+        <div className="animate-fade-in">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            {paginated.map((reg, i) => {
+               const actualIndex = page * itemsPerPage + i;
+               return (
+                 <button key={reg.id} onClick={() => { setCurrentIndex(actualIndex); setMode('detail'); window.scrollTo(0, 0); }}
+                    className="text-left p-5 hover:bg-stone-50 transition flex flex-col justify-between group"
+                    style={{ background: paper, border: `1px solid ${ink}` }}>
+                    <div className="mb-5">
+                      <div className="flex justify-between items-start gap-2 mb-1.5">
+                        <div className="text-xs uppercase tracking-widest line-clamp-1" style={{ ...S.fontBody, color: accent }}>{reg.province}</div>
+                        {diary[reg.id]?.status === 'favorita' && <BookmarkCheck size={14} style={{ color: accent }} />}
+                      </div>
+                      <div className="text-xl leading-tight" style={{ ...S.fontDisplay, color: ink, fontWeight: 700 }}>{reg.name}</div>
+                    </div>
+                    <div className="flex justify-between items-end border-t pt-3" style={{ borderColor: '#D6CFC0' }}>
+                      <div>
+                         <div className="text-xl tabular-nums leading-none mb-1" style={{ ...S.fontDisplay, color: ink, fontWeight: 800 }}>{reg.priceM2.toLocaleString('es-ES')}</div>
+                         <div className="text-[10px] uppercase tracking-wider opacity-50" style={S.fontBody}>€/m²</div>
+                      </div>
+                      <div className="text-right group-hover:-translate-y-0.5 transition-transform">
+                         <div className="text-xl tabular-nums leading-none mb-1" style={{ ...S.fontDisplay, color: accent, fontWeight: 800 }}>{calcFinalScore(reg, weights)}</div>
+                         <div className="text-[10px] opacity-50 uppercase tracking-wider" style={S.fontBody}>Nota</div>
+                      </div>
+                    </div>
+                 </button>
+               );
+            })}
+          </div>
+          {totalPages > 1 && (
+            <div className="flex justify-between items-center px-4 py-3 border-t" style={{ borderColor: ink }}>
+               <button disabled={page === 0} onClick={() => { setPage(p => p - 1); window.scrollTo(0, 0); }} className="px-4 py-2 text-xs uppercase tracking-wider disabled:opacity-30 hover:bg-stone-100 transition" style={{ ...S.fontBody, border: `1px solid ${ink}` }}>← Anterior</button>
+               <span className="text-xs uppercase tracking-wider opacity-50" style={S.fontBody}>Página {page + 1} de {totalPages}</span>
+               <button disabled={page >= totalPages - 1} onClick={() => { setPage(p => p + 1); window.scrollTo(0, 0); }} className="px-4 py-2 text-xs uppercase tracking-wider disabled:opacity-30 hover:bg-stone-100 transition" style={{ ...S.fontBody, border: `1px solid ${ink}` }}>Siguiente →</button>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className="animate-fade-in">
+          <div key={r.id} className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Izquierda */}
         <div className="space-y-5">
           <div className="text-xs uppercase tracking-widest flex flex-wrap gap-x-2" style={{ ...S.fontBody, color: accent }}>
@@ -756,17 +822,19 @@ const GameView = () => {
           </div>
 
           {/* Playa */}
-          <div className="p-4" style={{ background: paper }}>
-            <div className="flex items-center gap-2 mb-1">
-              <Waves size={13} style={{ color: '#2563EB' }} />
-              <div className="text-xs uppercase tracking-wider" style={{ ...S.fontBody, color: ink, opacity: 0.5 }}>
-                Cercanía al mar
+          {r.beachKm !== null && (
+            <div className="p-4" style={{ background: paper }}>
+              <div className="flex items-center gap-2 mb-1">
+                <Waves size={13} style={{ color: '#2563EB' }} />
+                <div className="text-xs uppercase tracking-wider" style={{ ...S.fontBody, color: ink, opacity: 0.5 }}>
+                  Cercanía al mar
+                </div>
+              </div>
+              <div className="text-2xl tabular-nums" style={{ ...S.fontDisplay, color: ink, fontWeight: 800 }}>
+                {r.beachKm === 0 ? 'En costa' : `${r.beachKm} km`}
               </div>
             </div>
-            <div className="text-2xl tabular-nums" style={{ ...S.fontDisplay, color: ink, fontWeight: 800 }}>
-              {r.beachKm === 0 ? 'En costa' : `${r.beachKm} km`}
-            </div>
-          </div>
+          )}
 
           {/* Clima */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-px" style={{ background: ink }}>
@@ -850,14 +918,16 @@ const GameView = () => {
             />
           </div>
         </div>
+        </div>
+        <SimilarRegions region={r} />
       </div>
-      <SimilarRegions region={r} />
+      )}
     </div>
   );
 };
 
 const RankingView = () => {
-  const { sortedRanking, setView, setCurrentIndex, shareUrl } = useCtx();
+  const { sortedRanking, setView, setCurrentIndex, shareUrl, setZonaId, setFilterProvince } = useCtx();
   const { ink, paper, accent, forest } = S;
   const [copied, setCopied] = useState(false);
 
@@ -889,7 +959,7 @@ const RankingView = () => {
         {winners.map((r, i) => {
           const isFirst = i === 0;
           return (
-            <div key={r.id} className="p-6" style={{ background: isFirst ? ink : paper, color: isFirst ? paper : ink }}>
+            <button key={r.id} onClick={() => { setFilterProvince('Todas'); setZonaId(r.id); setView('game'); }} className="p-6 text-left cursor-pointer hover:opacity-90 transition" style={{ background: isFirst ? ink : paper, color: isFirst ? paper : ink }}>
               <div className="flex justify-between items-start mb-4">
                 <span className="text-6xl tabular-nums leading-none" style={{ ...S.fontDisplay, fontWeight: 900, opacity: 0.2 }}>
                   {String(i + 1).padStart(2, '0')}
@@ -914,11 +984,12 @@ const RankingView = () => {
                 ))}
               </div>
               <a href={idealistaURL(r)} target="_blank" rel="noopener noreferrer"
-                className="mt-4 flex items-center gap-1.5 text-xs uppercase tracking-wider opacity-60 hover:opacity-100 transition"
+                onClick={e => e.stopPropagation()}
+                className="mt-4 flex items-center gap-1.5 text-xs uppercase tracking-wider opacity-60 hover:opacity-100 transition inline-flex"
                 style={S.fontBody}>
                 Ver en Idealista <ExternalLink size={10} />
               </a>
-            </div>
+            </button>
           );
         })}
       </div>
@@ -948,7 +1019,7 @@ const RankingView = () => {
           </thead>
           <tbody>
             {bestValue.map(r => (
-              <tr key={r.id} className="border-t" style={{ borderColor: '#E8E0D2' }}>
+              <tr key={r.id} onClick={() => { setFilterProvince('Todas'); setZonaId(r.id); setView('game'); }} className="border-t cursor-pointer hover:bg-stone-50 transition" style={{ borderColor: '#E8E0D2' }}>
                 <td className="py-2.5 pr-3 text-sm" style={{ ...S.fontDisplay, color: ink, fontWeight: 600 }}>{r.name}</td>
                 <td className="py-2.5 pr-3 text-xs" style={{ ...S.fontBody, color: ink, opacity: 0.7 }}>{r.province}</td>
                 <td className="py-2.5 pr-3 text-right tabular-nums text-xs" style={S.fontMono}>{r.priceM2.toLocaleString('es-ES')}</td>
@@ -983,7 +1054,7 @@ const RankingView = () => {
             </thead>
             <tbody>
               {rest.map((r, idx) => (
-                <tr key={r.id} className="border-b group hover:bg-stone-50 transition" style={{ borderColor: '#E8E0D2' }}>
+                <tr key={r.id} onClick={() => { setFilterProvince('Todas'); setZonaId(r.id); setView('game'); }} className="border-b group hover:bg-stone-50 transition cursor-pointer" style={{ borderColor: '#E8E0D2' }}>
                   <td className="py-2.5 pr-2 tabular-nums text-xs" style={{ ...S.fontMono, color: ink, opacity: 0.4 }}>
                     {String(idx + 4).padStart(2, '0')}
                   </td>
@@ -1136,7 +1207,7 @@ const DiaryView = () => {
                       <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs tabular-nums" style={{ ...S.fontMono, color: ink, opacity: 0.7 }}>
                         <span>{r.priceM2?.toLocaleString('es-ES')} €/m²</span>
                         <span>{r.tempAvg}°C · {r.sunHours?.toLocaleString('es-ES')}h sol</span>
-                        <span>{r.beachKm === 0 ? 'En costa' : `Playa ${r.beachKm}km`}</span>
+                        {r.beachKm !== null && <span>{r.beachKm === 0 ? 'En costa' : `Playa ${r.beachKm}km`}</span>}
                       </div>
                       {r.note && (
                         <p className="mt-2 text-xs italic leading-relaxed" style={{ ...S.fontBody, color: ink, opacity: 0.65 }}>
@@ -1193,7 +1264,7 @@ const DiaryView = () => {
 const App = () => {
   const [view, setView] = useState('intro');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [filterCommunity, setFilterCommunity] = useState('Todas');
+  const [filterProvince, setFilterProvince] = useState('Todas');
   const [maxBudget, setMaxBudget] = useState(8500);
   const [hidePopRisk, setHidePopRisk] = useState(false);
   const [weights, setWeights] = useLocalStorage('iberia-weights', DEFAULT_WEIGHTS);
@@ -1245,15 +1316,15 @@ const App = () => {
 
   const filteredRegions = useMemo(() => {
     let arr = REGIONS_DATA;
-    if (filterCommunity !== 'Todas') arr = arr.filter(r => r.community === filterCommunity);
+    if (filterProvince !== 'Todas') arr = arr.filter(r => r.province === filterProvince);
     arr = arr.filter(r => r.priceM2 <= maxBudget);
     if (hidePopRisk) arr = arr.filter(r => r.popTrend > -10);
     if (useBudgetFilter) arr = arr.filter(r => calcTotalCost(r, superficie, reformLevel) <= totalBudget);
     return arr;
-  }, [filterCommunity, maxBudget, hidePopRisk, useBudgetFilter, totalBudget, superficie, reformLevel]);
+  }, [filterProvince, maxBudget, hidePopRisk, useBudgetFilter, totalBudget, superficie, reformLevel]);
 
-  const communities = useMemo(() =>
-    ['Todas', ...new Set(REGIONS_DATA.map(r => r.community))].sort()
+  const provinces = useMemo(() =>
+    ['Todas', ...new Set(REGIONS_DATA.map(r => r.province))].sort()
   , []);
 
   const sortedRanking = useMemo(() =>
@@ -1265,11 +1336,11 @@ const App = () => {
   const ctx = {
     view, setView,
     currentIndex, setCurrentIndex,
-    filterCommunity, setFilterCommunity,
+    filterProvince, setFilterProvince,
     maxBudget, setMaxBudget,
     hidePopRisk, setHidePopRisk,
     weights, setWeights,
-    filteredRegions, communities, sortedRanking,
+    filteredRegions, provinces, sortedRanking,
     diary, setDiary,
     totalBudget, setTotalBudget,
     superficie, setSuperficie,

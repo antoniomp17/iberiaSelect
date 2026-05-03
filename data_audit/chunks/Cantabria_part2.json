@@ -1,0 +1,25 @@
+[
+  {
+    "id": "cant-liebana",
+    "name": "Liébana",
+    "community": "Cantabria",
+    "province": "Cantabria",
+    "zone": "Picos de Europa",
+    "idealistaSlug": "liebana",
+    "description": "Potes y el microclima mediterráneo encajonado en los Picos. Románico, orujo y paisaje de nivel alpino.",
+    "vibe": "Monacal, alpino, sorprendente.",
+    "priceM2": 1200,
+    "yoyPrice": 17,
+    "tempAvg": 13.5,
+    "sunHours": 2200,
+    "rainfall": 700,
+    "popTrend": -8,
+    "density": 15,
+    "fiber": 72,
+    "hospitalKm": 40,
+    "airportKm": 90,
+    "protected": "PN",
+    "beauty": 10,
+    "beachKm": 0
+  }
+]

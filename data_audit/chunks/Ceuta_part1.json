@@ -1,0 +1,24 @@
+[
+  {
+    "id": "ceuta",
+    "name": "Ceuta",
+    "community": "Ceuta",
+    "province": "Ceuta",
+    "zone": "Ciudad Autónoma",
+    "description": "Ciudad española en el norte de África con arquitectura multicultural única. Precio muy bajo respecto a otras ciudades costeras.",
+    "vibe": "Multicultural, estratégico, dos continentes.",
+    "priceM2": 2200,
+    "yoyPrice": 8,
+    "tempAvg": 18.5,
+    "sunHours": 2800,
+    "rainfall": 650,
+    "popTrend": -2,
+    "density": 4300,
+    "fiber": 98,
+    "hospitalKm": 2,
+    "airportKm": 15,
+    "protected": null,
+    "beauty": 7,
+    "beachKm": 3
+  }
+]

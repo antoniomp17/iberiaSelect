@@ -1,0 +1,25 @@
+[
+  {
+    "id": "bizk-encartar",
+    "name": "Encartaciones",
+    "community": "País Vasco",
+    "province": "Bizkaia",
+    "zone": "Suroeste",
+    "idealistaSlug": "encartaciones",
+    "description": "Balmaseda y los valles mineros del oeste. Historia indiana, montaña y los precios más bajos de Bizkaia.",
+    "vibe": "Tranquilo, menos saturado, asequible.",
+    "priceM2": 2200,
+    "yoyPrice": 12,
+    "tempAvg": 12.5,
+    "sunHours": 1900,
+    "rainfall": 1400,
+    "popTrend": -3,
+    "density": 50,
+    "fiber": 85,
+    "hospitalKm": 20,
+    "airportKm": 40,
+    "protected": null,
+    "beauty": 7,
+    "beachKm": null
+  }
+]
