@@ -87,11 +87,19 @@ const PROVINCE_SLUGS = {
   'Asturias': 'asturias',
   'Cantabria': 'cantabria',
   'Navarra': 'navarra',
-  'Mallorca': 'mallorca',
-  'Menorca': 'menorca',
-  'Ibiza': 'ibiza',
-  'S.C. de Tenerife': 'santa-cruz-de-tenerife-provincia',
-  'Las Palmas': 'las-palmas-provincia',
+  'Mallorca': 'balears-illes',
+  'Menorca': 'balears-illes',
+  'Ibiza': 'balears-illes',
+  'Formentera': 'balears-illes',
+  'Tenerife': 'santa-cruz-de-tenerife-provincia',
+  'La Palma': 'santa-cruz-de-tenerife-provincia',
+  'La Gomera': 'santa-cruz-de-tenerife-provincia',
+  'El Hierro': 'santa-cruz-de-tenerife-provincia',
+  'Gran Canaria': 'las-palmas-provincia',
+  'Lanzarote': 'las-palmas-provincia',
+  'Fuerteventura': 'las-palmas-provincia',
+  'Ceuta': 'ceuta-ceuta',
+  'Melilla': 'melilla-melilla',
 };
 
 const IDEALISTA_AFFILIATE = ''; // Rellenar con el ID de afiliado cuando esté disponible
@@ -144,13 +152,19 @@ const IDEALISTA_PROVINCE_SLUGS = {
   'León':         'leon',
   'Soria':        'soria',
   'La Rioja':     'la-rioja',
-  // Islas Baleares (todas comparten la provincia de Idealista 'balears-illes')
-  'Mallorca':           'balears-illes',
-  'Menorca':            'balears-illes',
-  'Ibiza':              'balears-illes',
-  // Canarias
-  'S.C. de Tenerife':   'santa-cruz-de-tenerife',
-  'Las Palmas':         'las-palmas',
+  // Islas Baleares — slug compuesto para soportar 4 niveles de URL
+  'Mallorca':           'balears-illes/mallorca',
+  'Menorca':            'balears-illes/menorca',
+  'Ibiza':              'balears-illes/ibiza',
+  'Formentera':         'balears-illes',            // nivel isla, sin subcomarca
+  // Canarias — slug compuesto por isla
+  'Tenerife':           'santa-cruz-de-tenerife/tenerife',
+  'La Palma':           'santa-cruz-de-tenerife/la-palma',
+  'La Gomera':          'santa-cruz-de-tenerife/la-gomera',
+  'El Hierro':          'santa-cruz-de-tenerife/el-hierro',
+  'Gran Canaria':       'las-palmas/gran-canaria',
+  'Lanzarote':          'las-palmas/lanzarote',
+  'Fuerteventura':      'las-palmas/fuerteventura',
   // Zona compartida Galicia
   'Lugo/Ourense':       'ourense',
 };
