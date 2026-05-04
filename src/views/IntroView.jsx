@@ -90,14 +90,8 @@ export const IntroView = () => {
 
       {/* ── Email capture ── */}
       <div className="mt-10 p-6 border-2" style={{ borderColor: ink }}>
-        <div className="text-xs uppercase tracking-widest mb-1" style={{ ...S.fontBody, color: S.accent }}>
-          Novedades · Gratis
-        </div>
-        <h3 className="text-xl mb-1" style={{ ...S.fontDisplay, color: ink, fontWeight: 700 }}>
-          Alerta cuando bajen precios en tu comarca
-        </h3>
         <p className="text-xs mb-4 leading-relaxed" style={{ ...S.fontBody, color: ink, opacity: 0.65 }}>
-          Sé el primero en enterarte de caídas de precio, nuevas comarcas y actualizaciones de datos.
+          Recibe actualizaciones de datos y nuevas comarcas.
         </p>
         {emailSent ? (
           <p className="text-xs uppercase tracking-wider" style={{ ...S.fontBody, color: S.forest, fontWeight: 600 }}>
