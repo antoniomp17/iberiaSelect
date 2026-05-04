@@ -6,7 +6,7 @@ import { S } from "../config/theme.js";
 import { REGIONS_DATA } from "../data/regions.js";
 import {
   Sun, ArrowUpRight, ArrowDownRight, Mountain, Hammer, Waves, Search,
-  Calculator, BookmarkCheck, Eye, Trash2, Cloud, Droplets
+  Calculator, Cloud, Droplets
 } from "lucide-react";
 import { calcTotalCost, scorePlayas, allStats, calcFinalScore } from "../utils/scoring.js";
 import { idealistaURL, protectedLabel, bookingUrl, iAhorroUrl } from "../config/constants.js";
@@ -14,7 +14,7 @@ import { AdSlot } from "../components/AdSlot.jsx";
 export const GameView = () => {
   const { filteredRegions, currentIndex, setCurrentIndex, filterProvince, setFilterProvince,
           maxBudget, setMaxBudget, hidePopRisk, setHidePopRisk, weights, setView, provinces,
-          diary, setDiary, superficie, reformLevel, useBudgetFilter, totalBudget,
+          superficie, reformLevel, useBudgetFilter, totalBudget,
           setUseBudgetFilter, zonaId, setZonaId, shareRegionUrl, favs, toggleFav,
           compareIds, toggleCompare } = useCtx();
   const { ink, paper, accent, forest } = S;
@@ -105,7 +105,6 @@ export const GameView = () => {
                     <div className="mb-5">
                       <div className="flex justify-between items-start gap-2 mb-1.5">
                         <div className="text-xs uppercase tracking-widest line-clamp-1" style={{ ...S.fontBody, color: accent }}>{reg.province}</div>
-                        {diary[reg.id]?.status === 'favorita' && <BookmarkCheck size={14} style={{ color: accent }} />}
                       </div>
                       <div className="text-xl leading-tight" style={{ ...S.fontDisplay, color: ink, fontWeight: 700 }}>{reg.name}</div>
                     </div>
@@ -360,50 +359,6 @@ export const GameView = () => {
 
           <div className="text-xs uppercase tracking-wider py-2.5 border-t border-b" style={{ ...S.fontBody, color: ink, opacity: 0.55, borderColor: ink }}>
             {r.vibe}
-          </div>
-          {/* ── Diario ── */}
-          <div className="border-t pt-4 space-y-3" style={{ borderColor: ink }}>
-            <div className="text-xs uppercase tracking-widest" style={{ ...S.fontBody, color: accent }}>
-              Mi diario
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-1.5">
-              {[
-                { key: 'favorita', label: 'Favorita', icon: BookmarkCheck, color: accent },
-                { key: 'visitada', label: 'Visitada', icon: Eye, color: S.ochre },
-                { key: 'descartada', label: 'Descartar', icon: Trash2, color: '#888' }
-              ].map(({ key, label, icon: Icon, color }) => {
-                const active = diary[r.id]?.status === key;
-                return (
-                  <button key={key}
-                    onClick={() => setDiary(prev => ({
-                      ...prev,
-                      [r.id]: { ...prev[r.id], status: active ? null : key, updatedAt: new Date().toISOString() }
-                    }))}
-                    className="flex flex-col items-center gap-1 py-2.5 text-xs uppercase tracking-wider transition"
-                    style={{
-                      ...S.fontBody,
-                      background: active ? color : 'transparent',
-                      color: active ? paper : ink,
-                      border: `1px solid ${active ? color : '#D6CFC0'}`,
-                      opacity: active ? 1 : 0.7
-                    }}>
-                    <Icon size={13} />
-                    {label}
-                  </button>
-                );
-              })}
-            </div>
-            <textarea
-              placeholder="Notas personales sobre esta zona..."
-              value={diary[r.id]?.note || ''}
-              onChange={e => setDiary(prev => ({
-                ...prev,
-                [r.id]: { ...prev[r.id], note: e.target.value, updatedAt: new Date().toISOString() }
-              }))}
-              rows={3}
-              className="w-full text-xs p-3 resize-none outline-none"
-              style={{ ...S.fontBody, color: ink, background: '#F5F0E8', border: `1px solid #D6CFC0` }}
-            />
           </div>
         </div>
         </div>
