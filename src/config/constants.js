@@ -1,5 +1,8 @@
-export { REFORM_COST_M2, REFORM_LABELS, DEFAULT_WEIGHTS } from "../data/constants.js";
 import { REGIONS_DATA } from "../data/regions.js";
+
+export const REFORM_COST_M2 = { basica: 650, media: 950, integral: 1450 };
+export const REFORM_LABELS  = { basica: 'Básica (650 €/m²)', media: 'Media (950 €/m²)', integral: 'Integral (1.450 €/m²)' };
+export const DEFAULT_WEIGHTS = { precio: 20, clima: 17, poblacion: 17, servicios: 16, belleza: 15, playa: 15 };
 
 // INE province code → province name (matches our regions.js province field)
 export const INE_TO_PROVINCE = {
