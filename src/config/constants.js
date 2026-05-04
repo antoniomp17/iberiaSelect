@@ -64,14 +64,17 @@ export const PROVINCE_SLUGS = {
 export const IDEALISTA_AFFILIATE = '';
 
 // ── Afiliación / Monetización ──────────────────────────────────────────────
-export const BOOKING_AID     = '';   // Rellenar: https://www.booking.com/affiliate-program
-export const IAHORRO_UTM     = 'iberiaselect_web';
-export const TRIOTECA_UTM    = 'iberiaselect_web';
-export const ADSENSE_CLIENT  = '';   // Rellenar: ca-pub-XXXXXXXXXXXXXXXX
+// CJ Publisher ID: 7947404 | Booking.com ES Link ID: 15734352
+const CJ_PID     = '7947404';
+const CJ_LINK_ID = '15734352';
+export const IAHORRO_UTM    = 'iberiaselect_web';
+export const ADSENSE_CLIENT = '';   // Rellenar: ca-pub-XXXXXXXXXXXXXXXX
 
 export const bookingUrl = (locationName) => {
-  const base = `https://www.booking.com/searchresults.es.html?ss=${encodeURIComponent(locationName + ', España')}&lang=es`;
-  return BOOKING_AID ? `${base}&aid=${BOOKING_AID}` : base;
+  const destination = encodeURIComponent(
+    `https://www.booking.com/searchresults.es.html?ss=${encodeURIComponent(locationName + ', España')}&lang=es`
+  );
+  return `https://www.anrdoezrs.net/click-${CJ_PID}-${CJ_LINK_ID}?url=${destination}`;
 };
 
 export const iAhorroUrl = (priceM2, superficie = 80) => {
