@@ -39,6 +39,29 @@ function extractPrice(html) {
   return (val > 100 && val < 20000) ? val : null;
 }
 
+function extractYoy(html) {
+  // Intenta varios patrones que usa Idealista para la variación anual
+  const patterns = [
+    /([+-]?\d+[,.]?\d*)\s*%[^<]{0,40}(?:último|ultimo)\s+año/i,
+    /(?:último|ultimo)\s+año[^<]{0,40}([+-]?\d+[,.]?\d*)\s*%/i,
+    /variaci[oó]n\s+anual[^<]{0,60}([+-]?\d+[,.]?\d*)\s*%/i,
+    /ha\s+(?:subido|bajado)[^<]{0,20}(\d+[,.]?\d*)\s*%/i,
+  ];
+  for (const re of patterns) {
+    const m = html.match(re);
+    if (m) {
+      const raw = m[1].replace(',', '.');
+      const val = parseFloat(raw);
+      if (!isNaN(val) && Math.abs(val) < 50) {
+        // Si el patrón detecta "bajado", fuerza negativo
+        if (/bajado/i.test(m[0]) && val > 0) return -val;
+        return val;
+      }
+    }
+  }
+  return null;
+}
+
 let done = 0;
 for (const region of pending) {
   try {
@@ -48,8 +71,9 @@ for (const region of pending) {
     });
     const html = await res.text();
     const price = extractPrice(html);
+    const yoy = extractYoy(html);
 
-    saved[region.id] = { id: region.id, priceM2: price, url: region.url };
+    saved[region.id] = { id: region.id, priceM2: price, yoyPrice: yoy, url: region.url };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
 
     done++;

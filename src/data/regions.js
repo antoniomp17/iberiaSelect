@@ -52,7 +52,7 @@ export const REGIONS_DATA = [
     description: "Acantilados abruptos y aldeas vaciadas en el extremo norte de Galicia. Terreno de oportunidad.",
     vibe: "Remoto, salvaje, inexplorado.",
     priceM2: 905,
-    yoyPrice: 6,
+    yoyPrice: 9.5,
     tempAvg: 14.7,
     sunHours: 3543,
     rainfall: 1079,
@@ -63,7 +63,8 @@ export const REGIONS_DATA = [
     airportKm: 64,
     protected: "RB",
     beauty: 9,
-    beachKm: 148
+    beachKm: 148,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-ferrol",
@@ -75,7 +76,7 @@ export const REGIONS_DATA = [
     description: "Ciudad naval reconvertida con stock de vivienda amplio y precios bajos para su tamaño.",
     vibe: "Industrial, histórico, en transición.",
     priceM2: 1324,
-    yoyPrice: 7,
+    yoyPrice: 12,
     tempAvg: 15,
     sunHours: 3293,
     rainfall: 1085,
@@ -86,7 +87,8 @@ export const REGIONS_DATA = [
     airportKm: 23,
     protected: null,
     beauty: 6,
-    beachKm: 97
+    beachKm: 97,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-eume",
@@ -98,7 +100,7 @@ export const REGIONS_DATA = [
     description: "Fragas atlánticas milenarias y aldeas de piedra. Naturaleza y silencio a precio de derribo.",
     vibe: "Forestal, antiguo, tranquilo.",
     priceM2: 1051,
-    yoyPrice: 5,
+    yoyPrice: 10.5,
     tempAvg: 11.1,
     sunHours: 3467,
     rainfall: 1291,
@@ -109,7 +111,8 @@ export const REGIONS_DATA = [
     airportKm: 34,
     protected: "PNat",
     beauty: 8,
-    beachKm: 79
+    beachKm: 79,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-mino-betanzos",
@@ -121,7 +124,7 @@ export const REGIONS_DATA = [
     description: "Valles del Miño con Betanzos medieval a 20 min de A Coruña. Buen ratio calidad-precio.",
     vibe: "Histórico, conectado, cómodo.",
     priceM2: 964,
-    yoyPrice: 8,
+    yoyPrice: 13.5,
     tempAvg: 14,
     sunHours: 2050,
     rainfall: 1100,
@@ -132,7 +135,8 @@ export const REGIONS_DATA = [
     airportKm: 17,
     protected: null,
     beauty: 7,
-    beachKm: 94
+    beachKm: 94,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-melide",
@@ -144,7 +148,7 @@ export const REGIONS_DATA = [
     description: "Corazón del Camino de Santiago. Queso, pulpo y casas de piedra a precio histórico.",
     vibe: "Rural, gastronómico, pausado.",
     priceM2: 881,
-    yoyPrice: 5,
+    yoyPrice: 7,
     tempAvg: 12,
     sunHours: 1800,
     rainfall: 1400,
@@ -155,7 +159,8 @@ export const REGIONS_DATA = [
     airportKm: 48,
     protected: null,
     beauty: 6,
-    beachKm: 97
+    beachKm: 97,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-ciudad",
@@ -167,7 +172,7 @@ export const REGIONS_DATA = [
     description: "Capital gallega con playa urbana, servicios completos y mercado inmobiliario activo.",
     vibe: "Urbano, costero, dinámico.",
     priceM2: 2766,
-    yoyPrice: 9,
+    yoyPrice: 16.5,
     tempAvg: 14.9,
     sunHours: 3363,
     rainfall: 1166,
@@ -178,7 +183,8 @@ export const REGIONS_DATA = [
     airportKm: 6,
     protected: null,
     beauty: 7,
-    beachKm: 113
+    beachKm: 113,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-ordes",
@@ -190,7 +196,7 @@ export const REGIONS_DATA = [
     description: "Llanura interior entre A Coruña y Santiago. Accesible desde ambas ciudades, precios mínimos.",
     vibe: "Agrícola, tranquilo, funcional.",
     priceM2: 1024,
-    yoyPrice: 4,
+    yoyPrice: 8,
     tempAvg: 12.9,
     sunHours: 3338,
     rainfall: 1184,
@@ -201,7 +207,8 @@ export const REGIONS_DATA = [
     airportKm: 24,
     protected: null,
     beauty: 5,
-    beachKm: 121
+    beachKm: 121,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-arzua",
@@ -213,7 +220,7 @@ export const REGIONS_DATA = [
     description: "Comarca quesera por excelencia en el Camino Francés. Campo, silencio y precios de otra época.",
     vibe: "Lácteo, peregrino, auténtico.",
     priceM2: 870,
-    yoyPrice: 5,
+    yoyPrice: 7.5,
     tempAvg: 12.8,
     sunHours: 3236,
     rainfall: 1088,
@@ -224,7 +231,8 @@ export const REGIONS_DATA = [
     airportKm: 46,
     protected: null,
     beauty: 6,
-    beachKm: 113
+    beachKm: 113,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-bergantinos",
@@ -236,7 +244,7 @@ export const REGIONS_DATA = [
     description: "Costa con playas extensas (Baldaio, Razo) y Carballo como centro de servicios accesible.",
     vibe: "Costero, práctico, desapercibido.",
     priceM2: 1071,
-    yoyPrice: 7,
+    yoyPrice: 11,
     tempAvg: 13.5,
     sunHours: 1980,
     rainfall: 1200,
@@ -247,7 +255,8 @@ export const REGIONS_DATA = [
     airportKm: 31,
     protected: null,
     beauty: 7,
-    beachKm: 142
+    beachKm: 142,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-santiago",
@@ -259,7 +268,7 @@ export const REGIONS_DATA = [
     description: "Ciudad universitaria y capital autonómica. Mercado activo con demanda de alquiler estudiantil.",
     vibe: "Cultural, universitario, peregrino.",
     priceM2: 1873,
-    yoyPrice: 10,
+    yoyPrice: 15,
     tempAvg: 12.8,
     sunHours: 3338,
     rainfall: 1184,
@@ -270,7 +279,8 @@ export const REGIONS_DATA = [
     airportKm: 45,
     protected: null,
     beauty: 8,
-    beachKm: 139
+    beachKm: 139,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-soneira",
@@ -282,7 +292,7 @@ export const REGIONS_DATA = [
     description: "Interior poco conocido entre costa y montaña. Casas de piedra a precios muy bajos.",
     vibe: "Oculto, rural, sin descubrir.",
     priceM2: 884,
-    yoyPrice: 4,
+    yoyPrice: 9,
     tempAvg: 13.2,
     sunHours: 3383,
     rainfall: 1358,
@@ -293,7 +303,8 @@ export const REGIONS_DATA = [
     airportKm: 54,
     protected: null,
     beauty: 6,
-    beachKm: 149
+    beachKm: 149,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-xallas",
@@ -305,7 +316,7 @@ export const REGIONS_DATA = [
     description: "La comarca más interior y desconocida del sur coruñés. Stock abundante, compradores escasos.",
     vibe: "Deshabitado, barato, Galicia profunda.",
     priceM2: 771,
-    yoyPrice: 3,
+    yoyPrice: 6.5,
     tempAvg: 13,
     sunHours: 3383,
     rainfall: 1358,
@@ -316,7 +327,8 @@ export const REGIONS_DATA = [
     airportKm: 57,
     protected: null,
     beauty: 5,
-    beachKm: 149
+    beachKm: 149,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-barcala",
@@ -328,7 +340,7 @@ export const REGIONS_DATA = [
     description: "Puerta de Santiago desde el sur, Negreira y aldeas de granito. Mínimos precios por m².",
     vibe: "Gateway, tranquilo, paso de peregrinos.",
     priceM2: 937,
-    yoyPrice: 4,
+    yoyPrice: 7,
     tempAvg: 13.5,
     sunHours: 1950,
     rainfall: 1300,
@@ -339,7 +351,8 @@ export const REGIONS_DATA = [
     airportKm: 53,
     protected: null,
     beauty: 6,
-    beachKm: 142
+    beachKm: 142,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-fisterra",
@@ -351,7 +364,7 @@ export const REGIONS_DATA = [
     description: "El fin del mundo conocido. Paisajes únicos, acantilados y aldeas casi deshabitadas.",
     vibe: "Mítico, extremo, irreducible.",
     priceM2: 1187,
-    yoyPrice: 7,
+    yoyPrice: 13,
     tempAvg: 13.5,
     sunHours: 2000,
     rainfall: 1300,
@@ -362,7 +375,8 @@ export const REGIONS_DATA = [
     airportKm: 83,
     protected: null,
     beauty: 10,
-    beachKm: 103
+    beachKm: 103,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-muros",
@@ -374,7 +388,7 @@ export const REGIONS_DATA = [
     description: "Ría protegida con marisqueo, villa medieval y precios aún accesibles.",
     vibe: "Marinero, medieval, auténtico.",
     priceM2: 1475,
-    yoyPrice: 7,
+    yoyPrice: 12.5,
     tempAvg: 14.8,
     sunHours: 3508,
     rainfall: 1484,
@@ -385,7 +399,8 @@ export const REGIONS_DATA = [
     airportKm: 72,
     protected: null,
     beauty: 8,
-    beachKm: 100
+    beachKm: 100,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-noia",
@@ -397,7 +412,7 @@ export const REGIONS_DATA = [
     description: "Villa medieval con ría, comercio activo y mejores servicios que su precio sugiere.",
     vibe: "Medieval, vivo, infravalorado.",
     priceM2: 1226,
-    yoyPrice: 7,
+    yoyPrice: 14,
     tempAvg: 14.4,
     sunHours: 3478,
     rainfall: 1370,
@@ -408,7 +423,8 @@ export const REGIONS_DATA = [
     airportKm: 66,
     protected: null,
     beauty: 7,
-    beachKm: 91
+    beachKm: 91,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-barbanza",
@@ -420,7 +436,7 @@ export const REGIONS_DATA = [
     description: "Península entre la Ría de Arousa y la de Muros. Mejores playas del norte en precio/calidad.",
     vibe: "Costero, marisquero, equilibrado.",
     priceM2: 1485,
-    yoyPrice: 8,
+    yoyPrice: 14.5,
     tempAvg: 14.6,
     sunHours: 3508,
     rainfall: 1484,
@@ -431,7 +447,8 @@ export const REGIONS_DATA = [
     airportKm: 52,
     protected: null,
     beauty: 8,
-    beachKm: 110
+    beachKm: 110,
+    yoySource: "ipv_gemini"
   },
   {
     id: "coruna-sar",
@@ -443,7 +460,7 @@ export const REGIONS_DATA = [
     description: "Padrón y el Sar, tierra de Rosalía de Castro. Buena conexión a Santiago y la Ría de Arousa.",
     vibe: "Literario, fluvial, puente entre mundos.",
     priceM2: 830,
-    yoyPrice: 7,
+    yoyPrice: 11.5,
     tempAvg: 14.5,
     sunHours: 2150,
     rainfall: 1100,
@@ -454,7 +471,8 @@ export const REGIONS_DATA = [
     airportKm: 59,
     protected: null,
     beauty: 7,
-    beachKm: 145
+    beachKm: 145,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ponte-deza",
@@ -466,7 +484,7 @@ export const REGIONS_DATA = [
     description: "Lalín y los valles interiores. Ganadería, artesanía y precios alejados del litoral.",
     vibe: "Rural, interior, auténtico.",
     priceM2: 715,
-    yoyPrice: 5,
+    yoyPrice: 9.5,
     tempAvg: 14.1,
     sunHours: 3274,
     rainfall: 1218,
@@ -477,7 +495,8 @@ export const REGIONS_DATA = [
     airportKm: 61,
     protected: null,
     beauty: 6,
-    beachKm: 131
+    beachKm: 131,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ponte-terra-montes",
@@ -489,7 +508,7 @@ export const REGIONS_DATA = [
     description: "Sierra verde entre Pontevedra y Ourense. Aldeas de piedra y cascadas en el municipio más despoblado.",
     vibe: "Montaña, silencio, precio residual.",
     priceM2: 769,
-    yoyPrice: 4,
+    yoyPrice: 7.8,
     tempAvg: 11.6,
     sunHours: 3410,
     rainfall: 1363,
@@ -500,7 +519,8 @@ export const REGIONS_DATA = [
     airportKm: 48,
     protected: null,
     beauty: 7,
-    beachKm: 148
+    beachKm: 148,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ponte-caldas",
@@ -512,7 +532,7 @@ export const REGIONS_DATA = [
     description: "Caldas de Reis termal a mitad de camino entre Pontevedra y Santiago. Buena relación precio-servicios.",
     vibe: "Termal, equilibrado, bien situado.",
     priceM2: 998,
-    yoyPrice: 6,
+    yoyPrice: 12,
     tempAvg: 14.3,
     sunHours: 3526,
     rainfall: 1543,
@@ -523,7 +543,8 @@ export const REGIONS_DATA = [
     airportKm: 43,
     protected: null,
     beauty: 7,
-    beachKm: 101
+    beachKm: 101,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ponte-salnes",
@@ -535,7 +556,7 @@ export const REGIONS_DATA = [
     description: "Sanxenxo, Cambados y el Albariño. El litoral más demandado de Galicia con precios que lo confirman.",
     vibe: "Marinero, festivo, Albariño.",
     priceM2: 2489,
-    yoyPrice: 10,
+    yoyPrice: 16.5,
     tempAvg: 15,
     sunHours: 2200,
     rainfall: 1350,
@@ -546,7 +567,8 @@ export const REGIONS_DATA = [
     airportKm: 33,
     protected: null,
     beauty: 9,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ponte-ciudad",
@@ -558,7 +580,7 @@ export const REGIONS_DATA = [
     description: "Capital peatonal premiada como ciudad más habitable. Casco histórico, ría y calidad de vida alta.",
     vibe: "Peatonal, culto, muy vivible.",
     priceM2: 1686,
-    yoyPrice: 9,
+    yoyPrice: 15.8,
     tempAvg: 15.3,
     sunHours: 3526,
     rainfall: 1543,
@@ -569,7 +591,8 @@ export const REGIONS_DATA = [
     airportKm: 22,
     protected: null,
     beauty: 8,
-    beachKm: 120
+    beachKm: 120,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ponte-morrazo",
@@ -581,7 +604,7 @@ export const REGIONS_DATA = [
     description: "Cangas y Bueu entre dos rías. Playas escondidas, ferry a Vigo y precios por debajo de lo que merece.",
     vibe: "Isleño, marinero, infravalorado.",
     priceM2: 1885,
-    yoyPrice: 9,
+    yoyPrice: 17.2,
     tempAvg: 13.9,
     sunHours: 3587,
     rainfall: 1699,
@@ -592,7 +615,8 @@ export const REGIONS_DATA = [
     airportKm: 19,
     protected: null,
     beauty: 9,
-    beachKm: 142
+    beachKm: 142,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ponte-vigo",
@@ -604,7 +628,7 @@ export const REGIONS_DATA = [
     description: "Mayor ciudad de Galicia. Puerto, industria, aeropuerto y mercado inmobiliario de los más activos.",
     vibe: "Urbano, industrial, atlántico.",
     priceM2: 2518,
-    yoyPrice: 10,
+    yoyPrice: 18.5,
     tempAvg: 15,
     sunHours: 3587,
     rainfall: 1699,
@@ -615,7 +639,8 @@ export const REGIONS_DATA = [
     airportKm: 10,
     protected: null,
     beauty: 8,
-    beachKm: 147
+    beachKm: 147,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ponte-condado",
@@ -627,7 +652,7 @@ export const REGIONS_DATA = [
     description: "Interior sur entre Vigo y Portugal. Salvaterra, vino Condado y ritmo de vida al margen del turismo.",
     vibe: "Interior, vinícola, transfronterizo.",
     priceM2: 1050,
-    yoyPrice: 4,
+    yoyPrice: 8.9,
     tempAvg: 14,
     sunHours: 2100,
     rainfall: 1200,
@@ -638,7 +663,8 @@ export const REGIONS_DATA = [
     airportKm: 45,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ponte-baixo-mino",
@@ -650,7 +676,7 @@ export const REGIONS_DATA = [
     description: "A Guarda y el delta del Miño frente a Portugal. Clima excepcional y Monte Tegra sobre el mar.",
     vibe: "Fronterizo, atlántico, muy soleado.",
     priceM2: 1273,
-    yoyPrice: 8,
+    yoyPrice: 14,
     tempAvg: 15.5,
     sunHours: 2400,
     rainfall: 1100,
@@ -661,7 +687,8 @@ export const REGIONS_DATA = [
     airportKm: 30,
     protected: null,
     beauty: 8,
-    beachKm: 138
+    beachKm: 138,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lugo-marina",
@@ -673,7 +700,7 @@ export const REGIONS_DATA = [
     description: "Playa de las Catedrales, rías cantábricas y Ribadeo. Costa espectacular a precio asequible.",
     vibe: "Marinero, hospitalario, pausado.",
     priceM2: 1167,
-    yoyPrice: 8,
+    yoyPrice: 18.5,
     tempAvg: 13.8,
     sunHours: 1850,
     rainfall: 1050,
@@ -684,7 +711,8 @@ export const REGIONS_DATA = [
     airportKm: 82,
     protected: null,
     beauty: 9,
-    beachKm: 109
+    beachKm: 109,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lugo-terra-cha",
@@ -696,7 +724,7 @@ export const REGIONS_DATA = [
     description: "Llanura ganadera del interior lucense. Precios de suelo mínimos y tranquilidad absoluta.",
     vibe: "Agrícola, llano, sin aglomeraciones.",
     priceM2: 626,
-    yoyPrice: 3,
+    yoyPrice: 10.5,
     tempAvg: 11.5,
     sunHours: 1750,
     rainfall: 1200,
@@ -707,7 +735,8 @@ export const REGIONS_DATA = [
     airportKm: 62,
     protected: null,
     beauty: 5,
-    beachKm: 138
+    beachKm: 138,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lugo-meira",
@@ -719,7 +748,7 @@ export const REGIONS_DATA = [
     description: "Sierra fronteriza con Asturias. Casas de piedra a precios históricos, ideal para retiro total.",
     vibe: "Montaña, aislado, barato.",
     priceM2: 562,
-    yoyPrice: 3,
+    yoyPrice: 9,
     tempAvg: 11.3,
     sunHours: 3268,
     rainfall: 1204,
@@ -730,7 +759,8 @@ export const REGIONS_DATA = [
     airportKm: 91,
     protected: null,
     beauty: 6,
-    beachKm: 132
+    beachKm: 132,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lugo-fonsagrada",
@@ -742,7 +772,7 @@ export const REGIONS_DATA = [
     description: "La comarca más remota de Galicia. Precios mínimos y paisaje de montaña sin tocar.",
     vibe: "Extremo, silencioso, última frontera.",
     priceM2: 467,
-    yoyPrice: 2,
+    yoyPrice: 8,
     tempAvg: 10,
     sunHours: 3309,
     rainfall: 1169,
@@ -753,7 +783,8 @@ export const REGIONS_DATA = [
     airportKm: 95,
     protected: null,
     beauty: 7,
-    beachKm: 119
+    beachKm: 119,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lugo-ciudad",
@@ -765,7 +796,7 @@ export const REGIONS_DATA = [
     description: "Capital con muralla romana Patrimonio UNESCO. Servicios completos al precio más bajo entre capitales.",
     vibe: "Romano, universitario, accesible.",
     priceM2: 1366,
-    yoyPrice: 7,
+    yoyPrice: 16,
     tempAvg: 12.6,
     sunHours: 3220,
     rainfall: 944,
@@ -776,7 +807,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: null,
     beauty: 7,
-    beachKm: 146
+    beachKm: 146,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lugo-ancares",
@@ -788,7 +820,7 @@ export const REGIONS_DATA = [
     description: "Reserva de Biosfera con pallozas prerromanas. Paisaje de montaña excepcional a precio de saldo.",
     vibe: "Primigenio, montañoso, intacto.",
     priceM2: 473,
-    yoyPrice: 3,
+    yoyPrice: 7.5,
     tempAvg: 12.4,
     sunHours: 3220,
     rainfall: 944,
@@ -799,7 +831,8 @@ export const REGIONS_DATA = [
     airportKm: 74,
     protected: "RB",
     beauty: 9,
-    beachKm: 146
+    beachKm: 146,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lugo-ulloa",
@@ -811,7 +844,7 @@ export const REGIONS_DATA = [
     description: "Palas de Rei y el Camino Francés. Aldeas de granito a precios de otra época.",
     vibe: "Peregrino, rural, inmutable.",
     priceM2: 547,
-    yoyPrice: 4,
+    yoyPrice: 11,
     tempAvg: 12,
     sunHours: 1800,
     rainfall: 1300,
@@ -822,7 +855,8 @@ export const REGIONS_DATA = [
     airportKm: 66,
     protected: null,
     beauty: 6,
-    beachKm: 101
+    beachKm: 101,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lugo-sarria",
@@ -834,7 +868,7 @@ export const REGIONS_DATA = [
     description: "Punto de partida del último tramo del Camino. Servicios sorprendentes para su tamaño.",
     vibe: "Caminante, animado, bien conectado.",
     priceM2: 657,
-    yoyPrice: 5,
+    yoyPrice: 13,
     tempAvg: 12,
     sunHours: 1800,
     rainfall: 1100,
@@ -845,7 +879,8 @@ export const REGIONS_DATA = [
     airportKm: 97,
     protected: null,
     beauty: 7,
-    beachKm: 90
+    beachKm: 90,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lugo-chantada",
@@ -857,7 +892,7 @@ export const REGIONS_DATA = [
     description: "Valle del Miño con viñedos en ladera. Puerta norte de la Ribeira Sacra con clima mucho más soleado.",
     vibe: "Vinícola, ribereño, tranquilo.",
     priceM2: 575,
-    yoyPrice: 4,
+    yoyPrice: 12.5,
     tempAvg: 13,
     sunHours: 2100,
     rainfall: 900,
@@ -868,7 +903,8 @@ export const REGIONS_DATA = [
     airportKm: 79,
     protected: null,
     beauty: 7,
-    beachKm: 120
+    beachKm: 120,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lugo-lemos",
@@ -880,7 +916,7 @@ export const REGIONS_DATA = [
     description: "Monforte de Lemos y el cañón del Sil. Vino, arte y uno de los microclimas más cálidos de Galicia.",
     vibe: "Señorial, vinícola, cálido.",
     priceM2: 582,
-    yoyPrice: 5,
+    yoyPrice: 14,
     tempAvg: 13.5,
     sunHours: 2300,
     rainfall: 800,
@@ -891,7 +927,8 @@ export const REGIONS_DATA = [
     airportKm: 99,
     protected: null,
     beauty: 8,
-    beachKm: 119
+    beachKm: 119,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lugo-quiroga",
@@ -903,7 +940,7 @@ export const REGIONS_DATA = [
     description: "Gargantas del Sil entre pizarras. El municipio más barato de Galicia con paisaje de nivel europeo.",
     vibe: "Extremo, geológico, olvidado.",
     priceM2: 505,
-    yoyPrice: 4,
+    yoyPrice: 9.5,
     tempAvg: 13,
     sunHours: 2400,
     rainfall: 750,
@@ -914,7 +951,8 @@ export const REGIONS_DATA = [
     airportKm: 121,
     protected: null,
     beauty: 8,
-    beachKm: 118
+    beachKm: 118,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ourense-valdeorras",
@@ -926,7 +964,7 @@ export const REGIONS_DATA = [
     description: "Pizarras, Godello y montaña. Puerta este de Galicia con sol garantizado y precios mínimos.",
     vibe: "Vitivinícola, minero, aislado.",
     priceM2: 619,
-    yoyPrice: 5,
+    yoyPrice: 12.5,
     tempAvg: 13.5,
     sunHours: 2500,
     rainfall: 850,
@@ -937,7 +975,8 @@ export const REGIONS_DATA = [
     airportKm: 111,
     protected: null,
     beauty: 7,
-    beachKm: 131
+    beachKm: 131,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ourense-caldelas",
@@ -949,7 +988,7 @@ export const REGIONS_DATA = [
     description: "Montaña remota entre valles. Casas de piedra a precio simbólico para quien busca aislamiento total.",
     vibe: "Remoto, montañoso, olvidado.",
     priceM2: 452,
-    yoyPrice: 3,
+    yoyPrice: 9.8,
     tempAvg: 12,
     sunHours: 2100,
     rainfall: 900,
@@ -960,7 +999,8 @@ export const REGIONS_DATA = [
     airportKm: 100,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ourense-verin",
@@ -972,7 +1012,7 @@ export const REGIONS_DATA = [
     description: "Termas, DO Monterrei y frontera portuguesa. Clima seco y soleado impropio de Galicia.",
     vibe: "Termal, fronterizo, soleado.",
     priceM2: 544,
-    yoyPrice: 5,
+    yoyPrice: 13,
     tempAvg: 14,
     sunHours: 2600,
     rainfall: 700,
@@ -983,7 +1023,8 @@ export const REGIONS_DATA = [
     airportKm: 90,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ourense-ciudad",
@@ -995,7 +1036,7 @@ export const REGIONS_DATA = [
     description: "Capital con aguas termales gratuitas en pleno centro y el mercado de pisos más barato entre capitales.",
     vibe: "Romano, termal, asequible.",
     priceM2: 1197,
-    yoyPrice: 7,
+    yoyPrice: 16.5,
     tempAvg: 15,
     sunHours: 2500,
     rainfall: 850,
@@ -1006,7 +1047,8 @@ export const REGIONS_DATA = [
     airportKm: 55,
     protected: null,
     beauty: 7,
-    beachKm: 148
+    beachKm: 148,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ourense-allariz",
@@ -1018,7 +1060,7 @@ export const REGIONS_DATA = [
     description: "Allariz medieval, una de las villas más bonitas de Galicia. Cerca de Ourense capital y muy tranquilo.",
     vibe: "Medieval, reconocido, sin masas.",
     priceM2: 448,
-    yoyPrice: 5,
+    yoyPrice: 13.8,
     tempAvg: 14,
     sunHours: 2400,
     rainfall: 800,
@@ -1029,7 +1071,8 @@ export const REGIONS_DATA = [
     airportKm: 79,
     protected: null,
     beauty: 7,
-    beachKm: 150
+    beachKm: 150,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ourense-limia",
@@ -1041,7 +1084,7 @@ export const REGIONS_DATA = [
     description: "Altiplano fronterizo con Portugal. Xinzo de Limia, clima continental y los precios más bajos de Ourense.",
     vibe: "Plateau, fronterizo, austero.",
     priceM2: 461,
-    yoyPrice: 4,
+    yoyPrice: 11.5,
     tempAvg: 12.5,
     sunHours: 2300,
     rainfall: 700,
@@ -1052,7 +1095,8 @@ export const REGIONS_DATA = [
     airportKm: 77,
     protected: null,
     beauty: 6,
-    beachKm: 145
+    beachKm: 145,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ourense-carballino",
@@ -1064,7 +1108,7 @@ export const REGIONS_DATA = [
     description: "Comarca bien conectada a Vigo y Ourense. Viñedos del Ribeiro al lado, ocio y servicios asequibles.",
     vibe: "Equilibrado, bien comunicado, cómodo.",
     priceM2: 565,
-    yoyPrice: 5,
+    yoyPrice: 14.2,
     tempAvg: 14.5,
     sunHours: 2400,
     rainfall: 850,
@@ -1075,7 +1119,8 @@ export const REGIONS_DATA = [
     airportKm: 52,
     protected: null,
     beauty: 6,
-    beachKm: 146
+    beachKm: 146,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ourense-ribeiro",
@@ -1087,7 +1132,7 @@ export const REGIONS_DATA = [
     description: "DO Ribeiro, Ribadavia con barrio judío medieval y confluencia del Miño y el Avia. Climat cálido.",
     vibe: "Vinícola, histórico, mediterráneo.",
     priceM2: 541,
-    yoyPrice: 6,
+    yoyPrice: 15,
     tempAvg: 15,
     sunHours: 2600,
     rainfall: 750,
@@ -1098,7 +1143,8 @@ export const REGIONS_DATA = [
     airportKm: 40,
     protected: null,
     beauty: 8,
-    beachKm: 128
+    beachKm: 128,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ourense-celanova",
@@ -1110,7 +1156,7 @@ export const REGIONS_DATA = [
     description: "Monasterio barroco y aldeas de granito junto a Portugal. Rural profundo con clima suave y soleado.",
     vibe: "Monacal, rural, transfronterizo.",
     priceM2: 504,
-    yoyPrice: 3,
+    yoyPrice: 12,
     tempAvg: 14,
     sunHours: 2400,
     rainfall: 750,
@@ -1121,7 +1167,8 @@ export const REGIONS_DATA = [
     airportKm: 58,
     protected: null,
     beauty: 6,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ast-oriente",
@@ -1133,7 +1180,7 @@ export const REGIONS_DATA = [
     description: "Llanes, Ribadesella y Picos de Europa. Montaña y calas en la comarca más demandada del Cantábrico.",
     vibe: "Sidra, caliza, turístico pero real.",
     priceM2: 1802,
-    yoyPrice: 17,
+    yoyPrice: 16.5,
     tempAvg: 13.5,
     sunHours: 1850,
     rainfall: 1250,
@@ -1144,7 +1191,8 @@ export const REGIONS_DATA = [
     airportKm: 80,
     protected: "PN",
     beauty: 10,
-    beachKm: 40
+    beachKm: 40,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ast-gijon",
@@ -1156,7 +1204,7 @@ export const REGIONS_DATA = [
     description: "Puerto reconvertido con playa de San Lorenzo y vida cultural activa. Asturias urbana en su mejor versión.",
     vibe: "Portuario, moderno, activo.",
     priceM2: 2765,
-    yoyPrice: 14,
+    yoyPrice: 15.2,
     tempAvg: 13.8,
     sunHours: 1900,
     rainfall: 1100,
@@ -1167,7 +1215,8 @@ export const REGIONS_DATA = [
     airportKm: 30,
     protected: null,
     beauty: 7,
-    beachKm: 7
+    beachKm: 7,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ast-oviedo",
@@ -1179,7 +1228,7 @@ export const REGIONS_DATA = [
     description: "Capital universitaria con casco histórico Patrimonio UNESCO. Servicios completos y buen stock a reformar.",
     vibe: "Culto, universitario, señorial.",
     priceM2: 1858,
-    yoyPrice: 14,
+    yoyPrice: 14.8,
     tempAvg: 13,
     sunHours: 1800,
     rainfall: 1050,
@@ -1190,7 +1239,8 @@ export const REGIONS_DATA = [
     airportKm: 24,
     protected: null,
     beauty: 7,
-    beachKm: 23
+    beachKm: 23,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ast-nalon",
@@ -1202,7 +1252,7 @@ export const REGIONS_DATA = [
     description: "Valle del Nalón en reconversión. Stock minero a precios bajos con buena conexión a Oviedo y Gijón.",
     vibe: "Minero, en transición, asequible.",
     priceM2: 850,
-    yoyPrice: 12,
+    yoyPrice: 11,
     tempAvg: 13,
     sunHours: 1750,
     rainfall: 1100,
@@ -1213,7 +1263,8 @@ export const REGIONS_DATA = [
     airportKm: 6,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ast-caudal",
@@ -1225,7 +1276,7 @@ export const REGIONS_DATA = [
     description: "Mieres y el Caudal. Piso de minero reformado como oportunidad de entrada al mercado asturiano.",
     vibe: "Industrial, recuperable, barato.",
     priceM2: 906,
-    yoyPrice: 11,
+    yoyPrice: 10.5,
     tempAvg: 12.5,
     sunHours: 1750,
     rainfall: 1100,
@@ -1236,7 +1287,8 @@ export const REGIONS_DATA = [
     airportKm: 36,
     protected: null,
     beauty: 6,
-    beachKm: 32
+    beachKm: 32,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ast-aviles",
@@ -1248,7 +1300,7 @@ export const REGIONS_DATA = [
     description: "Ría reconvertida con el Centro Niemeyer y acceso directo al aeropuerto. Precio por debajo de Oviedo.",
     vibe: "Industrial reconvertido, costero.",
     priceM2: 1797,
-    yoyPrice: 13,
+    yoyPrice: 13.8,
     tempAvg: 13.5,
     sunHours: 1850,
     rainfall: 1100,
@@ -1259,7 +1311,8 @@ export const REGIONS_DATA = [
     airportKm: 9,
     protected: null,
     beauty: 6,
-    beachKm: 19
+    beachKm: 19,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ast-eo-navia",
@@ -1271,7 +1324,7 @@ export const REGIONS_DATA = [
     description: "Occidente salvaje entre Galicia y Asturias. Rías, bosques y aldeas deshabitadas a precio de derribo.",
     vibe: "Fronterizo, verde, remoto.",
     priceM2: 1079,
-    yoyPrice: 12,
+    yoyPrice: 12.5,
     tempAvg: 13,
     sunHours: 1900,
     rainfall: 1400,
@@ -1282,7 +1335,8 @@ export const REGIONS_DATA = [
     airportKm: 80,
     protected: "RB",
     beauty: 9,
-    beachKm: 45
+    beachKm: 45,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ast-narcea",
@@ -1294,7 +1348,7 @@ export const REGIONS_DATA = [
     description: "Cangas del Narcea y valles de montaña entre castaños. Parque Natural y los precios más bajos de Asturias.",
     vibe: "Montañoso, castaño, intacto.",
     priceM2: 666,
-    yoyPrice: 10,
+    yoyPrice: 9.5,
     tempAvg: 12,
     sunHours: 1900,
     rainfall: 1400,
@@ -1305,7 +1359,8 @@ export const REGIONS_DATA = [
     airportKm: 53,
     protected: "PNat",
     beauty: 8,
-    beachKm: 74
+    beachKm: 74,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cant-costa-or",
@@ -1317,7 +1372,7 @@ export const REGIONS_DATA = [
     description: "Laredo y Castro Urdiales bordeando el Bilbao Metropolitano. Playas amplias con precio aún cántabro.",
     vibe: "Playero, bien comunicado, subiendo.",
     priceM2: 2693,
-    yoyPrice: 18,
+    yoyPrice: 15.5,
     tempAvg: 14,
     sunHours: 1950,
     rainfall: 1100,
@@ -1328,7 +1383,8 @@ export const REGIONS_DATA = [
     airportKm: 116,
     protected: null,
     beauty: 8,
-    beachKm: 136
+    beachKm: 136,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cant-ason",
@@ -1340,7 +1396,7 @@ export const REGIONS_DATA = [
     description: "Valles kársticos de Ramales y Arredondo. Cuevas prehistóricas y casas de piedra a precio comedido.",
     vibe: "Kárstico, prehistórico, tranquilo.",
     priceM2: 1248,
-    yoyPrice: 16,
+    yoyPrice: 10.8,
     tempAvg: 13,
     sunHours: 1850,
     rainfall: 1300,
@@ -1351,7 +1407,8 @@ export const REGIONS_DATA = [
     airportKm: 101,
     protected: null,
     beauty: 8,
-    beachKm: 142
+    beachKm: 142,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cant-trasmiera",
@@ -1363,7 +1420,7 @@ export const REGIONS_DATA = [
     description: "Noja, Santoña y la bahía de Santander al fondo. Playas excelentes y ferry a Santander.",
     vibe: "Veraniego, marinero, familiar.",
     priceM2: 2206,
-    yoyPrice: 18,
+    yoyPrice: 14.2,
     tempAvg: 14,
     sunHours: 1950,
     rainfall: 1100,
@@ -1374,7 +1431,8 @@ export const REGIONS_DATA = [
     airportKm: 114,
     protected: null,
     beauty: 8,
-    beachKm: 148
+    beachKm: 148,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cant-pasiegos",
@@ -1386,7 +1444,7 @@ export const REGIONS_DATA = [
     description: "Cabañas pasiegas en prados escarpados. La Cantabria más verde e inmutable, perfecta para reformar.",
     vibe: "Ganadero, silencioso, auténtico.",
     priceM2: 864,
-    yoyPrice: 18,
+    yoyPrice: 9.5,
     tempAvg: 11.5,
     sunHours: 1900,
     rainfall: 1500,
@@ -1397,7 +1455,8 @@ export const REGIONS_DATA = [
     airportKm: 162,
     protected: null,
     beauty: 9,
-    beachKm: 149
+    beachKm: 149,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cant-santander",
@@ -1409,7 +1468,7 @@ export const REGIONS_DATA = [
     description: "Capital con palacio y playa. La ciudad más cara de la cornisa pero con aeropuerto a 5 min del centro.",
     vibe: "Señorial, moderno, costero.",
     priceM2: 3014,
-    yoyPrice: 19,
+    yoyPrice: 16.8,
     tempAvg: 14.5,
     sunHours: 1950,
     rainfall: 1050,
@@ -1420,7 +1479,8 @@ export const REGIONS_DATA = [
     airportKm: 5,
     protected: null,
     beauty: 8,
-    beachKm: 148
+    beachKm: 148,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cant-besaya",
@@ -1432,7 +1492,7 @@ export const REGIONS_DATA = [
     description: "Torrelavega y el valle del Besaya. Hub industrial bien comunicado con precios por debajo de la costa.",
     vibe: "Industrial, práctico, asequible.",
     priceM2: 1946,
-    yoyPrice: 16,
+    yoyPrice: 12.5,
     tempAvg: 13,
     sunHours: 1850,
     rainfall: 1200,
@@ -1443,7 +1503,8 @@ export const REGIONS_DATA = [
     airportKm: 149,
     protected: null,
     beauty: 6,
-    beachKm: 135
+    beachKm: 135,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cant-costa-oc",
@@ -1455,7 +1516,7 @@ export const REGIONS_DATA = [
     description: "Comillas, Santillana del Mar y playas de surf. La Cantabria más señorial y fotogénica.",
     vibe: "Elegante, surfero, señorial.",
     priceM2: 2181,
-    yoyPrice: 19,
+    yoyPrice: 14.9,
     tempAvg: 14,
     sunHours: 1950,
     rainfall: 1200,
@@ -1466,7 +1527,8 @@ export const REGIONS_DATA = [
     airportKm: 126,
     protected: null,
     beauty: 10,
-    beachKm: 109
+    beachKm: 109,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cant-barquera",
@@ -1478,7 +1540,7 @@ export const REGIONS_DATA = [
     description: "San Vicente de la Barquera, uno de los pueblos más bonitos del Cantábrico con ría y castillo.",
     vibe: "Pintoresco, castellano, atlántico.",
     priceM2: 2663,
-    yoyPrice: 18,
+    yoyPrice: 15.8,
     tempAvg: 14,
     sunHours: 1950,
     rainfall: 1200,
@@ -1489,7 +1551,8 @@ export const REGIONS_DATA = [
     airportKm: 126,
     protected: null,
     beauty: 9,
-    beachKm: 99
+    beachKm: 99,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cant-saja",
@@ -1501,7 +1564,7 @@ export const REGIONS_DATA = [
     description: "Parque Natural del Saja y valles de Cabuérniga. El refugio verde más apartado de Cantabria.",
     vibe: "Natural, apartado, reforestado.",
     priceM2: 863,
-    yoyPrice: 15,
+    yoyPrice: 10.2,
     tempAvg: 12.5,
     sunHours: 1900,
     rainfall: 1400,
@@ -1512,7 +1575,8 @@ export const REGIONS_DATA = [
     airportKm: 113,
     protected: "PNat",
     beauty: 9,
-    beachKm: 114
+    beachKm: 114,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cant-campoo",
@@ -1524,7 +1588,7 @@ export const REGIONS_DATA = [
     description: "Reinosa y el nacimiento del Ebro. Interior de clima más seco, embalse del Ebro y los precios más bajos.",
     vibe: "Castellano, seco, tranquilo.",
     priceM2: 678,
-    yoyPrice: 14,
+    yoyPrice: 8.5,
     tempAvg: 10.5,
     sunHours: 1950,
     rainfall: 800,
@@ -1535,7 +1599,8 @@ export const REGIONS_DATA = [
     airportKm: 131,
     protected: null,
     beauty: 7,
-    beachKm: 145
+    beachKm: 145,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cant-liebana",
@@ -1547,7 +1612,7 @@ export const REGIONS_DATA = [
     description: "Potes y el microclima mediterráneo encajonado en los Picos. Románico, orujo y paisaje de nivel alpino.",
     vibe: "Monacal, alpino, sorprendente.",
     priceM2: 1010,
-    yoyPrice: 17,
+    yoyPrice: 11.5,
     tempAvg: 13.5,
     sunHours: 2200,
     rainfall: 700,
@@ -1558,7 +1623,8 @@ export const REGIONS_DATA = [
     airportKm: 90,
     protected: "PN",
     beauty: 10,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alava-ayala",
@@ -1570,7 +1636,7 @@ export const REGIONS_DATA = [
     description: "Llodio y los valles del Nervión en la frontera con Bizkaia. Precio vasco accesible con acceso al Gran Bilbao.",
     vibe: "Industrial, vasco, asequible.",
     priceM2: 1846,
-    yoyPrice: 10,
+    yoyPrice: 13.5,
     tempAvg: 12.5,
     sunHours: 1900,
     rainfall: 1200,
@@ -1581,7 +1647,8 @@ export const REGIONS_DATA = [
     airportKm: 133,
     protected: null,
     beauty: 7,
-    beachKm: 132
+    beachKm: 132,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alava-zuya",
@@ -1593,7 +1660,7 @@ export const REGIONS_DATA = [
     description: "Valles verdes al sur de Vitoria. Rural con buenos accesos a la capital alavesa y precios muy por debajo.",
     vibe: "Agrícola, tranquilo, cerca de todo.",
     priceM2: 1892,
-    yoyPrice: 10,
+    yoyPrice: 12.8,
     tempAvg: 12,
     sunHours: 2000,
     rainfall: 1000,
@@ -1604,7 +1671,8 @@ export const REGIONS_DATA = [
     airportKm: 119,
     protected: null,
     beauty: 7,
-    beachKm: 118
+    beachKm: 118,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alava-salvat",
@@ -1616,7 +1684,7 @@ export const REGIONS_DATA = [
     description: "Agurain/Salvatierra, villa medieval en el Camino de Santiago. Interior alavés accesible y con carácter.",
     vibe: "Medieval, peregrino, sobrio.",
     priceM2: 2065,
-    yoyPrice: 9,
+    yoyPrice: 11,
     tempAvg: 11,
     sunHours: 2000,
     rainfall: 900,
@@ -1627,7 +1695,8 @@ export const REGIONS_DATA = [
     airportKm: 98,
     protected: null,
     beauty: 7,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alava-campez",
@@ -1639,7 +1708,7 @@ export const REGIONS_DATA = [
     description: "El rincón más remoto y barato de Álava. Sierra de Toloño, aldeas despobladas y vistas al valle del Ebro.",
     vibe: "Remoto, alavés profundo, barato.",
     priceM2: 938,
-    yoyPrice: 7,
+    yoyPrice: 9.5,
     tempAvg: 11.5,
     sunHours: 2200,
     rainfall: 700,
@@ -1650,7 +1719,8 @@ export const REGIONS_DATA = [
     airportKm: 60,
     protected: null,
     beauty: 7,
-    beachKm: 132
+    beachKm: 132,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alava-laguard",
@@ -1662,7 +1732,7 @@ export const REGIONS_DATA = [
     description: "Laguardia amurallada, bodegas de Gehry y Frank Lloyd Wright. El mar de Tempranillo más elegante de España.",
     vibe: "Vinícola, señorial, sofisticado.",
     priceM2: 1060,
-    yoyPrice: 11,
+    yoyPrice: 14,
     tempAvg: 13,
     sunHours: 2400,
     rainfall: 500,
@@ -1673,7 +1743,8 @@ export const REGIONS_DATA = [
     airportKm: 134,
     protected: null,
     beauty: 9,
-    beachKm: 134
+    beachKm: 134,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alava-vitoria",
@@ -1685,7 +1756,7 @@ export const REGIONS_DATA = [
     description: "Capital política vasca, ciudad verde por excelencia. Cinturón de parques, casco medieval y calidad de vida top.",
     vibe: "Verde, cívico, equilibrado.",
     priceM2: 3223,
-    yoyPrice: 11,
+    yoyPrice: 15,
     tempAvg: 11.5,
     sunHours: 2050,
     rainfall: 800,
@@ -1696,7 +1767,8 @@ export const REGIONS_DATA = [
     airportKm: 115,
     protected: null,
     beauty: 7,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alava-anana",
@@ -1708,7 +1780,7 @@ export const REGIONS_DATA = [
     description: "Valle Salado milenario Patrimonio UNESCO y aldeas de piedra entre robledales. El Álava más desconocido.",
     vibe: "Histórico, oculto, salinero.",
     priceM2: 1258,
-    yoyPrice: 8,
+    yoyPrice: 10.5,
     tempAvg: 12,
     sunHours: 2200,
     rainfall: 700,
@@ -1719,7 +1791,8 @@ export const REGIONS_DATA = [
     airportKm: 140,
     protected: null,
     beauty: 8,
-    beachKm: 139
+    beachKm: 139,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gipu-bidasoa",
@@ -1731,7 +1804,7 @@ export const REGIONS_DATA = [
     description: "Hondarribia e Irún en la bahía del Bidasoa. Frontera francesa, pintxos y mercado activo todo el año.",
     vibe: "Fronterizo, cosmopolita, caro.",
     priceM2: 3839,
-    yoyPrice: 12,
+    yoyPrice: 13.8,
     tempAvg: 14,
     sunHours: 1750,
     rainfall: 1500,
@@ -1742,7 +1815,8 @@ export const REGIONS_DATA = [
     airportKm: 27,
     protected: null,
     beauty: 9,
-    beachKm: 144
+    beachKm: 144,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gipu-donosti",
@@ -1754,7 +1828,7 @@ export const REGIONS_DATA = [
     description: "La ciudad más cara de España junto a Madrid y Barcelona. Playa de la Concha, Michelin y arquitectura.",
     vibe: "Gourmet, cosmopolita, identitario.",
     priceM2: 6173,
-    yoyPrice: 12,
+    yoyPrice: 14.5,
     tempAvg: 14.5,
     sunHours: 1800,
     rainfall: 1450,
@@ -1765,7 +1839,8 @@ export const REGIONS_DATA = [
     airportKm: 40,
     protected: null,
     beauty: 10,
-    beachKm: 108
+    beachKm: 108,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gipu-urola",
@@ -1777,7 +1852,7 @@ export const REGIONS_DATA = [
     description: "Zarautz, Zumaia y el Flysch geoparque. Costa de acantilados geológicos únicos con surf de nivel mundial.",
     vibe: "Surfero, geológico, auténtico.",
     priceM2: 3940,
-    yoyPrice: 11,
+    yoyPrice: 12.5,
     tempAvg: 14,
     sunHours: 1750,
     rainfall: 1500,
@@ -1788,7 +1863,8 @@ export const REGIONS_DATA = [
     airportKm: 66,
     protected: "PNat",
     beauty: 10,
-    beachKm: 127
+    beachKm: 127,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gipu-tolosa",
@@ -1800,7 +1876,7 @@ export const REGIONS_DATA = [
     description: "Tolosa, capital histórica y alubias famosas. Interior verde bien comunicado a precio inferior a la costa.",
     vibe: "Histórico, txoko, tranquilo.",
     priceM2: 2223,
-    yoyPrice: 10,
+    yoyPrice: 10.5,
     tempAvg: 12.5,
     sunHours: 1850,
     rainfall: 1500,
@@ -1811,7 +1887,8 @@ export const REGIONS_DATA = [
     airportKm: 57,
     protected: null,
     beauty: 7,
-    beachKm: 126
+    beachKm: 126,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gipu-goierri",
@@ -1823,7 +1900,7 @@ export const REGIONS_DATA = [
     description: "Caseríos y montaña. Cuna del Idiazábal y los valores rurales vascos más arraigados. El más asequible.",
     vibe: "Caserío, queso, aislado.",
     priceM2: 2162,
-    yoyPrice: 10,
+    yoyPrice: 9.8,
     tempAvg: 11,
     sunHours: 1900,
     rainfall: 1500,
@@ -1834,7 +1911,8 @@ export const REGIONS_DATA = [
     airportKm: 50,
     protected: null,
     beauty: 8,
-    beachKm: 144
+    beachKm: 144,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gipu-bajo-deba",
@@ -1846,7 +1924,7 @@ export const REGIONS_DATA = [
     description: "Deba y Mutriku en acantilados sobre el Cantábrico. Pueblos de pescadores con precios algo inferiores.",
     vibe: "Marinero, acantilado, auténtico.",
     priceM2: 2503,
-    yoyPrice: 11,
+    yoyPrice: 11.5,
     tempAvg: 13.5,
     sunHours: 1750,
     rainfall: 1400,
@@ -1857,7 +1935,8 @@ export const REGIONS_DATA = [
     airportKm: 72,
     protected: null,
     beauty: 9,
-    beachKm: 129
+    beachKm: 129,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gipu-alto-deba",
@@ -1880,7 +1959,8 @@ export const REGIONS_DATA = [
     airportKm: 88,
     protected: null,
     beauty: 7,
-    beachKm: 150
+    beachKm: 150,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bizk-lea",
@@ -1892,7 +1972,7 @@ export const REGIONS_DATA = [
     description: "Lekeitio y Ondarroa: playas entre acantilados y villas pesqueras vascas con sabor auténtico.",
     vibe: "Marinero, festivo, identitario.",
     priceM2: 2170,
-    yoyPrice: 11,
+    yoyPrice: 10.5,
     tempAvg: 13.5,
     sunHours: 1750,
     rainfall: 1350,
@@ -1903,7 +1983,8 @@ export const REGIONS_DATA = [
     airportKm: 83,
     protected: null,
     beauty: 9,
-    beachKm: 134
+    beachKm: 134,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bizk-durango",
@@ -1915,7 +1996,7 @@ export const REGIONS_DATA = [
     description: "Durango y el valle industrial más verde del País Vasco. Conexión directa a Bilbao en 20 min.",
     vibe: "Industrial vasco, verde, eficiente.",
     priceM2: 2364,
-    yoyPrice: 10,
+    yoyPrice: 11.8,
     tempAvg: 12,
     sunHours: 1800,
     rainfall: 1400,
@@ -1926,7 +2007,8 @@ export const REGIONS_DATA = [
     airportKm: 93,
     protected: null,
     beauty: 7,
-    beachKm: 148
+    beachKm: 148,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bizk-busturi",
@@ -1938,7 +2020,7 @@ export const REGIONS_DATA = [
     description: "Urdaibai, Bermeo y Mundaka. Reserva de Biosfera con la ola de izquierda más famosa de Europa.",
     vibe: "Protegido, surfero, estuario.",
     priceM2: 2421,
-    yoyPrice: 11,
+    yoyPrice: 13.2,
     tempAvg: 13.5,
     sunHours: 1750,
     rainfall: 1300,
@@ -1949,7 +2031,8 @@ export const REGIONS_DATA = [
     airportKm: 93,
     protected: "RB",
     beauty: 10,
-    beachKm: 140
+    beachKm: 140,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bizk-uribe",
@@ -1961,7 +2044,7 @@ export const REGIONS_DATA = [
     description: "Getxo, Plentzia y Las Arenas: la costa residencial del gran Bilbao. Tren directo al centro en 20 min.",
     vibe: "Residencial, costero, exclusivo.",
     priceM2: 3252,
-    yoyPrice: 11,
+    yoyPrice: 14.5,
     tempAvg: 14,
     sunHours: 1750,
     rainfall: 1200,
@@ -1972,7 +2055,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: null,
     beauty: 8,
-    beachKm: 10
+    beachKm: 10,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bizk-bilbao",
@@ -1984,7 +2068,7 @@ export const REGIONS_DATA = [
     description: "Guggenheim, gastronomía y ría reconvertida. La reinvención urbana más exitosa de España.",
     vibe: "Cosmopolita, reinventado, vasco.",
     priceM2: 3886,
-    yoyPrice: 11,
+    yoyPrice: 12.8,
     tempAvg: 13.5,
     sunHours: 1700,
     rainfall: 1200,
@@ -1995,7 +2079,8 @@ export const REGIONS_DATA = [
     airportKm: 114,
     protected: null,
     beauty: 7,
-    beachKm: 149
+    beachKm: 149,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bizk-arratia",
@@ -2007,7 +2092,7 @@ export const REGIONS_DATA = [
     description: "Valle alto del Nervión entre caseríos y robledales. El Bizkaia más rural y asequible.",
     vibe: "Caserío, verde, apartado.",
     priceM2: 1592,
-    yoyPrice: 10,
+    yoyPrice: 9.5,
     tempAvg: 12,
     sunHours: 1800,
     rainfall: 1500,
@@ -2018,7 +2103,8 @@ export const REGIONS_DATA = [
     airportKm: 111,
     protected: null,
     beauty: 8,
-    beachKm: 143
+    beachKm: 143,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bizk-encartar",
@@ -2030,7 +2116,7 @@ export const REGIONS_DATA = [
     description: "Balmaseda y los valles mineros del oeste. Historia indiana, montaña y los precios más bajos de Bizkaia.",
     vibe: "Tranquilo, menos saturado, asequible.",
     priceM2: 1532,
-    yoyPrice: 12,
+    yoyPrice: 8.8,
     tempAvg: 12.5,
     sunHours: 1900,
     rainfall: 1400,
@@ -2041,7 +2127,8 @@ export const REGIONS_DATA = [
     airportKm: 104,
     protected: null,
     beauty: 7,
-    beachKm: 131
+    beachKm: 131,
+    yoySource: "ipv_gemini"
   },
   {
     id: "nav-sanguesa",
@@ -2053,7 +2140,7 @@ export const REGIONS_DATA = [
     description: "Foces del Irati, Javier y el prepirineo oriental. Naturaleza intacta y acceso al Camino Aragonés.",
     vibe: "Pirenaico, rural, tranquilo.",
     priceM2: 874,
-    yoyPrice: 7,
+    yoyPrice: 9.5,
     tempAvg: 12.5,
     sunHours: 2300,
     rainfall: 700,
@@ -2064,7 +2151,8 @@ export const REGIONS_DATA = [
     airportKm: 90,
     protected: null,
     beauty: 8,
-    beachKm: 146
+    beachKm: 146,
+    yoySource: "ipv_gemini"
   },
   {
     id: "nav-esteribar",
@@ -2076,7 +2164,7 @@ export const REGIONS_DATA = [
     description: "Roncesvalles y los valles pirenaicos entre hayedos. El inicio más mágico del Camino de Santiago.",
     vibe: "Pirenaico, peregrino, misterioso.",
     priceM2: 1155,
-    yoyPrice: 8,
+    yoyPrice: 10.8,
     tempAvg: 11.5,
     sunHours: 2000,
     rainfall: 1200,
@@ -2087,7 +2175,8 @@ export const REGIONS_DATA = [
     airportKm: 35,
     protected: null,
     beauty: 9,
-    beachKm: 144
+    beachKm: 144,
+    yoySource: "ipv_gemini"
   },
   {
     id: "nav-norte",
@@ -2099,7 +2188,7 @@ export const REGIONS_DATA = [
     description: "Baztán, Bidasoa y valles atlánticos. Caseríos palaciegos, bosques oscuros y leyendas navarras.",
     vibe: "Misterioso, noble, atlántico.",
     priceM2: 1186,
-    yoyPrice: 8,
+    yoyPrice: 10.2,
     tempAvg: 12,
     sunHours: 1900,
     rainfall: 1400,
@@ -2110,7 +2199,8 @@ export const REGIONS_DATA = [
     airportKm: 71,
     protected: null,
     beauty: 8,
-    beachKm: 146
+    beachKm: 146,
+    yoySource: "ipv_gemini"
   },
   {
     id: "nav-pamplona",
@@ -2122,7 +2212,7 @@ export const REGIONS_DATA = [
     description: "Capital con mercado laboral sólido y calidad de vida alta. Precio muy inferior a las capitales vascas.",
     vibe: "Festivo, bien comunicado, accesible.",
     priceM2: 2974,
-    yoyPrice: 9,
+    yoyPrice: 13.5,
     tempAvg: 12.5,
     sunHours: 2100,
     rainfall: 800,
@@ -2133,7 +2223,8 @@ export const REGIONS_DATA = [
     airportKm: 72,
     protected: null,
     beauty: 7,
-    beachKm: 147
+    beachKm: 147,
+    yoySource: "ipv_gemini"
   },
   {
     id: "nav-estella",
@@ -2145,7 +2236,7 @@ export const REGIONS_DATA = [
     description: "Estella medieval en el Camino Francés y la meseta de Urbasa. Naturaleza y patrimonio a buen precio.",
     vibe: "Medieval, peregrino, verde.",
     priceM2: 1138,
-    yoyPrice: 7,
+    yoyPrice: 8.8,
     tempAvg: 12,
     sunHours: 2300,
     rainfall: 800,
@@ -2156,7 +2247,8 @@ export const REGIONS_DATA = [
     airportKm: 45,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "nav-puente",
@@ -2168,7 +2260,7 @@ export const REGIONS_DATA = [
     description: "Unión del Camino Francés y el Aragonés. Viñedos, bodegas y villa medieval a 20 min de Pamplona.",
     vibe: "Vinícola, peregrino, cercano.",
     priceM2: 1477,
-    yoyPrice: 8,
+    yoyPrice: 11,
     tempAvg: 13,
     sunHours: 2300,
     rainfall: 650,
@@ -2179,7 +2271,8 @@ export const REGIONS_DATA = [
     airportKm: 92,
     protected: null,
     beauty: 7,
-    beachKm: 140
+    beachKm: 140,
+    yoySource: "ipv_gemini"
   },
   {
     id: "nav-tafalla",
@@ -2191,7 +2284,7 @@ export const REGIONS_DATA = [
     description: "Centro geográfico de Navarra con AVE a Pamplona. Transición entre la Navarra verde y la seca.",
     vibe: "Central, práctico, equilibrado.",
     priceM2: 1099,
-    yoyPrice: 7,
+    yoyPrice: 10.5,
     tempAvg: 13.5,
     sunHours: 2400,
     rainfall: 550,
@@ -2202,7 +2295,8 @@ export const REGIONS_DATA = [
     airportKm: 110,
     protected: null,
     beauty: 6,
-    beachKm: 113
+    beachKm: 113,
+    yoySource: "ipv_gemini"
   },
   {
     id: "nav-olite",
@@ -2214,7 +2308,7 @@ export const REGIONS_DATA = [
     description: "Castillo real medieval, vinos rosados y una de las villas más bonitas de España. Tranquilo y barato.",
     vibe: "Medieval, palaciego, vinícola.",
     priceM2: 1077,
-    yoyPrice: 7,
+    yoyPrice: 9.8,
     tempAvg: 13.5,
     sunHours: 2500,
     rainfall: 500,
@@ -2225,7 +2319,8 @@ export const REGIONS_DATA = [
     airportKm: 110,
     protected: null,
     beauty: 8,
-    beachKm: 113
+    beachKm: 113,
+    yoySource: "ipv_gemini"
   },
   {
     id: "nav-peralta",
@@ -2237,7 +2332,7 @@ export const REGIONS_DATA = [
     description: "Entre la Navarra Media y el Ebro. Peral de la Ribera, huerta navarra y los precios más bajos del norte.",
     vibe: "Agrícola, seco, práctico.",
     priceM2: 971,
-    yoyPrice: 6,
+    yoyPrice: 9.2,
     tempAvg: 14,
     sunHours: 2600,
     rainfall: 450,
@@ -2248,7 +2343,8 @@ export const REGIONS_DATA = [
     airportKm: 110,
     protected: null,
     beauty: 6,
-    beachKm: 113
+    beachKm: 113,
+    yoySource: "ipv_gemini"
   },
   {
     id: "nav-tudela",
@@ -2260,7 +2356,7 @@ export const REGIONS_DATA = [
     description: "Tudela junto al Ebro y las Bardenas Reales. Huerta exuberante, clima seco y la RB más espectacular del norte.",
     vibe: "Mediterráneo, agrícola, desértico.",
     priceM2: 1273,
-    yoyPrice: 8,
+    yoyPrice: 12,
     tempAvg: 15,
     sunHours: 2700,
     rainfall: 400,
@@ -2271,7 +2367,8 @@ export const REGIONS_DATA = [
     airportKm: 157,
     protected: "RB",
     beauty: 8,
-    beachKm: 149
+    beachKm: 149,
+    yoySource: "ipv_gemini"
   },
   {
     id: "rioja-logrono",
@@ -2283,7 +2380,7 @@ export const REGIONS_DATA = [
     description: "Logroño capital, metrópoli del vino español, con mercado activo, buen precio y excelente calidad de vida.",
     vibe: "Festivo, gastronómico, asequible.",
     priceM2: 1880,
-    yoyPrice: 10,
+    yoyPrice: 16.8,
     tempAvg: 13.5,
     sunHours: 2600,
     rainfall: 450,
@@ -2294,7 +2391,8 @@ export const REGIONS_DATA = [
     airportKm: 173,
     protected: null,
     beauty: 7,
-    beachKm: 148
+    beachKm: 148,
+    yoySource: "ipv_gemini"
   },
   {
     id: "rioja-cameros",
@@ -2306,7 +2404,7 @@ export const REGIONS_DATA = [
     description: "Sierra de Cameros con aldeas casi deshabitadas y pinares extensos. Los precios más bajos de La Rioja.",
     vibe: "Serrano, silencioso, remoto.",
     priceM2: 481,
-    yoyPrice: 7,
+    yoyPrice: 10.5,
     tempAvg: 10.5,
     sunHours: 2200,
     rainfall: 700,
@@ -2317,7 +2415,8 @@ export const REGIONS_DATA = [
     airportKm: 70,
     protected: null,
     beauty: 8,
-    beachKm: 146
+    beachKm: 146,
+    yoySource: "ipv_gemini"
   },
   {
     id: "rioja-alta",
@@ -2329,7 +2428,7 @@ export const REGIONS_DATA = [
     description: "Haro y las grandes bodegas de Rioja Alta. Pueblos señoriales, inversión en bodega o segunda residencia premium.",
     vibe: "Señorial, vinícola, elegante.",
     priceM2: 935,
-    yoyPrice: 9,
+    yoyPrice: 14,
     tempAvg: 13,
     sunHours: 2500,
     rainfall: 450,
@@ -2340,7 +2439,8 @@ export const REGIONS_DATA = [
     airportKm: 50,
     protected: null,
     beauty: 8,
-    beachKm: 140
+    beachKm: 140,
+    yoySource: "ipv_gemini"
   },
   {
     id: "rioja-baja",
@@ -2352,7 +2452,7 @@ export const REGIONS_DATA = [
     description: "Calahorra y Alfaro, zona más cálida y seca de La Rioja. Menores precios y buen acceso a Zaragoza.",
     vibe: "Soleado, práctico, más barato.",
     priceM2: 803,
-    yoyPrice: 8,
+    yoyPrice: 13.5,
     tempAvg: 14.5,
     sunHours: 2700,
     rainfall: 380,
@@ -2363,7 +2463,8 @@ export const REGIONS_DATA = [
     airportKm: 119,
     protected: null,
     beauty: 6,
-    beachKm: 40
+    beachKm: 40,
+    yoySource: "ipv_gemini"
   },
   {
     id: "hues-altogall",
@@ -2375,7 +2476,7 @@ export const REGIONS_DATA = [
     description: "Sabiñánigo y los valles del Gállego hacia Ordesa. Acceso a esquí y senderismo, precios aún moderados.",
     vibe: "Alpino, deportivo, accesible.",
     priceM2: 2562,
-    yoyPrice: 8,
+    yoyPrice: 18.5,
     tempAvg: 10,
     sunHours: 2400,
     rainfall: 900,
@@ -2386,7 +2487,8 @@ export const REGIONS_DATA = [
     airportKm: 90,
     protected: "PN",
     beauty: 10,
-    beachKm: 143
+    beachKm: 143,
+    yoySource: "ipv_gemini"
   },
   {
     id: "hues-cinca",
@@ -2398,7 +2500,7 @@ export const REGIONS_DATA = [
     description: "Monzón y el corredor del Cinca. Agricultura de regadío, industria y buen acceso a Lleida y Zaragoza.",
     vibe: "Industrial, regadío, funcional.",
     priceM2: 761,
-    yoyPrice: 6,
+    yoyPrice: 11,
     tempAvg: 14,
     sunHours: 2700,
     rainfall: 450,
@@ -2409,7 +2511,8 @@ export const REGIONS_DATA = [
     airportKm: 175,
     protected: null,
     beauty: 6,
-    beachKm: 143
+    beachKm: 143,
+    yoySource: "ipv_gemini"
   },
   {
     id: "hues-hoya",
@@ -2421,7 +2524,7 @@ export const REGIONS_DATA = [
     description: "Huesca capital y su entorno. Ciudad de servicios completos, precio bajo y puerta de los Pirineos.",
     vibe: "Tranquilo, universitario, puerta.",
     priceM2: 1167,
-    yoyPrice: 7,
+    yoyPrice: 15.5,
     tempAvg: 13.5,
     sunHours: 2700,
     rainfall: 550,
@@ -2432,7 +2535,8 @@ export const REGIONS_DATA = [
     airportKm: 128,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "hues-jacetan",
@@ -2444,7 +2548,7 @@ export const REGIONS_DATA = [
     description: "Jaca, Canfranc y el Camino de Santiago pirenaico. Castillos, ski y turismo de montaña todo el año.",
     vibe: "Medieval, alpino, histó rico.",
     priceM2: 2029,
-    yoyPrice: 9,
+    yoyPrice: 19,
     tempAvg: 9.5,
     sunHours: 2200,
     rainfall: 1000,
@@ -2455,7 +2559,8 @@ export const REGIONS_DATA = [
     airportKm: 83,
     protected: null,
     beauty: 10,
-    beachKm: 145
+    beachKm: 145,
+    yoySource: "ipv_gemini"
   },
   {
     id: "hues-litera",
@@ -2467,7 +2572,7 @@ export const REGIONS_DATA = [
     description: "Binéfar y la llanura oriental. Economía agroalimentaria estable y los precios más bajos de Huesca.",
     vibe: "Agrícola, llano, práctico.",
     priceM2: 691,
-    yoyPrice: 5,
+    yoyPrice: 10.5,
     tempAvg: 14,
     sunHours: 2700,
     rainfall: 450,
@@ -2478,7 +2583,8 @@ export const REGIONS_DATA = [
     airportKm: 182,
     protected: null,
     beauty: 5,
-    beachKm: 135
+    beachKm: 135,
+    yoySource: "ipv_gemini"
   },
   {
     id: "hues-monegro",
@@ -2490,7 +2596,7 @@ export const REGIONS_DATA = [
     description: "Estepa semidesértica entre Huesca y Zaragoza. Paisaje marciano, sáhara aragonés y los precios más bajos.",
     vibe: "Seco, despoblado, único.",
     priceM2: 546,
-    yoyPrice: 3,
+    yoyPrice: 9,
     tempAvg: 14.5,
     sunHours: 2800,
     rainfall: 320,
@@ -2501,7 +2607,8 @@ export const REGIONS_DATA = [
     airportKm: 178,
     protected: null,
     beauty: 4,
-    beachKm: 145
+    beachKm: 145,
+    yoySource: "ipv_gemini"
   },
   {
     id: "hues-ribagoza",
@@ -2513,7 +2620,7 @@ export const REGIONS_DATA = [
     description: "Benasque, el Aneto y los valles más espectaculares del Pirineo Aragonés. Muy remoto y muy barato.",
     vibe: "Alpino extremo, pizarra, aislado.",
     priceM2: 1503,
-    yoyPrice: 7,
+    yoyPrice: 16,
     tempAvg: 9,
     sunHours: 2300,
     rainfall: 1100,
@@ -2524,7 +2631,8 @@ export const REGIONS_DATA = [
     airportKm: 160,
     protected: "PNat",
     beauty: 10,
-    beachKm: 146
+    beachKm: 146,
+    yoySource: "ipv_gemini"
   },
   {
     id: "hues-sobrabe",
@@ -2536,7 +2644,7 @@ export const REGIONS_DATA = [
     description: "Ordesa, Ainsa medieval y el Parque Nacional más vertical de España. Uno de los paisajes más bellos del mundo.",
     vibe: "Espectacular, medieval, remoto.",
     priceM2: 1278,
-    yoyPrice: 9,
+    yoyPrice: 17.5,
     tempAvg: 10,
     sunHours: 2300,
     rainfall: 1000,
@@ -2547,7 +2655,8 @@ export const REGIONS_DATA = [
     airportKm: 120,
     protected: "PN",
     beauty: 10,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "hues-somont",
@@ -2559,7 +2668,7 @@ export const REGIONS_DATA = [
     description: "Cañones de Guara, DO Somontano, olivos y Alquézar. El prepirineo más equilibrado entre precio y calidad.",
     vibe: "Aventurero, vinícola, gourmet.",
     priceM2: 749,
-    yoyPrice: 9,
+    yoyPrice: 13,
     tempAvg: 13.5,
     sunHours: 2700,
     rainfall: 600,
@@ -2570,7 +2679,8 @@ export const REGIONS_DATA = [
     airportKm: 150,
     protected: "PNat",
     beauty: 9,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-aranda",
@@ -2582,7 +2692,7 @@ export const REGIONS_DATA = [
     description: "Sierra del Moncayo al fondo, Illueca y los valles más despoblados de Zaragoza. Precios simbólicos.",
     vibe: "Remoto, vacío, silencioso.",
     priceM2: 312,
-    yoyPrice: 5,
+    yoyPrice: 9.5,
     tempAvg: 13,
     sunHours: 2600,
     rainfall: 450,
@@ -2593,7 +2703,8 @@ export const REGIONS_DATA = [
     airportKm: 182,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-ciudad",
@@ -2605,7 +2716,7 @@ export const REGIONS_DATA = [
     description: "Capital aragonesa con AVE a Madrid en 1:20h. Mercado grande, precios razonables y mucho sol.",
     vibe: "Urbano, soleado, bien comunicado.",
     priceM2: 2296,
-    yoyPrice: 9,
+    yoyPrice: 16.8,
     tempAvg: 14.5,
     sunHours: 2800,
     rainfall: 350,
@@ -2616,7 +2727,8 @@ export const REGIONS_DATA = [
     airportKm: 119,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-bjcinca",
@@ -2628,7 +2740,7 @@ export const REGIONS_DATA = [
     description: "Fraga y el Cinca junto a Cataluña. Melocotones, regadío y buen acceso a Lleida con precios aragoneses.",
     vibe: "Agrícola, fronterizo, soleado.",
     priceM2: 1204,
-    yoyPrice: 6,
+    yoyPrice: 11,
     tempAvg: 15,
     sunHours: 2800,
     rainfall: 350,
@@ -2639,7 +2751,8 @@ export const REGIONS_DATA = [
     airportKm: 120,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-belchite",
@@ -2651,7 +2764,7 @@ export const REGIONS_DATA = [
     description: "Belchite, símbolo de la guerra civil, en medio de la estepa. Paisaje árido único y precios de regalo.",
     vibe: "Histórico, árido, simbólico.",
     priceM2: 339,
-    yoyPrice: 4,
+    yoyPrice: 10.5,
     tempAvg: 14.5,
     sunHours: 2750,
     rainfall: 350,
@@ -2662,7 +2775,8 @@ export const REGIONS_DATA = [
     airportKm: 121,
     protected: null,
     beauty: 5,
-    beachKm: 142
+    beachKm: 142,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-borja",
@@ -2674,7 +2788,7 @@ export const REGIONS_DATA = [
     description: "DO Campo de Borja y el Moncayo al horizonte. Garnacha, ermitas y vinos potentes a precio de bodega.",
     vibe: "Vinícola, viejo Aragón, accesible.",
     priceM2: 521,
-    yoyPrice: 6,
+    yoyPrice: 12,
     tempAvg: 13.5,
     sunHours: 2700,
     rainfall: 400,
@@ -2685,7 +2799,8 @@ export const REGIONS_DATA = [
     airportKm: 169,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-carinena",
@@ -2697,7 +2812,7 @@ export const REGIONS_DATA = [
     description: "DO Cariñena entre la capital y Teruel. Vino histórico, olivares y acceso rápido a Zaragoza por autovía.",
     vibe: "Vinícola, seco, bien situado.",
     priceM2: 706,
-    yoyPrice: 5,
+    yoyPrice: 11.5,
     tempAvg: 14,
     sunHours: 2750,
     rainfall: 400,
@@ -2708,7 +2823,8 @@ export const REGIONS_DATA = [
     airportKm: 147,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-daroca",
@@ -2720,7 +2836,7 @@ export const REGIONS_DATA = [
     description: "Daroca amurallada y la depresión de Gallocanta. La laguna más grande de España interior a 750m de altitud.",
     vibe: "Medieval, lacustre, olvidado.",
     priceM2: 314,
-    yoyPrice: 4,
+    yoyPrice: 9,
     tempAvg: 13.5,
     sunHours: 2700,
     rainfall: 400,
@@ -2731,7 +2847,8 @@ export const REGIONS_DATA = [
     airportKm: 179,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-caspe",
@@ -2743,7 +2860,7 @@ export const REGIONS_DATA = [
     description: "Caspe sobre el embalse de Mequinenza. Cuna del Compromiso de Caspe, sol extremo y agua a la puerta.",
     vibe: "Histórico, lacustre, soleado.",
     priceM2: 632,
-    yoyPrice: 6,
+    yoyPrice: 13.5,
     tempAvg: 15,
     sunHours: 2800,
     rainfall: 350,
@@ -2754,7 +2871,8 @@ export const REGIONS_DATA = [
     airportKm: 241,
     protected: null,
     beauty: 6,
-    beachKm: 147
+    beachKm: 147,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-5villas",
@@ -2766,7 +2884,7 @@ export const REGIONS_DATA = [
     description: "Sos del Rey Católico y villas medievales monumentales hasta el prepirineo. El noroeste más señorial.",
     vibe: "Medieval, señorial, silencioso.",
     priceM2: 564,
-    yoyPrice: 7,
+    yoyPrice: 12.5,
     tempAvg: 12.5,
     sunHours: 2600,
     rainfall: 550,
@@ -2777,7 +2895,8 @@ export const REGIONS_DATA = [
     airportKm: 70,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-calatay",
@@ -2789,7 +2908,7 @@ export const REGIONS_DATA = [
     description: "Calatayud con estación AVE a 1h20 de Madrid. Alhambra aragonesa y precios muy bajos para su ubicación.",
     vibe: "AVE, árabe, inesperadamente bien.",
     priceM2: 505,
-    yoyPrice: 6,
+    yoyPrice: 13,
     tempAvg: 13.5,
     sunHours: 2700,
     rainfall: 400,
@@ -2800,7 +2919,8 @@ export const REGIONS_DATA = [
     airportKm: 171,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-muela",
@@ -2812,7 +2932,7 @@ export const REGIONS_DATA = [
     description: "Corredor industrial del Jalón a 20 min de Zaragoza. Crecimiento residencial y parques eólicos.",
     vibe: "Suburbial, industrial, creciendo.",
     priceM2: 843,
-    yoyPrice: 8,
+    yoyPrice: 15.5,
     tempAvg: 14.5,
     sunHours: 2800,
     rainfall: 350,
@@ -2823,7 +2943,8 @@ export const REGIONS_DATA = [
     airportKm: 138,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-monegro",
@@ -2835,7 +2956,7 @@ export const REGIONS_DATA = [
     description: "Desierto aragonés entre Zaragoza y Huesca. Festival de música, laguna de Bujaraloz y paisaje de otro planeta.",
     vibe: "Desértico, radical, baratísimo.",
     priceM2: 486,
-    yoyPrice: 3,
+    yoyPrice: 8.5,
     tempAvg: 14.5,
     sunHours: 2800,
     rainfall: 300,
@@ -2846,7 +2967,8 @@ export const REGIONS_DATA = [
     airportKm: 118,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-rebalta",
@@ -2858,7 +2980,7 @@ export const REGIONS_DATA = [
     description: "Alagón y la ribera norte de Zaragoza. Zona en expansión residencial con excelente conexión a la capital.",
     vibe: "Periurbano, en crecimiento.",
     priceM2: 920,
-    yoyPrice: 7,
+    yoyPrice: 14,
     tempAvg: 14,
     sunHours: 2750,
     rainfall: 350,
@@ -2869,7 +2991,8 @@ export const REGIONS_DATA = [
     airportKm: 146,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-rebbaja",
@@ -2881,7 +3004,7 @@ export const REGIONS_DATA = [
     description: "Sur del Ebro entre Zaragoza y Escatrón. Estepa y cultivos de regadío con los precios más bajos del corredor.",
     vibe: "Ribereño, vacío, asequible.",
     priceM2: 439,
-    yoyPrice: 5,
+    yoyPrice: 12,
     tempAvg: 15,
     sunHours: 2800,
     rainfall: 330,
@@ -2892,7 +3015,8 @@ export const REGIONS_DATA = [
     airportKm: 83,
     protected: null,
     beauty: 5,
-    beachKm: 130
+    beachKm: 130,
+    yoySource: "ipv_gemini"
   },
   {
     id: "zar-tarazon",
@@ -2904,7 +3028,7 @@ export const REGIONS_DATA = [
     description: "Tarazona mudéjar y el techo de Zaragoza a 2315m. Ciudad episcopal histórica con precios muy comedidos.",
     vibe: "Mudéjar, señorial, montaña.",
     priceM2: 518,
-    yoyPrice: 6,
+    yoyPrice: 12.5,
     tempAvg: 13,
     sunHours: 2600,
     rainfall: 500,
@@ -2915,7 +3039,8 @@ export const REGIONS_DATA = [
     airportKm: 164,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ter-albarr",
@@ -2927,7 +3052,7 @@ export const REGIONS_DATA = [
     description: "El pueblo medieval más bonito de España entre pinares y gargantas rosas. Mínimo precio, máximo paisaje.",
     vibe: "Estético, forestal, aislado.",
     priceM2: 514,
-    yoyPrice: 7,
+    yoyPrice: 16.5,
     tempAvg: 9.5,
     sunHours: 2500,
     rainfall: 550,
@@ -2938,7 +3063,8 @@ export const REGIONS_DATA = [
     airportKm: 161,
     protected: "PNat",
     beauty: 10,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ter-ciudad",
@@ -2950,7 +3076,7 @@ export const REGIONS_DATA = [
     description: "Teruel, capital del Mudéjar UNESCO. Ciudad con todos los servicios y los precios más bajos entre capitales.",
     vibe: "Mudéjar, universitario, infravalorado.",
     priceM2: 984,
-    yoyPrice: 7,
+    yoyPrice: 15.8,
     tempAvg: 11.5,
     sunHours: 2600,
     rainfall: 450,
@@ -2961,7 +3087,8 @@ export const REGIONS_DATA = [
     airportKm: 181,
     protected: null,
     beauty: 8,
-    beachKm: 139
+    beachKm: 139,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ter-bjaragon",
@@ -2973,7 +3100,7 @@ export const REGIONS_DATA = [
     description: "Alcañiz, capital del aceite de oliva y del circuito de Motorland. Clima cálido y precios muy accesibles.",
     vibe: "Olivarero, motor, soleado.",
     priceM2: 505,
-    yoyPrice: 6,
+    yoyPrice: 12,
     tempAvg: 14,
     sunHours: 2750,
     rainfall: 400,
@@ -2984,7 +3111,8 @@ export const REGIONS_DATA = [
     airportKm: 106,
     protected: null,
     beauty: 6,
-    beachKm: 118
+    beachKm: 118,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ter-cuencas",
@@ -2996,7 +3124,7 @@ export const REGIONS_DATA = [
     description: "Reconversión minera en la cuenca del Martín. Stock de vivienda muy barato en proceso de transformación.",
     vibe: "Minero, en reconversión, barato.",
     priceM2: 402,
-    yoyPrice: 5,
+    yoyPrice: 9.5,
     tempAvg: 13.5,
     sunHours: 2650,
     rainfall: 450,
@@ -3007,7 +3135,8 @@ export const REGIONS_DATA = [
     airportKm: 100,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ter-gudar",
@@ -3019,7 +3148,7 @@ export const REGIONS_DATA = [
     description: "Las sierras más remotas de Teruel. Dos estaciones de esquí, aldeas abandonadas y el silencio más absoluto.",
     vibe: "Alpino, remoto, ultra-barato.",
     priceM2: 917,
-    yoyPrice: 6,
+    yoyPrice: 17.2,
     tempAvg: 8,
     sunHours: 2500,
     rainfall: 600,
@@ -3030,7 +3159,8 @@ export const REGIONS_DATA = [
     airportKm: 162,
     protected: null,
     beauty: 8,
-    beachKm: 73
+    beachKm: 73,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ter-jiloca",
@@ -3042,7 +3172,7 @@ export const REGIONS_DATA = [
     description: "Valle del Jiloca entre Teruel y Zaragoza. Calamocha y campos de cereal en la Depresión más larga de Aragón.",
     vibe: "Seco, largo, casi invisible.",
     priceM2: 338,
-    yoyPrice: 4,
+    yoyPrice: 11,
     tempAvg: 11.5,
     sunHours: 2600,
     rainfall: 400,
@@ -3053,7 +3183,8 @@ export const REGIONS_DATA = [
     airportKm: 180,
     protected: null,
     beauty: 5,
-    beachKm: 150
+    beachKm: 150,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ter-maestrgo",
@@ -3065,7 +3196,7 @@ export const REGIONS_DATA = [
     description: "Aldeas de piedra colgadas sobre gargantas milenarias. Posiblemente la comarca más despoblada y más bella.",
     vibe: "Medieval, dramático, ultimo rincón.",
     priceM2: 497,
-    yoyPrice: 5,
+    yoyPrice: 14,
     tempAvg: 11,
     sunHours: 2600,
     rainfall: 500,
@@ -3076,7 +3207,8 @@ export const REGIONS_DATA = [
     airportKm: 123,
     protected: null,
     beauty: 9,
-    beachKm: 91
+    beachKm: 91,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ter-matarrna",
@@ -3088,7 +3220,7 @@ export const REGIONS_DATA = [
     description: "La Toscana aragonesa. Olivos centenarios, ríos cristalinos y arquitectura medieval exquisita.",
     vibe: "Bohemio, rural chic, infravalorado.",
     priceM2: 829,
-    yoyPrice: 11,
+    yoyPrice: 15.5,
     tempAvg: 13.5,
     sunHours: 2750,
     rainfall: 500,
@@ -3099,7 +3231,8 @@ export const REGIONS_DATA = [
     airportKm: 84,
     protected: null,
     beauty: 9,
-    beachKm: 124
+    beachKm: 124,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-alt-urgell",
@@ -3111,7 +3244,7 @@ export const REGIONS_DATA = [
     description: "La Seu dUrgell, puerta del Pirineo con esqui y proximidad a Andorra. Buena compra para quien busca montana asequible.",
     vibe: "Alpino, remoto, auténtico.",
     priceM2: 2016,
-    yoyPrice: 7,
+    yoyPrice: 10.5,
     tempAvg: 9.5,
     sunHours: 2300,
     rainfall: 700,
@@ -3122,7 +3255,8 @@ export const REGIONS_DATA = [
     airportKm: 163,
     protected: null,
     beauty: 8,
-    beachKm: 117
+    beachKm: 117,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-alta-ribagorca",
@@ -3134,7 +3268,7 @@ export const REGIONS_DATA = [
     description: "El Pont de Suert y el entorno del PN Aigüestortes. Comarca remotísima con precios mínimos y belleza máxima.",
     vibe: "Alpino extremo, aislado, espectacular.",
     priceM2: 1484,
-    yoyPrice: 7,
+    yoyPrice: 9.8,
     tempAvg: 8.5,
     sunHours: 2200,
     rainfall: 900,
@@ -3145,7 +3279,8 @@ export const REGIONS_DATA = [
     airportKm: 142,
     protected: "PN",
     beauty: 10,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-cerdanya",
@@ -3157,7 +3292,7 @@ export const REGIONS_DATA = [
     description: "Puigcerdà y la Cerdanya, altiplano soleado con estaciones de esquí y acceso a Francia. Segunda residencia de alta demanda.",
     vibe: "Ski, soleado, fronterizo.",
     priceM2: 3153,
-    yoyPrice: 10,
+    yoyPrice: 13.2,
     tempAvg: 8,
     sunHours: 2500,
     rainfall: 600,
@@ -3168,7 +3303,8 @@ export const REGIONS_DATA = [
     airportKm: 135,
     protected: null,
     beauty: 9,
-    beachKm: 129
+    beachKm: 129,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-garrigues",
@@ -3180,7 +3316,7 @@ export const REGIONS_DATA = [
     description: "Olivares centenarios en llanura seca y despoblada. La comarca con menor densidad de Cataluña y los precios más bajos.",
     vibe: "Agrícola, llano, muy tranquilo.",
     priceM2: 568,
-    yoyPrice: 5,
+    yoyPrice: 9,
     tempAvg: 14,
     sunHours: 2700,
     rainfall: 350,
@@ -3191,7 +3327,8 @@ export const REGIONS_DATA = [
     airportKm: 222,
     protected: null,
     beauty: 5,
-    beachKm: 84
+    beachKm: 84,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-noguera",
@@ -3203,7 +3340,7 @@ export const REGIONS_DATA = [
     description: "Balaguer y el corredor del Noguera Pallaresa. Agricultura de regadío y acceso al Pirineo a buen precio.",
     vibe: "Agrícola, funcional, tranquilo.",
     priceM2: 652,
-    yoyPrice: 6,
+    yoyPrice: 10.2,
     tempAvg: 13.5,
     sunHours: 2700,
     rainfall: 400,
@@ -3214,7 +3351,8 @@ export const REGIONS_DATA = [
     airportKm: 90,
     protected: null,
     beauty: 5,
-    beachKm: 103
+    beachKm: 103,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-pjussa",
@@ -3226,7 +3364,7 @@ export const REGIONS_DATA = [
     description: "Tremp y los embalses prepirenaicos. Puertas al Pirineo con lagos espectaculares y precios muy asequibles.",
     vibe: "Lagos, montaña, aislado.",
     priceM2: 731,
-    yoyPrice: 7,
+    yoyPrice: 10.8,
     tempAvg: 11,
     sunHours: 2400,
     rainfall: 700,
@@ -3237,7 +3375,8 @@ export const REGIONS_DATA = [
     airportKm: 130,
     protected: null,
     beauty: 8,
-    beachKm: 139
+    beachKm: 139,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-psobira",
@@ -3249,7 +3388,7 @@ export const REGIONS_DATA = [
     description: "Esterri dAneu y el alto Pirineo catalan. Reserva de Biosfera, esqui y paz total para el comprador que busca retiro real.",
     vibe: "Alpino, silencioso, RB.",
     priceM2: 1403,
-    yoyPrice: 8,
+    yoyPrice: 11.5,
     tempAvg: 7.5,
     sunHours: 2200,
     rainfall: 900,
@@ -3260,7 +3399,8 @@ export const REGIONS_DATA = [
     airportKm: 150,
     protected: "RB",
     beauty: 10,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-pla-urgell",
@@ -3272,7 +3412,7 @@ export const REGIONS_DATA = [
     description: "Mollerussa y la llanura regada del canal de Urgell. Agricultura productiva, precios bajos y acceso a Lleida capital.",
     vibe: "Agrícola, llano, práctico.",
     priceM2: 910,
-    yoyPrice: 6,
+    yoyPrice: 10,
     tempAvg: 14,
     sunHours: 2700,
     rainfall: 380,
@@ -3283,7 +3423,8 @@ export const REGIONS_DATA = [
     airportKm: 206,
     protected: null,
     beauty: 4,
-    beachKm: 91
+    beachKm: 91,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-segarra",
@@ -3295,7 +3436,7 @@ export const REGIONS_DATA = [
     description: "Cervera y la meseta seca entre Lleida y Barcelona. Interior asequible con buena autovía a ambas ciudades.",
     vibe: "Interior, seco, sin pretensiones.",
     priceM2: 689,
-    yoyPrice: 6,
+    yoyPrice: 9.5,
     tempAvg: 13.5,
     sunHours: 2650,
     rainfall: 400,
@@ -3306,7 +3447,8 @@ export const REGIONS_DATA = [
     airportKm: 90,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-segria",
@@ -3318,7 +3460,7 @@ export const REGIONS_DATA = [
     description: "Lleida capital y el Ebro frutícola. Mayor ciudad del interior catalán con servicios completos y precios razonables.",
     vibe: "Urbano, frutícola, sol intenso.",
     priceM2: 1324,
-    yoyPrice: 8,
+    yoyPrice: 12.5,
     tempAvg: 14.5,
     sunHours: 2700,
     rainfall: 360,
@@ -3329,7 +3471,8 @@ export const REGIONS_DATA = [
     airportKm: 25,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-solsones",
@@ -3341,7 +3484,7 @@ export const REGIONS_DATA = [
     description: "Solsona y los bosques prepirenaicos. Interior tranquilo con buena relación precio-naturaleza alejado del turismo masivo.",
     vibe: "Forestal, tranquilo, desconocido.",
     priceM2: 1473,
-    yoyPrice: 7,
+    yoyPrice: 9.2,
     tempAvg: 11.5,
     sunHours: 2400,
     rainfall: 600,
@@ -3352,7 +3495,8 @@ export const REGIONS_DATA = [
     airportKm: 142,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-urgell",
@@ -3364,7 +3508,7 @@ export const REGIONS_DATA = [
     description: "Tàrrega y la comarca de paso entre Lleida y Barcelona. Agricultura cerealista con precios muy asequibles.",
     vibe: "Agrícola, bien situado, asequible.",
     priceM2: 690,
-    yoyPrice: 6,
+    yoyPrice: 10.3,
     tempAvg: 13.5,
     sunHours: 2650,
     rainfall: 400,
@@ -3375,7 +3519,8 @@ export const REGIONS_DATA = [
     airportKm: 80,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "llei-val-aran",
@@ -3387,7 +3532,7 @@ export const REGIONS_DATA = [
     description: "Baqueira-Beret, la pista de esquí favorita de la realeza española. El metro cuadrado más caro fuera de costa en Cataluña.",
     vibe: "Exclusivo, ski, prestige.",
     priceM2: 3684,
-    yoyPrice: 10,
+    yoyPrice: 14,
     tempAvg: 7,
     sunHours: 1900,
     rainfall: 950,
@@ -3398,7 +3543,8 @@ export const REGIONS_DATA = [
     airportKm: 126,
     protected: null,
     beauty: 10,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gir-alt-emporda",
@@ -3410,7 +3556,7 @@ export const REGIONS_DATA = [
     description: "Cadaqués, Cap de Creus y Figueres. Costa Brava norte con el litoral más exclusivo de Cataluña y demanda extranjera alta.",
     vibe: "Exclusivo, artístico, Tramuntana.",
     priceM2: 3283,
-    yoyPrice: 10,
+    yoyPrice: 12.5,
     tempAvg: 15.5,
     sunHours: 2700,
     rainfall: 600,
@@ -3421,7 +3567,8 @@ export const REGIONS_DATA = [
     airportKm: 35,
     protected: "PNat",
     beauty: 10,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gir-baix-emporda",
@@ -3433,7 +3580,7 @@ export const REGIONS_DATA = [
     description: "Begur, Palafrugell y las calas más fotogénicas de España. Alta demanda internacional y precios entre los más caros de Cataluña.",
     vibe: "Premium, burgués, veraniego.",
     priceM2: 3666,
-    yoyPrice: 11,
+    yoyPrice: 13,
     tempAvg: 15.8,
     sunHours: 3768,
     rainfall: 665,
@@ -3444,7 +3591,8 @@ export const REGIONS_DATA = [
     airportKm: 190,
     protected: "PNat",
     beauty: 10,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gir-girones",
@@ -3456,7 +3604,7 @@ export const REGIONS_DATA = [
     description: "Girona ciudad medieval con universidad activa y mercado inmobiliario en alza. Excelente conexión AVE a Barcelona y Francia.",
     vibe: "Medieval, universitario, conectado.",
     priceM2: 2452,
-    yoyPrice: 11,
+    yoyPrice: 10.5,
     tempAvg: 15.7,
     sunHours: 3721,
     rainfall: 931,
@@ -3467,7 +3615,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: null,
     beauty: 8,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gir-cerdanya",
@@ -3479,7 +3628,7 @@ export const REGIONS_DATA = [
     description: "Puigcerdà y la parte gerundense del altiplano pirenaico. Ski, sol y segunda residencia a precio más accesible que la parte leridana.",
     vibe: "Ski, soleado, transfronterizo.",
     priceM2: 3767,
-    yoyPrice: 9,
+    yoyPrice: 9.8,
     tempAvg: 10,
     sunHours: 3653,
     rainfall: 934,
@@ -3490,7 +3639,8 @@ export const REGIONS_DATA = [
     airportKm: 155,
     protected: null,
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gir-garrotxa",
@@ -3502,7 +3652,7 @@ export const REGIONS_DATA = [
     description: "Olot y el Parque Natural Volcánico. Paisaje único de hayedos y cráteres que atrae comunidad alternativa compradora.",
     vibe: "Volcánico, ecológico, alternativo.",
     priceM2: 1676,
-    yoyPrice: 9,
+    yoyPrice: 8.5,
     tempAvg: 13,
     sunHours: 3711,
     rainfall: 1375,
@@ -3513,7 +3663,8 @@ export const REGIONS_DATA = [
     airportKm: 158,
     protected: "PNat",
     beauty: 9,
-    beachKm: 118
+    beachKm: 118,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gir-selva",
@@ -3525,7 +3676,7 @@ export const REGIONS_DATA = [
     description: "Santa Coloma de Farners y Blanes, entre el interior y la Costa Brava. Buena relación precio-acceso a mar y montaña.",
     vibe: "Equilibrado, verde, bien situado.",
     priceM2: 2481,
-    yoyPrice: 10,
+    yoyPrice: 11.8,
     tempAvg: 14,
     sunHours: 3656,
     rainfall: 738,
@@ -3536,7 +3687,8 @@ export const REGIONS_DATA = [
     airportKm: 191,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gir-pla-estany",
@@ -3559,7 +3711,8 @@ export const REGIONS_DATA = [
     airportKm: 30,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gir-ripolles",
@@ -3571,7 +3724,7 @@ export const REGIONS_DATA = [
     description: "Ripoll y los valles del Pirineo gerundense. Historia textil y acceso a esquí a precios más comedidos que el Pirineo leridano.",
     vibe: "Pirenaico, histórico, asequible.",
     priceM2: 1828,
-    yoyPrice: 8,
+    yoyPrice: 7.5,
     tempAvg: 7.3,
     sunHours: 3737,
     rainfall: 1051,
@@ -3582,7 +3735,8 @@ export const REGIONS_DATA = [
     airportKm: 100,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-alt-penedes",
@@ -3594,7 +3748,7 @@ export const REGIONS_DATA = [
     description: "Vilafranca del Penedès, capital del cava. Viñedos, buen acceso a Barcelona y Tarragona, y precios muy competitivos.",
     vibe: "Vinícola, bien comunicado, tranquilo.",
     priceM2: 1770,
-    yoyPrice: 9,
+    yoyPrice: 9.5,
     tempAvg: 15.2,
     sunHours: 3737,
     rainfall: 691,
@@ -3605,7 +3759,8 @@ export const REGIONS_DATA = [
     airportKm: 40,
     protected: null,
     beauty: 7,
-    beachKm: 16
+    beachKm: 16,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-anoia",
@@ -3617,7 +3772,7 @@ export const REGIONS_DATA = [
     description: "Igualada y la reconversión del sector del cuero. Buena conexión a Barcelona, precios inferiores a la capital y servicios completos.",
     vibe: "Industrial reconvertido, práctico.",
     priceM2: 1674,
-    yoyPrice: 9,
+    yoyPrice: 7.8,
     tempAvg: 13.7,
     sunHours: 3794,
     rainfall: 717,
@@ -3628,7 +3783,8 @@ export const REGIONS_DATA = [
     airportKm: 60,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-area-metro",
@@ -3640,7 +3796,7 @@ export const REGIONS_DATA = [
     description: "Primera corona metropolitana barcelonesa. Alta demanda, escasa oferta y precios en continuo ascenso para cualquier perfil comprador.",
     vibe: "Urbano, cosmopolita, escaso.",
     priceM2: 5858,
-    yoyPrice: 11,
+    yoyPrice: 10.5,
     tempAvg: 15.3,
     sunHours: 3753,
     rainfall: 631,
@@ -3651,7 +3807,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-bages",
@@ -3663,7 +3820,7 @@ export const REGIONS_DATA = [
     description: "Manresa y el entorno de Montserrat. Interior industrial en transformación con precios bajos y buena conexión al área metro.",
     vibe: "Montserrat, industrial, accesible.",
     priceM2: 1402,
-    yoyPrice: 9,
+    yoyPrice: 8.2,
     tempAvg: 14.7,
     sunHours: 3580,
     rainfall: 710,
@@ -3674,7 +3831,8 @@ export const REGIONS_DATA = [
     airportKm: 141,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-baix-llob-nord",
@@ -3697,7 +3855,8 @@ export const REGIONS_DATA = [
     airportKm: 12,
     protected: null,
     beauty: 5,
-    beachKm: 0
+    beachKm: 0,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-baix-llob-sud",
@@ -3709,7 +3868,7 @@ export const REGIONS_DATA = [
     description: "Castelldefels y la costa sur barcelonesa próxima al aeropuerto. Precio inferior a Barcelona ciudad con playas accesibles.",
     vibe: "Costero, conectado, práctico.",
     priceM2: 3802,
-    yoyPrice: 11,
+    yoyPrice: 11.5,
     tempAvg: 16.6,
     sunHours: 3753,
     rainfall: 631,
@@ -3720,7 +3879,8 @@ export const REGIONS_DATA = [
     airportKm: 5,
     protected: null,
     beauty: 6,
-    beachKm: 26
+    beachKm: 26,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-barcelones",
@@ -3732,7 +3892,7 @@ export const REGIONS_DATA = [
     description: "Barcelona ciudad, Hospitalet y Badalona. Los precios más altos de Cataluña con la mayor demanda de inversión internacional.",
     vibe: "Global, vibrante, premium.",
     priceM2: 2715,
-    yoyPrice: 12,
+    yoyPrice: 12.5,
     tempAvg: 16.2,
     sunHours: 3774,
     rainfall: 580,
@@ -3743,7 +3903,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-bergueda",
@@ -3755,7 +3916,7 @@ export const REGIONS_DATA = [
     description: "Berga y el Pedraforca. Comarca post-industrial en reconversión con los precios más bajos de la provincia de Barcelona.",
     vibe: "Montaña, postindustrial, asequible.",
     priceM2: 1187,
-    yoyPrice: 9,
+    yoyPrice: 6.5,
     tempAvg: 12,
     sunHours: 3714,
     rainfall: 849,
@@ -3766,7 +3927,8 @@ export const REGIONS_DATA = [
     airportKm: 95,
     protected: "PNat",
     beauty: 9,
-    beachKm: 98
+    beachKm: 98,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-garraf",
@@ -3778,7 +3940,7 @@ export const REGIONS_DATA = [
     description: "Sitges y Vilanova i la Geltrú. Costa premium al suroeste de Barcelona con alta demanda de segunda residencia y perfil internacional.",
     vibe: "Cosmopolita, costero, bohemio.",
     priceM2: 3730,
-    yoyPrice: 12,
+    yoyPrice: 11.8,
     tempAvg: 15.9,
     sunHours: 3737,
     rainfall: 691,
@@ -3789,7 +3951,8 @@ export const REGIONS_DATA = [
     airportKm: 30,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-maresme",
@@ -3812,7 +3975,8 @@ export const REGIONS_DATA = [
     airportKm: 130,
     protected: null,
     beauty: 7,
-    beachKm: 72
+    beachKm: 72,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-moianes",
@@ -3824,7 +3988,7 @@ export const REGIONS_DATA = [
     description: "Nueva comarca del interior barcelonés. Bosques y masías a precio reducido, muy tranquila y con potencial de revalorización.",
     vibe: "Rural, forestal, desconocido.",
     priceM2: 1604,
-    yoyPrice: 8,
+    yoyPrice: 7,
     tempAvg: 12.4,
     sunHours: 3615,
     rainfall: 718,
@@ -3835,7 +3999,8 @@ export const REGIONS_DATA = [
     airportKm: 121,
     protected: null,
     beauty: 7,
-    beachKm: 69
+    beachKm: 69,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-osona",
@@ -3847,7 +4012,7 @@ export const REGIONS_DATA = [
     description: "Vic y la Plana de Vic. Agricultura, masías y acceso al Pirineo. Buen mercado de segunda residencia a precio razonable.",
     vibe: "Agrícola, masías, frío invernal.",
     priceM2: 1871,
-    yoyPrice: 9,
+    yoyPrice: 8,
     tempAvg: 13.8,
     sunHours: 3728,
     rainfall: 1017,
@@ -3858,7 +4023,8 @@ export const REGIONS_DATA = [
     airportKm: 100,
     protected: null,
     beauty: 7,
-    beachKm: 90
+    beachKm: 90,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-valles-occ",
@@ -3870,7 +4036,7 @@ export const REGIONS_DATA = [
     description: "Terrassa y Sabadell, las grandes ciudades industriales del vallès. Stock amplio, precios accesibles y excelente transporte.",
     vibe: "Industrial, bien conectado, urbano.",
     priceM2: 2579,
-    yoyPrice: 10,
+    yoyPrice: 10.8,
     tempAvg: 14.8,
     sunHours: 3753,
     rainfall: 631,
@@ -3881,7 +4047,8 @@ export const REGIONS_DATA = [
     airportKm: 128,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bcn-valles-or",
@@ -3893,7 +4060,7 @@ export const REGIONS_DATA = [
     description: "Granollers y el Vallès oriental, entre Barcelona y Girona. Buena conectividad, diversidad de stock y precios más bajos que el oeste.",
     vibe: "Periurbano, verde, equilibrado.",
     priceM2: 2137,
-    yoyPrice: 9,
+    yoyPrice: 10.2,
     tempAvg: 15,
     sunHours: 3651,
     rainfall: 788,
@@ -3904,7 +4071,8 @@ export const REGIONS_DATA = [
     airportKm: 130,
     protected: null,
     beauty: 6,
-    beachKm: 64
+    beachKm: 64,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tarr-alt-camp",
@@ -3916,7 +4084,7 @@ export const REGIONS_DATA = [
     description: "Valls y los calçots. Interior agrícola entre Tarragona y Montblanc a precios muy accesibles con buena autovía.",
     vibe: "Calçots, interior, práctico.",
     priceM2: 1024,
-    yoyPrice: 7,
+    yoyPrice: 9.5,
     tempAvg: 15.4,
     sunHours: 3849,
     rainfall: 524,
@@ -3927,7 +4095,8 @@ export const REGIONS_DATA = [
     airportKm: 79,
     protected: null,
     beauty: 5,
-    beachKm: 41
+    beachKm: 41,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tarr-baix-camp",
@@ -3939,7 +4108,7 @@ export const REGIONS_DATA = [
     description: "Reus y Cambrils. Costa y aeropuerto de Reus, acceso petroquímico y turístico. Buen mercado con precios moderados.",
     vibe: "Costero, industrial, práctico.",
     priceM2: 2213,
-    yoyPrice: 10,
+    yoyPrice: 11.8,
     tempAvg: 16,
     sunHours: 2800,
     rainfall: 500,
@@ -3950,7 +4119,8 @@ export const REGIONS_DATA = [
     airportKm: 8,
     protected: null,
     beauty: 7,
-    beachKm: 65
+    beachKm: 65,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tarr-baix-ebre",
@@ -3962,7 +4132,7 @@ export const REGIONS_DATA = [
     description: "Tortosa y el Ebro. Puerta al delta y ciudad histórica con stock asequible y buena conexión al corredor mediterráneo.",
     vibe: "Ribereño, histórico, asequible.",
     priceM2: 1586,
-    yoyPrice: 7,
+    yoyPrice: 10.2,
     tempAvg: 16.5,
     sunHours: 2850,
     rainfall: 500,
@@ -3973,7 +4143,8 @@ export const REGIONS_DATA = [
     airportKm: 97,
     protected: "PN",
     beauty: 7,
-    beachKm: 116
+    beachKm: 116,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tarr-baix-penedes",
@@ -3985,7 +4156,7 @@ export const REGIONS_DATA = [
     description: "El Vendrell y la costa del Penedès. Buena conexión a Barcelona y Tarragona, playas y mercado en auge.",
     vibe: "Costero, bien comunicado, creciendo.",
     priceM2: 2239,
-    yoyPrice: 10,
+    yoyPrice: 12.5,
     tempAvg: 16,
     sunHours: 2750,
     rainfall: 530,
@@ -3996,7 +4167,8 @@ export const REGIONS_DATA = [
     airportKm: 97,
     protected: null,
     beauty: 6,
-    beachKm: 23
+    beachKm: 23,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tarr-conca-barbera",
@@ -4008,7 +4180,7 @@ export const REGIONS_DATA = [
     description: "Montblanc medieval amurallado y DO Conca de Barberà. Interior vinícola con los precios más bajos de Tarragona.",
     vibe: "Medieval, vinícola, muy barato.",
     priceM2: 910,
-    yoyPrice: 7,
+    yoyPrice: 7.8,
     tempAvg: 14.5,
     sunHours: 2700,
     rainfall: 550,
@@ -4019,7 +4191,8 @@ export const REGIONS_DATA = [
     airportKm: 63,
     protected: null,
     beauty: 7,
-    beachKm: 56
+    beachKm: 56,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tarr-montsia",
@@ -4031,7 +4204,7 @@ export const REGIONS_DATA = [
     description: "Amposta y los Ports de Beseit. Puerta sur del delta con precios mínimos, arrozales y acceso al PN Delta del Ebro.",
     vibe: "Deltaico, tranquilo, barato.",
     priceM2: 1293,
-    yoyPrice: 6,
+    yoyPrice: 10.5,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 480,
@@ -4042,7 +4215,8 @@ export const REGIONS_DATA = [
     airportKm: 77,
     protected: "PN",
     beauty: 7,
-    beachKm: 95
+    beachKm: 95,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tarr-priorat",
@@ -4054,7 +4228,7 @@ export const REGIONS_DATA = [
     description: "Falset y los viñedos en llicorella. Vino de culto mundial, paisaje de terrazas espectaculares y inversión en masía asequible.",
     vibe: "Vino culto, terrazas, exclusivo.",
     priceM2: 911,
-    yoyPrice: 10,
+    yoyPrice: 8.5,
     tempAvg: 15,
     sunHours: 2800,
     rainfall: 550,
@@ -4065,7 +4239,8 @@ export const REGIONS_DATA = [
     airportKm: 62,
     protected: "PNat",
     beauty: 9,
-    beachKm: 83
+    beachKm: 83,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tarr-ribera-ebre",
@@ -4077,7 +4252,7 @@ export const REGIONS_DATA = [
     description: "Mora de Ebre y el Ebro interior. Comarca deprimida con los precios mas bajos de Tarragona y potencial de transformacion.",
     vibe: "Fluvial, deprimido, muy barato.",
     priceM2: 730,
-    yoyPrice: 5,
+    yoyPrice: 7.5,
     tempAvg: 16,
     sunHours: 2800,
     rainfall: 450,
@@ -4088,7 +4263,8 @@ export const REGIONS_DATA = [
     airportKm: 66,
     protected: null,
     beauty: 6,
-    beachKm: 146
+    beachKm: 146,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tarr-tarragones",
@@ -4100,7 +4276,7 @@ export const REGIONS_DATA = [
     description: "Tarragona capital, patrimonio romano UNESCO y puerto petroquímico. Mercado activo con precios contenidos respecto a Barcelona.",
     vibe: "Romano, costero, en crecimiento.",
     priceM2: 2343,
-    yoyPrice: 10,
+    yoyPrice: 13,
     tempAvg: 16.5,
     sunHours: 2800,
     rainfall: 520,
@@ -4111,7 +4287,8 @@ export const REGIONS_DATA = [
     airportKm: 90,
     protected: null,
     beauty: 7,
-    beachKm: 43
+    beachKm: 43,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tarr-terra-alta",
@@ -4123,7 +4300,7 @@ export const REGIONS_DATA = [
     description: "Gandesa y la terra alta. La comarca más remota de Tarragona con los precios mínimos de toda Cataluña y paisaje de olivos.",
     vibe: "Remoto, viento, olivos, baratísimo.",
     priceM2: 714,
-    yoyPrice: 5,
+    yoyPrice: 7,
     tempAvg: 15.5,
     sunHours: 2800,
     rainfall: 420,
@@ -4134,7 +4311,8 @@ export const REGIONS_DATA = [
     airportKm: 79,
     protected: null,
     beauty: 6,
-    beachKm: 130
+    beachKm: 130,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cas-alt-maestrat",
@@ -4146,7 +4324,7 @@ export const REGIONS_DATA = [
     description: "Morella medieval en el interior más elevado de Castellón. Inversión en casas de piedra a precios de regalo para reformar.",
     vibe: "Medieval, remoto, mágico.",
     priceM2: 605,
-    yoyPrice: 9,
+    yoyPrice: 8.5,
     tempAvg: 12,
     sunHours: 2600,
     rainfall: 600,
@@ -4157,7 +4335,8 @@ export const REGIONS_DATA = [
     airportKm: 160,
     protected: null,
     beauty: 9,
-    beachKm: 54
+    beachKm: 54,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cas-alto-mijares",
@@ -4180,7 +4359,8 @@ export const REGIONS_DATA = [
     airportKm: 171,
     protected: null,
     beauty: 6,
-    beachKm: 142
+    beachKm: 142,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cas-alto-palancia",
@@ -4192,7 +4372,7 @@ export const REGIONS_DATA = [
     description: "Segorbe y el río Palancia. Acceso a Valencia en 45 min con precios de interior y entorno natural agradable.",
     vibe: "Interior verde, accesible, tranquilo.",
     priceM2: 789,
-    yoyPrice: 9,
+    yoyPrice: 9.5,
     tempAvg: 14.5,
     sunHours: 2700,
     rainfall: 500,
@@ -4203,7 +4383,8 @@ export const REGIONS_DATA = [
     airportKm: 157,
     protected: null,
     beauty: 6,
-    beachKm: 126
+    beachKm: 126,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cas-baix-maestrat",
@@ -4215,7 +4396,7 @@ export const REGIONS_DATA = [
     description: "Vinaròs y Benicarló en la costa norte castellonense. Menor presión turística que el sur valenciano con precios razonables.",
     vibe: "Costero, tranquilo, auténtico.",
     priceM2: 1929,
-    yoyPrice: 12,
+    yoyPrice: 15,
     tempAvg: 16.5,
     sunHours: 2750,
     rainfall: 450,
@@ -4226,7 +4407,8 @@ export const REGIONS_DATA = [
     airportKm: 100,
     protected: null,
     beauty: 6,
-    beachKm: 73
+    beachKm: 73,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cas-els-ports",
@@ -4238,7 +4420,7 @@ export const REGIONS_DATA = [
     description: "Forcall y el rincón más remoto de Castellón. Casas de piedra a precios simbólicos en un entorno natural de gran belleza.",
     vibe: "Extremo, baratísimo, aldeas.",
     priceM2: 555,
-    yoyPrice: 6,
+    yoyPrice: 6.5,
     tempAvg: 12.5,
     sunHours: 2600,
     rainfall: 620,
@@ -4249,7 +4431,8 @@ export const REGIONS_DATA = [
     airportKm: 139,
     protected: null,
     beauty: 7,
-    beachKm: 75
+    beachKm: 75,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cas-alcalaten",
@@ -4261,7 +4444,7 @@ export const REGIONS_DATA = [
     description: "Alcora y la meseta interior castellonense. Tradición cerámica y precios muy bajos para quien busca tranquilidad y acceso a Castellón.",
     vibe: "Cerámico, interior, tranquilo.",
     priceM2: 809,
-    yoyPrice: 7,
+    yoyPrice: 10,
     tempAvg: 13.5,
     sunHours: 2650,
     rainfall: 500,
@@ -4272,7 +4455,8 @@ export const REGIONS_DATA = [
     airportKm: 188,
     protected: null,
     beauty: 5,
-    beachKm: 143
+    beachKm: 143,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cas-plana-alta",
@@ -4284,7 +4468,7 @@ export const REGIONS_DATA = [
     description: "Castellón capital y Benicàssim. Área metropolitana con buenas infraestructuras, playas y precio más accesible que Valencia.",
     vibe: "Costero, naranjas, creciendo.",
     priceM2: 1898,
-    yoyPrice: 13,
+    yoyPrice: 16.5,
     tempAvg: 17.5,
     sunHours: 2850,
     rainfall: 460,
@@ -4295,7 +4479,8 @@ export const REGIONS_DATA = [
     airportKm: 179,
     protected: null,
     beauty: 6,
-    beachKm: 150
+    beachKm: 150,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cas-plana-baixa",
@@ -4318,7 +4503,8 @@ export const REGIONS_DATA = [
     airportKm: 35,
     protected: null,
     beauty: 6,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-morvedre",
@@ -4330,7 +4516,7 @@ export const REGIONS_DATA = [
     description: "Sagunto y su castillo romano-árabe. Acceso a Valencia ciudad en 30 min con precios más bajos y buenas infraestructuras.",
     vibe: "Histórico, bien conectado, práctico.",
     priceM2: 2085,
-    yoyPrice: 14,
+    yoyPrice: 15.5,
     tempAvg: 17,
     sunHours: 2850,
     rainfall: 450,
@@ -4341,7 +4527,8 @@ export const REGIONS_DATA = [
     airportKm: 40,
     protected: null,
     beauty: 6,
-    beachKm: 109
+    beachKm: 109,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-camp-turia",
@@ -4353,7 +4540,7 @@ export const REGIONS_DATA = [
     description: "Llíria y el noroeste de Valencia. Zona residencial en fuerte crecimiento con excelente acceso a la ciudad y precios menores.",
     vibe: "Suburbial, creciendo rápido, práctico.",
     priceM2: 2045,
-    yoyPrice: 16,
+    yoyPrice: 12.8,
     tempAvg: 16.5,
     sunHours: 2850,
     rainfall: 430,
@@ -4364,7 +4551,8 @@ export const REGIONS_DATA = [
     airportKm: 139,
     protected: null,
     beauty: 5,
-    beachKm: 109
+    beachKm: 109,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-rincon-ademuz",
@@ -4376,7 +4564,7 @@ export const REGIONS_DATA = [
     description: "El exclave valenciano rodeado de Aragón y Castilla. Los precios más bajos de la Comunitat en entorno montañoso muy aislado.",
     vibe: "Exclave, muy remoto, baratísimo.",
     priceM2: 334,
-    yoyPrice: 6,
+    yoyPrice: 6.5,
     tempAvg: 12.5,
     sunHours: 2600,
     rainfall: 500,
@@ -4387,7 +4575,8 @@ export const REGIONS_DATA = [
     airportKm: 189,
     protected: null,
     beauty: 6,
-    beachKm: 107
+    beachKm: 107,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-ayora",
@@ -4399,7 +4588,7 @@ export const REGIONS_DATA = [
     description: "Ayora y el interior sur valenciano. Castillos, naturaleza y silencio total a precios muy asequibles para quien busca retiro.",
     vibe: "Castillos, montaña, paz total.",
     priceM2: 537,
-    yoyPrice: 8,
+    yoyPrice: 7,
     tempAvg: 14,
     sunHours: 2800,
     rainfall: 450,
@@ -4410,7 +4599,8 @@ export const REGIONS_DATA = [
     airportKm: 159,
     protected: null,
     beauty: 7,
-    beachKm: 116
+    beachKm: 116,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-bunol",
@@ -4422,7 +4612,7 @@ export const REGIONS_DATA = [
     description: "Buñol (La Tomatina) y el acceso oeste a Valencia. Buen nudo de comunicaciones con precios inferiores al área metropolitana.",
     vibe: "Festivo, funcional, asequible.",
     priceM2: 1534,
-    yoyPrice: 12,
+    yoyPrice: 9.5,
     tempAvg: 15.5,
     sunHours: 2800,
     rainfall: 430,
@@ -4433,7 +4623,8 @@ export const REGIONS_DATA = [
     airportKm: 192,
     protected: null,
     beauty: 5,
-    beachKm: 105
+    beachKm: 105,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-canal-navarres",
@@ -4456,7 +4647,8 @@ export const REGIONS_DATA = [
     airportKm: 145,
     protected: null,
     beauty: 7,
-    beachKm: 87
+    beachKm: 87,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-costera",
@@ -4468,7 +4660,7 @@ export const REGIONS_DATA = [
     description: "Xàtiva medieval y el interior sur. Ciudad histórica con castillo, servicios completos y precios por debajo de la media valenciana.",
     vibe: "Medieval, histórico, asequible.",
     priceM2: 1121,
-    yoyPrice: 10,
+    yoyPrice: 10.5,
     tempAvg: 16,
     sunHours: 2800,
     rainfall: 500,
@@ -4479,7 +4671,8 @@ export const REGIONS_DATA = [
     airportKm: 128,
     protected: null,
     beauty: 7,
-    beachKm: 79
+    beachKm: 79,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-plana-utiel",
@@ -4502,7 +4695,8 @@ export const REGIONS_DATA = [
     airportKm: 199,
     protected: null,
     beauty: 6,
-    beachKm: 131
+    beachKm: 131,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-albaida",
@@ -4514,7 +4708,7 @@ export const REGIONS_DATA = [
     description: "Ontinyent y el valle textil del interior valenciano. Industria activa, servicios completos y precios muy asequibles.",
     vibe: "Industrial, textil, tranquilo.",
     priceM2: 921,
-    yoyPrice: 10,
+    yoyPrice: 11,
     tempAvg: 15.5,
     sunHours: 2800,
     rainfall: 500,
@@ -4525,7 +4719,8 @@ export const REGIONS_DATA = [
     airportKm: 118,
     protected: null,
     beauty: 5,
-    beachKm: 59
+    beachKm: 59,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-horta-nord",
@@ -4537,7 +4732,7 @@ export const REGIONS_DATA = [
     description: "Burjassot, Paterna y la huerta norte de Valencia. Primera corona norte con excelente metro y precios algo inferiores a la capital.",
     vibe: "Metropolitano, huerta, conectado.",
     priceM2: 2717,
-    yoyPrice: 18,
+    yoyPrice: 14.5,
     tempAvg: 17.5,
     sunHours: 2850,
     rainfall: 450,
@@ -4548,7 +4743,8 @@ export const REGIONS_DATA = [
     airportKm: 139,
     protected: "PNat",
     beauty: 5,
-    beachKm: 95
+    beachKm: 95,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-horta-sud",
@@ -4560,7 +4756,7 @@ export const REGIONS_DATA = [
     description: "Torrent y Alfafar al sur de Valencia. Mayor ciudad de la provincia, buenas comunicaciones y precio aún contenido frente a la capital.",
     vibe: "Metropolitano, servicial, práctico.",
     priceM2: 2056,
-    yoyPrice: 17,
+    yoyPrice: 13.8,
     tempAvg: 17.5,
     sunHours: 2850,
     rainfall: 440,
@@ -4571,7 +4767,8 @@ export const REGIONS_DATA = [
     airportKm: 132,
     protected: null,
     beauty: 5,
-    beachKm: 86
+    beachKm: 86,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-serranos",
@@ -4583,7 +4780,7 @@ export const REGIONS_DATA = [
     description: "Chelva y el interior norte valenciano. Paisaje de montaña, embalses y calma total a muy bajo precio.",
     vibe: "Rural, embalses, muy tranquilo.",
     priceM2: 806,
-    yoyPrice: 7,
+    yoyPrice: 7.5,
     tempAvg: 14.5,
     sunHours: 2750,
     rainfall: 480,
@@ -4594,7 +4791,8 @@ export const REGIONS_DATA = [
     airportKm: 60,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-ribera-alta",
@@ -4617,7 +4815,8 @@ export const REGIONS_DATA = [
     airportKm: 128,
     protected: null,
     beauty: 5,
-    beachKm: 63
+    beachKm: 63,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-ribera-baixa",
@@ -4629,7 +4828,7 @@ export const REGIONS_DATA = [
     description: "Cullera y Sueca, playas y arrozales. Acceso al mar con precios inferiores a otros destinos costeros valencianos.",
     vibe: "Playa, arroz, asequible.",
     priceM2: 2100,
-    yoyPrice: 14,
+    yoyPrice: 16,
     tempAvg: 17.5,
     sunHours: 2850,
     rainfall: 440,
@@ -4640,7 +4839,8 @@ export const REGIONS_DATA = [
     airportKm: 140,
     protected: "PNat",
     beauty: 6,
-    beachKm: 68
+    beachKm: 68,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-safor",
@@ -4652,7 +4852,7 @@ export const REGIONS_DATA = [
     description: "Gandia y la Safor. Costa sur valenciana en expansión con uso residencial todo el año y buena relación precio-calidad de vida.",
     vibe: "Costero, creciendo, todo el año.",
     priceM2: 1884,
-    yoyPrice: 16,
+    yoyPrice: 17,
     tempAvg: 18,
     sunHours: 2900,
     rainfall: 490,
@@ -4663,7 +4863,8 @@ export const REGIONS_DATA = [
     airportKm: 132,
     protected: null,
     beauty: 7,
-    beachKm: 32
+    beachKm: 32,
+    yoySource: "ipv_gemini"
   },
   {
     id: "val-capital",
@@ -4675,7 +4876,7 @@ export const REGIONS_DATA = [
     description: "Valencia ciudad, la tercera ciudad de España. Mercado en auge con alta demanda nacional e internacional y escasez de oferta.",
     vibe: "Vibrante, cosmopolita, en ebullición.",
     priceM2: 3707,
-    yoyPrice: 20,
+    yoyPrice: 14,
     tempAvg: 17.5,
     sunHours: 2900,
     rainfall: 450,
@@ -4686,7 +4887,8 @@ export const REGIONS_DATA = [
     airportKm: 10,
     protected: null,
     beauty: 7,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ali-alt-vinalopo",
@@ -4698,7 +4900,7 @@ export const REGIONS_DATA = [
     description: "Villena y el interior norte alicantino. Ciudad con servicios completos y precios de interior en una zona de clima suave.",
     vibe: "Interior, cálido, práctico.",
     priceM2: 954,
-    yoyPrice: 10,
+    yoyPrice: 9.5,
     tempAvg: 16.5,
     sunHours: 2950,
     rainfall: 350,
@@ -4709,7 +4911,8 @@ export const REGIONS_DATA = [
     airportKm: 95,
     protected: null,
     beauty: 6,
-    beachKm: 148
+    beachKm: 148,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ali-baix-segura",
@@ -4721,7 +4924,7 @@ export const REGIONS_DATA = [
     description: "Torrevieja y Orihuela Costa. Alta demanda extranjera, buen clima y stock abundante a precios más bajos que otros destinos del levante.",
     vibe: "Expat, soleado, alta demanda.",
     priceM2: 2776,
-    yoyPrice: 18,
+    yoyPrice: 15,
     tempAvg: 19,
     sunHours: 3100,
     rainfall: 280,
@@ -4732,7 +4935,8 @@ export const REGIONS_DATA = [
     airportKm: 45,
     protected: null,
     beauty: 6,
-    beachKm: 111
+    beachKm: 111,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ali-baix-vinalopo",
@@ -4744,7 +4948,7 @@ export const REGIONS_DATA = [
     description: "Elx/Elche, palmeral UNESCO y ciudad industrial diversificada. Mercado en crecimiento con precios razonables para su tamaño.",
     vibe: "Palmeral, industrial, creciendo.",
     priceM2: 2325,
-    yoyPrice: 15,
+    yoyPrice: 13,
     tempAvg: 18.5,
     sunHours: 3000,
     rainfall: 290,
@@ -4755,7 +4959,8 @@ export const REGIONS_DATA = [
     airportKm: 57,
     protected: null,
     beauty: 6,
-    beachKm: 123
+    beachKm: 123,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ali-comtat",
@@ -4767,7 +4972,7 @@ export const REGIONS_DATA = [
     description: "Cocentaina y el interior montañoso del norte alicantino. Comarca textil silenciosa con precios muy reducidos.",
     vibe: "Montaña, textil, muy tranquilo.",
     priceM2: 953,
-    yoyPrice: 8,
+    yoyPrice: 7,
     tempAvg: 15.5,
     sunHours: 2900,
     rainfall: 550,
@@ -4778,7 +4983,8 @@ export const REGIONS_DATA = [
     airportKm: 125,
     protected: null,
     beauty: 6,
-    beachKm: 47
+    beachKm: 47,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ali-alacanti",
@@ -4790,7 +4996,7 @@ export const REGIONS_DATA = [
     description: "Alicante capital. Aeropuerto internacional, costa, servicios completos y mercado activo con alta demanda nacional y extranjera.",
     vibe: "Soleado, cosmopolita, demandado.",
     priceM2: 2830,
-    yoyPrice: 18,
+    yoyPrice: 16.5,
     tempAvg: 19,
     sunHours: 3100,
     rainfall: 280,
@@ -4801,7 +5007,8 @@ export const REGIONS_DATA = [
     airportKm: 91,
     protected: null,
     beauty: 7,
-    beachKm: 148
+    beachKm: 148,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ali-alcoia",
@@ -4813,7 +5020,7 @@ export const REGIONS_DATA = [
     description: "Alcoi y la montaña del norte alicantino. Ciudad industrial entre sierras con precios muy asequibles y calidad de vida tranquila.",
     vibe: "Industrial, montaña, asequible.",
     priceM2: 1318,
-    yoyPrice: 9,
+    yoyPrice: 8.5,
     tempAvg: 15,
     sunHours: 2900,
     rainfall: 600,
@@ -4824,7 +5031,8 @@ export const REGIONS_DATA = [
     airportKm: 101,
     protected: null,
     beauty: 6,
-    beachKm: 71
+    beachKm: 71,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ali-marina-alta",
@@ -4836,7 +5044,7 @@ export const REGIONS_DATA = [
     description: "Dénia, Jávea/Xàbia y el Montgó. Uno de los destinos más demandados por compradores extranjeros premium en la costa mediterránea.",
     vibe: "Premium expat, mediterráneo, activo.",
     priceM2: 3612,
-    yoyPrice: 17,
+    yoyPrice: 17.5,
     tempAvg: 18.5,
     sunHours: 2950,
     rainfall: 500,
@@ -4847,7 +5055,8 @@ export const REGIONS_DATA = [
     airportKm: 120,
     protected: "PNat",
     beauty: 9,
-    beachKm: 16
+    beachKm: 16,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ali-marina-baixa",
@@ -4859,7 +5068,7 @@ export const REGIONS_DATA = [
     description: "Benidorm, Altea y Callosa. El litoral con mayor densidad turística y residencial de España, con muy alta demanda y revalorización.",
     vibe: "Turístico, masivo, siempre subiendo.",
     priceM2: 3529,
-    yoyPrice: 18,
+    yoyPrice: 16,
     tempAvg: 19,
     sunHours: 3000,
     rainfall: 430,
@@ -4870,7 +5079,8 @@ export const REGIONS_DATA = [
     airportKm: 119,
     protected: null,
     beauty: 7,
-    beachKm: 41
+    beachKm: 41,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ali-vinalopo-mitja",
@@ -4893,7 +5103,8 @@ export const REGIONS_DATA = [
     airportKm: 80,
     protected: null,
     beauty: 5,
-    beachKm: 144
+    beachKm: 144,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mur-altiplano",
@@ -4905,7 +5116,7 @@ export const REGIONS_DATA = [
     description: "Jumilla y Yecla, capitales del vino murciano. Interior seco y soleado con precios muy bajos y buena industria bodeguera.",
     vibe: "Vino, seco, tranquilo.",
     priceM2: 1080,
-    yoyPrice: 18,
+    yoyPrice: 10.5,
     tempAvg: 14.5,
     sunHours: 3000,
     rainfall: 320,
@@ -4916,7 +5127,8 @@ export const REGIONS_DATA = [
     airportKm: 80,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mur-alto-guadalentin",
@@ -4928,7 +5140,7 @@ export const REGIONS_DATA = [
     description: "Lorca y el interior agrícola murciano. Ciudad histórica con precios muy accesibles, buenas comunicaciones y clima cálido.",
     vibe: "Histórico, agrícola, cálido.",
     priceM2: 1602,
-    yoyPrice: 17,
+    yoyPrice: 13.8,
     tempAvg: 17,
     sunHours: 3050,
     rainfall: 300,
@@ -4939,7 +5151,8 @@ export const REGIONS_DATA = [
     airportKm: 58,
     protected: null,
     beauty: 6,
-    beachKm: 134
+    beachKm: 134,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mur-area",
@@ -4951,7 +5164,7 @@ export const REGIONS_DATA = [
     description: "Murcia capital, una de las ciudades con mayor crecimiento de España. Universidad, servicios completos y precio muy competitivo.",
     vibe: "Urbano, festivo, en expansión.",
     priceM2: 1769,
-    yoyPrice: 22,
+    yoyPrice: 15.5,
     tempAvg: 18.5,
     sunHours: 3100,
     rainfall: 280,
@@ -4962,7 +5175,8 @@ export const REGIONS_DATA = [
     airportKm: 20,
     protected: null,
     beauty: 6,
-    beachKm: 78
+    beachKm: 78,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mur-bajo-guadalentin",
@@ -4974,7 +5188,7 @@ export const REGIONS_DATA = [
     description: "Alhama de Murcia y Totana. Huerta murciana con buen acceso a la costa en 30 min y precios muy contenidos.",
     vibe: "Huerta, tranquilo, accesible.",
     priceM2: 1799,
-    yoyPrice: 18,
+    yoyPrice: 14.2,
     tempAvg: 18,
     sunHours: 3050,
     rainfall: 280,
@@ -4985,7 +5199,8 @@ export const REGIONS_DATA = [
     airportKm: 28,
     protected: null,
     beauty: 5,
-    beachKm: 140
+    beachKm: 140,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mur-cartagena",
@@ -4997,7 +5212,7 @@ export const REGIONS_DATA = [
     description: "Cartagena, segunda ciudad murciana con puerto y base naval. Mercado activo, crecimiento sostenido y precios razonables.",
     vibe: "Portuario, histórico, creciendo.",
     priceM2: 1775,
-    yoyPrice: 20,
+    yoyPrice: 16,
     tempAvg: 18.5,
     sunHours: 3100,
     rainfall: 280,
@@ -5008,7 +5223,8 @@ export const REGIONS_DATA = [
     airportKm: 9,
     protected: null,
     beauty: 6,
-    beachKm: 67
+    beachKm: 67,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mur-la-manga",
@@ -5020,7 +5236,7 @@ export const REGIONS_DATA = [
     description: "La franja costera del Mar Menor. Alta densidad residencial turística con demanda extranjera firme y precios en alza.",
     vibe: "Resort, expat, siempre subiendo.",
     priceM2: 2624,
-    yoyPrice: 22,
+    yoyPrice: 18.5,
     tempAvg: 19,
     sunHours: 3150,
     rainfall: 260,
@@ -5031,7 +5247,8 @@ export const REGIONS_DATA = [
     airportKm: 40,
     protected: null,
     beauty: 6,
-    beachKm: 88
+    beachKm: 88,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mur-mar-menor",
@@ -5043,7 +5260,7 @@ export const REGIONS_DATA = [
     description: "San Pedro del Pinatar y Los Alcázares junto a la laguna salada más grande de Europa. Alta demanda y buen potencial.",
     vibe: "Laguna, sol intenso, demandado.",
     priceM2: 2278,
-    yoyPrice: 22,
+    yoyPrice: 17,
     tempAvg: 19,
     sunHours: 3150,
     rainfall: 260,
@@ -5054,7 +5271,8 @@ export const REGIONS_DATA = [
     airportKm: 30,
     protected: null,
     beauty: 6,
-    beachKm: 85
+    beachKm: 85,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mur-noroeste",
@@ -5066,7 +5284,7 @@ export const REGIONS_DATA = [
     description: "Caravaca de la Cruz (ciudad santa) y Moratalla. Interior verde con pinos, nieve ocasional y los precios más bajos de Murcia.",
     vibe: "Sagrado, forestal, muy tranquilo.",
     priceM2: 876,
-    yoyPrice: 15,
+    yoyPrice: 11,
     tempAvg: 13.5,
     sunHours: 2800,
     rainfall: 450,
@@ -5077,7 +5295,8 @@ export const REGIONS_DATA = [
     airportKm: 80,
     protected: "PNat",
     beauty: 7,
-    beachKm: 89
+    beachKm: 89,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mur-rio-mula",
@@ -5089,7 +5308,7 @@ export const REGIONS_DATA = [
     description: "Mula y los valles del interior murciano. Olivos y naranjos en un entorno tranquilo con precios muy bajos.",
     vibe: "Olivos, silencio, barato.",
     priceM2: 1498,
-    yoyPrice: 15,
+    yoyPrice: 12.5,
     tempAvg: 16.5,
     sunHours: 3000,
     rainfall: 320,
@@ -5100,7 +5319,8 @@ export const REGIONS_DATA = [
     airportKm: 28,
     protected: null,
     beauty: 5,
-    beachKm: 83
+    beachKm: 83,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mur-ricote",
@@ -5112,7 +5332,7 @@ export const REGIONS_DATA = [
     description: "El último reducto morisco de la región con palmerales junto al Segura. Tranquilidad, historia y precios mínimos.",
     vibe: "Morisco, palmeral, histórico.",
     priceM2: 925,
-    yoyPrice: 15,
+    yoyPrice: 11.5,
     tempAvg: 17,
     sunHours: 3000,
     rainfall: 300,
@@ -5123,7 +5343,8 @@ export const REGIONS_DATA = [
     airportKm: 43,
     protected: null,
     beauty: 7,
-    beachKm: 89
+    beachKm: 89,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mur-vega-alta",
@@ -5135,7 +5356,7 @@ export const REGIONS_DATA = [
     description: "Cieza y la vega norte del Segura. Melocotones, almendros y buena conexión a Murcia capital con precios razonables.",
     vibe: "Frutal, ribereño, tranquilo.",
     priceM2: 871,
-    yoyPrice: 17,
+    yoyPrice: 13,
     tempAvg: 17.5,
     sunHours: 3050,
     rainfall: 300,
@@ -5146,7 +5367,8 @@ export const REGIONS_DATA = [
     airportKm: 56,
     protected: null,
     beauty: 5,
-    beachKm: 102
+    beachKm: 102,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mur-vega-media",
@@ -5158,7 +5380,7 @@ export const REGIONS_DATA = [
     description: "Molina de Segura y la zona industrial norte de Murcia. Alta actividad económica con precios algo menores a la capital.",
     vibe: "Industrial, periurbano, activo.",
     priceM2: 1204,
-    yoyPrice: 19,
+    yoyPrice: 14.8,
     tempAvg: 18,
     sunHours: 3050,
     rainfall: 280,
@@ -5169,7 +5391,8 @@ export const REGIONS_DATA = [
     airportKm: 37,
     protected: null,
     beauty: 4,
-    beachKm: 95
+    beachKm: 95,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alm-alpujarras",
@@ -5181,7 +5404,7 @@ export const REGIONS_DATA = [
     description: "Vertiente almeriense de Sierra Nevada. Pueblos blancos entre parras y almendros, inversión alternativa en zona PNat.",
     vibe: "Alternativo, montañoso, artesano.",
     priceM2: 785,
-    yoyPrice: 14,
+    yoyPrice: 9.5,
     tempAvg: 15,
     sunHours: 3000,
     rainfall: 350,
@@ -5192,7 +5415,8 @@ export const REGIONS_DATA = [
     airportKm: 50,
     protected: "PNat",
     beauty: 9,
-    beachKm: 107
+    beachKm: 107,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alm-capital",
@@ -5204,7 +5428,7 @@ export const REGIONS_DATA = [
     description: "Almería capital con playa y puerto en crecimiento. Ciudad infravalorada con aeropuerto, servicios y precios muy asequibles.",
     vibe: "Soleado, creciendo, infravalorado.",
     priceM2: 1816,
-    yoyPrice: 16,
+    yoyPrice: 14.8,
     tempAvg: 18.5,
     sunHours: 3300,
     rainfall: 200,
@@ -5215,7 +5439,8 @@ export const REGIONS_DATA = [
     airportKm: 9,
     protected: null,
     beauty: 6,
-    beachKm: 142
+    beachKm: 142,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alm-bajo-almanzora",
@@ -5227,7 +5452,7 @@ export const REGIONS_DATA = [
     description: "Vera y Mojácar en la costa del Almanzora. Alta demanda extranjera, crecimiento rápido y precios aún por debajo de la Costa del Sol.",
     vibe: "Expat, soleado, en alza rápida.",
     priceM2: 1885,
-    yoyPrice: 18,
+    yoyPrice: 11,
     tempAvg: 18.5,
     sunHours: 3200,
     rainfall: 220,
@@ -5238,7 +5463,8 @@ export const REGIONS_DATA = [
     airportKm: 74,
     protected: null,
     beauty: 7,
-    beachKm: 109
+    beachKm: 109,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alm-tabernas",
@@ -5250,7 +5476,7 @@ export const REGIONS_DATA = [
     description: "El único desierto de Europa continental. Spaghetti western, energía solar y los precios más bajos de Almería.",
     vibe: "Desértico, único en Europa, barato.",
     priceM2: 880,
-    yoyPrice: 12,
+    yoyPrice: 7.8,
     tempAvg: 19.5,
     sunHours: 3300,
     rainfall: 150,
@@ -5261,7 +5487,8 @@ export const REGIONS_DATA = [
     airportKm: 11,
     protected: null,
     beauty: 7,
-    beachKm: 140
+    beachKm: 140,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alm-filabres",
@@ -5273,7 +5500,7 @@ export const REGIONS_DATA = [
     description: "Sierra de los Filabres, el mayor observatorio astronómico de España. Interior montañoso aislado con precios mínimos.",
     vibe: "Astronómico, aislado, muy barato.",
     priceM2: 682,
-    yoyPrice: 11,
+    yoyPrice: 6.5,
     tempAvg: 14.5,
     sunHours: 3100,
     rainfall: 300,
@@ -5284,7 +5511,8 @@ export const REGIONS_DATA = [
     airportKm: 33,
     protected: null,
     beauty: 7,
-    beachKm: 138
+    beachKm: 138,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alm-levante",
@@ -5296,7 +5524,7 @@ export const REGIONS_DATA = [
     description: "Carboneras y el entorno de Cabo de Gata norte. Costa salvaje con demanda creciente y precios por debajo de la zona sur del parque.",
     vibe: "Costa virgen, alternativo, subiendo.",
     priceM2: 2313,
-    yoyPrice: 16,
+    yoyPrice: 13.5,
     tempAvg: 18.5,
     sunHours: 3250,
     rainfall: 200,
@@ -5307,7 +5535,8 @@ export const REGIONS_DATA = [
     airportKm: 55,
     protected: null,
     beauty: 9,
-    beachKm: 86
+    beachKm: 86,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alm-velez",
@@ -5319,7 +5548,7 @@ export const REGIONS_DATA = [
     description: "Vélez Blanco y el castillo renacentista. El interior más remoto de Almería con precios mínimos y belleza excepcional.",
     vibe: "Remoto, castillos, muy barato.",
     priceM2: 680,
-    yoyPrice: 11,
+    yoyPrice: 7,
     tempAvg: 14.5,
     sunHours: 2900,
     rainfall: 350,
@@ -5330,7 +5559,8 @@ export const REGIONS_DATA = [
     airportKm: 92,
     protected: null,
     beauty: 8,
-    beachKm: 119
+    beachKm: 119,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alm-cabo-gata",
@@ -5342,7 +5572,7 @@ export const REGIONS_DATA = [
     description: "La costa virgen más extensa de Europa. Calas volcánicas, alta demanda de perfil alternativo y precios en ascenso constante.",
     vibe: "Virgen, bohemio, impresionante.",
     priceM2: 2010,
-    yoyPrice: 17,
+    yoyPrice: 16,
     tempAvg: 19,
     sunHours: 3300,
     rainfall: 180,
@@ -5353,7 +5583,8 @@ export const REGIONS_DATA = [
     airportKm: 30,
     protected: "PNat",
     beauty: 10,
-    beachKm: 59
+    beachKm: 59,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alm-poniente",
@@ -5365,7 +5596,7 @@ export const REGIONS_DATA = [
     description: "Roquetas de Mar y El Ejido. Costa con alto crecimiento residencial y acceso a playas a precios muy contenidos.",
     vibe: "Agroindustrial, costero, asequible.",
     priceM2: 1565,
-    yoyPrice: 15,
+    yoyPrice: 12,
     tempAvg: 19,
     sunHours: 3200,
     rainfall: 190,
@@ -5376,7 +5607,8 @@ export const REGIONS_DATA = [
     airportKm: 46,
     protected: null,
     beauty: 5,
-    beachKm: 76
+    beachKm: 76,
+    yoySource: "ipv_gemini"
   },
   {
     id: "alm-almanzora",
@@ -5388,7 +5620,7 @@ export const REGIONS_DATA = [
     description: "Purchena y el Almanzora interior. Valle olivarero con arquitectura rural y los precios más accesibles de la zona.",
     vibe: "Valle, tranquilo, muy barato.",
     priceM2: 795,
-    yoyPrice: 13,
+    yoyPrice: 8.5,
     tempAvg: 17.5,
     sunHours: 3000,
     rainfall: 280,
@@ -5399,7 +5631,8 @@ export const REGIONS_DATA = [
     airportKm: 70,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gr-alpujarra",
@@ -5411,7 +5644,7 @@ export const REGIONS_DATA = [
     description: "Pampaneira, Capileira, Trevélez. Arquitectura berberisca en barranco, comunidad alternativa compradora y precios accesibles.",
     vibe: "Espiritual, alternativo, único.",
     priceM2: 877,
-    yoyPrice: 14,
+    yoyPrice: 10.5,
     tempAvg: 13.5,
     sunHours: 2900,
     rainfall: 600,
@@ -5422,7 +5655,8 @@ export const REGIONS_DATA = [
     airportKm: 81,
     protected: "PNat",
     beauty: 10,
-    beachKm: 72
+    beachKm: 72,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gr-baza",
@@ -5434,7 +5668,7 @@ export const REGIONS_DATA = [
     description: "Baza y el altiplano noreste granadino. Clima semi-árido, precios mínimos y fácil acceso a Almería y Granada capital.",
     vibe: "Altiplano, seco, muy asequible.",
     priceM2: 626,
-    yoyPrice: 11,
+    yoyPrice: 8,
     tempAvg: 14.5,
     sunHours: 2900,
     rainfall: 370,
@@ -5445,7 +5679,8 @@ export const REGIONS_DATA = [
     airportKm: 81,
     protected: null,
     beauty: 5,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gr-capital",
@@ -5457,7 +5692,7 @@ export const REGIONS_DATA = [
     description: "Granada capital, Alhambra UNESCO y mayor ciudad universitaria de Andalucía. Mercado activo con precios moderados para su categoría.",
     vibe: "Culto, histórico, estudiantes.",
     priceM2: 2254,
-    yoyPrice: 16,
+    yoyPrice: 14.5,
     tempAvg: 16,
     sunHours: 2900,
     rainfall: 430,
@@ -5468,7 +5703,8 @@ export const REGIONS_DATA = [
     airportKm: 145,
     protected: null,
     beauty: 9,
-    beachKm: 29
+    beachKm: 29,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gr-guadix",
@@ -5480,7 +5716,7 @@ export const REGIONS_DATA = [
     description: "Guadix, capital mundial de las casas cueva. Turismo creciente, precios muy bajos y un nicho de inversión completamente único.",
     vibe: "Cueva, único, infravalorado.",
     priceM2: 710,
-    yoyPrice: 13,
+    yoyPrice: 9,
     tempAvg: 14,
     sunHours: 2850,
     rainfall: 380,
@@ -5491,7 +5727,8 @@ export const REGIONS_DATA = [
     airportKm: 60,
     protected: null,
     beauty: 7,
-    beachKm: 103
+    beachKm: 103,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gr-huescar",
@@ -5503,7 +5740,7 @@ export const REGIONS_DATA = [
     description: "Huéscar y el rincón más remoto de Granada. Los precios más bajos de toda la provincia en entorno rural muy tranquilo.",
     vibe: "Remoto, baratísimo, silencioso.",
     priceM2: 713,
-    yoyPrice: 10,
+    yoyPrice: 7.5,
     tempAvg: 13.5,
     sunHours: 2800,
     rainfall: 400,
@@ -5514,7 +5751,8 @@ export const REGIONS_DATA = [
     airportKm: 105,
     protected: null,
     beauty: 5,
-    beachKm: 121
+    beachKm: 121,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gr-costa-tropical",
@@ -5526,7 +5764,7 @@ export const REGIONS_DATA = [
     description: "Motril y Salobreña, la única costa subtropical de Europa. Chirimoya, aguacate, playa y precios más contenidos que Málaga.",
     vibe: "Subtropical, relajado, diferente.",
     priceM2: 2455,
-    yoyPrice: 17,
+    yoyPrice: 16,
     tempAvg: 19,
     sunHours: 3100,
     rainfall: 430,
@@ -5537,7 +5775,8 @@ export const REGIONS_DATA = [
     airportKm: 104,
     protected: null,
     beauty: 7,
-    beachKm: 48
+    beachKm: 48,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gr-montes",
@@ -5549,7 +5788,7 @@ export const REGIONS_DATA = [
     description: "Loja y las colinas del interior granadino. Olivares y cereales a precios muy bajos, bien comunicado en la A-92.",
     vibe: "Interior, olivo, tranquilo.",
     priceM2: 563,
-    yoyPrice: 11,
+    yoyPrice: 8.5,
     tempAvg: 15.5,
     sunHours: 2850,
     rainfall: 450,
@@ -5560,7 +5799,8 @@ export const REGIONS_DATA = [
     airportKm: 55,
     protected: null,
     beauty: 5,
-    beachKm: 81
+    beachKm: 81,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gr-poniente",
@@ -5572,7 +5812,7 @@ export const REGIONS_DATA = [
     description: "Montefrío y los pueblos del poniente. Interior granadino con alcauciles, olivos y buenas comunicaciones a Granada y Sevilla.",
     vibe: "Interior, olivos, muy asequible.",
     priceM2: 827,
-    yoyPrice: 12,
+    yoyPrice: 11,
     tempAvg: 15.5,
     sunHours: 2850,
     rainfall: 500,
@@ -5583,7 +5823,8 @@ export const REGIONS_DATA = [
     airportKm: 60,
     protected: null,
     beauty: 6,
-    beachKm: 60
+    beachKm: 60,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gr-lecrin",
@@ -5595,7 +5836,7 @@ export const REGIONS_DATA = [
     description: "Entre Granada capital y la Costa Tropical. Cítricos, olivos y posición estratégica con acceso a ciudad y playa en 40 min cada uno.",
     vibe: "Estratégico, verde, dosificado.",
     priceM2: 1120,
-    yoyPrice: 14,
+    yoyPrice: 12,
     tempAvg: 17,
     sunHours: 2950,
     rainfall: 550,
@@ -5606,7 +5847,8 @@ export const REGIONS_DATA = [
     airportKm: 108,
     protected: null,
     beauty: 7,
-    beachKm: 51
+    beachKm: 51,
+    yoySource: "ipv_gemini"
   },
   {
     id: "jaen-alto-guadalquivir",
@@ -5618,7 +5860,7 @@ export const REGIONS_DATA = [
     description: "Cazorla y la Sierra más grande de España con el PN más visitado. Olivos, naturaleza e inversión rural a precio mínimo.",
     vibe: "Natural, olivarero, espectacular.",
     priceM2: 624,
-    yoyPrice: 13,
+    yoyPrice: 10.5,
     tempAvg: 13.5,
     sunHours: 2800,
     rainfall: 800,
@@ -5629,7 +5871,8 @@ export const REGIONS_DATA = [
     airportKm: 132,
     protected: "PNat",
     beauty: 10,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "jaen-norte",
@@ -5641,7 +5884,7 @@ export const REGIONS_DATA = [
     description: "Andújar y el norte jaenés junto a Sierra Morena. Olivares, lince ibérico y precios mínimos en la zona menos conocida de Jaén.",
     vibe: "Sierra Morena, lince, muy barato.",
     priceM2: 721,
-    yoyPrice: 11,
+    yoyPrice: 9.8,
     tempAvg: 16,
     sunHours: 2850,
     rainfall: 550,
@@ -5652,7 +5895,8 @@ export const REGIONS_DATA = [
     airportKm: 90,
     protected: "PNat",
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "jaen-capital",
@@ -5664,7 +5908,7 @@ export const REGIONS_DATA = [
     description: "Jaén, capital del aceite de oliva mundial. Ciudad con catedral renacentista, barrio árabe y los precios más bajos entre capitales.",
     vibe: "Olivo, Renacimiento, infravalorada.",
     priceM2: 1458,
-    yoyPrice: 13,
+    yoyPrice: 14.2,
     tempAvg: 16.5,
     sunHours: 2900,
     rainfall: 475,
@@ -5675,7 +5919,8 @@ export const REGIONS_DATA = [
     airportKm: 40,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "jaen-campina",
@@ -5698,7 +5943,8 @@ export const REGIONS_DATA = [
     airportKm: 80,
     protected: null,
     beauty: 5,
-    beachKm: 139
+    beachKm: 139,
+    yoySource: "ipv_gemini"
   },
   {
     id: "jaen-loma-villas",
@@ -5710,7 +5956,7 @@ export const REGIONS_DATA = [
     description: "Úbeda y Baeza, joyas del Renacimiento español UNESCO. Inversión en casco histórico con enorme potencial a precios bajos.",
     vibe: "Renacentista, culto, subestimado.",
     priceM2: 780,
-    yoyPrice: 12,
+    yoyPrice: 12.8,
     tempAvg: 16,
     sunHours: 2900,
     rainfall: 500,
@@ -5721,7 +5967,8 @@ export const REGIONS_DATA = [
     airportKm: 75,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "jaen-segura",
@@ -5733,7 +5980,7 @@ export const REGIONS_DATA = [
     description: "El interior más remoto de Jaén entre ríos y pinos. Precios de derribo para quien busca naturaleza extrema y aislamiento total.",
     vibe: "Remoto, ríos, baratísimo.",
     priceM2: 588,
-    yoyPrice: 10,
+    yoyPrice: 8.5,
     tempAvg: 13,
     sunHours: 2750,
     rainfall: 900,
@@ -5744,7 +5991,8 @@ export const REGIONS_DATA = [
     airportKm: 120,
     protected: null,
     beauty: 8,
-    beachKm: 139
+    beachKm: 139,
+    yoySource: "ipv_gemini"
   },
   {
     id: "jaen-magina",
@@ -5756,7 +6004,7 @@ export const REGIONS_DATA = [
     description: "Parque Natural de Sierra Mágina con castillos medievales y olivares centenarios. Muy desconocido y muy barato.",
     vibe: "Castillos, olivos, desconocido.",
     priceM2: 639,
-    yoyPrice: 11,
+    yoyPrice: 9.2,
     tempAvg: 15,
     sunHours: 2800,
     rainfall: 600,
@@ -5767,7 +6015,8 @@ export const REGIONS_DATA = [
     airportKm: 133,
     protected: "PNat",
     beauty: 7,
-    beachKm: 121
+    beachKm: 121,
+    yoySource: "ipv_gemini"
   },
   {
     id: "jaen-sierra-sur",
@@ -5790,7 +6039,8 @@ export const REGIONS_DATA = [
     airportKm: 122,
     protected: null,
     beauty: 7,
-    beachKm: 119
+    beachKm: 119,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cor-alto-guadalquivir",
@@ -5802,7 +6052,7 @@ export const REGIONS_DATA = [
     description: "Montoro y el Guadalquivir cordobés. Olivares y encinas junto al río con precios de interior muy accesibles.",
     vibe: "Río, olivo, tranquilo.",
     priceM2: 843,
-    yoyPrice: 12,
+    yoyPrice: 11.5,
     tempAvg: 16.5,
     sunHours: 2950,
     rainfall: 520,
@@ -5813,7 +6063,8 @@ export const REGIONS_DATA = [
     airportKm: 112,
     protected: null,
     beauty: 6,
-    beachKm: 138
+    beachKm: 138,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cor-guadiato",
@@ -5825,7 +6076,7 @@ export const REGIONS_DATA = [
     description: "Peñarroya y la cuenca minera cordobesa. Post-industrial con los precios más bajos de Córdoba y buen acceso a la capital.",
     vibe: "Postminero, baratísimo, reconversión.",
     priceM2: 768,
-    yoyPrice: 10,
+    yoyPrice: 9.8,
     tempAvg: 16,
     sunHours: 2900,
     rainfall: 550,
@@ -5836,7 +6087,8 @@ export const REGIONS_DATA = [
     airportKm: 128,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cor-campina",
@@ -5848,7 +6100,7 @@ export const REGIONS_DATA = [
     description: "Lucena y la campiña sur. Industria del mueble, bodegas y acceso a la Costa del Sol en 1 hora. Precios muy contenidos.",
     vibe: "Industrial, mueble, accesible.",
     priceM2: 795,
-    yoyPrice: 12,
+    yoyPrice: 10.5,
     tempAvg: 17,
     sunHours: 2950,
     rainfall: 550,
@@ -5859,7 +6111,8 @@ export const REGIONS_DATA = [
     airportKm: 75,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cor-capital",
@@ -5871,7 +6124,7 @@ export const REGIONS_DATA = [
     description: "Córdoba, Mezquita-Catedral UNESCO. Ciudad con alta oferta de vivienda para reformar en casco histórico a precios muy competitivos.",
     vibe: "Islámico, culto, muy asequible.",
     priceM2: 1865,
-    yoyPrice: 15,
+    yoyPrice: 14.2,
     tempAvg: 17.5,
     sunHours: 2950,
     rainfall: 580,
@@ -5882,7 +6135,8 @@ export const REGIONS_DATA = [
     airportKm: 12,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cor-subbetica",
@@ -5905,7 +6159,8 @@ export const REGIONS_DATA = [
     airportKm: 151,
     protected: "PNat",
     beauty: 8,
-    beachKm: 85
+    beachKm: 85,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cor-pedroches",
@@ -5917,7 +6172,7 @@ export const REGIONS_DATA = [
     description: "Dehesas infinitas de encinas y cerdos ibéricos. El norte cordobés más remoto y los precios más bajos de toda Córdoba.",
     vibe: "Dehesa, ibérico, hospitalario.",
     priceM2: 633,
-    yoyPrice: 11,
+    yoyPrice: 9.5,
     tempAvg: 15,
     sunHours: 2900,
     rainfall: 550,
@@ -5928,7 +6183,8 @@ export const REGIONS_DATA = [
     airportKm: 85,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cor-vega",
@@ -5940,7 +6196,7 @@ export const REGIONS_DATA = [
     description: "Palma del Río y la vega del Guadalquivir. Agricultura intensiva, naranjales y acceso rápido a Córdoba y Sevilla.",
     vibe: "Ribereño, naranjal, práctico.",
     priceM2: 884,
-    yoyPrice: 13,
+    yoyPrice: 11.8,
     tempAvg: 17.5,
     sunHours: 2950,
     rainfall: 530,
@@ -5951,7 +6207,8 @@ export const REGIONS_DATA = [
     airportKm: 14,
     protected: null,
     beauty: 5,
-    beachKm: 145
+    beachKm: 145,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mal-antequera",
@@ -5963,7 +6220,7 @@ export const REGIONS_DATA = [
     description: "Antequera, cruce de caminos de Andalucía con Dólmenes UNESCO. Inversión en interior malagueño a precios muy bajos.",
     vibe: "Estratégico, dolmen, accesible.",
     priceM2: 1426,
-    yoyPrice: 13,
+    yoyPrice: 9.5,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 500,
@@ -5974,7 +6231,8 @@ export const REGIONS_DATA = [
     airportKm: 95,
     protected: null,
     beauty: 7,
-    beachKm: 54
+    beachKm: 54,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mal-malaga",
@@ -5986,7 +6244,7 @@ export const REGIONS_DATA = [
     description: "Málaga capital, la ciudad más dinámica del Mediterráneo español. Aeropuerto, museo Picasso y mercado en pleno auge.",
     vibe: "Boom inmobiliario, tech, cosmopolita.",
     priceM2: 4225,
-    yoyPrice: 20,
+    yoyPrice: 13.8,
     tempAvg: 19.5,
     sunHours: 3000,
     rainfall: 540,
@@ -5997,7 +6255,8 @@ export const REGIONS_DATA = [
     airportKm: 90,
     protected: null,
     beauty: 7,
-    beachKm: 66
+    beachKm: 66,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mal-estepona",
@@ -6009,7 +6268,7 @@ export const REGIONS_DATA = [
     description: "Estepona y el Nuevo Golden Mile. Costa del Sol en expansión con alta demanda de perfil internacional y proyectos de lujo.",
     vibe: "Lujo, golf, nueva frontera.",
     priceM2: 5010,
-    yoyPrice: 18,
+    yoyPrice: 14.5,
     tempAvg: 19.5,
     sunHours: 3000,
     rainfall: 550,
@@ -6020,7 +6279,8 @@ export const REGIONS_DATA = [
     airportKm: 70,
     protected: null,
     beauty: 8,
-    beachKm: 102
+    beachKm: 102,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mal-benalmadena",
@@ -6032,7 +6292,7 @@ export const REGIONS_DATA = [
     description: "Benalmádena y Torremolinos. Destino maduro con alta ocupación anual, amplia oferta y precios algo más contenidos.",
     vibe: "Resort maduro, demanda estable.",
     priceM2: 4324,
-    yoyPrice: 16,
+    yoyPrice: 15.2,
     tempAvg: 19.5,
     sunHours: 3000,
     rainfall: 520,
@@ -6043,7 +6303,8 @@ export const REGIONS_DATA = [
     airportKm: 85,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mal-marbella",
@@ -6055,7 +6316,7 @@ export const REGIONS_DATA = [
     description: "Marbella y Puerto Banús, el destino de lujo mediterráneo más reconocido. La inversión más segura de la Costa del Sol.",
     vibe: "Ultra-premium, global, escaso.",
     priceM2: 6698,
-    yoyPrice: 18,
+    yoyPrice: 16,
     tempAvg: 20,
     sunHours: 3050,
     rainfall: 500,
@@ -6066,7 +6327,8 @@ export const REGIONS_DATA = [
     airportKm: 55,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mal-axarquia",
@@ -6078,7 +6340,7 @@ export const REGIONS_DATA = [
     description: "Nerja, Vélez-Málaga y la Axarquía. Costa este menos masificada con precios inferiores y paisaje de pueblos blancos.",
     vibe: "Menos turística, aguacate, en alza.",
     priceM2: 2999,
-    yoyPrice: 18,
+    yoyPrice: 11.5,
     tempAvg: 18.5,
     sunHours: 3000,
     rainfall: 500,
@@ -6089,7 +6351,8 @@ export const REGIONS_DATA = [
     airportKm: 136,
     protected: "PNat",
     beauty: 8,
-    beachKm: 4
+    beachKm: 4,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mal-ronda",
@@ -6101,7 +6364,7 @@ export const REGIONS_DATA = [
     description: "Ronda y el Tajo espectacular. Interior malagueño con white villages, pinsapos y segunda residencia a precios muy contenidos.",
     vibe: "Romántico, serranía, señorial.",
     priceM2: 1674,
-    yoyPrice: 16,
+    yoyPrice: 8,
     tempAvg: 15,
     sunHours: 2800,
     rainfall: 850,
@@ -6112,7 +6375,8 @@ export const REGIONS_DATA = [
     airportKm: 60,
     protected: "PNat",
     beauty: 10,
-    beachKm: 99
+    beachKm: 99,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mal-guadalhorce",
@@ -6124,7 +6388,7 @@ export const REGIONS_DATA = [
     description: "Coín y Alhaurín el Grande, suburbio verde de Málaga. Buena conexión a la capital y la costa con precios de interior.",
     vibe: "Periurbano malagueño, verde, práctico.",
     priceM2: 2392,
-    yoyPrice: 16,
+    yoyPrice: 10.5,
     tempAvg: 18.5,
     sunHours: 2950,
     rainfall: 550,
@@ -6135,7 +6399,8 @@ export const REGIONS_DATA = [
     airportKm: 92,
     protected: null,
     beauty: 6,
-    beachKm: 54
+    beachKm: 54,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sev-aljarafe",
@@ -6147,7 +6412,7 @@ export const REGIONS_DATA = [
     description: "Colinas olivareras al oeste de Sevilla. El barrio residencial de alta renta de la capital con buena oferta de vivienda reformada.",
     vibe: "Residencial premium, familiar.",
     priceM2: 1735,
-    yoyPrice: 16,
+    yoyPrice: 13.8,
     tempAvg: 19,
     sunHours: 2950,
     rainfall: 540,
@@ -6158,7 +6423,8 @@ export const REGIONS_DATA = [
     airportKm: 120,
     protected: null,
     beauty: 5,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sev-estepa",
@@ -6170,7 +6436,7 @@ export const REGIONS_DATA = [
     description: "Estepa, capital mundial del mantecado. Interior sur sevillano con precios mínimos y acceso a Antequera y Córdoba.",
     vibe: "Mantecado, interior, muy tranquilo.",
     priceM2: 799,
-    yoyPrice: 11,
+    yoyPrice: 9.5,
     tempAvg: 18,
     sunHours: 2950,
     rainfall: 500,
@@ -6181,7 +6447,8 @@ export const REGIONS_DATA = [
     airportKm: 75,
     protected: null,
     beauty: 5,
-    beachKm: 90
+    beachKm: 90,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sev-metropolitana",
@@ -6193,7 +6460,7 @@ export const REGIONS_DATA = [
     description: "Dos Hermanas y la corona metropolitana sevillana. Alta demanda, buen metro y precios significativamente inferiores a la capital.",
     vibe: "Metropolitano, accesible, creciendo.",
     priceM2: 1912,
-    yoyPrice: 16,
+    yoyPrice: 12.9,
     tempAvg: 19.5,
     sunHours: 3000,
     rainfall: 520,
@@ -6204,7 +6471,8 @@ export const REGIONS_DATA = [
     airportKm: 102,
     protected: null,
     beauty: 5,
-    beachKm: 149
+    beachKm: 149,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sev-campina",
@@ -6216,7 +6484,7 @@ export const REGIONS_DATA = [
     description: "Carmona y Écija en la llanura sevillana. Patrimonio señorial, olivares y precios de interior muy accesibles.",
     vibe: "Señorial, llanura, muy asequible.",
     priceM2: 1109,
-    yoyPrice: 12,
+    yoyPrice: 10.2,
     tempAvg: 19.5,
     sunHours: 3000,
     rainfall: 500,
@@ -6227,7 +6495,8 @@ export const REGIONS_DATA = [
     airportKm: 42,
     protected: null,
     beauty: 6,
-    beachKm: 128
+    beachKm: 128,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sev-marisma",
@@ -6239,7 +6508,7 @@ export const REGIONS_DATA = [
     description: "Lebrija y el borde de Doñana. Marismas, arrozales y ambiente rociero junto al PN con precios de zona deprimida.",
     vibe: "Marisma, Doñana, económico.",
     priceM2: 1098,
-    yoyPrice: 12,
+    yoyPrice: 8.7,
     tempAvg: 19.5,
     sunHours: 3000,
     rainfall: 530,
@@ -6250,7 +6519,8 @@ export const REGIONS_DATA = [
     airportKm: 55,
     protected: "PN",
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sev-vega",
@@ -6262,7 +6532,7 @@ export const REGIONS_DATA = [
     description: "Lora del Río y el Guadalquivir norte sevillano. Naranjos, aceite y buena A-4 con precios de interior muy contenidos.",
     vibe: "Ribereño, naranjal, tranquilo.",
     priceM2: 1132,
-    yoyPrice: 13,
+    yoyPrice: 11.5,
     tempAvg: 19.5,
     sunHours: 2950,
     rainfall: 530,
@@ -6273,7 +6543,8 @@ export const REGIONS_DATA = [
     airportKm: 81,
     protected: null,
     beauty: 5,
-    beachKm: 125
+    beachKm: 125,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sev-capital",
@@ -6285,7 +6556,7 @@ export const REGIONS_DATA = [
     description: "Sevilla, la más bonita de España para muchos. AVE a Madrid en 2:30h y mercado en fuerte crecimiento con alta demanda internacional.",
     vibe: "Flamenco, patrimonio, en ebullición.",
     priceM2: 3099,
-    yoyPrice: 18,
+    yoyPrice: 15.1,
     tempAvg: 19.5,
     sunHours: 3000,
     rainfall: 520,
@@ -6296,7 +6567,8 @@ export const REGIONS_DATA = [
     airportKm: 10,
     protected: null,
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sev-sierra-norte",
@@ -6308,7 +6580,7 @@ export const REGIONS_DATA = [
     description: "Cazalla de la Sierra y la sierra sevillana. Dehesas, cascadas y el respiro verde de los sevillanos a precio de sierra.",
     vibe: "Rural andaluz, fresco, dominguero.",
     priceM2: 1099,
-    yoyPrice: 12,
+    yoyPrice: 7.8,
     tempAvg: 16,
     sunHours: 2900,
     rainfall: 700,
@@ -6319,7 +6591,8 @@ export const REGIONS_DATA = [
     airportKm: 114,
     protected: "PNat",
     beauty: 8,
-    beachKm: 147
+    beachKm: 147,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cad-bahia",
@@ -6331,7 +6604,7 @@ export const REGIONS_DATA = [
     description: "Cádiz capital, El Puerto de Santa María y San Fernando. La ciudad más antigua de Occidente con mercado activo y precios contenidos.",
     vibe: "Carnaval, marinero, atlántico.",
     priceM2: 2851,
-    yoyPrice: 16,
+    yoyPrice: 14.8,
     tempAvg: 18.5,
     sunHours: 3000,
     rainfall: 600,
@@ -6342,7 +6615,8 @@ export const REGIONS_DATA = [
     airportKm: 78,
     protected: null,
     beauty: 8,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cad-jerez",
@@ -6354,7 +6628,7 @@ export const REGIONS_DATA = [
     description: "Jerez de la Frontera, el sherry, el flamenco y los caballos. Gran ciudad con variada oferta inmobiliaria y precios razonables.",
     vibe: "Sherry, flamenco, caballos.",
     priceM2: 1985,
-    yoyPrice: 14,
+    yoyPrice: 11.5,
     tempAvg: 19,
     sunHours: 3000,
     rainfall: 600,
@@ -6365,7 +6639,8 @@ export const REGIONS_DATA = [
     airportKm: 89,
     protected: null,
     beauty: 7,
-    beachKm: 140
+    beachKm: 140,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cad-gibraltar",
@@ -6377,7 +6652,7 @@ export const REGIONS_DATA = [
     description: "Algeciras y La Línea de la Concepción, junto a Gibraltar. Zona logística estratégica con mercado activo y precios razonables.",
     vibe: "Estratégico, multicultural, portuario.",
     priceM2: 2931,
-    yoyPrice: 14,
+    yoyPrice: 13.2,
     tempAvg: 18.5,
     sunHours: 2900,
     rainfall: 700,
@@ -6388,7 +6663,8 @@ export const REGIONS_DATA = [
     airportKm: 17,
     protected: null,
     beauty: 6,
-    beachKm: 135
+    beachKm: 135,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cad-costa-noroeste",
@@ -6400,7 +6676,7 @@ export const REGIONS_DATA = [
     description: "Sanlúcar, Chipiona y Rota con sus playas atlánticas. Menor presión turística que el sur con playas largas y precios razonables.",
     vibe: "Atlántico, tranquilo, manzanilla.",
     priceM2: 2787,
-    yoyPrice: 15,
+    yoyPrice: 15.5,
     tempAvg: 19,
     sunHours: 3000,
     rainfall: 580,
@@ -6411,7 +6687,8 @@ export const REGIONS_DATA = [
     airportKm: 25,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cad-la-janda",
@@ -6423,7 +6700,7 @@ export const REGIONS_DATA = [
     description: "Vejer, Conil y Tarifa. Costa atlántica en fuerte auge con surf, kiteboard y alto perfil alternativo-premium. Crecimiento rápido.",
     vibe: "Surf, kiteboard, en plena expansión.",
     priceM2: 2984,
-    yoyPrice: 16,
+    yoyPrice: 12,
     tempAvg: 19,
     sunHours: 2900,
     rainfall: 750,
@@ -6434,7 +6711,8 @@ export const REGIONS_DATA = [
     airportKm: 45,
     protected: null,
     beauty: 9,
-    beachKm: 118
+    beachKm: 118,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cad-sierra",
@@ -6446,7 +6724,7 @@ export const REGIONS_DATA = [
     description: "Grazalema PNat y los pueblos blancos serranos. Senderismo, pinsapos únicos y segunda residencia a precios muy contenidos.",
     vibe: "Pueblos blancos, pinsapos, senderista.",
     priceM2: 1291,
-    yoyPrice: 14,
+    yoyPrice: 8.5,
     tempAvg: 15,
     sunHours: 2750,
     rainfall: 1800,
@@ -6457,7 +6735,8 @@ export const REGIONS_DATA = [
     airportKm: 95,
     protected: "PNat",
     beauty: 10,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "huel-andevalo",
@@ -6469,7 +6748,7 @@ export const REGIONS_DATA = [
     description: "Sierra Morena onubense, minería histórica y el cerdo ibérico. El interior más deprimido y barato de la provincia.",
     vibe: "Minero, rural profundo, baratísimo.",
     priceM2: 1069,
-    yoyPrice: 10,
+    yoyPrice: 9.8,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 600,
@@ -6480,7 +6759,8 @@ export const REGIONS_DATA = [
     airportKm: 101,
     protected: null,
     beauty: 6,
-    beachKm: 132
+    beachKm: 132,
+    yoySource: "ipv_gemini"
   },
   {
     id: "huel-condado",
@@ -6492,7 +6772,7 @@ export const REGIONS_DATA = [
     description: "Lepe, Cartaya y el condado onubense. Fresas, naranjos y acceso a la costa a buenos precios con servicios completos.",
     vibe: "Freseros, cítricos, práctico.",
     priceM2: 962,
-    yoyPrice: 13,
+    yoyPrice: 11.5,
     tempAvg: 18.5,
     sunHours: 3000,
     rainfall: 530,
@@ -6503,7 +6783,8 @@ export const REGIONS_DATA = [
     airportKm: 128,
     protected: null,
     beauty: 5,
-    beachKm: 69
+    beachKm: 69,
+    yoySource: "ipv_gemini"
   },
   {
     id: "huel-costa",
@@ -6515,7 +6796,7 @@ export const REGIONS_DATA = [
     description: "Punta Umbría y Mazagón, playas atlánticas en expansión. Alternativa más barata y menos masificada que la Costa del Sol.",
     vibe: "Atlántico, pinos, en crecimiento.",
     priceM2: 2072,
-    yoyPrice: 15,
+    yoyPrice: 14.2,
     tempAvg: 18.5,
     sunHours: 3000,
     rainfall: 530,
@@ -6526,7 +6807,8 @@ export const REGIONS_DATA = [
     airportKm: 56,
     protected: null,
     beauty: 8,
-    beachKm: 112
+    beachKm: 112,
+    yoySource: "ipv_gemini"
   },
   {
     id: "huel-sierra",
@@ -6538,7 +6820,7 @@ export const REGIONS_DATA = [
     description: "Sierra de Aracena PNat, castaños y el jamón de Jabugo. Inversión en segunda residencia de interior a precios muy asequibles.",
     vibe: "Ibérico, forestal, auténtico.",
     priceM2: 989,
-    yoyPrice: 12,
+    yoyPrice: 10.8,
     tempAvg: 15,
     sunHours: 2800,
     rainfall: 950,
@@ -6549,7 +6831,8 @@ export const REGIONS_DATA = [
     airportKm: 149,
     protected: "PNat",
     beauty: 9,
-    beachKm: 143
+    beachKm: 143,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ba-merida",
@@ -6561,7 +6844,7 @@ export const REGIONS_DATA = [
     description: "Mérida, capital autonómica y patrimonio romano UNESCO. Mercado activo con los precios más bajos entre capitales autonómicas.",
     vibe: "Romano, UNESCO, asequible.",
     priceM2: 965,
-    yoyPrice: 9,
+    yoyPrice: 14.5,
     tempAvg: 17,
     sunHours: 2950,
     rainfall: 450,
@@ -6572,7 +6855,8 @@ export const REGIONS_DATA = [
     airportKm: 192,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ba-badajoz",
@@ -6584,7 +6868,7 @@ export const REGIONS_DATA = [
     description: "Badajoz capital en la frontera con Portugal. Ciudad con servicios completos y precio muy bajo, AVE a Madrid.",
     vibe: "Fronterizo, asequible, bien comunicado.",
     priceM2: 1559,
-    yoyPrice: 8,
+    yoyPrice: 15,
     tempAvg: 17.5,
     sunHours: 3000,
     rainfall: 430,
@@ -6595,7 +6879,8 @@ export const REGIONS_DATA = [
     airportKm: 231,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ba-campina-sur",
@@ -6607,7 +6892,7 @@ export const REGIONS_DATA = [
     description: "Zafra y la campiña sur pacense. Feria ganadera nacional, cerdo ibérico y precios mínimos de interior.",
     vibe: "Ganadero, ibérico, tranquilo.",
     priceM2: 406,
-    yoyPrice: 7,
+    yoyPrice: 11,
     tempAvg: 17.5,
     sunHours: 2950,
     rainfall: 430,
@@ -6618,7 +6903,8 @@ export const REGIONS_DATA = [
     airportKm: 86,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ba-don-benito",
@@ -6630,7 +6916,7 @@ export const REGIONS_DATA = [
     description: "Don Benito y la Siberia extremeña con sus grandes embalses. Llanura cerealista con los precios más bajos de Extremadura.",
     vibe: "Embalses, llano, muy barato.",
     priceM2: 639,
-    yoyPrice: 7,
+    yoyPrice: 10.5,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 550,
@@ -6641,7 +6927,8 @@ export const REGIONS_DATA = [
     airportKm: 150,
     protected: "RB",
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ba-jerez-caballeros",
@@ -6653,7 +6940,7 @@ export const REGIONS_DATA = [
     description: "El suroeste más remoto de Extremadura. Templarios, torres barrocas y los precios más bajos de la provincia.",
     vibe: "Templario, remoto, baratísimo.",
     priceM2: 579,
-    yoyPrice: 6,
+    yoyPrice: 12,
     tempAvg: 17.5,
     sunHours: 3000,
     rainfall: 550,
@@ -6664,7 +6951,8 @@ export const REGIONS_DATA = [
     airportKm: 176,
     protected: null,
     beauty: 6,
-    beachKm: 137
+    beachKm: 137,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ba-olivenza",
@@ -6676,7 +6964,7 @@ export const REGIONS_DATA = [
     description: "Olivenza, la villa más portuguesa de España. Arquitectura manuelina y acceso rápido a Portugal a precios muy accesibles.",
     vibe: "Luso-extremeño, fronterizo, barato.",
     priceM2: 718,
-    yoyPrice: 7,
+    yoyPrice: 11.5,
     tempAvg: 17.5,
     sunHours: 2950,
     rainfall: 450,
@@ -6687,7 +6975,8 @@ export const REGIONS_DATA = [
     airportKm: 192,
     protected: null,
     beauty: 6,
-    beachKm: 148
+    beachKm: 148,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ba-tentudia",
@@ -6699,7 +6988,7 @@ export const REGIONS_DATA = [
     description: "Sierra Morena sur extremeña. La comarca más remota del sur de Badajoz con precios de derribo en entorno natural de robledales.",
     vibe: "Sierra Morena, remoto, muy barato.",
     priceM2: 734,
-    yoyPrice: 6,
+    yoyPrice: 10,
     tempAvg: 16.5,
     sunHours: 2950,
     rainfall: 600,
@@ -6710,7 +6999,8 @@ export const REGIONS_DATA = [
     airportKm: 133,
     protected: null,
     beauty: 7,
-    beachKm: 113
+    beachKm: 113,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ba-tierra-barros",
@@ -6722,7 +7012,7 @@ export const REGIONS_DATA = [
     description: "Almendralejo y la DO Ribera del Guadiana. Motor económico pacense con viñedos y buena autovía.",
     vibe: "Vino, viñedos, trabajador.",
     priceM2: 796,
-    yoyPrice: 8,
+    yoyPrice: 13,
     tempAvg: 17.5,
     sunHours: 2950,
     rainfall: 450,
@@ -6733,7 +7023,8 @@ export const REGIONS_DATA = [
     airportKm: 85,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ca-alcantara",
@@ -6745,7 +7036,7 @@ export const REGIONS_DATA = [
     description: "Alcántara y el Tajo internacional. Puente romano y embalse Alcántara en la frontera con Portugal. Muy remoto y muy barato.",
     vibe: "Romano, fronterizo, remoto.",
     priceM2: 569,
-    yoyPrice: 6,
+    yoyPrice: 10.5,
     tempAvg: 16.5,
     sunHours: 2900,
     rainfall: 550,
@@ -6756,7 +7047,8 @@ export const REGIONS_DATA = [
     airportKm: 180,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ca-caceres",
@@ -6768,7 +7060,7 @@ export const REGIONS_DATA = [
     description: "Cáceres capital, casco monumental UNESCO. Ciudad con la mayor concentración de arquitectura medieval de España a precio mínimo.",
     vibe: "Medieval UNESCO, muy asequible.",
     priceM2: 1289,
-    yoyPrice: 8,
+    yoyPrice: 16,
     tempAvg: 16.5,
     sunHours: 2900,
     rainfall: 500,
@@ -6779,7 +7071,8 @@ export const REGIONS_DATA = [
     airportKm: 174,
     protected: null,
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ca-campo-aranuela",
@@ -6791,7 +7084,7 @@ export const REGIONS_DATA = [
     description: "Navalmoral de la Mata y el acceso a Extremadura desde Madrid. Buena autovía, embalse de Valdecañas y precios de interior.",
     vibe: "Embalse, accesible, tranquilo.",
     priceM2: 1080,
-    yoyPrice: 8,
+    yoyPrice: 12,
     tempAvg: 17,
     sunHours: 2850,
     rainfall: 600,
@@ -6802,7 +7095,8 @@ export const REGIONS_DATA = [
     airportKm: 115,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ca-jerte",
@@ -6814,7 +7108,7 @@ export const REGIONS_DATA = [
     description: "Valle del Jerte y el espectáculo de los cerezos en flor. Turismo rural creciente e inversión en casa de aldea a buen precio.",
     vibe: "Cerezos, agua, muy bello.",
     priceM2: 1013,
-    yoyPrice: 9,
+    yoyPrice: 14.5,
     tempAvg: 14,
     sunHours: 2700,
     rainfall: 1200,
@@ -6825,7 +7119,8 @@ export const REGIONS_DATA = [
     airportKm: 200,
     protected: null,
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ca-la-vera",
@@ -6837,7 +7132,7 @@ export const REGIONS_DATA = [
     description: "Jarandilla y el pimentón de La Vera DOP. Valle verde y suave, ideal para segunda residencia con naturaleza a buen precio.",
     vibe: "Pimentón, verde, monasterio.",
     priceM2: 1032,
-    yoyPrice: 9,
+    yoyPrice: 15,
     tempAvg: 15.5,
     sunHours: 2800,
     rainfall: 1000,
@@ -6848,7 +7143,8 @@ export const REGIONS_DATA = [
     airportKm: 180,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ca-hurdes",
@@ -6860,7 +7156,7 @@ export const REGIONS_DATA = [
     description: "Las Hurdes de Buñuel y el valle del Ambroz. El interior más inaccesible de Extremadura con los precios más bajos de Cáceres.",
     vibe: "Mítico, muy remoto, baratísimo.",
     priceM2: 674,
-    yoyPrice: 6,
+    yoyPrice: 11,
     tempAvg: 13.5,
     sunHours: 2600,
     rainfall: 1200,
@@ -6871,7 +7167,8 @@ export const REGIONS_DATA = [
     airportKm: 200,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ca-sierra-gata",
@@ -6883,7 +7180,7 @@ export const REGIONS_DATA = [
     description: "Sierra de Gata y la lengua A Fala. Rincón noroccidental de Extremadura con piscinas naturales y precios simbólicos.",
     vibe: "A Fala, natural, muy barato.",
     priceM2: 600,
-    yoyPrice: 7,
+    yoyPrice: 13,
     tempAvg: 14.5,
     sunHours: 2700,
     rainfall: 1100,
@@ -6894,7 +7191,8 @@ export const REGIONS_DATA = [
     airportKm: 128,
     protected: "PNat",
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ca-trujillo",
@@ -6906,7 +7204,7 @@ export const REGIONS_DATA = [
     description: "Trujillo, cuna de los conquistadores. Dehesas, cigüeñas y un conjunto medieval con relación precio-belleza excepcional.",
     vibe: "Conquistadores, dehesa, histórico.",
     priceM2: 1042,
-    yoyPrice: 7,
+    yoyPrice: 13.5,
     tempAvg: 16.5,
     sunHours: 2900,
     rainfall: 500,
@@ -6917,7 +7215,8 @@ export const REGIONS_DATA = [
     airportKm: 169,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ca-alagon",
@@ -6929,7 +7228,7 @@ export const REGIONS_DATA = [
     description: "Moraleja y el valle del Alagón. Tabaco, pimentón y gran tranquilidad en el norte cacereño a precios muy reducidos.",
     vibe: "Tabaco, quietud, barato.",
     priceM2: 641,
-    yoyPrice: 7,
+    yoyPrice: 12.5,
     tempAvg: 16,
     sunHours: 2800,
     rainfall: 600,
@@ -6940,7 +7239,8 @@ export const REGIONS_DATA = [
     airportKm: 126,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ca-villuercas",
@@ -6952,7 +7252,7 @@ export const REGIONS_DATA = [
     description: "Geoparque de relieves apalachenses y monasterio de Guadalupe. El interior más bello de Cáceres a precios mínimos.",
     vibe: "Geológico, místico, muy barato.",
     priceM2: 475,
-    yoyPrice: 7,
+    yoyPrice: 9.5,
     tempAvg: 15,
     sunHours: 2800,
     rainfall: 800,
@@ -6963,7 +7263,8 @@ export const REGIONS_DATA = [
     airportKm: 134,
     protected: "RB",
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "av-capital",
@@ -6975,7 +7276,7 @@ export const REGIONS_DATA = [
     description: "Ávila capital, muralla medieval Patrimonio UNESCO. Conexión a Madrid en 1:30h, mercado activo y precios muy bajos.",
     vibe: "Medieval, cerca Madrid, frío.",
     priceM2: 1214,
-    yoyPrice: 9,
+    yoyPrice: 17.5,
     tempAvg: 10,
     sunHours: 2600,
     rainfall: 450,
@@ -6986,7 +7287,8 @@ export const REGIONS_DATA = [
     airportKm: 86,
     protected: null,
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "av-arevalo",
@@ -6998,7 +7300,7 @@ export const REGIONS_DATA = [
     description: "Arévalo y la llanura norte abulense. Cereales, barro cocido y precios mínimos entre Ávila y Valladolid.",
     vibe: "Castellano llano, barato, sereno.",
     priceM2: 658,
-    yoyPrice: 7,
+    yoyPrice: 12.8,
     tempAvg: 11,
     sunHours: 2650,
     rainfall: 420,
@@ -7009,7 +7311,8 @@ export const REGIONS_DATA = [
     airportKm: 67,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "av-burgohondo",
@@ -7021,7 +7324,7 @@ export const REGIONS_DATA = [
     description: "Embalse de Burguillo y los pinares del sur abulense. Acceso a Madrid en 1h y destino de fin de semana con potencial inversor.",
     vibe: "Pinos, embalse, escapada Madrid.",
     priceM2: 995,
-    yoyPrice: 10,
+    yoyPrice: 16.5,
     tempAvg: 12.5,
     sunHours: 2700,
     rainfall: 700,
@@ -7032,7 +7335,8 @@ export const REGIONS_DATA = [
     airportKm: 100,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "av-tietar",
@@ -7044,7 +7348,7 @@ export const REGIONS_DATA = [
     description: "La \"Andalucía de Ávila\". Naranjos bajo Gredos, clima subtemplado y buena demanda de segunda residencia desde Madrid.",
     vibe: "Subtropical abulense, relajado.",
     priceM2: 1114,
-    yoyPrice: 10,
+    yoyPrice: 18,
     tempAvg: 15,
     sunHours: 2750,
     rainfall: 950,
@@ -7055,7 +7359,8 @@ export const REGIONS_DATA = [
     airportKm: 94,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "av-tormes",
@@ -7067,7 +7372,7 @@ export const REGIONS_DATA = [
     description: "Piedrahíta y el Tormes en el interior oeste abulense. Muy tranquilo y asequible, ideal para retiro alejado de todo.",
     vibe: "Interior, silencioso, muy barato.",
     priceM2: 523,
-    yoyPrice: 7,
+    yoyPrice: 11.5,
     tempAvg: 11.5,
     sunHours: 2600,
     rainfall: 650,
@@ -7078,7 +7383,8 @@ export const REGIONS_DATA = [
     airportKm: 67,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sa-capital",
@@ -7090,7 +7396,7 @@ export const REGIONS_DATA = [
     description: "Salamanca, una de las ciudades más bellas del mundo. Universidad, Patrimonio UNESCO y mercado activo para segunda residencia.",
     vibe: "Universitario, cultural, bello.",
     priceM2: 2151,
-    yoyPrice: 9,
+    yoyPrice: 18.5,
     tempAvg: 12,
     sunHours: 2700,
     rainfall: 450,
@@ -7101,7 +7407,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: null,
     beauty: 10,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sa-bejar",
@@ -7113,7 +7420,7 @@ export const REGIONS_DATA = [
     description: "Béjar y la Sierra de Béjar. Ciudad textil en reconversión con stocks baratos y entorno natural de montaña muy agradable.",
     vibe: "Textil reconvertido, montaña, barato.",
     priceM2: 637,
-    yoyPrice: 7,
+    yoyPrice: 12.8,
     tempAvg: 12,
     sunHours: 2600,
     rainfall: 900,
@@ -7124,7 +7431,8 @@ export const REGIONS_DATA = [
     airportKm: 67,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sa-campo-charro",
@@ -7136,7 +7444,7 @@ export const REGIONS_DATA = [
     description: "La dehesa salmantina del toro de lidia. Rural profundo con los precios más bajos de Salamanca.",
     vibe: "Dehesa, toro, muy rural.",
     priceM2: 469,
-    yoyPrice: 6,
+    yoyPrice: 10.5,
     tempAvg: 13.5,
     sunHours: 2750,
     rainfall: 500,
@@ -7147,7 +7455,8 @@ export const REGIONS_DATA = [
     airportKm: 186,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sa-ciudad-rodrigo",
@@ -7159,7 +7468,7 @@ export const REGIONS_DATA = [
     description: "Ciudad Rodrigo, fortaleza medieval junto a Portugal. Carnaval declarado de Interés Internacional y precios mínimos.",
     vibe: "Medieval, fronterizo, asequible.",
     priceM2: 682,
-    yoyPrice: 7,
+    yoyPrice: 14,
     tempAvg: 13.5,
     sunHours: 2750,
     rainfall: 550,
@@ -7170,7 +7479,8 @@ export const REGIONS_DATA = [
     airportKm: 194,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sa-penaranda",
@@ -7182,7 +7492,7 @@ export const REGIONS_DATA = [
     description: "Peñaranda de Bracamonte y el llano este salmantino. Paso entre Salamanca y Ávila con precios muy accesibles.",
     vibe: "Castellano llano, tranquilo, barato.",
     priceM2: 474,
-    yoyPrice: 6,
+    yoyPrice: 11.5,
     tempAvg: 12,
     sunHours: 2650,
     rainfall: 430,
@@ -7193,7 +7503,8 @@ export const REGIONS_DATA = [
     airportKm: 26,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sa-vitigudino",
@@ -7205,7 +7516,7 @@ export const REGIONS_DATA = [
     description: "El rincón más remoto de Salamanca en la frontera con Portugal. Los precios más bajos de la provincia en máxima tranquilidad.",
     vibe: "Remoto, Portugal, baratísimo.",
     priceM2: 455,
-    yoyPrice: 5,
+    yoyPrice: 9.8,
     tempAvg: 13.5,
     sunHours: 2750,
     rainfall: 600,
@@ -7216,7 +7527,8 @@ export const REGIONS_DATA = [
     airportKm: 188,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "za-toro",
@@ -7228,7 +7540,7 @@ export const REGIONS_DATA = [
     description: "Toro y el Duero. DO Toro con vinos potentes, románico singular y precios muy bajos en un enclave histórico excepcional.",
     vibe: "Vino Toro, románico, barato.",
     priceM2: 517,
-    yoyPrice: 8,
+    yoyPrice: 12.5,
     tempAvg: 12.5,
     sunHours: 2700,
     rainfall: 380,
@@ -7239,7 +7551,8 @@ export const REGIONS_DATA = [
     airportKm: 120,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "za-aliste",
@@ -7251,7 +7564,7 @@ export const REGIONS_DATA = [
     description: "El Aliste zamorano fronterizo con Portugal. Pizarra negra, aldeas medio vacías y los precios más bajos de Zamora.",
     vibe: "Pizarra, fronterizo, muy barato.",
     priceM2: 312,
-    yoyPrice: 5,
+    yoyPrice: 9.8,
     tempAvg: 12.5,
     sunHours: 2600,
     rainfall: 650,
@@ -7262,7 +7575,8 @@ export const REGIONS_DATA = [
     airportKm: 95,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "za-sayago",
@@ -7274,7 +7588,7 @@ export const REGIONS_DATA = [
     description: "El Sayago, meseta esquistosa entre el Duero y Portugal. Aldeas de pizarra, arribes y los precios más bajos de toda Zamora.",
     vibe: "Pizarra, arribes, mínimo precio.",
     priceM2: 250,
-    yoyPrice: 5,
+    yoyPrice: 8.5,
     tempAvg: 13,
     sunHours: 2750,
     rainfall: 550,
@@ -7285,7 +7599,8 @@ export const REGIONS_DATA = [
     airportKm: 110,
     protected: "PNat",
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "za-capital",
@@ -7297,7 +7612,7 @@ export const REGIONS_DATA = [
     description: "Zamora, capital del románico español. La ciudad con mayor concentración de iglesias románicas de Europa a precios muy bajos.",
     vibe: "Románico, UNESCO candidata, barata.",
     priceM2: 1117,
-    yoyPrice: 8,
+    yoyPrice: 18,
     tempAvg: 12,
     sunHours: 2700,
     rainfall: 380,
@@ -7308,7 +7623,8 @@ export const REGIONS_DATA = [
     airportKm: 121,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "za-benavente",
@@ -7320,7 +7636,7 @@ export const REGIONS_DATA = [
     description: "Benavente, cruce de autovías del noroeste. Paradores nacionales y buena posición entre Zamora, León y Galicia.",
     vibe: "Cruce de caminos, castillo, práctico.",
     priceM2: 625,
-    yoyPrice: 7,
+    yoyPrice: 15.5,
     tempAvg: 12,
     sunHours: 2600,
     rainfall: 500,
@@ -7331,7 +7647,8 @@ export const REGIONS_DATA = [
     airportKm: 66,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "za-sanabria",
@@ -7343,7 +7660,7 @@ export const REGIONS_DATA = [
     description: "El lago glaciar más grande de la península. PNat, lobos, pizarra y máxima tranquilidad. Segunda residencia a precio muy bajo.",
     vibe: "Glaciar, lobo, máxima tranquilidad.",
     priceM2: 494,
-    yoyPrice: 7,
+    yoyPrice: 16.5,
     tempAvg: 10.5,
     sunHours: 2400,
     rainfall: 1200,
@@ -7354,7 +7671,8 @@ export const REGIONS_DATA = [
     airportKm: 84,
     protected: "PNat",
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "za-campos",
@@ -7366,7 +7684,7 @@ export const REGIONS_DATA = [
     description: "El extremo zamorano de la Tierra de Campos. Cereal, palomares y horizontes infinitos con los precios más bajos de la comarca.",
     vibe: "Palomares, horizonte, muy barato.",
     priceM2: 367,
-    yoyPrice: 5,
+    yoyPrice: 10.5,
     tempAvg: 11.5,
     sunHours: 2600,
     rainfall: 420,
@@ -7377,7 +7695,8 @@ export const REGIONS_DATA = [
     airportKm: 80,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "za-vino",
@@ -7389,7 +7708,7 @@ export const REGIONS_DATA = [
     description: "El sur zamorano con viñas y cereales. DO Tierra del Vino y pueblos tranquilos entre Salamanca y Zamora a precios mínimos.",
     vibe: "Vino, cereal, muy asequible.",
     priceM2: 481,
-    yoyPrice: 6,
+    yoyPrice: 11.5,
     tempAvg: 13,
     sunHours: 2700,
     rainfall: 400,
@@ -7400,7 +7719,8 @@ export const REGIONS_DATA = [
     airportKm: 90,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "va-capital",
@@ -7412,7 +7732,7 @@ export const REGIONS_DATA = [
     description: "Valladolid capital, metrópoli del automóvil español. AVE a Madrid en 55 min y precio muy inferior a la capital.",
     vibe: "Urbano, industria, AVE, asequible.",
     priceM2: 2059,
-    yoyPrice: 9,
+    yoyPrice: 18.5,
     tempAvg: 12.5,
     sunHours: 2700,
     rainfall: 420,
@@ -7423,7 +7743,8 @@ export const REGIONS_DATA = [
     airportKm: 12,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "va-campos",
@@ -7435,7 +7756,7 @@ export const REGIONS_DATA = [
     description: "El norte vallisoletano de la Tierra de Campos. Cereal, barro cocido y los precios más bajos de la provincia.",
     vibe: "Castellano puro, llano, barato.",
     priceM2: 339,
-    yoyPrice: 5,
+    yoyPrice: 10.2,
     tempAvg: 11.5,
     sunHours: 2600,
     rainfall: 430,
@@ -7446,7 +7767,8 @@ export const REGIONS_DATA = [
     airportKm: 80,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "va-medina",
@@ -7458,7 +7780,7 @@ export const REGIONS_DATA = [
     description: "Medina del Campo y el triángulo vinícola entre Valladolid, Salamanca y Ávila. Feria histórica del vino y buena comunicación.",
     vibe: "Vino, historia, bien situado.",
     priceM2: 693,
-    yoyPrice: 8,
+    yoyPrice: 14.8,
     tempAvg: 12,
     sunHours: 2700,
     rainfall: 430,
@@ -7469,7 +7791,8 @@ export const REGIONS_DATA = [
     airportKm: 97,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "va-pinares",
@@ -7481,7 +7804,7 @@ export const REGIONS_DATA = [
     description: "Íscar y los pinares de Valladolid. Industria del mueble y madera con precios contenidos y buen acceso a la capital.",
     vibe: "Pinos, mueble, tranquilo.",
     priceM2: 668,
-    yoyPrice: 8,
+    yoyPrice: 16.1,
     tempAvg: 12,
     sunHours: 2700,
     rainfall: 430,
@@ -7492,7 +7815,8 @@ export const REGIONS_DATA = [
     airportKm: 110,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "va-tordesillas",
@@ -7504,7 +7828,7 @@ export const REGIONS_DATA = [
     description: "Tordesillas y el Tratado que dividió el mundo. Pequeño enclave histórico junto al Duero a muy buen precio.",
     vibe: "Histórico, Duero, tranquilo.",
     priceM2: 795,
-    yoyPrice: 7,
+    yoyPrice: 17,
     tempAvg: 12.5,
     sunHours: 2700,
     rainfall: 400,
@@ -7515,7 +7839,8 @@ export const REGIONS_DATA = [
     airportKm: 74,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sg-cuellar",
@@ -7527,7 +7852,7 @@ export const REGIONS_DATA = [
     description: "Cuéllar y sus pinares en el norte segoviano. Maderera histórica y los precios más bajos de la provincia.",
     vibe: "Pinos, castillo, muy barato.",
     priceM2: 654,
-    yoyPrice: 6,
+    yoyPrice: 12.5,
     tempAvg: 11.5,
     sunHours: 2650,
     rainfall: 430,
@@ -7538,7 +7863,8 @@ export const REGIONS_DATA = [
     airportKm: 96,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sg-riaza",
@@ -7550,7 +7876,7 @@ export const REGIONS_DATA = [
     description: "Riaza y La Pinilla ski resort. El noreste segoviano más demandado con acceso a Sierra y a Madrid en 1:30h.",
     vibe: "Sierra, ski, demandado.",
     priceM2: 901,
-    yoyPrice: 10,
+    yoyPrice: 16.8,
     tempAvg: 10.5,
     sunHours: 2600,
     rainfall: 600,
@@ -7561,7 +7887,8 @@ export const REGIONS_DATA = [
     airportKm: 88,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sg-nieva",
@@ -7573,7 +7900,7 @@ export const REGIONS_DATA = [
     description: "Llano segoviano al oeste. Pueblo con gótico expiatorio singular y los precios más asequibles de la provincia.",
     vibe: "Llano, tranquilo, muy barato.",
     priceM2: 574,
-    yoyPrice: 6,
+    yoyPrice: 11.2,
     tempAvg: 11.5,
     sunHours: 2650,
     rainfall: 400,
@@ -7584,7 +7911,8 @@ export const REGIONS_DATA = [
     airportKm: 65,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sg-capital",
@@ -7596,7 +7924,7 @@ export const REGIONS_DATA = [
     description: "Segovia capital, acueducto romano Patrimonio UNESCO. A 30 min de Madrid en AVE con demanda alta y precios en alza.",
     vibe: "UNESCO, cercanía Madrid, muy bello.",
     priceM2: 1819,
-    yoyPrice: 12,
+    yoyPrice: 18.5,
     tempAvg: 11,
     sunHours: 2700,
     rainfall: 500,
@@ -7607,7 +7935,8 @@ export const REGIONS_DATA = [
     airportKm: 75,
     protected: "PN",
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "sg-sepulveda",
@@ -7619,7 +7948,7 @@ export const REGIONS_DATA = [
     description: "Hoces del Duratón PNat y Sepúlveda medieval. Paisaje espectacular de cañones con precios muy asequibles.",
     vibe: "Cañones, románico, tranquilo.",
     priceM2: 913,
-    yoyPrice: 8,
+    yoyPrice: 14,
     tempAvg: 11,
     sunHours: 2650,
     rainfall: 500,
@@ -7630,7 +7959,8 @@ export const REGIONS_DATA = [
     airportKm: 100,
     protected: "PNat",
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bu-capital",
@@ -7642,7 +7972,7 @@ export const REGIONS_DATA = [
     description: "Burgos capital, catedral gótica UNESCO y AVE a Madrid en 1:25h. Centro industrial activo con precios muy por debajo de Madrid.",
     vibe: "Catedral, AVE, frío pero bien.",
     priceM2: 1938,
-    yoyPrice: 9,
+    yoyPrice: 18.5,
     tempAvg: 9.5,
     sunHours: 2400,
     rainfall: 650,
@@ -7653,7 +7983,8 @@ export const REGIONS_DATA = [
     airportKm: 10,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bu-arlanza",
@@ -7665,7 +7996,7 @@ export const REGIONS_DATA = [
     description: "Lerma y el río Arlanza. Palacio ducal, Covarrubias románica y pueblos castellanos a precios muy bajos.",
     vibe: "Barroco, románico, tranquilo.",
     priceM2: 508,
-    yoyPrice: 7,
+    yoyPrice: 12,
     tempAvg: 10.5,
     sunHours: 2500,
     rainfall: 600,
@@ -7676,7 +8007,8 @@ export const REGIONS_DATA = [
     airportKm: 167,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bu-demanda",
@@ -7688,7 +8020,7 @@ export const REGIONS_DATA = [
     description: "Sierra de la Demanda y los Obarenes. Bosques de robles, hayedos y el ambiente más verde del sur burgalés a precios mínimos.",
     vibe: "Forestal, verde, muy tranquilo.",
     priceM2: 525,
-    yoyPrice: 7,
+    yoyPrice: 13.5,
     tempAvg: 9.5,
     sunHours: 2300,
     rainfall: 800,
@@ -7699,7 +8031,8 @@ export const REGIONS_DATA = [
     airportKm: 187,
     protected: null,
     beauty: 8,
-    beachKm: 142
+    beachKm: 142,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bu-ebro-bur",
@@ -7711,7 +8044,7 @@ export const REGIONS_DATA = [
     description: "Los embalses del norte burgalés donde nace el Ebro. Paisaje tranquilo y muy rural con precios mínimos.",
     vibe: "Embalses, muy rural, baratísimo.",
     priceM2: 1465,
-    yoyPrice: 6,
+    yoyPrice: 11,
     tempAvg: 10,
     sunHours: 2200,
     rainfall: 900,
@@ -7722,7 +8055,8 @@ export const REGIONS_DATA = [
     airportKm: 147,
     protected: null,
     beauty: 6,
-    beachKm: 146
+    beachKm: 146,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bu-bureba",
@@ -7734,7 +8068,7 @@ export const REGIONS_DATA = [
     description: "Briviesca y la Bureba, corredor histórico hacia el País Vasco. Castillos y cereales con precios muy contenidos.",
     vibe: "Histórico, cereal, práctico.",
     priceM2: 589,
-    yoyPrice: 6,
+    yoyPrice: 12.5,
     tempAvg: 10.5,
     sunHours: 2400,
     rainfall: 600,
@@ -7745,7 +8079,8 @@ export const REGIONS_DATA = [
     airportKm: 173,
     protected: null,
     beauty: 5,
-    beachKm: 150
+    beachKm: 150,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bu-merindades",
@@ -7757,7 +8092,7 @@ export const REGIONS_DATA = [
     description: "Frías y las Merindades, el norte burgalés verde con cascadas y pueblos medievales. Turismo creciente a precios accesibles.",
     vibe: "Cascadas, medieval, hermoso.",
     priceM2: 708,
-    yoyPrice: 10,
+    yoyPrice: 14,
     tempAvg: 11,
     sunHours: 2200,
     rainfall: 1000,
@@ -7768,7 +8103,8 @@ export const REGIONS_DATA = [
     airportKm: 174,
     protected: "PNat",
     beauty: 10,
-    beachKm: 150
+    beachKm: 150,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bu-montes-oca",
@@ -7780,7 +8116,7 @@ export const REGIONS_DATA = [
     description: "Camino de Santiago y los montes de Oca. Bosques y silencio en el corazón del Camino a precios muy reducidos.",
     vibe: "Camino, bosque, silencioso.",
     priceM2: 442,
-    yoyPrice: 6,
+    yoyPrice: 11.5,
     tempAvg: 9.5,
     sunHours: 2400,
     rainfall: 700,
@@ -7791,7 +8127,8 @@ export const REGIONS_DATA = [
     airportKm: 189,
     protected: null,
     beauty: 6,
-    beachKm: 149
+    beachKm: 149,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bu-odra",
@@ -7803,7 +8140,7 @@ export const REGIONS_DATA = [
     description: "Los páramos del noroeste burgalés. Aridez, castillos medievales y los precios más bajos de toda la provincia.",
     vibe: "Páramo, muy barato, silencio total.",
     priceM2: 353,
-    yoyPrice: 6,
+    yoyPrice: 10.5,
     tempAvg: 10.5,
     sunHours: 2500,
     rainfall: 500,
@@ -7814,7 +8151,8 @@ export const REGIONS_DATA = [
     airportKm: 70,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bu-ribera",
@@ -7826,7 +8164,7 @@ export const REGIONS_DATA = [
     description: "Aranda de Duero y la Ribera del Duero burgalesa. Vino DO de referencia mundial, cochinillo y buen acceso a Madrid por A-1.",
     vibe: "Vino, cochinillo, bien comunicado.",
     priceM2: 987,
-    yoyPrice: 9,
+    yoyPrice: 16,
     tempAvg: 11.5,
     sunHours: 2700,
     rainfall: 430,
@@ -7837,7 +8175,8 @@ export const REGIONS_DATA = [
     airportKm: 147,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "bu-trevino",
@@ -7849,7 +8188,7 @@ export const REGIONS_DATA = [
     description: "El condado de Treviño, enclave burgalés dentro de Álava. Curiosidad jurídica con precios castellanos en entorno vasco.",
     vibe: "Enclave singular, vasco-castellano.",
     priceM2: 1392,
-    yoyPrice: 8,
+    yoyPrice: 15,
     tempAvg: 11.5,
     sunHours: 2200,
     rainfall: 700,
@@ -7860,7 +8199,8 @@ export const REGIONS_DATA = [
     airportKm: 129,
     protected: null,
     beauty: 6,
-    beachKm: 128
+    beachKm: 128,
+    yoySource: "ipv_gemini"
   },
   {
     id: "pa-camino",
@@ -7872,7 +8212,7 @@ export const REGIONS_DATA = [
     description: "El llano camino palentino de Santiago. Iglesias románicas en cada pueblo y los precios más bajos de la meseta castellana.",
     vibe: "Peregrino, llano, muy barato.",
     priceM2: 445,
-    yoyPrice: 7,
+    yoyPrice: 12.5,
     tempAvg: 11,
     sunHours: 2550,
     rainfall: 450,
@@ -7883,7 +8223,8 @@ export const REGIONS_DATA = [
     airportKm: 110,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "pa-montana",
@@ -7895,7 +8236,7 @@ export const REGIONS_DATA = [
     description: "Picos de Europa sur, osos pardos y el románico más denso de Europa. La montaña más salvaje y más barata de Castilla y León.",
     vibe: "Osos, románico, impresionante.",
     priceM2: 578,
-    yoyPrice: 8,
+    yoyPrice: 18,
     tempAvg: 9.5,
     sunHours: 2300,
     rainfall: 1100,
@@ -7906,7 +8247,8 @@ export const REGIONS_DATA = [
     airportKm: 100,
     protected: "PNat",
     beauty: 9,
-    beachKm: 117
+    beachKm: 117,
+    yoySource: "ipv_gemini"
   },
   {
     id: "pa-campos",
@@ -7918,7 +8260,7 @@ export const REGIONS_DATA = [
     description: "La Tierra de Campos palentina. Llanura castellana de cereal con los precios absolutos más bajos de toda la meseta norte.",
     vibe: "Castellano puro, llano, baratísimo.",
     priceM2: 1257,
-    yoyPrice: 6,
+    yoyPrice: 14,
     tempAvg: 11.5,
     sunHours: 2600,
     rainfall: 430,
@@ -7929,7 +8271,8 @@ export const REGIONS_DATA = [
     airportKm: 118,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "le-babia",
@@ -7941,7 +8284,7 @@ export const REGIONS_DATA = [
     description: "Babia (donde los reyes castellanos iban \"a Babia\") y el Bierzo Alto. Reconversión minera con casas baratas y paisaje magnífico.",
     vibe: "Minero reconvertido, remoto, barato.",
     priceM2: 521,
-    yoyPrice: 7,
+    yoyPrice: 12.5,
     tempAvg: 10,
     sunHours: 2200,
     rainfall: 1100,
@@ -7952,7 +8295,8 @@ export const REGIONS_DATA = [
     airportKm: 130,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "le-bierzo",
@@ -7964,7 +8308,7 @@ export const REGIONS_DATA = [
     description: "El Bierzo, valle resguardado con DO Bierzo Mencía y Las Médulas romanas UNESCO. El mejor microclima de Castilla y León.",
     vibe: "Vino, Médulas, microclima benigno.",
     priceM2: 631,
-    yoyPrice: 9,
+    yoyPrice: 14.8,
     tempAvg: 13,
     sunHours: 2400,
     rainfall: 750,
@@ -7975,7 +8319,8 @@ export const REGIONS_DATA = [
     airportKm: 110,
     protected: null,
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "le-paramo",
@@ -7987,7 +8332,7 @@ export const REGIONS_DATA = [
     description: "La meseta sur leonesa. Llanura cerealista y regadío del Esla con los precios más bajos de la provincia.",
     vibe: "Llano, muy barato, silencioso.",
     priceM2: 553,
-    yoyPrice: 6,
+    yoyPrice: 11,
     tempAvg: 11.5,
     sunHours: 2600,
     rainfall: 450,
@@ -7998,7 +8343,8 @@ export const REGIONS_DATA = [
     airportKm: 53,
     protected: null,
     beauty: 3,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "le-montanas",
@@ -8010,7 +8356,7 @@ export const REGIONS_DATA = [
     description: "El norte leonés junto a Picos de Europa. Boñar, Riaño y los glaciares del Cantábrico con precios de interior montañoso.",
     vibe: "Glaciar, Picos, muy barato.",
     priceM2: 736,
-    yoyPrice: 7,
+    yoyPrice: 10.5,
     tempAvg: 9,
     sunHours: 2200,
     rainfall: 1300,
@@ -8021,7 +8367,8 @@ export const REGIONS_DATA = [
     airportKm: 96,
     protected: "PN",
     beauty: 10,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "le-maragateria",
@@ -8033,7 +8380,7 @@ export const REGIONS_DATA = [
     description: "La Maragatería y la Cabrera, los rincones más remotos y deprimidos de León. Tradiciones antiquísimas y precios de derribo.",
     vibe: "Antiguo, muy remoto, baratísimo.",
     priceM2: 542,
-    yoyPrice: 5,
+    yoyPrice: 9.8,
     tempAvg: 11,
     sunHours: 2400,
     rainfall: 800,
@@ -8044,7 +8391,8 @@ export const REGIONS_DATA = [
     airportKm: 130,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "le-campos-le",
@@ -8056,7 +8404,7 @@ export const REGIONS_DATA = [
     description: "El sector leonés de la Tierra de Campos. Campos de cereal con los precios más bajos de León.",
     vibe: "Cereal, llano, muy asequible.",
     priceM2: 422,
-    yoyPrice: 5,
+    yoyPrice: 10.2,
     tempAvg: 11.5,
     sunHours: 2550,
     rainfall: 430,
@@ -8067,7 +8415,8 @@ export const REGIONS_DATA = [
     airportKm: 79,
     protected: null,
     beauty: 3,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "le-capital",
@@ -8079,7 +8428,7 @@ export const REGIONS_DATA = [
     description: "León capital, catedral de vidrieras y descenso del Camino. Ciudad con mercado activo y precio muy por debajo de otras capitales.",
     vibe: "Catedral, tapeo, muy asequible.",
     priceM2: 1597,
-    yoyPrice: 9,
+    yoyPrice: 18.5,
     tempAvg: 11,
     sunHours: 2550,
     rainfall: 560,
@@ -8090,7 +8439,8 @@ export const REGIONS_DATA = [
     airportKm: 68,
     protected: null,
     beauty: 8,
-    beachKm: 85
+    beachKm: 85,
+    yoySource: "ipv_gemini"
   },
   {
     id: "so-almazan",
@@ -8102,7 +8452,7 @@ export const REGIONS_DATA = [
     description: "Almazán y el Duero sur soriano. Pequeña ciudad histórica con servicios básicos y los precios más bajos de toda Soria.",
     vibe: "Duero, histórico, muy barato.",
     priceM2: 553,
-    yoyPrice: 6,
+    yoyPrice: 12.5,
     tempAvg: 11.5,
     sunHours: 2650,
     rainfall: 450,
@@ -8113,7 +8463,8 @@ export const REGIONS_DATA = [
     airportKm: 135,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "so-capital",
@@ -8125,7 +8476,7 @@ export const REGIONS_DATA = [
     description: "Soria, la capital de provincia más pequeña y silenciosa de España. Campos de Castilla y los precios más bajos de la meseta.",
     vibe: "Silenciosa, Machado, muy tranquila.",
     priceM2: 1374,
-    yoyPrice: 7,
+    yoyPrice: 18,
     tempAvg: 10.5,
     sunHours: 2600,
     rainfall: 500,
@@ -8136,7 +8487,8 @@ export const REGIONS_DATA = [
     airportKm: 138,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "so-burgo-osma",
@@ -8148,7 +8500,7 @@ export const REGIONS_DATA = [
     description: "El Burgo de Osma, villa con catedral episcopal preciosa. El Berlín de Castilla y la Ribera del Duero soriana a precio mínimo.",
     vibe: "Catedral, vino, muy asequible.",
     priceM2: 599,
-    yoyPrice: 7,
+    yoyPrice: 14,
     tempAvg: 11,
     sunHours: 2650,
     rainfall: 450,
@@ -8159,7 +8511,8 @@ export const REGIONS_DATA = [
     airportKm: 126,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "so-pinares",
@@ -8171,7 +8524,7 @@ export const REGIONS_DATA = [
     description: "La Laguna Negra, el Moncayo y los pinares sorianos. Muy frío, muy tranquilo y absolutamente los precios más bajos de Castilla.",
     vibe: "Pinos, dinosaurios, ultra-barato.",
     priceM2: 652,
-    yoyPrice: 5,
+    yoyPrice: 10.5,
     tempAvg: 9,
     sunHours: 2500,
     rainfall: 650,
@@ -8182,7 +8535,8 @@ export const REGIONS_DATA = [
     airportKm: 120,
     protected: "PNat",
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "to-torrijos",
@@ -8194,7 +8548,7 @@ export const REGIONS_DATA = [
     description: "Torrijos y el periurbano oeste de Toledo. Zona en expansión residencial con acceso a Toledo capital en 20 min.",
     vibe: "Periurbano, en crecimiento, práctico.",
     priceM2: 955,
-    yoyPrice: 11,
+    yoyPrice: 11.5,
     tempAvg: 14.5,
     sunHours: 2900,
     rainfall: 420,
@@ -8205,7 +8559,8 @@ export const REGIONS_DATA = [
     airportKm: 60,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "to-oropesa",
@@ -8217,7 +8572,7 @@ export const REGIONS_DATA = [
     description: "Oropesa del Mar interior con Parador histórico. Extremo norte toledano muy tranquilo y asequible.",
     vibe: "Castillo, parador, muy tranquilo.",
     priceM2: 636,
-    yoyPrice: 8,
+    yoyPrice: 9.8,
     tempAvg: 15,
     sunHours: 2900,
     rainfall: 500,
@@ -8228,7 +8583,8 @@ export const REGIONS_DATA = [
     airportKm: 118,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "to-jara",
@@ -8240,7 +8596,7 @@ export const REGIONS_DATA = [
     description: "La Jara toledana, alcornocales y el Tajo. Una de las comarcas más despobladas de Castilla-La Mancha con precios simbólicos.",
     vibe: "Alcornoque, muy deprimido, baratísimo.",
     priceM2: 511,
-    yoyPrice: 6,
+    yoyPrice: 8.5,
     tempAvg: 15.5,
     sunHours: 2900,
     rainfall: 550,
@@ -8251,7 +8607,8 @@ export const REGIONS_DATA = [
     airportKm: 101,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "to-mancha",
@@ -8263,7 +8620,7 @@ export const REGIONS_DATA = [
     description: "La Mancha de Quijote, molinos y viñedos DO La Mancha. Llanura cultural con precios mínimos para grandes casas manchegas.",
     vibe: "Don Quijote, vino, llanura infinita.",
     priceM2: 562,
-    yoyPrice: 8,
+    yoyPrice: 10.2,
     tempAvg: 14.5,
     sunHours: 2950,
     rainfall: 380,
@@ -8274,7 +8631,8 @@ export const REGIONS_DATA = [
     airportKm: 50,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "to-ocana",
@@ -8297,7 +8655,8 @@ export const REGIONS_DATA = [
     airportKm: 50,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "to-sagra",
@@ -8309,7 +8668,7 @@ export const REGIONS_DATA = [
     description: "La Sagra, el gran dormitorio de Madrid al sur. Illescas, Seseña y crecimiento exponencial con la mayor demanda de Toledo.",
     vibe: "Dormitorio Madrid, en auge fuerte.",
     priceM2: 1519,
-    yoyPrice: 16,
+    yoyPrice: 14.5,
     tempAvg: 13.5,
     sunHours: 2800,
     rainfall: 380,
@@ -8320,7 +8679,8 @@ export const REGIONS_DATA = [
     airportKm: 64,
     protected: null,
     beauty: 3,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "to-montes",
@@ -8332,7 +8692,7 @@ export const REGIONS_DATA = [
     description: "Los Montes de Toledo entre la Mancha y Extremadura. Caza, dehesas y una calma excepcional con precios muy bajos.",
     vibe: "Caza, dehesa, muy tranquilo.",
     priceM2: 772,
-    yoyPrice: 7,
+    yoyPrice: 9,
     tempAvg: 15,
     sunHours: 2900,
     rainfall: 600,
@@ -8343,7 +8703,8 @@ export const REGIONS_DATA = [
     airportKm: 113,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "to-sierra-sv",
@@ -8355,7 +8716,7 @@ export const REGIONS_DATA = [
     description: "La sierra noroeste de Toledo entre Ávila y la capital. El Puente del Arzobispo, aceite de oliva y precios de interior bajo.",
     vibe: "Sierra, aceite, muy tranquilo.",
     priceM2: 1011,
-    yoyPrice: 9,
+    yoyPrice: 10,
     tempAvg: 15.5,
     sunHours: 2900,
     rainfall: 700,
@@ -8366,7 +8727,8 @@ export const REGIONS_DATA = [
     airportKm: 110,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "to-talavera",
@@ -8378,7 +8740,7 @@ export const REGIONS_DATA = [
     description: "Talavera de la Reina, segunda ciudad de Toledo. Cerámica, Tajo y ciudad completa con precios muy por debajo de la capital.",
     vibe: "Cerámica, Tajo, gran ciudad barata.",
     priceM2: 1343,
-    yoyPrice: 10,
+    yoyPrice: 13.5,
     tempAvg: 14.5,
     sunHours: 2900,
     rainfall: 450,
@@ -8389,7 +8751,8 @@ export const REGIONS_DATA = [
     airportKm: 122,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "to-capital",
@@ -8401,7 +8764,7 @@ export const REGIONS_DATA = [
     description: "Toledo, Ciudad de las Tres Culturas UNESCO y AVE a Madrid en 30 min. Alta demanda de inversión y turismo. Escasez de oferta.",
     vibe: "UNESCO, cerca Madrid, muy demandado.",
     priceM2: 2150,
-    yoyPrice: 14,
+    yoyPrice: 15,
     tempAvg: 14,
     sunHours: 2900,
     rainfall: 360,
@@ -8412,7 +8775,8 @@ export const REGIONS_DATA = [
     airportKm: 75,
     protected: null,
     beauty: 10,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gu-alcarria-alta",
@@ -8424,7 +8788,7 @@ export const REGIONS_DATA = [
     description: "Pastrana y la Alcarria alta guadalajareña. Lavanda, miel y monumentos barrocos a precios muy contenidos.",
     vibe: "Lavanda, miel, tranquilo.",
     priceM2: 881,
-    yoyPrice: 8,
+    yoyPrice: 9.5,
     tempAvg: 13,
     sunHours: 2750,
     rainfall: 500,
@@ -8435,7 +8799,8 @@ export const REGIONS_DATA = [
     airportKm: 80,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gu-alcarria-baja",
@@ -8447,7 +8812,7 @@ export const REGIONS_DATA = [
     description: "La Alcarria más próxima a Madrid, en crecimiento como zona dormitorio. Buena autovía con precios inferiores a la capital.",
     vibe: "Dormitorio Madrid, accesible, subiendo.",
     priceM2: 820,
-    yoyPrice: 12,
+    yoyPrice: 11,
     tempAvg: 13,
     sunHours: 2750,
     rainfall: 480,
@@ -8458,7 +8823,8 @@ export const REGIONS_DATA = [
     airportKm: 60,
     protected: null,
     beauty: 5,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gu-campina",
@@ -8470,7 +8836,7 @@ export const REGIONS_DATA = [
     description: "La campiña sur guadalajareña, llanura cerealista entre Guadalajara y Cuenca. Precios mínimos en entorno muy tranquilo.",
     vibe: "Llano, cereal, muy barato.",
     priceM2: 1794,
-    yoyPrice: 9,
+    yoyPrice: 14.5,
     tempAvg: 13.5,
     sunHours: 2800,
     rainfall: 450,
@@ -8481,7 +8847,8 @@ export const REGIONS_DATA = [
     airportKm: 42,
     protected: null,
     beauty: 3,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gu-molina",
@@ -8493,7 +8860,7 @@ export const REGIONS_DATA = [
     description: "Molina de Aragón, el frío extremo de España y el nacimiento del Gallo. Comarca más despoblada de Guadalajara con precios mínimos.",
     vibe: "Frío extremo, remoto, muy barato.",
     priceM2: 511,
-    yoyPrice: 5,
+    yoyPrice: 7,
     tempAvg: 9.5,
     sunHours: 2600,
     rainfall: 500,
@@ -8504,7 +8871,8 @@ export const REGIONS_DATA = [
     airportKm: 150,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "gu-sierra",
@@ -8516,7 +8884,7 @@ export const REGIONS_DATA = [
     description: "La sierra norte de Guadalajara, Sigüenza y la arquitectura negra. Muy demandada por madrileños para segunda residencia alternativa.",
     vibe: "Pizarra negra, Sigüenza, especial.",
     priceM2: 737,
-    yoyPrice: 12,
+    yoyPrice: 8.5,
     tempAvg: 10.5,
     sunHours: 2500,
     rainfall: 700,
@@ -8527,7 +8895,8 @@ export const REGIONS_DATA = [
     airportKm: 68,
     protected: null,
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cu-alcarria",
@@ -8539,7 +8908,7 @@ export const REGIONS_DATA = [
     description: "La Alcarria conquense, entre Cuenca y Guadalajara. Miel, lavanda y pueblos encalados a precios muy contenidos.",
     vibe: "Miel, tranquilo, muy barato.",
     priceM2: 519,
-    yoyPrice: 7,
+    yoyPrice: 10.5,
     tempAvg: 12.5,
     sunHours: 2750,
     rainfall: 500,
@@ -8550,7 +8919,8 @@ export const REGIONS_DATA = [
     airportKm: 83,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cu-mancha-alta",
@@ -8562,7 +8932,7 @@ export const REGIONS_DATA = [
     description: "La Mancha alta conquense, vinos y paisaje manchego en la parte oeste de la provincia. Precios mínimos.",
     vibe: "Mancha, vino, muy barato.",
     priceM2: 709,
-    yoyPrice: 7,
+    yoyPrice: 11.8,
     tempAvg: 13.5,
     sunHours: 2900,
     rainfall: 400,
@@ -8573,7 +8943,8 @@ export const REGIONS_DATA = [
     airportKm: 80,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cu-mancha-baja",
@@ -8585,7 +8956,7 @@ export const REGIONS_DATA = [
     description: "El sur manchego conquense más árido. Llanura extrema a precios mínimos con buenas conexiones a Albacete y Murcia.",
     vibe: "Aridez, llano, baratísimo.",
     priceM2: 467,
-    yoyPrice: 7,
+    yoyPrice: 12.3,
     tempAvg: 14,
     sunHours: 2900,
     rainfall: 380,
@@ -8596,7 +8967,8 @@ export const REGIONS_DATA = [
     airportKm: 90,
     protected: null,
     beauty: 3,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cu-manchuela",
@@ -8608,7 +8980,7 @@ export const REGIONS_DATA = [
     description: "La Manchuela conquense, entre La Mancha y la Comunitat Valenciana. Hoces del Cabriel y buenos precios de transición.",
     vibe: "Hoces, vino, transición, barato.",
     priceM2: 566,
-    yoyPrice: 7,
+    yoyPrice: 13.5,
     tempAvg: 14,
     sunHours: 2850,
     rainfall: 420,
@@ -8619,7 +8991,8 @@ export const REGIONS_DATA = [
     airportKm: 171,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cu-serrania-alta",
@@ -8631,7 +9004,7 @@ export const REGIONS_DATA = [
     description: "La serranía alta conquense, el interior más aislado. Aldeas casi vacías y precios de derribo en entorno forestal espectacular.",
     vibe: "Ultra-remoto, forestal, muy barato.",
     priceM2: 522,
-    yoyPrice: 5,
+    yoyPrice: 9.8,
     tempAvg: 11,
     sunHours: 2650,
     rainfall: 750,
@@ -8642,7 +9015,8 @@ export const REGIONS_DATA = [
     airportKm: 140,
     protected: null,
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cu-serrania-baja",
@@ -8654,7 +9028,7 @@ export const REGIONS_DATA = [
     description: "El sur montañoso de Cuenca, Priego de Cuenca. Hoces del Escabas y nacimiento del Cuervo a precios muy accesibles.",
     vibe: "Hoces, nacimientos, tranquilo.",
     priceM2: 478,
-    yoyPrice: 6,
+    yoyPrice: 14.2,
     tempAvg: 12,
     sunHours: 2700,
     rainfall: 650,
@@ -8665,7 +9039,8 @@ export const REGIONS_DATA = [
     airportKm: 170,
     protected: null,
     beauty: 8,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cu-capital",
@@ -8677,7 +9052,7 @@ export const REGIONS_DATA = [
     description: "Cuenca ciudad, casas colgadas Patrimonio UNESCO y AVE a Madrid en 55 min. Alta demanda turística, buena inversión en casco.",
     vibe: "UNESCO, AVE, colgadas famosas.",
     priceM2: 1342,
-    yoyPrice: 10,
+    yoyPrice: 15.5,
     tempAvg: 11.5,
     sunHours: 2700,
     rainfall: 550,
@@ -8688,7 +9063,8 @@ export const REGIONS_DATA = [
     airportKm: 85,
     protected: "PNat",
     beauty: 10,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ab-hellin",
@@ -8700,7 +9076,7 @@ export const REGIONS_DATA = [
     description: "Hellín y el sur albaceteño, la zona más cálida y seca de la provincia. Tabaco, cereales y conexión a Murcia.",
     vibe: "Cálido, seco, práctico.",
     priceM2: 732,
-    yoyPrice: 8,
+    yoyPrice: 11.5,
     tempAvg: 16.5,
     sunHours: 3000,
     rainfall: 330,
@@ -8711,7 +9087,8 @@ export const REGIONS_DATA = [
     airportKm: 100,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ab-capital",
@@ -8723,7 +9100,7 @@ export const REGIONS_DATA = [
     description: "Albacete capital, AVE a Madrid en 55 min. Ciudad navajas y cuchas, servicios completos y precio muy contenido.",
     vibe: "AVE, navajas, práctico, asequible.",
     priceM2: 1709,
-    yoyPrice: 10,
+    yoyPrice: 14.8,
     tempAvg: 14,
     sunHours: 2900,
     rainfall: 380,
@@ -8734,7 +9111,8 @@ export const REGIONS_DATA = [
     airportKm: 147,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ab-almansa",
@@ -8746,7 +9124,7 @@ export const REGIONS_DATA = [
     description: "Almansa y el corredor hacia Valencia. Castillo espectacular, vino DO Almansa y buen acceso a la Comunitat Valenciana.",
     vibe: "Castillo, vino, corredor.",
     priceM2: 776,
-    yoyPrice: 9,
+    yoyPrice: 13.2,
     tempAvg: 15,
     sunHours: 2950,
     rainfall: 370,
@@ -8757,7 +9135,8 @@ export const REGIONS_DATA = [
     airportKm: 75,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ab-mancha",
@@ -8769,7 +9148,7 @@ export const REGIONS_DATA = [
     description: "La Mancha norte de Albacete, llanura manchega de viñedos. Precios mínimos para grandes propiedades rurales.",
     vibe: "Llanura, vino, baratísimo.",
     priceM2: 707,
-    yoyPrice: 7,
+    yoyPrice: 10.5,
     tempAvg: 14,
     sunHours: 2900,
     rainfall: 380,
@@ -8780,7 +9159,8 @@ export const REGIONS_DATA = [
     airportKm: 133,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ab-manchuela",
@@ -8792,7 +9172,7 @@ export const REGIONS_DATA = [
     description: "La Manchuela albacetense, Casas-Ibáñez y las hoces del Júcar. Zona rural tranquila entre La Mancha y Valencia.",
     vibe: "Hoces, rural, muy tranquilo.",
     priceM2: 599,
-    yoyPrice: 7,
+    yoyPrice: 10.8,
     tempAvg: 14,
     sunHours: 2850,
     rainfall: 400,
@@ -8803,7 +9183,8 @@ export const REGIONS_DATA = [
     airportKm: 80,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ab-sierra-alcaraz",
@@ -8815,7 +9196,7 @@ export const REGIONS_DATA = [
     description: "Las sierras sur de Albacete, nacimiento del Mundo y río Segura. Paisaje espectacular a precios mínimos para amantes del monte.",
     vibe: "Nacimiento ríos, espectacular, barato.",
     priceM2: 557,
-    yoyPrice: 7,
+    yoyPrice: 9.5,
     tempAvg: 12.5,
     sunHours: 2750,
     rainfall: 600,
@@ -8826,7 +9207,8 @@ export const REGIONS_DATA = [
     airportKm: 130,
     protected: "PNat",
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cr-alcudia",
@@ -8838,7 +9220,7 @@ export const REGIONS_DATA = [
     description: "Almadén y el Valle de Alcudia. Patrimonio minero único (mercurio) y dehesas en los Montes de Toledo meridionales.",
     vibe: "Minero histórico, dehesa, barato.",
     priceM2: 443,
-    yoyPrice: 7,
+    yoyPrice: 9.5,
     tempAvg: 16,
     sunHours: 2950,
     rainfall: 500,
@@ -8849,7 +9231,8 @@ export const REGIONS_DATA = [
     airportKm: 62,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cr-calatrava",
@@ -8861,7 +9244,7 @@ export const REGIONS_DATA = [
     description: "Ciudad Real capital con AVE a Madrid en 55 min. La capital más asequible del corredor AVE, en pleno crecimiento inmobiliario.",
     vibe: "AVE Madrid, asequible, en alza.",
     priceM2: 1178,
-    yoyPrice: 11,
+    yoyPrice: 14.2,
     tempAvg: 15.5,
     sunHours: 2950,
     rainfall: 400,
@@ -8872,7 +9255,8 @@ export const REGIONS_DATA = [
     airportKm: 24,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cr-mancha",
@@ -8884,7 +9268,7 @@ export const REGIONS_DATA = [
     description: "La Mancha oriental con Tomelloso y el mayor viñedo del mundo. Cooperativas de vino y amplias propiedades a precios mínimos.",
     vibe: "Mayor viñedo mundo, coop, muy barato.",
     priceM2: 756,
-    yoyPrice: 8,
+    yoyPrice: 11.8,
     tempAvg: 15.5,
     sunHours: 2950,
     rainfall: 380,
@@ -8895,7 +9279,8 @@ export const REGIONS_DATA = [
     airportKm: 63,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cr-montes",
@@ -8907,7 +9292,7 @@ export const REGIONS_DATA = [
     description: "Los Montes de Toledo en Ciudad Real. Cork oaks, caza mayor y una calma excepcional con precios de interior muy bajos.",
     vibe: "Alcornoque, caza, muy tranquilo.",
     priceM2: 561,
-    yoyPrice: 6,
+    yoyPrice: 8.9,
     tempAvg: 15,
     sunHours: 2900,
     rainfall: 550,
@@ -8918,7 +9303,8 @@ export const REGIONS_DATA = [
     airportKm: 70,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cr-montiel",
@@ -8930,7 +9316,7 @@ export const REGIONS_DATA = [
     description: "El Campo de Montiel, donde murió don Pedro I. Lagunas de Ruidera PNat y castillos medievales a precios mínimos.",
     vibe: "Lagunas, castillos, muy barato.",
     priceM2: 390,
-    yoyPrice: 6,
+    yoyPrice: 9.2,
     tempAvg: 15.5,
     sunHours: 2950,
     rainfall: 420,
@@ -8941,7 +9327,8 @@ export const REGIONS_DATA = [
     airportKm: 68,
     protected: "PNat",
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "cr-sierra-morena",
@@ -8953,7 +9340,7 @@ export const REGIONS_DATA = [
     description: "Puertollano, mayor ciudad industrial manchega. Post-industrial en transición a energías renovables con precios muy accesibles.",
     vibe: "Industrial, petroquímico, en transición.",
     priceM2: 711,
-    yoyPrice: 7,
+    yoyPrice: 13.5,
     tempAvg: 16,
     sunHours: 2950,
     rainfall: 450,
@@ -8964,7 +9351,8 @@ export const REGIONS_DATA = [
     airportKm: 90,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mad-henares",
@@ -8976,7 +9364,7 @@ export const REGIONS_DATA = [
     description: "Alcalá de Henares (UNESCO) y el corredor industrial del Henares. El eje de mayor crecimiento económico y residencial del este madrileño.",
     vibe: "Industrial, universitario, en auge.",
     priceM2: 2896,
-    yoyPrice: 17,
+    yoyPrice: 12.8,
     tempAvg: 14,
     sunHours: 2800,
     rainfall: 380,
@@ -8987,7 +9375,8 @@ export const REGIONS_DATA = [
     airportKm: 25,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mad-capital",
@@ -8999,7 +9388,7 @@ export const REGIONS_DATA = [
     description: "Madrid, la capital global de España. El mercado más líquido del país con demanda permanente y precios en ascenso continuo.",
     vibe: "Global, vibrante, el mercado rey.",
     priceM2: 7080,
-    yoyPrice: 18,
+    yoyPrice: 15.5,
     tempAvg: 15,
     sunHours: 2800,
     rainfall: 380,
@@ -9010,7 +9399,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mad-noroeste",
@@ -9022,7 +9412,7 @@ export const REGIONS_DATA = [
     description: "El Escorial y La Moraleja. El noroeste de máximo prestigio de la Comunidad de Madrid con chalet y aire de Sierra a alto precio.",
     vibe: "Prestigio, sierra, alto standing.",
     priceM2: 3774,
-    yoyPrice: 17,
+    yoyPrice: 14.9,
     tempAvg: 11.5,
     sunHours: 2700,
     rainfall: 600,
@@ -9033,7 +9423,8 @@ export const REGIONS_DATA = [
     airportKm: 40,
     protected: "PN",
     beauty: 8,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mad-norte",
@@ -9045,7 +9436,7 @@ export const REGIONS_DATA = [
     description: "Colmenar Viejo y Tres Cantos. El norte madrileño de alta renta con buenas infraestructuras y demanda residencial constante.",
     vibe: "Residencial, norte, alto nivel.",
     priceM2: 3599,
-    yoyPrice: 17,
+    yoyPrice: 13.5,
     tempAvg: 13.5,
     sunHours: 2750,
     rainfall: 450,
@@ -9056,7 +9447,8 @@ export const REGIONS_DATA = [
     airportKm: 20,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mad-sur",
@@ -9068,7 +9460,7 @@ export const REGIONS_DATA = [
     description: "Leganés, Getafe y Fuenlabrada. Los municipios más asequibles del área metropolitana madrileña con buenas infraestructuras.",
     vibe: "Obrero, asequible, bien comunicado.",
     priceM2: 2899,
-    yoyPrice: 17,
+    yoyPrice: 13.8,
     tempAvg: 15,
     sunHours: 2850,
     rainfall: 360,
@@ -9079,7 +9471,8 @@ export const REGIONS_DATA = [
     airportKm: 24,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mad-sureste",
@@ -9091,7 +9484,7 @@ export const REGIONS_DATA = [
     description: "Vallecas, Arganda del Rey y Rivas. El sureste en expansión con nuevos desarrollos urbanos y precios por debajo de la media madrileña.",
     vibe: "En expansión, nuevos barrios, sube.",
     priceM2: 2141,
-    yoyPrice: 17,
+    yoyPrice: 13.2,
     tempAvg: 15,
     sunHours: 2850,
     rainfall: 360,
@@ -9102,7 +9495,8 @@ export const REGIONS_DATA = [
     airportKm: 43,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mad-suroeste",
@@ -9114,7 +9508,7 @@ export const REGIONS_DATA = [
     description: "Móstoles, Alcorcón y Leganés oeste. Gran masa residencial consolidada al suroeste de Madrid con buena oferta y transporte.",
     vibe: "Consolidado, metro, accesible.",
     priceM2: 2053,
-    yoyPrice: 17,
+    yoyPrice: 14.5,
     tempAvg: 14.5,
     sunHours: 2800,
     rainfall: 370,
@@ -9125,7 +9519,8 @@ export const REGIONS_DATA = [
     airportKm: 37,
     protected: null,
     beauty: 4,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-palma",
@@ -9137,7 +9532,7 @@ export const REGIONS_DATA = [
     description: "Capital balear con casco histórico, catedral gótica y mercado inmobiliario muy activo. Reformas en Sa Calatrava y barrios históricos.",
     vibe: "Urbano, cosmopolita, mediterráneo.",
     priceM2: 6403,
-    yoyPrice: 12,
+    yoyPrice: 14.8,
     tempAvg: 17,
     sunHours: 2750,
     rainfall: 450,
@@ -9148,7 +9543,8 @@ export const REGIONS_DATA = [
     airportKm: 136,
     protected: null,
     beauty: 7,
-    beachKm: 56
+    beachKm: 56,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-calvia",
@@ -9160,7 +9556,7 @@ export const REGIONS_DATA = [
     description: "Costa suroeste con urbanizaciones consolidadas, calas de aguas turquesas y gran stock de pisos para reformar.",
     vibe: "Costero, sol garantizado, dinámico.",
     priceM2: 8340,
-    yoyPrice: 14,
+    yoyPrice: 16.5,
     tempAvg: 17,
     sunHours: 2800,
     rainfall: 400,
@@ -9171,7 +9567,8 @@ export const REGIONS_DATA = [
     airportKm: 120,
     protected: null,
     beauty: 9,
-    beachKm: 53
+    beachKm: 53,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-andratx",
@@ -9183,7 +9580,7 @@ export const REGIONS_DATA = [
     description: "Extremo suroeste de la isla, con Port d'Andratx exclusivo y casas de pueblo en el interior a reformar.",
     vibe: "Exclusivo, tranquilo, paisaje espectacular.",
     priceM2: 9602,
-    yoyPrice: 13,
+    yoyPrice: 15.9,
     tempAvg: 17,
     sunHours: 2850,
     rainfall: 380,
@@ -9194,7 +9591,8 @@ export const REGIONS_DATA = [
     airportKm: 134,
     protected: null,
     beauty: 9,
-    beachKm: 56
+    beachKm: 56,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-soller",
@@ -9206,7 +9604,7 @@ export const REGIONS_DATA = [
     description: "Valle de naranjos entre montaña y mar. Arquitectura modernista y casas señoriales con potencial de reforma.",
     vibe: "Romántico, verde, señorial.",
     priceM2: 6479,
-    yoyPrice: 13,
+    yoyPrice: 14.2,
     tempAvg: 17,
     sunHours: 2700,
     rainfall: 700,
@@ -9217,7 +9615,8 @@ export const REGIONS_DATA = [
     airportKm: 137,
     protected: "RB",
     beauty: 10,
-    beachKm: 59
+    beachKm: 59,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-deia",
@@ -9229,7 +9628,7 @@ export const REGIONS_DATA = [
     description: "Pueblo de artistas colgado sobre el Mediterráneo. Casas de piedra con vistas únicas, mercado muy selectivo.",
     vibe: "Artístico, íntimo, único en España.",
     priceM2: 7081,
-    yoyPrice: 15,
+    yoyPrice: 15.5,
     tempAvg: 17,
     sunHours: 2700,
     rainfall: 750,
@@ -9240,7 +9639,8 @@ export const REGIONS_DATA = [
     airportKm: 40,
     protected: "RB",
     beauty: 10,
-    beachKm: 2
+    beachKm: 2,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-escorca",
@@ -9252,7 +9652,7 @@ export const REGIONS_DATA = [
     description: "Municipio menos poblado de Baleares. Solo fincas rústicas en pleno Parque Nacional de la Serra de Tramuntana.",
     vibe: "Silencioso, prístino, aislamiento total.",
     priceM2: 5566,
-    yoyPrice: 7,
+    yoyPrice: 13,
     tempAvg: 16,
     sunHours: 2700,
     rainfall: 900,
@@ -9263,7 +9663,8 @@ export const REGIONS_DATA = [
     airportKm: 135,
     protected: "PN",
     beauty: 10,
-    beachKm: 55
+    beachKm: 55,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-esporles",
@@ -9275,7 +9676,7 @@ export const REGIONS_DATA = [
     description: "Municipios de la Tramuntana central con terrazas agrícolas y casas de pueblo a reformar junto al GR221.",
     vibe: "Rural, senderista, auténtico balear.",
     priceM2: 5870,
-    yoyPrice: 11,
+    yoyPrice: 12.5,
     tempAvg: 17,
     sunHours: 2720,
     rainfall: 700,
@@ -9286,7 +9687,8 @@ export const REGIONS_DATA = [
     airportKm: 30,
     protected: "RB",
     beauty: 10,
-    beachKm: 2
+    beachKm: 2,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-valldemossa",
@@ -9298,7 +9700,7 @@ export const REGIONS_DATA = [
     description: "Villa histórica donde Chopin y George Sand pasaron el invierno. Casas de piedra muy cotizadas para reformar.",
     vibe: "Histórico, cultural, muy cotizado.",
     priceM2: 6168,
-    yoyPrice: 13,
+    yoyPrice: 14,
     tempAvg: 16,
     sunHours: 2700,
     rainfall: 800,
@@ -9309,7 +9711,8 @@ export const REGIONS_DATA = [
     airportKm: 136,
     protected: "RB",
     beauty: 10,
-    beachKm: 63
+    beachKm: 63,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-alcudia",
@@ -9321,7 +9724,7 @@ export const REGIONS_DATA = [
     description: "Ciudad amurallada romana con bahía extensa. Oferta mixta de apartamentos en primera línea y casas para reformar en casco.",
     vibe: "Histórico, familiar, norte de la isla.",
     priceM2: 5981,
-    yoyPrice: 12,
+    yoyPrice: 15.2,
     tempAvg: 17,
     sunHours: 2800,
     rainfall: 500,
@@ -9332,7 +9735,8 @@ export const REGIONS_DATA = [
     airportKm: 86,
     protected: null,
     beauty: 8,
-    beachKm: 80
+    beachKm: 80,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-pollenca",
@@ -9344,7 +9748,7 @@ export const REGIONS_DATA = [
     description: "Villa artística con un Calvari icónico y Formentor al fondo. Casas señoriales y fincas para reformar con gran demanda.",
     vibe: "Artístico, elegante, norte genuino.",
     priceM2: 6311,
-    yoyPrice: 13,
+    yoyPrice: 14.9,
     tempAvg: 17,
     sunHours: 2800,
     rainfall: 550,
@@ -9355,7 +9759,8 @@ export const REGIONS_DATA = [
     airportKm: 131,
     protected: null,
     beauty: 9,
-    beachKm: 55
+    beachKm: 55,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-marratxi",
@@ -9367,7 +9772,7 @@ export const REGIONS_DATA = [
     description: "Municipio periurbano de Palma con acceso rápido a la capital y precios más asequibles que la ciudad.",
     vibe: "Práctico, bien conectado, familiar.",
     priceM2: 4594,
-    yoyPrice: 11,
+    yoyPrice: 13.8,
     tempAvg: 17,
     sunHours: 2800,
     rainfall: 420,
@@ -9378,7 +9783,8 @@ export const REGIONS_DATA = [
     airportKm: 135,
     protected: null,
     beauty: 6,
-    beachKm: 55
+    beachKm: 55,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-inca",
@@ -9390,7 +9796,7 @@ export const REGIONS_DATA = [
     description: "Capital del Raiguer, centro logístico e industrial de la isla. Buen mercado de pisos para reformar con servicios completos.",
     vibe: "Comercial, cuero, interior práctico.",
     priceM2: 3245,
-    yoyPrice: 10,
+    yoyPrice: 12.5,
     tempAvg: 17,
     sunHours: 2800,
     rainfall: 450,
@@ -9401,7 +9807,8 @@ export const REGIONS_DATA = [
     airportKm: 106,
     protected: null,
     beauty: 5,
-    beachKm: 66
+    beachKm: 66,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-binissalem",
@@ -9413,7 +9820,7 @@ export const REGIONS_DATA = [
     description: "DO Binissalem, viñedos y casas señoriales de piedra en el corazón del interior mallorquín. Reforma con encanto.",
     vibe: "Vinícola, tranquilo, interior auténtico.",
     priceM2: 5165,
-    yoyPrice: 11,
+    yoyPrice: 12,
     tempAvg: 17,
     sunHours: 2820,
     rainfall: 430,
@@ -9424,7 +9831,8 @@ export const REGIONS_DATA = [
     airportKm: 136,
     protected: null,
     beauty: 6,
-    beachKm: 57
+    beachKm: 57,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-sineu",
@@ -9436,7 +9844,7 @@ export const REGIONS_DATA = [
     description: "Corazón geográfico de Mallorca. Mercado medieval y fincas rústicas en plena llanura a precios accesibles.",
     vibe: "Rural, mercado, Mallorca profunda.",
     priceM2: 3551,
-    yoyPrice: 8,
+    yoyPrice: 11.5,
     tempAvg: 17,
     sunHours: 2850,
     rainfall: 420,
@@ -9447,7 +9855,8 @@ export const REGIONS_DATA = [
     airportKm: 106,
     protected: null,
     beauty: 6,
-    beachKm: 58
+    beachKm: 58,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-manacor",
@@ -9459,7 +9868,7 @@ export const REGIONS_DATA = [
     description: "Segunda ciudad de Mallorca, cuna de las perlas artificiales y Rafa Nadal. Mercado activo con casas a precio razonable.",
     vibe: "Comercial, perlas, bien equipado.",
     priceM2: 4052,
-    yoyPrice: 11,
+    yoyPrice: 13.5,
     tempAvg: 17,
     sunHours: 2850,
     rainfall: 450,
@@ -9470,7 +9879,8 @@ export const REGIONS_DATA = [
     airportKm: 136,
     protected: null,
     beauty: 7,
-    beachKm: 55
+    beachKm: 55,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-arta",
@@ -9482,7 +9892,7 @@ export const REGIONS_DATA = [
     description: "Villa amurallada con parque natural colindante. Casas de pueblo para reformar en entorno rural con turismo de calidad.",
     vibe: "Medieval, naturaleza, alternativo.",
     priceM2: 4759,
-    yoyPrice: 12,
+    yoyPrice: 14,
     tempAvg: 17,
     sunHours: 2850,
     rainfall: 500,
@@ -9493,7 +9903,8 @@ export const REGIONS_DATA = [
     airportKm: 95,
     protected: "PNat",
     beauty: 9,
-    beachKm: 79
+    beachKm: 79,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-capdepera",
@@ -9505,7 +9916,7 @@ export const REGIONS_DATA = [
     description: "Castillo medieval y Cala Ratjada. Apartamentos costeros y casas de pueblo para reformar en la punta nordeste.",
     vibe: "Costero, histórico, nordeste genuino.",
     priceM2: 4805,
-    yoyPrice: 12,
+    yoyPrice: 14.5,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 480,
@@ -9516,7 +9927,8 @@ export const REGIONS_DATA = [
     airportKm: 65,
     protected: null,
     beauty: 8,
-    beachKm: 12
+    beachKm: 12,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-sant-llorenc",
@@ -9528,7 +9940,7 @@ export const REGIONS_DATA = [
     description: "Sa Coma y Cala Millor en la costa este. Casas del interior del pueblo a reformar con acceso fácil a la playa.",
     vibe: "Familiar, costa este, tranquilo.",
     priceM2: 4245,
-    yoyPrice: 12,
+    yoyPrice: 13,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 450,
@@ -9539,7 +9951,8 @@ export const REGIONS_DATA = [
     airportKm: 106,
     protected: null,
     beauty: 8,
-    beachKm: 58
+    beachKm: 58,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-son-servera",
@@ -9551,7 +9964,7 @@ export const REGIONS_DATA = [
     description: "Costa dels Pins y Cala Bona. Municipio pequeño con casco antiguo y stock de casas para rehabilitar.",
     vibe: "Marino, tranquilo, escala humana.",
     priceM2: 4282,
-    yoyPrice: 13,
+    yoyPrice: 13.8,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 440,
@@ -9562,7 +9975,8 @@ export const REGIONS_DATA = [
     airportKm: 108,
     protected: null,
     beauty: 8,
-    beachKm: 43
+    beachKm: 43,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-felanitx",
@@ -9574,7 +9988,7 @@ export const REGIONS_DATA = [
     description: "Sureste interior con Cala d'Or en la costa. Gran término municipal con casas de pueblo y fincas asequibles.",
     vibe: "Interior tranquilo, acceso a la costa.",
     priceM2: 4436,
-    yoyPrice: 10,
+    yoyPrice: 13.2,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 430,
@@ -9585,7 +9999,8 @@ export const REGIONS_DATA = [
     airportKm: 133,
     protected: null,
     beauty: 7,
-    beachKm: 53
+    beachKm: 53,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-santanyi",
@@ -9597,7 +10012,7 @@ export const REGIONS_DATA = [
     description: "Calas Figuera, Mondrago y Santanyí pueblo. El sur más pintoresco de Mallorca con casas de piedra muy demandadas.",
     vibe: "Artístico, calas exclusivas, mercado semanal.",
     priceM2: 6429,
-    yoyPrice: 13,
+    yoyPrice: 15,
     tempAvg: 18,
     sunHours: 2950,
     rainfall: 380,
@@ -9608,7 +10023,8 @@ export const REGIONS_DATA = [
     airportKm: 109,
     protected: null,
     beauty: 9,
-    beachKm: 30
+    beachKm: 30,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-ses-salines",
@@ -9620,7 +10036,7 @@ export const REGIONS_DATA = [
     description: "Salines de Llevant, Colonia de Sant Jordi y Es Trenc. Parque natural y casas rurales en el extremo sur.",
     vibe: "Natural, salitre, exclusivo sur.",
     priceM2: 5818,
-    yoyPrice: 14,
+    yoyPrice: 14.5,
     tempAvg: 18,
     sunHours: 2950,
     rainfall: 360,
@@ -9631,7 +10047,8 @@ export const REGIONS_DATA = [
     airportKm: 135,
     protected: "PNat",
     beauty: 9,
-    beachKm: 55
+    beachKm: 55,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-campos",
@@ -9643,7 +10060,7 @@ export const REGIONS_DATA = [
     description: "Llanura sur con sa Vall y casas de posesión. Interior accesible con fincas rústicas para reformar a buen precio.",
     vibe: "Agrícola, tranquilo, sur interior.",
     priceM2: 4989,
-    yoyPrice: 10,
+    yoyPrice: 12.8,
     tempAvg: 17,
     sunHours: 2920,
     rainfall: 390,
@@ -9654,7 +10071,8 @@ export const REGIONS_DATA = [
     airportKm: 136,
     protected: null,
     beauty: 7,
-    beachKm: 56
+    beachKm: 56,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-llucmajor",
@@ -9666,7 +10084,7 @@ export const REGIONS_DATA = [
     description: "El término municipal más grande de Mallorca. Pueblo interior con costa al sur, buen precio para vivienda principal.",
     vibe: "Amplio, tranquilo, buen precio.",
     priceM2: 5090,
-    yoyPrice: 11,
+    yoyPrice: 13.9,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 410,
@@ -9677,7 +10095,8 @@ export const REGIONS_DATA = [
     airportKm: 136,
     protected: null,
     beauty: 7,
-    beachKm: 53
+    beachKm: 53,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-algaida",
@@ -9689,7 +10108,7 @@ export const REGIONS_DATA = [
     description: "Pla de Mallorca con Castellitx y Randa. Casas de pueblo tranquilas lejos del turismo costero y a buen precio.",
     vibe: "Interior, paz, llanura mallorquina.",
     priceM2: 3975,
-    yoyPrice: 9,
+    yoyPrice: 11.8,
     tempAvg: 17,
     sunHours: 2850,
     rainfall: 430,
@@ -9700,7 +10119,8 @@ export const REGIONS_DATA = [
     airportKm: 118,
     protected: null,
     beauty: 6,
-    beachKm: 48
+    beachKm: 48,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-porreres",
@@ -9712,7 +10132,7 @@ export const REGIONS_DATA = [
     description: "Pueblo del Pla con almazara, iglesia y plaza típica. Casas antiguas a reformar con excelente relación calidad-precio.",
     vibe: "Auténtico, olivarero, sin masas.",
     priceM2: 3870,
-    yoyPrice: 8,
+    yoyPrice: 11.5,
     tempAvg: 17,
     sunHours: 2850,
     rainfall: 440,
@@ -9723,7 +10143,8 @@ export const REGIONS_DATA = [
     airportKm: 110,
     protected: null,
     beauty: 6,
-    beachKm: 44
+    beachKm: 44,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-santa-margalida",
@@ -9735,7 +10156,7 @@ export const REGIONS_DATA = [
     description: "Pueblo agrícola del norte con Can Picafort en la costa. Combinación de casa interior asequible y playa accesible.",
     vibe: "Norte agrícola, familia, playa cercana.",
     priceM2: 4363,
-    yoyPrice: 11,
+    yoyPrice: 14,
     tempAvg: 17,
     sunHours: 2820,
     rainfall: 470,
@@ -9746,7 +10167,8 @@ export const REGIONS_DATA = [
     airportKm: 97,
     protected: null,
     beauty: 7,
-    beachKm: 66
+    beachKm: 66,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-muro",
@@ -9758,7 +10180,7 @@ export const REGIONS_DATA = [
     description: "Parque Natural s'Albufera colindante y playa de Muro. Casas de pueblo y apartamentos para reformar en el norte.",
     vibe: "Natural, tranquilo, norte interior.",
     priceM2: 3084,
-    yoyPrice: 10,
+    yoyPrice: 13.5,
     tempAvg: 17,
     sunHours: 2820,
     rainfall: 460,
@@ -9769,7 +10191,8 @@ export const REGIONS_DATA = [
     airportKm: 100,
     protected: "PNat",
     beauty: 7,
-    beachKm: 69
+    beachKm: 69,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-sa-pobla",
@@ -9781,7 +10204,7 @@ export const REGIONS_DATA = [
     description: "Capital agrícola del norte, tierra de patatas y hortalizas. Casas de pueblo a precio contenido con servicios propios.",
     vibe: "Agrícola, auténtico, sin turistas.",
     priceM2: 3076,
-    yoyPrice: 9,
+    yoyPrice: 12,
     tempAvg: 17,
     sunHours: 2800,
     rainfall: 480,
@@ -9792,7 +10215,8 @@ export const REGIONS_DATA = [
     airportKm: 101,
     protected: null,
     beauty: 6,
-    beachKm: 69
+    beachKm: 69,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-campanet",
@@ -9804,7 +10228,7 @@ export const REGIONS_DATA = [
     description: "Pie de la Tramuntana al norte. Cuevas de Campanet y pueblo tranquilo con casas antiguas muy asequibles.",
     vibe: "Tranquilo, base Tramuntana, económico.",
     priceM2: 4386,
-    yoyPrice: 8,
+    yoyPrice: 11,
     tempAvg: 17,
     sunHours: 2780,
     rainfall: 530,
@@ -9815,7 +10239,8 @@ export const REGIONS_DATA = [
     airportKm: 40,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-selva",
@@ -9827,7 +10252,7 @@ export const REGIONS_DATA = [
     description: "Caimari, con la carretera de Sa Pobla a Lluc. Pueblo con encanto y acceso a Tramuntana, casas asequibles.",
     vibe: "Pie de sierra, olivarero, tranquilo.",
     priceM2: 3998,
-    yoyPrice: 8,
+    yoyPrice: 11.2,
     tempAvg: 17,
     sunHours: 2780,
     rainfall: 550,
@@ -9838,7 +10263,8 @@ export const REGIONS_DATA = [
     airportKm: 125,
     protected: null,
     beauty: 7,
-    beachKm: 54
+    beachKm: 54,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-mancor",
@@ -9850,7 +10276,7 @@ export const REGIONS_DATA = [
     description: "Pequeño pueblo en la falda de la Tramuntana. Casas de piedra para reformar a precio contenido con vistas de sierra.",
     vibe: "Sereno, sierra, pequeño y especial.",
     priceM2: 3608,
-    yoyPrice: 9,
+    yoyPrice: 10.8,
     tempAvg: 17,
     sunHours: 2750,
     rainfall: 600,
@@ -9861,7 +10287,8 @@ export const REGIONS_DATA = [
     airportKm: 32,
     protected: "RB",
     beauty: 8,
-    beachKm: 0
+    beachKm: 0,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-lloseta",
@@ -9873,7 +10300,7 @@ export const REGIONS_DATA = [
     description: "Pueblo obrero del Raiguer con buena accesibilidad a Palma e Inca. Casas para reformar a precio de interior.",
     vibe: "Obrero, funcional, precio de interior.",
     priceM2: 3864,
-    yoyPrice: 9,
+    yoyPrice: 12.2,
     tempAvg: 17,
     sunHours: 2800,
     rainfall: 450,
@@ -9884,7 +10311,8 @@ export const REGIONS_DATA = [
     airportKm: 135,
     protected: null,
     beauty: 5,
-    beachKm: 55
+    beachKm: 55,
+    yoySource: "ipv_gemini"
   },
   {
     id: "mallorca-santa-maria",
@@ -9896,7 +10324,7 @@ export const REGIONS_DATA = [
     description: "Villa del Raiguer entre Palma e Inca, conocida por su mercado y bodegas. Buena opción de vivienda principal económica.",
     vibe: "Mercado, relajado, bien ubicado.",
     priceM2: 6013,
-    yoyPrice: 10,
+    yoyPrice: 12.8,
     tempAvg: 17,
     sunHours: 2820,
     rainfall: 430,
@@ -9907,7 +10335,8 @@ export const REGIONS_DATA = [
     airportKm: 20,
     protected: null,
     beauty: 6,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "menorca-mahon",
@@ -9919,7 +10348,7 @@ export const REGIONS_DATA = [
     description: "Capital de Menorca con el puerto natural más largo de Europa. Casas del casco histórico y pisos para reformar con servicios completos.",
     vibe: "Náutico, histórico, capital serena.",
     priceM2: 4302,
-    yoyPrice: 11,
+    yoyPrice: 14.8,
     tempAvg: 17,
     sunHours: 2700,
     rainfall: 600,
@@ -9930,7 +10359,8 @@ export const REGIONS_DATA = [
     airportKm: 8,
     protected: "RB",
     beauty: 8,
-    beachKm: 145
+    beachKm: 145,
+    yoySource: "ipv_gemini"
   },
   {
     id: "menorca-ciutadella",
@@ -9942,7 +10372,7 @@ export const REGIONS_DATA = [
     description: "Antigua capital con casco medieval bien conservado. Casas señoriales para reformar y calas turquesas al oeste.",
     vibe: "Medieval, festivo (Sant Joan), auténtico.",
     priceM2: 4379,
-    yoyPrice: 11,
+    yoyPrice: 13.2,
     tempAvg: 17,
     sunHours: 2700,
     rainfall: 580,
@@ -9953,7 +10383,8 @@ export const REGIONS_DATA = [
     airportKm: 45,
     protected: "RB",
     beauty: 8,
-    beachKm: 10
+    beachKm: 10,
+    yoySource: "ipv_gemini"
   },
   {
     id: "menorca-alaior",
@@ -9965,7 +10396,7 @@ export const REGIONS_DATA = [
     description: "Centro de la isla, quesos artesanos y talayots. Casas de pueblo tranquilas a precio razonable con buen acceso.",
     vibe: "Quesero, prehistórico, interior tranquilo.",
     priceM2: 4832,
-    yoyPrice: 9,
+    yoyPrice: 12.5,
     tempAvg: 17,
     sunHours: 2700,
     rainfall: 600,
@@ -9976,7 +10407,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: "RB",
     beauty: 7,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "menorca-castell",
@@ -9988,7 +10420,7 @@ export const REGIONS_DATA = [
     description: "Municipio de fundación británica junto a Mahón. Casas georgianas únicas en España y acceso directo al puerto.",
     vibe: "Histórico, singular, british heritage.",
     priceM2: 3821,
-    yoyPrice: 10,
+    yoyPrice: 15.5,
     tempAvg: 17,
     sunHours: 2700,
     rainfall: 590,
@@ -9999,7 +10431,8 @@ export const REGIONS_DATA = [
     airportKm: 8,
     protected: "RB",
     beauty: 8,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "menorca-mercadal",
@@ -10011,7 +10444,7 @@ export const REGIONS_DATA = [
     description: "Monte Toro y la costa norte virgen. Casas de pueblo en el centro geográfico de Menorca a precio contenido.",
     vibe: "Central, virgen, sin masas.",
     priceM2: 4855,
-    yoyPrice: 9,
+    yoyPrice: 11.9,
     tempAvg: 17,
     sunHours: 2700,
     rainfall: 620,
@@ -10022,7 +10455,8 @@ export const REGIONS_DATA = [
     airportKm: 20,
     protected: "RB",
     beauty: 9,
-    beachKm: 8
+    beachKm: 8,
+    yoySource: "ipv_gemini"
   },
   {
     id: "menorca-ferreries",
@@ -10034,7 +10468,7 @@ export const REGIONS_DATA = [
     description: "Interior verdadero de Menorca, artesanía y acceso a Cala Galdana. Casas sencillas a reformar al mejor precio de la isla.",
     vibe: "Artesanal, tranquilo, más asequible.",
     priceM2: 4046,
-    yoyPrice: 8,
+    yoyPrice: 11,
     tempAvg: 17,
     sunHours: 2700,
     rainfall: 630,
@@ -10045,7 +10479,8 @@ export const REGIONS_DATA = [
     airportKm: 25,
     protected: "RB",
     beauty: 7,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "menorca-sant-lluis",
@@ -10057,7 +10492,7 @@ export const REGIONS_DATA = [
     description: "Sur de Menorca con Binibequer y calas tranquilas. Casas de pueblo blancas y urbanizaciones de bajo perfil para reformar.",
     vibe: "Sureste tranquilo, calas, calidad de vida.",
     priceM2: 5432,
-    yoyPrice: 11,
+    yoyPrice: 14,
     tempAvg: 17,
     sunHours: 2750,
     rainfall: 570,
@@ -10068,7 +10503,8 @@ export const REGIONS_DATA = [
     airportKm: 12,
     protected: "RB",
     beauty: 9,
-    beachKm: 6
+    beachKm: 6,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ibiza-ciudad",
@@ -10080,7 +10516,7 @@ export const REGIONS_DATA = [
     description: "Capital ibicenca con Dalt Vila Patrimonio UNESCO. Pisos para reformar en el ensanche y barrio antiguo, mercado muy activo.",
     vibe: "Urbano, cosmopolita, muy demandado.",
     priceM2: 8253,
-    yoyPrice: 14,
+    yoyPrice: 15.8,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 400,
@@ -10091,7 +10527,8 @@ export const REGIONS_DATA = [
     airportKm: 12,
     protected: null,
     beauty: 8,
-    beachKm: 109
+    beachKm: 109,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ibiza-sant-antoni",
@@ -10103,7 +10540,7 @@ export const REGIONS_DATA = [
     description: "Oeste de Ibiza con la bahía de Sant Antoni. Apartamentos para reformar en costa a precio más accesible que Eivissa.",
     vibe: "Costero, activo, puesta de sol.",
     priceM2: 8083,
-    yoyPrice: 13,
+    yoyPrice: 12.5,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 400,
@@ -10114,7 +10551,8 @@ export const REGIONS_DATA = [
     airportKm: 14,
     protected: null,
     beauty: 8,
-    beachKm: 99
+    beachKm: 99,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ibiza-sant-joan",
@@ -10126,7 +10564,7 @@ export const REGIONS_DATA = [
     description: "Norte virgen de Ibiza con fincas rurales y casas de campo. El área más cotizada y difícil de encontrar oferta.",
     vibe: "Bohemio, exclusivo, naturaleza.",
     priceM2: 8472,
-    yoyPrice: 15,
+    yoyPrice: 10.2,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 420,
@@ -10137,7 +10575,8 @@ export const REGIONS_DATA = [
     airportKm: 30,
     protected: null,
     beauty: 10,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ibiza-sant-josep",
@@ -10149,7 +10588,7 @@ export const REGIONS_DATA = [
     description: "Sur de Ibiza con Cala Jondal y las Salinas. Fincas y villas para reformar en el área más demandada junto a la capital.",
     vibe: "Exclusivo, sur, salinas y calas.",
     priceM2: 8881,
-    yoyPrice: 14,
+    yoyPrice: 14.9,
     tempAvg: 17,
     sunHours: 2950,
     rainfall: 390,
@@ -10160,7 +10599,8 @@ export const REGIONS_DATA = [
     airportKm: 9,
     protected: null,
     beauty: 9,
-    beachKm: 97
+    beachKm: 97,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ibiza-santa-eularia",
@@ -10172,7 +10612,7 @@ export const REGIONS_DATA = [
     description: "Costa este con ambiente más familiar y tranquilo. Casas y pisos para reformar con buen equilibrio precio-calidad.",
     vibe: "Familiar, tranquilo, este de la isla.",
     priceM2: 9434,
-    yoyPrice: 13,
+    yoyPrice: 13.6,
     tempAvg: 17,
     sunHours: 2900,
     rainfall: 400,
@@ -10183,7 +10623,8 @@ export const REGIONS_DATA = [
     airportKm: 16,
     protected: null,
     beauty: 8,
-    beachKm: 114
+    beachKm: 114,
+    yoySource: "ipv_gemini"
   },
   {
     id: "formentera",
@@ -10195,7 +10636,7 @@ export const REGIONS_DATA = [
     description: "La isla más pequeña de las Baleares, playas de arena blanca fina sin masificación. Casas rurales muy escasas y cotizadas para reformar.",
     vibe: "Paraíso escaso, lento, sin masas.",
     priceM2: 13155,
-    yoyPrice: 16,
+    yoyPrice: 13.4,
     tempAvg: 18,
     sunHours: 2950,
     rainfall: 350,
@@ -10206,7 +10647,8 @@ export const REGIONS_DATA = [
     airportKm: 19,
     protected: "RB",
     beauty: 10,
-    beachKm: 110
+    beachKm: 110,
+    yoySource: "ipv_gemini"
   },
   {
     id: "hierro-valverde",
@@ -10218,7 +10660,7 @@ export const REGIONS_DATA = [
     description: "Única capital de provincia española sin salida al mar. Casas a reformar en la isla más remota de Canarias.",
     vibe: "Íntimo, reserva biosfera, autosuficiente.",
     priceM2: 1554,
-    yoyPrice: 8,
+    yoyPrice: 12.5,
     tempAvg: 19,
     sunHours: 2700,
     rainfall: 350,
@@ -10229,7 +10671,8 @@ export const REGIONS_DATA = [
     airportKm: 10,
     protected: "RB",
     beauty: 9,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "hierro-frontera",
@@ -10241,7 +10684,7 @@ export const REGIONS_DATA = [
     description: "Valle del Golfo en el oeste del Hierro, con viñedos y piscinas naturales. Casas de pueblo a precios mínimos.",
     vibe: "Volcánico, tranquilo, el fin del mundo.",
     priceM2: 2154,
-    yoyPrice: 7,
+    yoyPrice: 10,
     tempAvg: 19,
     sunHours: 2750,
     rainfall: 340,
@@ -10252,7 +10695,8 @@ export const REGIONS_DATA = [
     airportKm: 25,
     protected: "RB",
     beauty: 10,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "hierro-pinar",
@@ -10264,7 +10708,7 @@ export const REGIONS_DATA = [
     description: "Sur del Hierro con Sabinosa y El Pinar. Casas humildes a precio de entrada en entorno volcánico único.",
     vibe: "Volcánico, aislado, naturaleza pura.",
     priceM2: 1780,
-    yoyPrice: 6,
+    yoyPrice: 9.5,
     tempAvg: 20,
     sunHours: 2800,
     rainfall: 300,
@@ -10275,7 +10719,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: "RB",
     beauty: 9,
-    beachKm: 124
+    beachKm: 124,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lapalma-sc",
@@ -10287,7 +10732,7 @@ export const REGIONS_DATA = [
     description: "Capital palmera con arquitectura colonial canaria única. Casas antiguas del casco histórico listas para rehabilitar.",
     vibe: "Colonial, señorial, ciudad bonita.",
     priceM2: 2165,
-    yoyPrice: 14,
+    yoyPrice: 13.5,
     tempAvg: 18,
     sunHours: 2700,
     rainfall: 600,
@@ -10298,7 +10743,8 @@ export const REGIONS_DATA = [
     airportKm: 6,
     protected: "RB",
     beauty: 8,
-    beachKm: 24
+    beachKm: 24,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lapalma-llanos",
@@ -10310,7 +10756,7 @@ export const REGIONS_DATA = [
     description: "Mayor núcleo del Valle de Aridane, afectado por el volcán de 2021. Oportunidades de compra en zona de reconstrucción.",
     vibe: "Verde exuberante, recuperación, plataneras.",
     priceM2: 2541,
-    yoyPrice: 13,
+    yoyPrice: 12,
     tempAvg: 18,
     sunHours: 2750,
     rainfall: 500,
@@ -10321,7 +10767,8 @@ export const REGIONS_DATA = [
     airportKm: 20,
     protected: "RB",
     beauty: 8,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lapalma-barlovento",
@@ -10344,7 +10791,8 @@ export const REGIONS_DATA = [
     airportKm: 40,
     protected: "RB",
     beauty: 10,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lapalma-garafia",
@@ -10356,7 +10804,7 @@ export const REGIONS_DATA = [
     description: "Noroeste de La Palma, el más remoto y con mejores cielos estrellados del mundo. Fincas a precio de saldo.",
     vibe: "Estrellas, silencio, Roque de los Muchachos.",
     priceM2: 3130,
-    yoyPrice: 8,
+    yoyPrice: 7.5,
     tempAvg: 18,
     sunHours: 2650,
     rainfall: 700,
@@ -10367,7 +10815,8 @@ export const REGIONS_DATA = [
     airportKm: 50,
     protected: "RB",
     beauty: 10,
-    beachKm: 3
+    beachKm: 3,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lapalma-brena",
@@ -10379,7 +10828,7 @@ export const REGIONS_DATA = [
     description: "Sur de La Palma cerca de la capital. Casas con plátanos y frutales, zona tranquila de residentes permanentes.",
     vibe: "Tranquilo, platanero, vida de isla.",
     priceM2: 2441,
-    yoyPrice: 11,
+    yoyPrice: 10,
     tempAvg: 18,
     sunHours: 2750,
     rainfall: 500,
@@ -10390,7 +10839,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: "RB",
     beauty: 8,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lagomera-sansebastian",
@@ -10402,7 +10852,7 @@ export const REGIONS_DATA = [
     description: "Capital de La Gomera donde Colón hizo su última parada antes de América. Casas del casco a reformar.",
     vibe: "Histórico, tranquilo, isla pequeña.",
     priceM2: 1986,
-    yoyPrice: 14,
+    yoyPrice: 13.5,
     tempAvg: 20,
     sunHours: 2800,
     rainfall: 350,
@@ -10413,7 +10863,8 @@ export const REGIONS_DATA = [
     airportKm: 12,
     protected: null,
     beauty: 9,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lagomera-agulo",
@@ -10425,7 +10876,7 @@ export const REGIONS_DATA = [
     description: "Norte gomero con el bosque de Garajonay encima. Casas tradicionales en barrancos verdes a precio muy asequible.",
     vibe: "Laurisilva, bancales, tranquilidad total.",
     priceM2: 1542,
-    yoyPrice: 11,
+    yoyPrice: 9.8,
     tempAvg: 19,
     sunHours: 2600,
     rainfall: 900,
@@ -10436,7 +10887,8 @@ export const REGIONS_DATA = [
     airportKm: 20,
     protected: "PN",
     beauty: 10,
-    beachKm: 3
+    beachKm: 3,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lagomera-vallegranrey",
@@ -10448,7 +10900,7 @@ export const REGIONS_DATA = [
     description: "Oeste de La Gomera, destino de nómadas y viajeros. Casas de pueblo en barrancos con palmeras y playa negra.",
     vibe: "Alternativo, barrancos, puesta de sol.",
     priceM2: 1692,
-    yoyPrice: 14,
+    yoyPrice: 12.5,
     tempAvg: 20,
     sunHours: 2800,
     rainfall: 400,
@@ -10459,7 +10911,8 @@ export const REGIONS_DATA = [
     airportKm: 35,
     protected: null,
     beauty: 10,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lagomera-alajero",
@@ -10471,7 +10924,7 @@ export const REGIONS_DATA = [
     description: "Sur seco de La Gomera, cerca del aeropuerto. Casas de pueblo y fincas a los precios más bajos de la isla.",
     vibe: "Tranquilo, soleado, accesible desde aeropuerto.",
     priceM2: 1860,
-    yoyPrice: 9,
+    yoyPrice: 8.2,
     tempAvg: 21,
     sunHours: 3000,
     rainfall: 200,
@@ -10482,7 +10935,8 @@ export const REGIONS_DATA = [
     airportKm: 10,
     protected: null,
     beauty: 9,
-    beachKm: 3
+    beachKm: 3,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-santa-cruz",
@@ -10494,7 +10948,7 @@ export const REGIONS_DATA = [
     description: "Capital provincial con amplia oferta de pisos para reformar en barrios históricos. Buena relación precio-servicios.",
     vibe: "Urbano, carnaval, capital atlántica.",
     priceM2: 2907,
-    yoyPrice: 15,
+    yoyPrice: 10.5,
     tempAvg: 20,
     sunHours: 2700,
     rainfall: 200,
@@ -10505,7 +10959,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: null,
     beauty: 7,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-laguna",
@@ -10517,7 +10972,7 @@ export const REGIONS_DATA = [
     description: "Ciudad Patrimonio UNESCO y sede universitaria. Casas históricas y pisos para reformar con gran demanda de alquiler.",
     vibe: "Universitario, Patrimonio UNESCO, activo.",
     priceM2: 2427,
-    yoyPrice: 14,
+    yoyPrice: 9.8,
     tempAvg: 18,
     sunHours: 2500,
     rainfall: 500,
@@ -10528,7 +10983,8 @@ export const REGIONS_DATA = [
     airportKm: 10,
     protected: null,
     beauty: 7,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-puerto-cruz",
@@ -10540,7 +10996,7 @@ export const REGIONS_DATA = [
     description: "Turismo tradicional en el norte verde de Tenerife. Buen stock de apartamentos y pisos para reformar con inversión local.",
     vibe: "Verde, turismo histórico, norte canario.",
     priceM2: 3520,
-    yoyPrice: 16,
+    yoyPrice: 12.5,
     tempAvg: 19,
     sunHours: 2600,
     rainfall: 450,
@@ -10551,7 +11007,8 @@ export const REGIONS_DATA = [
     airportKm: 78,
     protected: null,
     beauty: 8,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-orotava",
@@ -10563,7 +11020,7 @@ export const REGIONS_DATA = [
     description: "Villa histórica en el Valle de La Orotava con casas coloniales canarias para restaurar. Clima privilegiado y vistas al Teide.",
     vibe: "Colonial, alfombras de flores, señorial.",
     priceM2: 2603,
-    yoyPrice: 13,
+    yoyPrice: 9,
     tempAvg: 19,
     sunHours: 2600,
     rainfall: 600,
@@ -10574,7 +11031,8 @@ export const REGIONS_DATA = [
     airportKm: 79,
     protected: null,
     beauty: 9,
-    beachKm: 145
+    beachKm: 145,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-realejos",
@@ -10586,7 +11044,7 @@ export const REGIONS_DATA = [
     description: "Norte tinerfeño verde y húmedo con casas de pueblo en ladera. Precios accesibles para vivir fuera de los núcleos turísticos.",
     vibe: "Verde, tranquilo, norte auténtico.",
     priceM2: 2428,
-    yoyPrice: 12,
+    yoyPrice: 8.5,
     tempAvg: 19,
     sunHours: 2550,
     rainfall: 650,
@@ -10597,7 +11055,8 @@ export const REGIONS_DATA = [
     airportKm: 71,
     protected: null,
     beauty: 7,
-    beachKm: 141
+    beachKm: 141,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-icod",
@@ -10609,7 +11068,7 @@ export const REGIONS_DATA = [
     description: "Drago milenario y arquitectura tradicional. Casas de pueblo a buen precio en el noroeste verde con vinos propios.",
     vibe: "Vinícola, drago, tranquilo noroeste.",
     priceM2: 1872,
-    yoyPrice: 11,
+    yoyPrice: 7.8,
     tempAvg: 19,
     sunHours: 2500,
     rainfall: 700,
@@ -10620,7 +11079,8 @@ export const REGIONS_DATA = [
     airportKm: 61,
     protected: null,
     beauty: 8,
-    beachKm: 132
+    beachKm: 132,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-buenavista",
@@ -10632,7 +11092,7 @@ export const REGIONS_DATA = [
     description: "Punta noroeste de Tenerife con Garachico reconstruida tras la lava y piscinas naturales. Casas antiguas muy asequibles.",
     vibe: "Renacer volcánico, marinero, auténtico.",
     priceM2: 2167,
-    yoyPrice: 10,
+    yoyPrice: 7,
     tempAvg: 19,
     sunHours: 2500,
     rainfall: 600,
@@ -10643,7 +11103,8 @@ export const REGIONS_DATA = [
     airportKm: 60,
     protected: null,
     beauty: 9,
-    beachKm: 126
+    beachKm: 126,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-guancha",
@@ -10655,7 +11116,7 @@ export const REGIONS_DATA = [
     description: "Municipios norteños tranquilos con casas de campo a precios muy contenidos, alejados del turismo del sur.",
     vibe: "Tranquilo, norteño, residencial.",
     priceM2: 1906,
-    yoyPrice: 9,
+    yoyPrice: 7.5,
     tempAvg: 19,
     sunHours: 2550,
     rainfall: 650,
@@ -10666,7 +11127,8 @@ export const REGIONS_DATA = [
     airportKm: 67,
     protected: null,
     beauty: 7,
-    beachKm: 136
+    beachKm: 136,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-tacoronte",
@@ -10678,7 +11140,7 @@ export const REGIONS_DATA = [
     description: "DO Tacoronte-Acentejo, el vino canario más reconocido. Casas de campo entre viñedos a precios aún asequibles.",
     vibe: "Vinícola, norteño, guachinches.",
     priceM2: 2731,
-    yoyPrice: 12,
+    yoyPrice: 9.2,
     tempAvg: 19,
     sunHours: 2600,
     rainfall: 600,
@@ -10689,7 +11151,8 @@ export const REGIONS_DATA = [
     airportKm: 94,
     protected: null,
     beauty: 7,
-    beachKm: 133
+    beachKm: 133,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-acentejo",
@@ -10701,7 +11164,7 @@ export const REGIONS_DATA = [
     description: "Costa norte con acantilados y viñedos. Casas con vistas al mar en ladera a precios accesibles respecto al sur.",
     vibe: "Vistas, viñedos, norte bello.",
     priceM2: 2991,
-    yoyPrice: 12,
+    yoyPrice: 9.5,
     tempAvg: 19,
     sunHours: 2600,
     rainfall: 580,
@@ -10712,7 +11175,8 @@ export const REGIONS_DATA = [
     airportKm: 88,
     protected: null,
     beauty: 8,
-    beachKm: 148
+    beachKm: 148,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-santa-ursula",
@@ -10724,7 +11188,7 @@ export const REGIONS_DATA = [
     description: "Municipio norteño bien conectado entre La Laguna y Puerto de la Cruz. Casas y pisos a reformar con buena relación precio-servicios.",
     vibe: "Conectado, tranquilo, norte verde.",
     priceM2: 2833,
-    yoyPrice: 13,
+    yoyPrice: 10,
     tempAvg: 19,
     sunHours: 2600,
     rainfall: 560,
@@ -10735,7 +11199,8 @@ export const REGIONS_DATA = [
     airportKm: 83,
     protected: null,
     beauty: 7,
-    beachKm: 148
+    beachKm: 148,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-tegueste",
@@ -10747,7 +11212,7 @@ export const REGIONS_DATA = [
     description: "Interior norte cerca de La Laguna. Casas de campo con frutales a precios muy contenidos para primera vivienda.",
     vibe: "Rural, tranquilo, cercano a la capital.",
     priceM2: 3232,
-    yoyPrice: 11,
+    yoyPrice: 8,
     tempAvg: 18,
     sunHours: 2500,
     rainfall: 600,
@@ -10758,7 +11223,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: null,
     beauty: 7,
-    beachKm: 139
+    beachKm: 139,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-el-rosario",
@@ -10770,7 +11236,7 @@ export const REGIONS_DATA = [
     description: "Municipio periurbano de Santa Cruz al este. Barrios residenciales con pisos a reformar a precios más bajos que la capital.",
     vibe: "Periurbano, práctico, precio contenido.",
     priceM2: 2532,
-    yoyPrice: 12,
+    yoyPrice: 10.8,
     tempAvg: 19,
     sunHours: 2700,
     rainfall: 250,
@@ -10781,7 +11247,8 @@ export const REGIONS_DATA = [
     airportKm: 94,
     protected: null,
     beauty: 6,
-    beachKm: 137
+    beachKm: 137,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-candelaria",
@@ -10793,7 +11260,7 @@ export const REGIONS_DATA = [
     description: "Santuario de la patrona de Canarias con playa negra. Casas y pisos a reformar en municipio de referencia cultural.",
     vibe: "Devocional, costero, en crecimiento.",
     priceM2: 2912,
-    yoyPrice: 14,
+    yoyPrice: 11.5,
     tempAvg: 20,
     sunHours: 2800,
     rainfall: 200,
@@ -10804,7 +11271,8 @@ export const REGIONS_DATA = [
     airportKm: 89,
     protected: null,
     beauty: 8,
-    beachKm: 135
+    beachKm: 135,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-arafo",
@@ -10816,7 +11284,7 @@ export const REGIONS_DATA = [
     description: "Pueblo de medianías al este de Tenerife. Casas tradicionales de campo a precios mínimos con buen acceso a servicios.",
     vibe: "Tranquilo, campo, medianías.",
     priceM2: 1760,
-    yoyPrice: 10,
+    yoyPrice: 8.2,
     tempAvg: 19,
     sunHours: 2700,
     rainfall: 400,
@@ -10827,7 +11295,8 @@ export const REGIONS_DATA = [
     airportKm: 84,
     protected: null,
     beauty: 7,
-    beachKm: 131
+    beachKm: 131,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-guimar",
@@ -10839,7 +11308,7 @@ export const REGIONS_DATA = [
     description: "Valle de Güímar y pirámides misteriosas. Clima seco y soleado con casas de pueblo a buen precio para vivienda habitual.",
     vibe: "Valle, pirámides, sol del este.",
     priceM2: 2448,
-    yoyPrice: 11,
+    yoyPrice: 8.8,
     tempAvg: 20,
     sunHours: 2800,
     rainfall: 200,
@@ -10850,7 +11319,8 @@ export const REGIONS_DATA = [
     airportKm: 85,
     protected: null,
     beauty: 8,
-    beachKm: 135
+    beachKm: 135,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-arico",
@@ -10873,7 +11343,8 @@ export const REGIONS_DATA = [
     airportKm: 75,
     protected: null,
     beauty: 7,
-    beachKm: 150
+    beachKm: 150,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-granadilla",
@@ -10885,7 +11356,7 @@ export const REGIONS_DATA = [
     description: "Municipio sur próximo al aeropuerto Reina Sofía. Urbanizaciones y casas en expansión con gran demanda por trabajadores del sur.",
     vibe: "Aeropuerto, en crecimiento, sur.",
     priceM2: 3112,
-    yoyPrice: 17,
+    yoyPrice: 13,
     tempAvg: 21,
     sunHours: 3000,
     rainfall: 100,
@@ -10896,7 +11367,8 @@ export const REGIONS_DATA = [
     airportKm: 65,
     protected: null,
     beauty: 7,
-    beachKm: 128
+    beachKm: 128,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-san-miguel",
@@ -10908,7 +11380,7 @@ export const REGIONS_DATA = [
     description: "Sur de Tenerife en pleno auge. Urbanizaciones de bajo perfil con sol garantizado y gran oferta para reformar.",
     vibe: "Sol garantizado, inversión, sur.",
     priceM2: 3351,
-    yoyPrice: 18,
+    yoyPrice: 13.5,
     tempAvg: 22,
     sunHours: 3000,
     rainfall: 80,
@@ -10919,7 +11391,8 @@ export const REGIONS_DATA = [
     airportKm: 59,
     protected: null,
     beauty: 7,
-    beachKm: 124
+    beachKm: 124,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-arona",
@@ -10931,7 +11404,7 @@ export const REGIONS_DATA = [
     description: "Los Cristianos y Las Américas, epicentro turístico del sur. Amplia oferta de pisos para reformar con alta rentabilidad.",
     vibe: "Turístico, sol, más demandado del sur.",
     priceM2: 4302,
-    yoyPrice: 22,
+    yoyPrice: 14.5,
     tempAvg: 22,
     sunHours: 3000,
     rainfall: 70,
@@ -10942,7 +11415,8 @@ export const REGIONS_DATA = [
     airportKm: 52,
     protected: null,
     beauty: 7,
-    beachKm: 149
+    beachKm: 149,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-adeje",
@@ -10954,7 +11428,7 @@ export const REGIONS_DATA = [
     description: "Costa Adeje, el área hotelera más lujosa del sur. Apartamentos y villas para reformar con alta demanda internacional.",
     vibe: "Lujo, sol, más exclusivo del sur.",
     priceM2: 5121,
-    yoyPrice: 24,
+    yoyPrice: 15,
     tempAvg: 22,
     sunHours: 3000,
     rainfall: 70,
@@ -10965,7 +11439,8 @@ export const REGIONS_DATA = [
     airportKm: 48,
     protected: null,
     beauty: 8,
-    beachKm: 139
+    beachKm: 139,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-guia-isora",
@@ -10977,7 +11452,7 @@ export const REGIONS_DATA = [
     description: "Alcalá y Playa San Juan en el suroeste, con el Teide visible desde la orilla. Casas a precio más bajo que Adeje.",
     vibe: "Suroeste tranquilo, vistas Teide, alternativa.",
     priceM2: 4983,
-    yoyPrice: 18,
+    yoyPrice: 12,
     tempAvg: 21,
     sunHours: 2950,
     rainfall: 80,
@@ -10988,7 +11463,8 @@ export const REGIONS_DATA = [
     airportKm: 49,
     protected: null,
     beauty: 8,
-    beachKm: 133
+    beachKm: 133,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-santiago",
@@ -11000,7 +11476,7 @@ export const REGIONS_DATA = [
     description: "Oeste de Tenerife entre Masca y Los Gigantes. Casas de pueblo y apartamentos costeros a precios asequibles.",
     vibe: "Volcánico, acantilados, oeste tranquilo.",
     priceM2: 4170,
-    yoyPrice: 16,
+    yoyPrice: 12.8,
     tempAvg: 20,
     sunHours: 2900,
     rainfall: 120,
@@ -11011,7 +11487,8 @@ export const REGIONS_DATA = [
     airportKm: 47,
     protected: null,
     beauty: 9,
-    beachKm: 125
+    beachKm: 125,
+    yoySource: "ipv_gemini"
   },
   {
     id: "tenerife-vilaflor",
@@ -11023,7 +11500,7 @@ export const REGIONS_DATA = [
     description: "Pueblo más alto de España a 1400 m, puerta al Parque Nacional del Teide. Casas tradicionales a precios mínimos.",
     vibe: "Altura, Teide, pueblo más alto de España.",
     priceM2: 2760,
-    yoyPrice: 9,
+    yoyPrice: 6.5,
     tempAvg: 13,
     sunHours: 2400,
     rainfall: 350,
@@ -11034,7 +11511,8 @@ export const REGIONS_DATA = [
     airportKm: 57,
     protected: "PN",
     beauty: 9,
-    beachKm: 145
+    beachKm: 145,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-laspalmas",
@@ -11046,7 +11524,7 @@ export const REGIONS_DATA = [
     description: "Capital con Las Canteras, una de las mejores playas urbanas del mundo. Pisos para reformar en Vegueta, Triana y Schamann.",
     vibe: "Urbano, cosmopolita, playa urbana.",
     priceM2: 3113,
-    yoyPrice: 16,
+    yoyPrice: 12.5,
     tempAvg: 21,
     sunHours: 2700,
     rainfall: 120,
@@ -11057,7 +11535,8 @@ export const REGIONS_DATA = [
     airportKm: 26,
     protected: null,
     beauty: 7,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-telde",
@@ -11069,7 +11548,7 @@ export const REGIONS_DATA = [
     description: "Segunda ciudad de Gran Canaria, cerca del aeropuerto. Amplia oferta de pisos para reformar con precios contenidos.",
     vibe: "Urbano, práctico, precios bajos.",
     priceM2: 2194,
-    yoyPrice: 13,
+    yoyPrice: 10.8,
     tempAvg: 21,
     sunHours: 2750,
     rainfall: 100,
@@ -11080,7 +11559,8 @@ export const REGIONS_DATA = [
     airportKm: 35,
     protected: null,
     beauty: 6,
-    beachKm: 109
+    beachKm: 109,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-arucas",
@@ -11092,7 +11572,7 @@ export const REGIONS_DATA = [
     description: "Ciudad del ron y la catedral de piedra. Casas de pueblo en el norte verde con servicios propios y buen precio.",
     vibe: "Norte verde, ron, catedral volcánica.",
     priceM2: 1916,
-    yoyPrice: 11,
+    yoyPrice: 9.5,
     tempAvg: 20,
     sunHours: 2650,
     rainfall: 350,
@@ -11103,7 +11583,8 @@ export const REGIONS_DATA = [
     airportKm: 26,
     protected: null,
     beauty: 7,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-galdar",
@@ -11115,7 +11596,7 @@ export const REGIONS_DATA = [
     description: "Antigua capital guanche con Cueva Pintada. Casas de pueblo antiguas para reformar a precios muy accesibles.",
     vibe: "Prehispánico, histórico, precio contenido.",
     priceM2: 1596,
-    yoyPrice: 10,
+    yoyPrice: 9,
     tempAvg: 20,
     sunHours: 2650,
     rainfall: 320,
@@ -11126,7 +11607,8 @@ export const REGIONS_DATA = [
     airportKm: 26,
     protected: null,
     beauty: 7,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-agaete",
@@ -11138,7 +11620,7 @@ export const REGIONS_DATA = [
     description: "El Puerto de Las Nieves y el valle de Agaete con café canario. Casas tradicionales en enclave entre montaña y mar.",
     vibe: "Café, marina, noroeste especial.",
     priceM2: 2076,
-    yoyPrice: 12,
+    yoyPrice: 8.5,
     tempAvg: 20,
     sunHours: 2700,
     rainfall: 280,
@@ -11149,7 +11631,8 @@ export const REGIONS_DATA = [
     airportKm: 26,
     protected: null,
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-moya",
@@ -11161,7 +11644,7 @@ export const REGIONS_DATA = [
     description: "Norte agrícola con queso de flor y costas escarpadas. Casas de pueblo a precios mínimos alejadas del turismo.",
     vibe: "Queso de flor, agrícola, tranquilo.",
     priceM2: 1758,
-    yoyPrice: 9,
+    yoyPrice: 8,
     tempAvg: 20,
     sunHours: 2650,
     rainfall: 380,
@@ -11172,7 +11655,8 @@ export const REGIONS_DATA = [
     airportKm: 29,
     protected: null,
     beauty: 7,
-    beachKm: 112
+    beachKm: 112,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-firgas",
@@ -11184,7 +11668,7 @@ export const REGIONS_DATA = [
     description: "Interior norte con agua mineral famosa y calles escalonadas. Casas de pueblo muy baratas con clima fresco y húmedo.",
     vibe: "Fresco, verde, interior norte.",
     priceM2: 1305,
-    yoyPrice: 8,
+    yoyPrice: 7.5,
     tempAvg: 18,
     sunHours: 2400,
     rainfall: 600,
@@ -11195,7 +11679,8 @@ export const REGIONS_DATA = [
     airportKm: 35,
     protected: null,
     beauty: 7,
-    beachKm: 20
+    beachKm: 20,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-teror",
@@ -11207,7 +11692,7 @@ export const REGIONS_DATA = [
     description: "Villa señorial con porches coloniales canarios y la patrona de la isla. Casas históricas para restaurar con gran valor patrimonial.",
     vibe: "Colonial, religioso, casa con porche.",
     priceM2: 1753,
-    yoyPrice: 9,
+    yoyPrice: 8,
     tempAvg: 18,
     sunHours: 2500,
     rainfall: 500,
@@ -11218,7 +11703,8 @@ export const REGIONS_DATA = [
     airportKm: 21,
     protected: null,
     beauty: 8,
-    beachKm: 122
+    beachKm: 122,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-santabrigida",
@@ -11230,7 +11716,7 @@ export const REGIONS_DATA = [
     description: "Medianías del norte con Monte Lentiscal. Casas con jardín y viñedos a precio medio, muy demandadas por familias.",
     vibe: "Zona residencial, viñas, calidad de vida.",
     priceM2: 2166,
-    yoyPrice: 12,
+    yoyPrice: 9,
     tempAvg: 19,
     sunHours: 2600,
     rainfall: 400,
@@ -11241,7 +11727,8 @@ export const REGIONS_DATA = [
     airportKm: 26,
     protected: null,
     beauty: 8,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-sanmateo",
@@ -11253,7 +11740,7 @@ export const REGIONS_DATA = [
     description: "Cumbre central de Gran Canaria con mercado agrícola famoso. Casas de campo frescas a precios muy asequibles.",
     vibe: "Mercado, fresco, centro de la isla.",
     priceM2: 1996,
-    yoyPrice: 9,
+    yoyPrice: 7,
     tempAvg: 17,
     sunHours: 2400,
     rainfall: 450,
@@ -11264,7 +11751,8 @@ export const REGIONS_DATA = [
     airportKm: 14,
     protected: null,
     beauty: 8,
-    beachKm: 121
+    beachKm: 121,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-aguimes",
@@ -11276,7 +11764,7 @@ export const REGIONS_DATA = [
     description: "Sureste soleado con Arinaga industrial y casco histórico rehabilitado. Casas y pisos a buen precio cerca del aeropuerto.",
     vibe: "Soleado, histórico rehabilitado, práctico.",
     priceM2: 2292,
-    yoyPrice: 12,
+    yoyPrice: 10,
     tempAvg: 21,
     sunHours: 2900,
     rainfall: 80,
@@ -11287,7 +11775,8 @@ export const REGIONS_DATA = [
     airportKm: 26,
     protected: null,
     beauty: 7,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-ingenio",
@@ -11299,7 +11788,7 @@ export const REGIONS_DATA = [
     description: "Sureste entre Telde y Agüimes. Municipio residencial con buen acceso a aeropuerto y Las Palmas, precios contenidos.",
     vibe: "Residencial, práctico, sureste.",
     priceM2: 1572,
-    yoyPrice: 11,
+    yoyPrice: 10.5,
     tempAvg: 21,
     sunHours: 2900,
     rainfall: 80,
@@ -11310,7 +11799,8 @@ export const REGIONS_DATA = [
     airportKm: 26,
     protected: null,
     beauty: 6,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-tirajana",
@@ -11322,7 +11812,7 @@ export const REGIONS_DATA = [
     description: "Maspalomas y Playa del Inglés, el gran polo turístico del sur. Gran oferta de pisos para reformar con alta rentabilidad.",
     vibe: "Turístico, sol, mayor polo del sur.",
     priceM2: 5151,
-    yoyPrice: 22,
+    yoyPrice: 14,
     tempAvg: 22,
     sunHours: 3000,
     rainfall: 50,
@@ -11333,7 +11823,8 @@ export const REGIONS_DATA = [
     airportKm: 26,
     protected: null,
     beauty: 8,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-mogan",
@@ -11345,7 +11836,7 @@ export const REGIONS_DATA = [
     description: "Puerto de Mogán y Amadores. Área más exclusiva del suroeste con demanda internacional alta y pocas oportunidades de reforma.",
     vibe: "Venezia canaria, exclusivo, suroeste.",
     priceM2: 5011,
-    yoyPrice: 24,
+    yoyPrice: 13.5,
     tempAvg: 22,
     sunHours: 3000,
     rainfall: 40,
@@ -11356,7 +11847,8 @@ export const REGIONS_DATA = [
     airportKm: 26,
     protected: null,
     beauty: 9,
-    beachKm: null
+    beachKm: null,
+    yoySource: "ipv_gemini"
   },
   {
     id: "grancanaria-santalucia",
@@ -11368,7 +11860,7 @@ export const REGIONS_DATA = [
     description: "Interior sur entre Agüimes y Maspalomas. Casas de campo con buen sol y acceso a servicios a precio inferior al litoral.",
     vibe: "Interior sur, sol, precio contenido.",
     priceM2: 1958,
-    yoyPrice: 14,
+    yoyPrice: 11.5,
     tempAvg: 21,
     sunHours: 2900,
     rainfall: 80,
@@ -11379,7 +11871,8 @@ export const REGIONS_DATA = [
     airportKm: 26,
     protected: null,
     beauty: 7,
-    beachKm: 115
+    beachKm: 115,
+    yoySource: "ipv_gemini"
   },
   {
     id: "fuerteventura-laoliva",
@@ -11391,7 +11884,7 @@ export const REGIONS_DATA = [
     description: "Norte de Fuerteventura con Corralejo y las dunas. Apartamentos y pisos para reformar muy demandados por extranjeros y nómadas.",
     vibe: "Dunas, surfeo, norte más activo.",
     priceM2: 3905,
-    yoyPrice: 22,
+    yoyPrice: 13.5,
     tempAvg: 20,
     sunHours: 3000,
     rainfall: 100,
@@ -11402,7 +11895,8 @@ export const REGIONS_DATA = [
     airportKm: 20,
     protected: "RB",
     beauty: 9,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "fuerteventura-puerto",
@@ -11414,7 +11908,7 @@ export const REGIONS_DATA = [
     description: "Capital administrativa de Fuerteventura junto al aeropuerto. Pisos y casas para reformar con precios de mercado local.",
     vibe: "Capital, práctico, bien conectado.",
     priceM2: 2217,
-    yoyPrice: 16,
+    yoyPrice: 9.8,
     tempAvg: 20,
     sunHours: 3000,
     rainfall: 100,
@@ -11425,7 +11919,8 @@ export const REGIONS_DATA = [
     airportKm: 5,
     protected: "RB",
     beauty: 6,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "fuerteventura-antigua",
@@ -11437,7 +11932,7 @@ export const REGIONS_DATA = [
     description: "Centro de la isla con Caleta de Fuste. Urbanizaciones consolidadas y casas de pueblo a precio más contenido.",
     vibe: "Centro, familiar, precios medios.",
     priceM2: 3000,
-    yoyPrice: 14,
+    yoyPrice: 10.5,
     tempAvg: 21,
     sunHours: 3000,
     rainfall: 95,
@@ -11448,7 +11943,8 @@ export const REGIONS_DATA = [
     airportKm: 7,
     protected: "RB",
     beauty: 7,
-    beachKm: 130
+    beachKm: 130,
+    yoySource: "ipv_gemini"
   },
   {
     id: "fuerteventura-pajara",
@@ -11460,7 +11956,7 @@ export const REGIONS_DATA = [
     description: "Sur de Fuerteventura con Jandía y Costa Calma. Urbanizaciones turísticas con apartamentos para reformar en primera línea.",
     vibe: "Jandía, viento, playas infinitas.",
     priceM2: 3459,
-    yoyPrice: 18,
+    yoyPrice: 12,
     tempAvg: 21,
     sunHours: 3100,
     rainfall: 80,
@@ -11471,7 +11967,8 @@ export const REGIONS_DATA = [
     airportKm: 40,
     protected: "RB",
     beauty: 8,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "fuerteventura-tuineje",
@@ -11483,7 +11980,7 @@ export const REGIONS_DATA = [
     description: "Interior sur de Fuerteventura con pueblo tranquilo y escasa oferta. Casas bajas a precio de entrada para vida calmada.",
     vibe: "Interior desértico, tranquilo, precio base.",
     priceM2: 2582,
-    yoyPrice: 12,
+    yoyPrice: 8.5,
     tempAvg: 21,
     sunHours: 3000,
     rainfall: 80,
@@ -11494,7 +11991,8 @@ export const REGIONS_DATA = [
     airportKm: 35,
     protected: "RB",
     beauty: 7,
-    beachKm: 8
+    beachKm: 8,
+    yoySource: "ipv_gemini"
   },
   {
     id: "fuerteventura-betancuria",
@@ -11506,7 +12004,7 @@ export const REGIONS_DATA = [
     description: "Antigua capital de la isla, el municipio más pequeño de Fuerteventura. Casas históricas en pueblo casi intacto.",
     vibe: "Capital histórica, barranco, muy tranquilo.",
     priceM2: 1839,
-    yoyPrice: 9,
+    yoyPrice: 7,
     tempAvg: 20,
     sunHours: 2900,
     rainfall: 120,
@@ -11517,7 +12015,8 @@ export const REGIONS_DATA = [
     airportKm: 30,
     protected: "RB",
     beauty: 8,
-    beachKm: 15
+    beachKm: 15,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lanzarote-arrecife",
@@ -11529,7 +12028,7 @@ export const REGIONS_DATA = [
     description: "Capital de Lanzarote con puerto, playa del Reducto y servicios completos. Pisos para reformar a menor precio que zonas turísticas.",
     vibe: "Capital, marinero, precio más razonable.",
     priceM2: 2445,
-    yoyPrice: 16,
+    yoyPrice: 9.5,
     tempAvg: 21,
     sunHours: 2900,
     rainfall: 130,
@@ -11540,7 +12039,8 @@ export const REGIONS_DATA = [
     airportKm: 10,
     protected: "RB",
     beauty: 6,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lanzarote-tias",
@@ -11552,7 +12052,7 @@ export const REGIONS_DATA = [
     description: "Puerto del Carmen, la zona turística más popular. Apartamentos en primera línea para reformar con alta rentabilidad.",
     vibe: "Turístico, playa, mayor zona hotelera.",
     priceM2: 4020,
-    yoyPrice: 21,
+    yoyPrice: 12.5,
     tempAvg: 21,
     sunHours: 2950,
     rainfall: 120,
@@ -11563,7 +12063,8 @@ export const REGIONS_DATA = [
     airportKm: 12,
     protected: "RB",
     beauty: 8,
-    beachKm: 5
+    beachKm: 5,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lanzarote-yaiza",
@@ -11575,7 +12076,7 @@ export const REGIONS_DATA = [
     description: "Sur con Playa Blanca y los Jameos del Agua. Apartamentos y villas para reformar con vistas al Parque Timanfaya.",
     vibe: "Volcánico, lujoso sur, vistas únicas.",
     priceM2: 4053,
-    yoyPrice: 20,
+    yoyPrice: 13,
     tempAvg: 21,
     sunHours: 3000,
     rainfall: 110,
@@ -11586,7 +12087,8 @@ export const REGIONS_DATA = [
     airportKm: 24,
     protected: "RB",
     beauty: 8,
-    beachKm: 139
+    beachKm: 139,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lanzarote-teguise",
@@ -11598,7 +12100,7 @@ export const REGIONS_DATA = [
     description: "Antigua capital con Costa Teguise al este. Casas de pueblo blancas en casco histórico y apartamentos costeros para reformar.",
     vibe: "Colonial, mercadillo, norte activo.",
     priceM2: 3668,
-    yoyPrice: 15,
+    yoyPrice: 11,
     tempAvg: 20,
     sunHours: 2850,
     rainfall: 140,
@@ -11609,7 +12111,8 @@ export const REGIONS_DATA = [
     airportKm: 12,
     protected: "RB",
     beauty: 9,
-    beachKm: 10
+    beachKm: 10,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lanzarote-haria",
@@ -11621,7 +12124,7 @@ export const REGIONS_DATA = [
     description: "Valle de los mil palmeras en el norte de Lanzarote. Casas encaladas a precio contenido en el extremo más tranquilo.",
     vibe: "Palmeras, tranquilo, norte encalado.",
     priceM2: 3151,
-    yoyPrice: 12,
+    yoyPrice: 8.5,
     tempAvg: 19,
     sunHours: 2800,
     rainfall: 160,
@@ -11632,7 +12135,8 @@ export const REGIONS_DATA = [
     airportKm: 25,
     protected: "RB",
     beauty: 9,
-    beachKm: 10
+    beachKm: 10,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lanzarote-tinajo",
@@ -11644,7 +12148,7 @@ export const REGIONS_DATA = [
     description: "Oeste tranquilo junto al Parque Nacional de Timanfaya. Casas de pueblo con las mejores vistas a volcanes de la isla.",
     vibe: "Volcánico, paz, Timanfaya cerca.",
     priceM2: 2828,
-    yoyPrice: 10,
+    yoyPrice: 7,
     tempAvg: 21,
     sunHours: 2950,
     rainfall: 115,
@@ -11655,7 +12159,8 @@ export const REGIONS_DATA = [
     airportKm: 20,
     protected: "RB",
     beauty: 8,
-    beachKm: 10
+    beachKm: 10,
+    yoySource: "ipv_gemini"
   },
   {
     id: "lanzarote-sanbartolome",
@@ -11667,7 +12172,7 @@ export const REGIONS_DATA = [
     description: "Centro geográfico de Lanzarote con bodegas de viñas en ceniza volcánica. Casas de pueblo a precios razonables.",
     vibe: "Vinos La Geria, central, tranquilo.",
     priceM2: 3126,
-    yoyPrice: 15,
+    yoyPrice: 10.5,
     tempAvg: 21,
     sunHours: 2950,
     rainfall: 120,
@@ -11678,7 +12183,8 @@ export const REGIONS_DATA = [
     airportKm: 15,
     protected: "RB",
     beauty: 7,
-    beachKm: 8
+    beachKm: 8,
+    yoySource: "ipv_gemini"
   },
   {
     id: "ceuta",
@@ -11689,7 +12195,7 @@ export const REGIONS_DATA = [
     description: "Ciudad española en el norte de África con arquitectura multicultural única. Precio muy bajo respecto a otras ciudades costeras.",
     vibe: "Multicultural, estratégico, dos continentes.",
     priceM2: 2614,
-    yoyPrice: 8,
+    yoyPrice: 13.3,
     tempAvg: 18.5,
     sunHours: 2800,
     rainfall: 650,
@@ -11700,7 +12206,8 @@ export const REGIONS_DATA = [
     airportKm: 29,
     protected: null,
     beauty: 7,
-    beachKm: 149
+    beachKm: 149,
+    yoySource: "ipv_gemini"
   },
   {
     id: "melilla",
@@ -11711,7 +12218,7 @@ export const REGIONS_DATA = [
     description: "Ciudad española en el Mediterráneo oriental africano con modernismo único de Enrique Nieto. Gran oportunidad de compra para reformar.",
     vibe: "Modernismo, Mediterráneo, singular.",
     priceM2: 2064,
-    yoyPrice: 7,
+    yoyPrice: 12.8,
     tempAvg: 17.5,
     sunHours: 2750,
     rainfall: 380,
@@ -11722,6 +12229,7 @@ export const REGIONS_DATA = [
     airportKm: 180,
     protected: null,
     beauty: 6,
-    beachKm: 66
+    beachKm: 66,
+    yoySource: "ipv_gemini"
   }
 ];

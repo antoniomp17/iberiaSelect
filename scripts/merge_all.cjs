@@ -22,10 +22,18 @@ const SOURCES = [
   },
   {
     file: path.join('data_audit', 'idealista_prices.json'),
-    fields: ['priceM2'],
+    fields: ['priceM2', 'yoyPrice'],
     filter: r => r.priceM2 && r.priceM2 > 0,
-    transform: r => ({ priceM2: r.priceM2 }),
+    transform: r => ({ priceM2: r.priceM2, yoyPrice: r.yoyPrice ?? null }),
     label: 'Precios Idealista',
+  },
+  {
+    file: path.join('data_audit', 'yoy_prices.json'),
+    fields: ['yoyPrice', 'yoySource'],
+    // Solo aplica si yoyPrice aún es null (Idealista tiene prioridad si lo sacó)
+    filter: r => r.yoyPrice !== undefined,
+    transform: r => ({ yoyPrice: r.yoyPrice, yoySource: r.yoySource }),
+    label: 'YoY estimado (IPV + Gemini)',
   },
 ];
 
@@ -39,9 +47,10 @@ function loadRegions() {
 function saveRegions(code, match, regions) {
   const backup = REGIONS_FILE + '.bak.' + Date.now();
   fs.copyFileSync(REGIONS_FILE, backup);
+  const prefix = match[0].slice(0, match[0].indexOf(match[1])); // 'export const REGIONS_DATA = '
   const newContent =
     code.slice(0, code.indexOf(match[0])) +
-    match[1] +
+    prefix +
     JSON.stringify(regions, null, 2).replace(/"([a-zA-Z_][a-zA-Z0-9_]*)"\s*:/g, '$1:') +
     ';';
   fs.writeFileSync(REGIONS_FILE, newContent, 'utf8');

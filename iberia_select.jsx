@@ -314,7 +314,7 @@ const SimilarRegions = ({ region }) => {
 };
 
 const AppHeader = () => {
-  const { view, setView } = useCtx();
+  const { view, setView, compareIds } = useCtx();
   const { ink, paper, accent } = S;
   return (
     <header className="sticky top-0 z-50 border-b" style={{ background: `${paper}F0`, borderColor: ink, backdropFilter: 'blur(8px)' }}>
@@ -324,13 +324,25 @@ const AppHeader = () => {
           <span className="text-xl italic" style={{ ...S.fontDisplay, color: accent, fontWeight: 300 }}>Select</span>
         </button>
         <nav className="flex flex-wrap gap-x-4 gap-y-2 text-xs uppercase tracking-widest" style={S.fontBody}>
-          {[['settings','Pesos'],['game','Explorar'],['ranking','Ranking'],['diary','Diario']].map(([v, l]) => (
+          {[['settings','Pesos'],['game','Explorar'],['ranking','Ranking']].map(([v, l]) => (
             <button key={v} onClick={() => setView(v)} className="relative py-1 shrink-0"
               style={{ color: view === v ? accent : ink, opacity: view === v ? 1 : 0.6 }}>
               {l}
               {view === v && <span className="absolute -bottom-3 left-0 right-0" style={{ background: accent, height: '2px' }} />}
             </button>
           ))}
+          <button onClick={() => setView('compare')} className="relative py-1 shrink-0 flex items-center gap-1.5"
+            style={{ color: view === 'compare' ? accent : compareIds.length > 0 ? accent : ink,
+                     opacity: view === 'compare' ? 1 : compareIds.length > 0 ? 0.9 : 0.35 }}>
+            Comparar
+            {compareIds.length > 0 && (
+              <span className="text-xs tabular-nums px-1.5 py-0.5 rounded-sm leading-none"
+                style={{ background: accent, color: paper, fontWeight: 700 }}>
+                {compareIds.length}
+              </span>
+            )}
+            {view === 'compare' && <span className="absolute -bottom-3 left-0 right-0" style={{ background: accent, height: '2px' }} />}
+          </button>
         </nav>
       </div>
     </header>
@@ -359,9 +371,9 @@ const IntroView = () => {
           Estudio inmobiliario · {REGIONS_DATA.length} comarcas analizadas
         </div>
         <h1 className="tracking-tight mb-6" style={{ ...S.fontDisplay, color: ink, lineHeight: 0.88 }}>
-          <span className="block text-5xl font-black">¿Dónde</span>
-          <span className="block text-5xl font-light italic" style={{ color: accent }}>comprar</span>
-          <span className="block text-5xl font-black">para reformar?</span>
+          <span className="block text-5xl font-black">Tu próxima</span>
+          <span className="block text-5xl font-light italic" style={{ color: accent }}>vida</span>
+          <span className="block text-5xl font-black">empieza aquí.</span>
         </h1>
         <p className="text-base leading-relaxed max-w-xl" style={{ ...S.fontBody, color: ink }}>
           Herramienta de decisión basada en <strong>datos reales</strong> de Idealista, Fotocasa, INE y AEMET. Sin marketing inmobiliario.
@@ -569,7 +581,8 @@ const GameView = () => {
   const { filteredRegions, currentIndex, setCurrentIndex, filterProvince, setFilterProvince,
           maxBudget, setMaxBudget, hidePopRisk, setHidePopRisk, weights, setView, provinces,
           diary, setDiary, superficie, reformLevel, useBudgetFilter, totalBudget,
-          setUseBudgetFilter, zonaId, setZonaId, shareRegionUrl } = useCtx();
+          setUseBudgetFilter, zonaId, setZonaId, shareRegionUrl, favs, toggleFav,
+          compareIds, toggleCompare } = useCtx();
   const { ink, paper, accent, forest } = S;
   const [copied, setCopied] = useState(false);
   const [mode, setMode] = useState('grid');
@@ -738,12 +751,30 @@ const GameView = () => {
               {safeIndex < filteredRegions.length - 1 ? 'Sig →' : 'Ranking →'}
             </button>
           </div>
-          <button
-            onClick={() => { shareRegionUrl(r.id); setCopied(true); setTimeout(() => setCopied(false), 2000); }}
-            className="w-full py-2 text-xs uppercase tracking-wider transition"
-            style={{ ...S.fontBody, color: ink, opacity: copied ? 1 : 0.45, border: `1px solid #D6CFC0` }}>
-            {copied ? '✓ Enlace copiado' : 'Compartir esta ficha ↗'}
-          </button>
+          <div className="flex gap-2">
+            <button
+              onClick={() => { shareRegionUrl(r.id); setCopied(true); setTimeout(() => setCopied(false), 2000); }}
+              className="flex-1 py-2 text-xs uppercase tracking-wider transition"
+              style={{ ...S.fontBody, color: ink, opacity: copied ? 1 : 0.45, border: `1px solid #D6CFC0` }}>
+              {copied ? '✓ Enlace copiado' : 'Compartir ↗'}
+            </button>
+            <button
+              onClick={() => toggleCompare(r.id)}
+              className="px-3 py-2 text-xs uppercase tracking-wider transition"
+              title={compareIds.includes(r.id) ? 'Quitar del comparador' : compareIds.length >= 3 ? 'Máximo 3 zonas' : 'Añadir al comparador'}
+              style={{ border: `1px solid #D6CFC0`, color: compareIds.includes(r.id) ? accent : ink,
+                background: compareIds.includes(r.id) ? '#FCEEEA' : 'transparent',
+                opacity: (!compareIds.includes(r.id) && compareIds.length >= 3) ? 0.3 : 1 }}>
+              {compareIds.includes(r.id) ? '✓ Comparando' : '⊕ Comparar'}
+            </button>
+            <button
+              onClick={() => toggleFav(r.id)}
+              className="px-4 py-2 text-xl transition"
+              title={favs.includes(r.id) ? 'Quitar de favoritos' : 'Guardar en favoritos'}
+              style={{ border: `1px solid #D6CFC0`, color: favs.includes(r.id) ? S.ochre : ink, opacity: favs.includes(r.id) ? 1 : 0.4 }}>
+              ♥
+            </button>
+          </div>
         </div>
 
         {/* Derecha */}
@@ -755,9 +786,10 @@ const GameView = () => {
                 Precio Q1 2026 · Idealista
               </div>
               <div className="flex items-center gap-1 text-xs tabular-nums px-2 py-0.5"
+                title={r.yoySource ? 'Estimación basada en IPV provincial (INE) refinada con IA' : 'Dato Idealista'}
                 style={{ ...S.fontMono, background: r.yoyPrice > 0 ? '#FCEEEA' : '#E8F0E5', color: r.yoyPrice > 0 ? accent : forest }}>
                 {r.yoyPrice > 0 ? <ArrowUpRight size={10} /> : <ArrowDownRight size={10} />}
-                {r.yoyPrice > 0 ? '+' : ''}{r.yoyPrice}% interanual
+                {r.yoySource ? '~' : ''}{r.yoyPrice > 0 ? '+' : ''}{r.yoyPrice}% interanual
               </div>
             </div>
             <div className="flex items-baseline gap-2">
@@ -926,18 +958,55 @@ const GameView = () => {
   );
 };
 
+const SortIcon = ({ active, dir }) => (
+  <span className="ml-0.5 opacity-40" style={{ opacity: active ? 1 : 0.3 }}>
+    {active ? (dir === 'asc' ? '↑' : '↓') : '↕'}
+  </span>
+);
+
 const RankingView = () => {
-  const { sortedRanking, setView, setCurrentIndex, shareUrl, setZonaId, setFilterProvince } = useCtx();
+  const { sortedRanking, setView, setCurrentIndex, shareUrl, setZonaId, setFilterProvince, favs, toggleFav, compareIds, toggleCompare } = useCtx();
   const { ink, paper, accent, forest } = S;
   const [copied, setCopied] = useState(false);
+  const [sortKey, setSortKey] = useState('score');
+  const [sortDir, setSortDir] = useState('desc');
+  const [provFilter, setProvFilter] = useState('Todas');
+  const [favsOnly, setFavsOnly] = useState(false);
+  const [page, setPage] = useState(1);
+  const PAGE_SIZE = 50;
+
+  const allProvs = useMemo(() =>
+    ['Todas', ...new Set(REGIONS_DATA.map(r => r.province))].sort()
+  , []);
+
+  const handleSort = (key) => {
+    if (sortKey === key) setSortDir(d => d === 'asc' ? 'desc' : 'asc');
+    else { setSortKey(key); setSortDir(key === 'score' ? 'desc' : 'asc'); }
+    setPage(1);
+  };
+
+  const displayList = useMemo(() => {
+    let arr = sortedRanking;
+    if (provFilter !== 'Todas') arr = arr.filter(r => r.province === provFilter);
+    if (favsOnly) arr = arr.filter(r => favs.includes(r.id));
+
+    if (sortKey !== 'score') {
+      arr = [...arr].sort((a, b) => {
+        const va = sortKey === 'price' ? a.priceM2 : sortKey === 'pop' ? a.popTrend : sortKey === 'sun' ? a.sunHours : 0;
+        const vb = sortKey === 'price' ? b.priceM2 : sortKey === 'pop' ? b.popTrend : sortKey === 'sun' ? b.sunHours : 0;
+        return sortDir === 'asc' ? va - vb : vb - va;
+      });
+    } else if (sortDir === 'asc') {
+      arr = [...arr].reverse();
+    }
+    return arr;
+  }, [sortedRanking, provFilter, favsOnly, favs, sortKey, sortDir]);
 
   const winners = sortedRanking.slice(0, 3);
-  const rest = sortedRanking.slice(3, 25);
+  const tableRows = displayList.slice(0, page * PAGE_SIZE);
+  const hasMore = displayList.length > page * PAGE_SIZE;
 
-  const bestValue = [...REGIONS_DATA]
-    .map(r => ({ ...r, vs: scorePrecio(r.priceM2) * 0.5 + scorePoblacion(r.popTrend) * 0.5 + r.beauty * 0.1 }))
-    .sort((a, b) => b.vs - a.vs)
-    .slice(0, 5);
+  const goToRegion = (r) => { setFilterProvince('Todas'); setZonaId(r.id); setView('game'); };
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
@@ -958,132 +1027,161 @@ const RankingView = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-px mb-12" style={{ background: ink }}>
         {winners.map((r, i) => {
           const isFirst = i === 0;
+          const isFav = favs.includes(r.id);
           return (
-            <button key={r.id} onClick={() => { setFilterProvince('Todas'); setZonaId(r.id); setView('game'); }} className="p-6 text-left cursor-pointer hover:opacity-90 transition" style={{ background: isFirst ? ink : paper, color: isFirst ? paper : ink }}>
-              <div className="flex justify-between items-start mb-4">
-                <span className="text-6xl tabular-nums leading-none" style={{ ...S.fontDisplay, fontWeight: 900, opacity: 0.2 }}>
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                {isFirst && <Sparkles size={18} style={{ color: S.ochre }} />}
-              </div>
-              <div className="text-xs uppercase tracking-wider mb-1" style={{ ...S.fontBody, opacity: 0.6 }}>
-                {r.province} · {r.community}
-              </div>
-              <h3 className="text-2xl mb-3" style={{ ...S.fontDisplay, fontWeight: 800, lineHeight: 0.95 }}>{r.name}</h3>
-              <div className="flex items-baseline gap-2 mb-3 pb-3 border-b" style={{ borderColor: isFirst ? '#3a342e' : '#D6CFC0' }}>
-                <span className="text-4xl tabular-nums" style={{ ...S.fontDisplay, fontWeight: 800 }}>{r.finalScore}</span>
-                <span className="text-xs uppercase tracking-wider opacity-50" style={S.fontBody}>nota</span>
-              </div>
-              <div className="grid grid-cols-2 gap-x-3 gap-y-1.5 text-xs" style={S.fontBody}>
-                {[['€/m²', r.priceM2.toLocaleString('es-ES')], ['Pob 2039', `${r.popTrend > 0 ? '+' : ''}${r.popTrend}%`],
-                  ['Sol/año', `${r.sunHours}h`], ['Fibra', `${r.fiber}%`]].map(([k, v]) => (
-                  <div key={k} className="flex justify-between">
-                    <span style={{ opacity: 0.5 }}>{k}</span>
-                    <span className="tabular-nums" style={S.fontMono}>{v}</span>
-                  </div>
-                ))}
-              </div>
-              <a href={idealistaURL(r)} target="_blank" rel="noopener noreferrer"
-                onClick={e => e.stopPropagation()}
-                className="mt-4 flex items-center gap-1.5 text-xs uppercase tracking-wider opacity-60 hover:opacity-100 transition inline-flex"
-                style={S.fontBody}>
-                Ver en Idealista <ExternalLink size={10} />
-              </a>
-            </button>
+            <div key={r.id} className="relative" style={{ background: isFirst ? ink : paper }}>
+              <button onClick={() => goToRegion(r)} className="w-full p-6 text-left hover:opacity-90 transition" style={{ color: isFirst ? paper : ink }}>
+                <div className="flex justify-between items-start mb-4">
+                  <span className="text-6xl tabular-nums leading-none" style={{ ...S.fontDisplay, fontWeight: 900, opacity: 0.2 }}>
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  {isFirst && <Sparkles size={18} style={{ color: S.ochre }} />}
+                </div>
+                <div className="text-xs uppercase tracking-wider mb-1" style={{ ...S.fontBody, opacity: 0.6 }}>
+                  {r.province} · {r.community}
+                </div>
+                <h3 className="text-2xl mb-3" style={{ ...S.fontDisplay, fontWeight: 800, lineHeight: 0.95 }}>{r.name}</h3>
+                <div className="flex items-baseline gap-2 mb-3 pb-3 border-b" style={{ borderColor: isFirst ? '#3a342e' : '#D6CFC0' }}>
+                  <span className="text-4xl tabular-nums" style={{ ...S.fontDisplay, fontWeight: 800 }}>{r.finalScore}</span>
+                  <span className="text-xs uppercase tracking-wider opacity-50" style={S.fontBody}>nota</span>
+                </div>
+                <div className="grid grid-cols-2 gap-x-3 gap-y-1.5 text-xs" style={S.fontBody}>
+                  {[['€/m²', r.priceM2.toLocaleString('es-ES')], ['Pob 2039', `${r.popTrend > 0 ? '+' : ''}${r.popTrend}%`],
+                    ['Sol/año', `${r.sunHours}h`], ['Fibra', `${r.fiber}%`]].map(([k, v]) => (
+                    <div key={k} className="flex justify-between">
+                      <span style={{ opacity: 0.5 }}>{k}</span>
+                      <span className="tabular-nums" style={S.fontMono}>{v}</span>
+                    </div>
+                  ))}
+                </div>
+                <a href={idealistaURL(r)} target="_blank" rel="noopener noreferrer"
+                  onClick={e => e.stopPropagation()}
+                  className="mt-4 flex items-center gap-1.5 text-xs uppercase tracking-wider opacity-60 hover:opacity-100 transition inline-flex"
+                  style={S.fontBody}>
+                  Ver en Idealista <ExternalLink size={10} />
+                </a>
+              </button>
+              <button onClick={e => { e.stopPropagation(); toggleFav(r.id); }}
+                className="absolute top-3 right-3 p-1.5 text-xl transition"
+                style={{ color: isFav ? S.ochre : (isFirst ? paper : ink), opacity: isFav ? 1 : 0.35 }}
+                title={isFav ? 'Quitar de favoritos' : 'Añadir a favoritos'}>
+                ♥
+              </button>
+            </div>
           );
         })}
       </div>
 
-      {/* Mejor valor */}
-      <div className="mb-12">
-        <div className="border-y-2 py-3 mb-5 flex justify-between text-xs uppercase tracking-widest"
-          style={{ ...S.fontBody, borderColor: ink, color: ink }}>
-          <span>Recomendación del editor</span>
-          <span style={{ color: accent }}>★ Mejor valor inversión</span>
-        </div>
-        <h3 className="text-2xl mb-1" style={{ ...S.fontDisplay, color: ink, fontWeight: 700 }}>
-          Las 5 zonas con <span style={{ fontStyle: 'italic', color: accent }}>mejor relación</span> precio-futuro
-        </h3>
-        <p className="text-xs mb-5" style={{ ...S.fontBody, color: ink, opacity: 0.6 }}>
-          Bajo coste de entrada + demografía estable. Independiente de tus pesos.
-        </p>
-        <table className="w-full text-left">
-          <thead>
-            <tr className="text-xs uppercase tracking-wider border-b" style={{ ...S.fontBody, color: ink, opacity: 0.5, borderColor: '#D6CFC0' }}>
-              <th className="pb-2 pr-3">Zona</th>
-              <th className="pb-2 pr-3">Provincia</th>
-              <th className="pb-2 pr-3 text-right">€/m²</th>
-              <th className="pb-2 pr-3 text-right">Pob 15a</th>
-              <th className="pb-2 text-right">Sol/año</th>
-            </tr>
-          </thead>
-          <tbody>
-            {bestValue.map(r => (
-              <tr key={r.id} onClick={() => { setFilterProvince('Todas'); setZonaId(r.id); setView('game'); }} className="border-t cursor-pointer hover:bg-stone-50 transition" style={{ borderColor: '#E8E0D2' }}>
-                <td className="py-2.5 pr-3 text-sm" style={{ ...S.fontDisplay, color: ink, fontWeight: 600 }}>{r.name}</td>
-                <td className="py-2.5 pr-3 text-xs" style={{ ...S.fontBody, color: ink, opacity: 0.7 }}>{r.province}</td>
-                <td className="py-2.5 pr-3 text-right tabular-nums text-xs" style={S.fontMono}>{r.priceM2.toLocaleString('es-ES')}</td>
-                <td className="py-2.5 pr-3 text-right tabular-nums text-xs" style={{ ...S.fontMono, color: r.popTrend >= 0 ? forest : ink }}>
-                  {r.popTrend > 0 ? '+' : ''}{r.popTrend}%
-                </td>
-                <td className="py-2.5 text-right tabular-nums text-xs" style={S.fontMono}>{r.sunHours}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
       {/* Tabla completa */}
       <div className="mb-10">
-        <div className="border-y-2 py-3 mb-0 flex justify-between text-xs uppercase tracking-widest"
+        {/* Cabecera + controles */}
+        <div className="border-y-2 py-3 mb-4 flex flex-wrap justify-between items-center gap-3 text-xs uppercase tracking-widest"
           style={{ ...S.fontBody, borderColor: ink, color: ink }}>
-          <span>Ranking completo (tus pesos)</span><span>Top 25 / {sortedRanking.length}</span>
+          <span>Ranking completo · {displayList.length} comarcas</span>
+          <div className="flex items-center gap-3 flex-wrap">
+            <button
+              onClick={() => { setFavsOnly(f => !f); setPage(1); }}
+              className="flex items-center gap-1.5 px-3 py-1 transition"
+              style={{ border: `1px solid ${favsOnly ? S.ochre : ink}`, color: favsOnly ? S.ochre : ink, background: favsOnly ? '#FFF8EC' : 'transparent' }}>
+              ♥ {favsOnly ? `Favoritos (${favs.length})` : 'Solo favoritos'}
+            </button>
+            <select value={provFilter} onChange={e => { setProvFilter(e.target.value); setPage(1); }}
+              className="text-xs uppercase tracking-wider px-2 py-1"
+              style={{ ...S.fontBody, border: `1px solid ${ink}`, color: ink, background: paper }}>
+              {allProvs.map(p => <option key={p} value={p}>{p === 'Todas' ? 'Todas las provincias' : p}</option>)}
+            </select>
+          </div>
         </div>
+
+        {compareIds.length === 0 && (
+          <p className="text-xs mb-3 mt-1" style={{ ...S.fontBody, color: S.ink, opacity: 0.4 }}>
+            Pulsa ⊕ en cualquier fila para añadirla al comparador · máx. 3 zonas
+          </p>
+        )}
+
         <div className="overflow-x-auto">
-          <table className="w-full text-left" style={{ minWidth: 600 }}>
+          <table className="w-full text-left" style={{ minWidth: 560 }}>
             <thead>
-              <tr className="text-xs uppercase tracking-wider border-b" style={{ ...S.fontBody, color: ink, opacity: 0.5, borderColor: ink }}>
-                <th className="py-2.5 pr-2 w-8">#</th>
+              <tr className="text-xs uppercase tracking-wider border-b" style={{ ...S.fontBody, color: ink, borderColor: ink }}>
+                <th className="py-2.5 pr-2 w-8 opacity-40">#</th>
                 <th className="py-2.5 pr-3">Comarca</th>
-                <th className="py-2.5 pr-2 text-right">€/m²</th>
-                <th className="py-2.5 pr-2 text-right">YoY</th>
-                <th className="py-2.5 pr-2 text-right">Pob</th>
-                <th className="py-2.5 pr-2 text-right">Sol</th>
-                <th className="py-2.5 text-right">Nota</th>
+                <th className="py-2.5 pr-2 text-right cursor-pointer select-none" onClick={() => handleSort('price')}>
+                  €/m² <SortIcon active={sortKey==='price'} dir={sortDir} />
+                </th>
+                <th className="py-2.5 pr-2 text-right cursor-pointer select-none" onClick={() => handleSort('pop')}>
+                  Pob <SortIcon active={sortKey==='pop'} dir={sortDir} />
+                </th>
+                <th className="py-2.5 pr-2 text-right cursor-pointer select-none" onClick={() => handleSort('sun')}>
+                  Sol <SortIcon active={sortKey==='sun'} dir={sortDir} />
+                </th>
+                <th className="py-2.5 pr-2 text-right cursor-pointer select-none" onClick={() => handleSort('score')}>
+                  Nota <SortIcon active={sortKey==='score'} dir={sortDir} />
+                </th>
+                <th className="py-2.5 w-8"></th>
               </tr>
             </thead>
             <tbody>
-              {rest.map((r, idx) => (
-                <tr key={r.id} onClick={() => { setFilterProvince('Todas'); setZonaId(r.id); setView('game'); }} className="border-b group hover:bg-stone-50 transition cursor-pointer" style={{ borderColor: '#E8E0D2' }}>
-                  <td className="py-2.5 pr-2 tabular-nums text-xs" style={{ ...S.fontMono, color: ink, opacity: 0.4 }}>
-                    {String(idx + 4).padStart(2, '0')}
-                  </td>
-                  <td className="py-2.5 pr-3">
-                    <div className="text-sm" style={{ ...S.fontDisplay, color: ink, fontWeight: 600 }}>{r.name}</div>
-                    <div className="text-xs uppercase tracking-wider" style={{ ...S.fontBody, color: ink, opacity: 0.45 }}>{r.province}</div>
-                  </td>
-                  <td className="py-2.5 pr-2 text-right tabular-nums text-xs" style={S.fontMono}>{r.priceM2.toLocaleString('es-ES')}</td>
-                  <td className="py-2.5 pr-2 text-right tabular-nums text-xs"
-                    style={{ ...S.fontMono, color: r.yoyPrice > 0 ? accent : forest }}>
-                    {r.yoyPrice > 0 ? '+' : ''}{r.yoyPrice}%
-                  </td>
-                  <td className="py-2.5 pr-2 text-right tabular-nums text-xs"
-                    style={{ ...S.fontMono, color: r.popTrend > 5 ? forest : r.popTrend < -10 ? S.crimson : ink, opacity: 0.8 }}>
-                    {r.popTrend > 0 ? '+' : ''}{r.popTrend}%
-                  </td>
-                  <td className="py-2.5 pr-2 text-right tabular-nums text-xs" style={{ ...S.fontMono, color: ink, opacity: 0.55 }}>
-                    {r.sunHours}h
-                  </td>
-                  <td className="py-2.5 text-right">
-                    <span className="text-base tabular-nums" style={{ ...S.fontDisplay, color: accent, fontWeight: 700 }}>
-                      {r.finalScore}
-                    </span>
-                  </td>
-                </tr>
-              ))}
+              {tableRows.map((r, idx) => {
+                const isFav = favs.includes(r.id);
+                const globalRank = sortedRanking.findIndex(x => x.id === r.id) + 1;
+                return (
+                  <tr key={r.id} className="border-b hover:bg-stone-50 transition cursor-pointer group" style={{ borderColor: '#E8E0D2' }}>
+                    <td className="py-2.5 pr-2 tabular-nums text-xs" style={{ ...S.fontMono, color: ink, opacity: 0.35 }}
+                      onClick={() => goToRegion(r)}>
+                      {String(sortKey === 'score' ? (sortDir === 'asc' ? displayList.length - idx : idx + 1) : globalRank).padStart(2, '0')}
+                    </td>
+                    <td className="py-2.5 pr-3" onClick={() => goToRegion(r)}>
+                      <div className="text-sm" style={{ ...S.fontDisplay, color: ink, fontWeight: 600 }}>{r.name}</div>
+                      <div className="text-xs uppercase tracking-wider" style={{ ...S.fontBody, color: ink, opacity: 0.45 }}>{r.province}</div>
+                    </td>
+                    <td className="py-2.5 pr-2 text-right tabular-nums text-xs" style={S.fontMono} onClick={() => goToRegion(r)}>
+                      {r.priceM2.toLocaleString('es-ES')}
+                    </td>
+                    <td className="py-2.5 pr-2 text-right tabular-nums text-xs"
+                      style={{ ...S.fontMono, color: r.popTrend > 5 ? forest : r.popTrend < -10 ? S.crimson : ink, opacity: 0.8 }}
+                      onClick={() => goToRegion(r)}>
+                      {r.popTrend > 0 ? '+' : ''}{r.popTrend}%
+                    </td>
+                    <td className="py-2.5 pr-2 text-right tabular-nums text-xs" style={{ ...S.fontMono, color: ink, opacity: 0.55 }}
+                      onClick={() => goToRegion(r)}>
+                      {r.sunHours}h
+                    </td>
+                    <td className="py-2.5 pr-2 text-right" onClick={() => goToRegion(r)}>
+                      <span className="text-base tabular-nums" style={{ ...S.fontDisplay, color: accent, fontWeight: 700 }}>
+                        {r.finalScore}
+                      </span>
+                    </td>
+                    <td className="py-2.5 text-center">
+                      <div className="flex items-center gap-1 justify-center">
+                        <button onClick={() => toggleCompare(r.id)}
+                          className="transition text-sm leading-none"
+                          style={{ color: compareIds.includes(r.id) ? accent : ink,
+                            opacity: compareIds.includes(r.id) ? 1 : (!compareIds.includes(r.id) && compareIds.length >= 3) ? 0.1 : 0.2 }}
+                          title={compareIds.includes(r.id) ? 'Quitar del comparador' : 'Añadir al comparador'}>
+                          ⊕
+                        </button>
+                        <button onClick={() => toggleFav(r.id)}
+                          className="transition text-xl leading-none"
+                          style={{ color: isFav ? S.ochre : ink, opacity: isFav ? 1 : 0.2 }}
+                          title={isFav ? 'Quitar de favoritos' : 'Añadir a favoritos'}>
+                          ♥
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
+
+        {hasMore && (
+          <button onClick={() => setPage(p => p + 1)}
+            className="w-full mt-4 py-3 text-xs uppercase tracking-wider transition"
+            style={{ ...S.fontBody, color: ink, border: `1px solid ${ink}` }}>
+            Ver más ({displayList.length - tableRows.length} restantes)
+          </button>
+        )}
       </div>
 
       <div className="mb-16 space-y-3">
@@ -1116,6 +1214,177 @@ const RankingView = () => {
           <div><strong>Demografía</strong><br />INE — Proyección de Población 2024–2039. Padrón Continuo.</div>
           <div><strong>Clima y servicios</strong><br />AEMET 1981–2010. MITECO — Cobertura banda ancha 2025.</div>
         </div>
+      </div>
+    </div>
+  );
+};
+
+/* ====================================================================
+   COMPARADOR
+   ==================================================================== */
+const CompareBar = () => {
+  const { compareIds, setCompareIds, setView } = useCtx();
+  const { ink, paper, accent } = S;
+  if (compareIds.length === 0) return null;
+  const regions = compareIds.map(id => REGIONS_DATA.find(r => r.id === id)).filter(Boolean);
+  return (
+    <div className="fixed bottom-0 left-0 right-0 z-50 border-t" style={{ background: ink, borderColor: '#3a342e' }}>
+      <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-3 flex-wrap">
+        <span className="text-xs uppercase tracking-widest shrink-0" style={{ ...S.fontBody, color: paper, opacity: 0.5 }}>
+          Comparando
+        </span>
+        <div className="flex gap-2 flex-1 flex-wrap">
+          {regions.map(r => (
+            <div key={r.id} className="flex items-center gap-1.5 px-2 py-1 text-xs" style={{ background: '#3a342e', color: paper }}>
+              <span style={S.fontBody}>{r.name}</span>
+              <button onClick={() => setCompareIds(ids => ids.filter(x => x !== r.id))}
+                className="opacity-50 hover:opacity-100 transition leading-none">×</button>
+            </div>
+          ))}
+        </div>
+        <div className="flex gap-2 shrink-0">
+          <button onClick={() => setCompareIds([])}
+            className="px-3 py-1.5 text-xs uppercase tracking-wider transition"
+            style={{ ...S.fontBody, color: paper, opacity: 0.45, border: '1px solid #3a342e' }}>
+            Limpiar
+          </button>
+          <button onClick={() => setView('compare')}
+            disabled={compareIds.length < 2}
+            className="px-4 py-1.5 text-xs uppercase tracking-wider transition disabled:opacity-30"
+            style={{ ...S.fontBody, background: accent, color: paper }}>
+            Ver comparativa ({compareIds.length})
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const CompareView = () => {
+  const { compareIds, setCompareIds, setView, setZonaId, setFilterProvince, weights } = useCtx();
+  const { ink, paper, accent, forest } = S;
+  const [copiedCmp, setCopiedCmp] = useState(false);
+
+  const regions = compareIds.map(id => REGIONS_DATA.find(r => r.id === id)).filter(Boolean)
+    .map(r => ({ ...r, finalScore: calcFinalScore(r, weights), stats: allStats(r) }));
+
+  const goTo = (r) => { setFilterProvince('Todas'); setZonaId(r.id); setView('game'); };
+
+  const shareCmp = () => {
+    const { precio, clima, poblacion, servicios, belleza, playa } = weights;
+    const cfg = [precio, clima, poblacion, servicios, belleza, playa].join('-');
+    const params = new URLSearchParams({ cfg, compare: compareIds.join(',') });
+    const url = `${window.location.origin}${window.location.pathname}?${params}`;
+    navigator.clipboard?.writeText(url).catch(() => {});
+    setCopiedCmp(true);
+    setTimeout(() => setCopiedCmp(false), 2000);
+  };
+
+  const best = (vals, lowerBetter = false) => {
+    const valid = vals.filter(v => v !== null && v !== undefined);
+    if (!valid.length) return null;
+    return lowerBetter ? Math.min(...valid) : Math.max(...valid);
+  };
+
+  const metrics = [
+    { label: 'Nota final', vals: regions.map(r => r.finalScore), fmt: v => v, lowerBetter: false, highlight: true },
+    { label: '€/m²', vals: regions.map(r => r.priceM2), fmt: v => v.toLocaleString('es-ES'), lowerBetter: true, highlight: true },
+    { label: 'Variación anual precio (~est.)', vals: regions.map(r => r.yoyPrice),
+      fmt: v => `~${v > 0 ? '+' : ''}${v}%`, highlight: false },
+    { label: 'Tendencia pob. 15a', vals: regions.map(r => r.popTrend), fmt: v => `${v > 0 ? '+' : ''}${v}%`, lowerBetter: false, highlight: true },
+    { label: 'Temperatura media', vals: regions.map(r => r.tempAvg), fmt: v => `${v} °C`, highlight: false },
+    { label: 'Horas de sol/año', vals: regions.map(r => r.sunHours), fmt: v => `${v}h`, lowerBetter: false, highlight: true },
+    { label: 'Lluvia anual', vals: regions.map(r => r.rainfall), fmt: v => `${v} mm`, highlight: false },
+    { label: 'Cobertura fibra', vals: regions.map(r => r.fiber), fmt: v => `${v}%`, lowerBetter: false, highlight: true },
+    { label: 'Hospital más cercano', vals: regions.map(r => r.hospitalKm), fmt: v => `${v} km`, lowerBetter: true, highlight: true },
+    { label: 'Aeropuerto más cercano', vals: regions.map(r => r.airportKm), fmt: v => `${v} km`, lowerBetter: true, highlight: true },
+    { label: 'Distancia playa', vals: regions.map(r => r.beachKm), fmt: v => v === null ? 'Interior' : `${v} km`, lowerBetter: true, highlight: true },
+    { label: 'Densidad (hab/km²)', vals: regions.map(r => r.density), fmt: v => v.toLocaleString('es-ES'), highlight: false },
+  ];
+
+  if (regions.length < 2) {
+    return (
+      <div className="max-w-3xl mx-auto px-4 py-20 text-center">
+        <p className="text-sm uppercase tracking-wider mb-6" style={{ ...S.fontBody, color: ink, opacity: 0.5 }}>
+          Selecciona al menos 2 zonas con ⊕ para comparar.
+        </p>
+        <button onClick={() => setView('ranking')} className="px-6 py-3 text-xs uppercase tracking-wider"
+          style={{ ...S.fontBody, background: ink, color: paper }}>← Volver al ranking</button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="max-w-5xl mx-auto px-4 py-10 pb-24">
+      <div className="border-y-2 py-3 mb-8 flex justify-between items-center text-xs uppercase tracking-widest"
+        style={{ ...S.fontBody, borderColor: ink, color: ink }}>
+        <span>Comparativa · {regions.length} zonas</span>
+        <button onClick={() => setView('ranking')} className="opacity-50 hover:opacity-100 transition">← Ranking</button>
+      </div>
+
+      <div className="overflow-x-auto">
+        <table className="w-full text-left" style={{ minWidth: 480 }}>
+          <thead>
+            <tr style={{ borderBottom: `2px solid ${ink}` }}>
+              <th className="py-3 pr-4 text-xs uppercase tracking-wider w-40" style={{ ...S.fontBody, color: ink, opacity: 0.4 }}>
+                Variable
+              </th>
+              {regions.map(r => (
+                <th key={r.id} className="py-3 pr-4 text-left">
+                  <div className="text-xs uppercase tracking-wider mb-0.5" style={{ ...S.fontBody, color: ink, opacity: 0.5 }}>{r.province}</div>
+                  <button onClick={() => goTo(r)} className="text-lg hover:underline text-left leading-tight"
+                    style={{ ...S.fontDisplay, color: ink, fontWeight: 800 }}>{r.name}</button>
+                  <div className="mt-1.5 flex gap-2 items-center">
+                    <a href={idealistaURL(r)} target="_blank" rel="noopener noreferrer"
+                      className="text-xs uppercase tracking-wider opacity-50 hover:opacity-100 transition flex items-center gap-1"
+                      style={S.fontBody}>
+                      Idealista <ExternalLink size={9} />
+                    </a>
+                    <button onClick={() => setCompareIds(ids => ids.filter(x => x !== r.id))}
+                      className="text-xs opacity-30 hover:opacity-70 transition" style={S.fontBody}>
+                      × quitar
+                    </button>
+                  </div>
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {metrics.map(({ label, vals, fmt, lowerBetter, highlight }) => {
+              const bestVal = highlight ? best(vals.filter(v => v !== null), lowerBetter) : null;
+              return (
+                <tr key={label} className="border-b" style={{ borderColor: '#E8E0D2' }}>
+                  <td className="py-3 pr-4 text-xs uppercase tracking-wider" style={{ ...S.fontBody, color: ink, opacity: 0.45 }}>
+                    {label}
+                  </td>
+                  {vals.map((v, i) => {
+                    const isBest = highlight && v !== null && v === bestVal;
+                    return (
+                      <td key={i} className="py-3 pr-4 text-sm tabular-nums"
+                        style={{ ...S.fontMono, color: isBest ? accent : ink, fontWeight: isBest ? 700 : 400 }}>
+                        {v === null || v === undefined ? <span style={{ opacity: 0.3 }}>—</span> : fmt(v)}
+                        {isBest && <span className="ml-1 text-xs" style={{ color: accent }}>✓</span>}
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      <div className="mt-8 flex gap-3 flex-wrap">
+        <button onClick={shareCmp}
+          className="px-6 py-3 text-xs uppercase tracking-wider transition"
+          style={{ ...S.fontBody, color: copiedCmp ? forest : ink, border: `1px solid ${copiedCmp ? forest : ink}`, background: copiedCmp ? '#E8F0E5' : 'transparent' }}>
+          {copiedCmp ? '✓ Enlace copiado' : 'Compartir comparativa ↗'}
+        </button>
+        <button onClick={() => setCompareIds([])}
+          className="px-6 py-3 text-xs uppercase tracking-wider transition"
+          style={{ ...S.fontBody, color: ink, opacity: 0.45, border: `1px solid #D6CFC0` }}>
+          Limpiar selección
+        </button>
       </div>
     </div>
   );
@@ -1262,13 +1531,27 @@ const DiaryView = () => {
 };
 
 const App = () => {
-  const [view, setView] = useState('intro');
+  const [view, setViewRaw] = useState(() => {
+    const hash = window.location.hash.slice(1);
+    return ['intro','settings','game','ranking'].includes(hash) ? hash : 'intro';
+  });
+  const setView = useCallback((v) => {
+    setViewRaw(v);
+    window.history.pushState({ view: v }, '', `#${v}`);
+  }, []);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [filterProvince, setFilterProvince] = useState('Todas');
   const [maxBudget, setMaxBudget] = useState(8500);
   const [hidePopRisk, setHidePopRisk] = useState(false);
   const [weights, setWeights] = useLocalStorage('iberia-weights', DEFAULT_WEIGHTS);
   const [diary, setDiary] = useLocalStorage('iberia-diary', {});
+  const [favs, setFavs] = useLocalStorage('iberia-favs', []);
+  const toggleFav = useCallback(id => setFavs(f => f.includes(id) ? f.filter(x => x !== id) : [...f, id]), [setFavs]);
+  const [compareIds, setCompareIds] = useState([]);
+  const toggleCompare = useCallback(id => setCompareIds(prev =>
+    prev.includes(id) ? prev.filter(x => x !== id)
+    : prev.length < 3 ? [...prev, id] : prev
+  ), []);
   const [totalBudget, setTotalBudget] = useState(150000);
   const [superficie, setSuperficie] = useState(80);
   const [reformLevel, setReformLevel] = useState('media');
@@ -1288,6 +1571,20 @@ const App = () => {
     }
     const zona = params.get('zona');
     if (zona) { setZonaId(zona); setView('game'); }
+    const compare = params.get('compare');
+    if (compare) { setCompareIds(compare.split(',').slice(0, 3)); setView('compare'); }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Browser back/forward button support
+  useEffect(() => {
+    const onPop = (e) => {
+      const v = e.state?.view || window.location.hash.slice(1) || 'intro';
+      setViewRaw(['intro','settings','game','ranking','compare'].includes(v) ? v : 'intro');
+    };
+    window.addEventListener('popstate', onPop);
+    // Push initial state so back button works from first view
+    window.history.replaceState({ view }, '', `#${view}`);
+    return () => window.removeEventListener('popstate', onPop);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const shareUrl = useCallback(() => {
@@ -1342,6 +1639,8 @@ const App = () => {
     weights, setWeights,
     filteredRegions, provinces, sortedRanking,
     diary, setDiary,
+    favs, toggleFav,
+    compareIds, setCompareIds, toggleCompare,
     totalBudget, setTotalBudget,
     superficie, setSuperficie,
     reformLevel, setReformLevel,
@@ -1376,8 +1675,9 @@ const App = () => {
           {view === 'settings' && <SettingsView />}
           {view === 'game' && <GameView />}
           {view === 'ranking' && <RankingView />}
-          {view === 'diary' && <DiaryView />}
+          {view === 'compare' && <CompareView />}
         </main>
+        <CompareBar />
         <footer className="border-t mt-8 py-5 px-5" style={{ borderColor: S.ink }}>
           <div className="max-w-7xl mx-auto flex justify-between text-xs uppercase tracking-wider"
             style={{ ...S.fontBody, color: S.ink, opacity: 0.4 }}>
