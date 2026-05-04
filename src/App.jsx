@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useCallback, useContext } from "react";
+import { useState, useMemo, useEffect, useCallback } from "react";
 import { Ctx, useLocalStorage } from "./context/AppContext.jsx";
 import { S } from "./config/theme.js";
 import { REGIONS_DATA } from "./data/regions.js";
@@ -11,21 +11,16 @@ import { GameView } from "./views/GameView.jsx";
 import { RankingView } from "./views/RankingView.jsx";
 import { CompareView } from "./views/CompareView.jsx";
 import { DEFAULT_WEIGHTS } from "./config/constants.js";
-import { calcTotalCost, calcFinalScore, allStats } from "./utils/scoring.js";
+import { calcFinalScore, allStats } from "./utils/scoring.js";
+import { useNavigation } from "./hooks/useNavigation.js";
+import { useFilters } from "./hooks/useFilters.js";
+import { useUrlParams } from "./hooks/useUrlParams.js";
 
 const App = () => {
-  const [view, setViewRaw] = useState(() => {
-    const hash = window.location.hash.slice(1);
-    return ['intro','settings','game','ranking'].includes(hash) ? hash : 'intro';
-  });
-  const setView = useCallback((v) => {
-    setViewRaw(v);
-    window.history.pushState({ view: v }, '', `#${v}`);
-  }, []);
+  const { view, setView } = useNavigation();
+  const filters = useFilters();
+
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [filterProvince, setFilterProvince] = useState('Todas');
-  const [maxBudget, setMaxBudget] = useState(8500);
-  const [hidePopRisk, setHidePopRisk] = useState(false);
   const [weights, setWeights] = useLocalStorage('iberia-weights', DEFAULT_WEIGHTS);
   const [diary, setDiary] = useLocalStorage('iberia-diary', {});
   const [favs, setFavs] = useLocalStorage('iberia-favs', []);
@@ -35,54 +30,19 @@ const App = () => {
     prev.includes(id) ? prev.filter(x => x !== id)
     : prev.length < 3 ? [...prev, id] : prev
   ), []);
-  const [totalBudget, setTotalBudget] = useState(150000);
-  const [superficie, setSuperficie] = useState(80);
-  const [reformLevel, setReformLevel] = useState('media');
-  const [useBudgetFilter, setUseBudgetFilter] = useState(false);
   const [zonaId, setZonaId] = useState(null);
 
-  // Lee pesos y zona desde query params al montar (enlace compartido)
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const cfg = params.get('cfg');
-    if (cfg) {
-      const parts = cfg.split('-').map(Number);
-      if (parts.length === 6 && parts.every(n => !isNaN(n) && n >= 0 && n <= 50)) {
-        const [precio, clima, poblacion, servicios, belleza, playa] = parts;
-        setWeights({ precio, clima, poblacion, servicios, belleza, playa });
-      }
-    }
-    const zona = params.get('zona');
-    if (zona) { setZonaId(zona); setView('game'); }
-    const compare = params.get('compare');
-    if (compare) { setCompareIds(compare.split(',').slice(0, 3)); setView('compare'); }
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
-  // Browser back/forward button support
-  useEffect(() => {
-    const onPop = (e) => {
-      const v = e.state?.view || window.location.hash.slice(1) || 'intro';
-      setViewRaw(['intro','settings','map','game','ranking','compare'].includes(v) ? v : 'intro');
-    };
-    window.addEventListener('popstate', onPop);
-    // Push initial state so back button works from first view
-    window.history.replaceState({ view }, '', `#${view}`);
-    return () => window.removeEventListener('popstate', onPop);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  useUrlParams({ setWeights, setZonaId, setView, setCompareIds });
 
   const shareUrl = useCallback(() => {
     const { precio, clima, poblacion, servicios, belleza, playa } = weights;
-    const cfg = [precio, clima, poblacion, servicios, belleza, playa].join('-');
-    const params = new URLSearchParams({ cfg });
-    const url = `${window.location.origin}${window.location.pathname}?${params}`;
+    const url = `${window.location.origin}${window.location.pathname}?cfg=${[precio, clima, poblacion, servicios, belleza, playa].join('-')}`;
     navigator.clipboard?.writeText(url).catch(() => {});
   }, [weights]);
 
   const shareRegionUrl = useCallback((regionId) => {
     const { precio, clima, poblacion, servicios, belleza, playa } = weights;
-    const cfg = [precio, clima, poblacion, servicios, belleza, playa].join('-');
-    const params = new URLSearchParams({ cfg, zona: regionId });
-    const url = `${window.location.origin}${window.location.pathname}?${params}`;
+    const url = `${window.location.origin}${window.location.pathname}?cfg=${[precio, clima, poblacion, servicios, belleza, playa].join('-')}&zona=${regionId}`;
     navigator.clipboard?.writeText(url).catch(() => {});
   }, [weights]);
 
@@ -94,19 +54,6 @@ const App = () => {
     return () => { try { document.head.removeChild(link); } catch (e) {} };
   }, []);
 
-  const filteredRegions = useMemo(() => {
-    let arr = REGIONS_DATA;
-    if (filterProvince !== 'Todas') arr = arr.filter(r => r.province === filterProvince);
-    arr = arr.filter(r => r.priceM2 <= maxBudget);
-    if (hidePopRisk) arr = arr.filter(r => r.popTrend > -10);
-    if (useBudgetFilter) arr = arr.filter(r => calcTotalCost(r, superficie, reformLevel) <= totalBudget);
-    return arr;
-  }, [filterProvince, maxBudget, hidePopRisk, useBudgetFilter, totalBudget, superficie, reformLevel]);
-
-  const provinces = useMemo(() =>
-    ['Todas', ...new Set(REGIONS_DATA.map(r => r.province))].sort()
-  , []);
-
   const sortedRanking = useMemo(() =>
     REGIONS_DATA
       .map(r => ({ ...r, finalScore: calcFinalScore(r, weights), stats: allStats(r) }))
@@ -116,18 +63,12 @@ const App = () => {
   const ctx = {
     view, setView,
     currentIndex, setCurrentIndex,
-    filterProvince, setFilterProvince,
-    maxBudget, setMaxBudget,
-    hidePopRisk, setHidePopRisk,
+    ...filters,
     weights, setWeights,
-    filteredRegions, provinces, sortedRanking,
+    sortedRanking,
     diary, setDiary,
     favs, toggleFav,
     compareIds, setCompareIds, toggleCompare,
-    totalBudget, setTotalBudget,
-    superficie, setSuperficie,
-    reformLevel, setReformLevel,
-    useBudgetFilter, setUseBudgetFilter,
     zonaId, setZonaId,
     shareUrl, shareRegionUrl,
   };
@@ -154,12 +95,12 @@ const App = () => {
         `}</style>
         <AppHeader />
         <main>
-          {view === 'intro' && <IntroView />}
+          {view === 'intro'    && <IntroView />}
           {view === 'settings' && <SettingsView />}
-          {view === 'map' && <MapView />}
-          {view === 'game' && <GameView />}
-          {view === 'ranking' && <RankingView />}
-          {view === 'compare' && <CompareView />}
+          {view === 'map'      && <MapView />}
+          {view === 'game'     && <GameView />}
+          {view === 'ranking'  && <RankingView />}
+          {view === 'compare'  && <CompareView />}
         </main>
         <CompareBar />
         <footer className="border-t mt-8 py-5 px-5" style={{ borderColor: S.ink }}>
