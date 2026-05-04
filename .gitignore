@@ -3,3 +3,5 @@ node_modules/
 .env
 dist/
 build/
+src/data/regions.js.bak.*
+data_audit/archive/
