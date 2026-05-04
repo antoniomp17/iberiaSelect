@@ -1,4 +1,5 @@
 export { REFORM_COST_M2, REFORM_LABELS, DEFAULT_WEIGHTS } from "../data/constants.js";
+import { REGIONS_DATA } from "../data/regions.js";
 
 // INE province code → province name (matches our regions.js province field)
 export const INE_TO_PROVINCE = {

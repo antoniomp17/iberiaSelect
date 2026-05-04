@@ -1,11 +1,11 @@
-import { createContext, useContext, useState, useEffect, useMemo, useCallback } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import { ChevronRight, Filter } from "lucide-react";
 import { idealistaURL, findSimilarCheaper } from "../config/constants.js";
 import { S } from "../config/theme.js";
 import { calcFinalScore } from "../utils/scoring.js";
+import { Ctx, useCtx } from "./Ctx.js";
 
-export const Ctx = createContext(null);
-export const useCtx = () => useContext(Ctx);
+export { Ctx, useCtx };
 
 /* ====================================================================
    HOOKS REUTILIZABLES

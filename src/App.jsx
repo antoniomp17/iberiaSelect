@@ -1,8 +1,7 @@
 import { useState, useMemo, useEffect, useCallback, useContext } from "react";
-import { useCtx } from "./context/AppContext.jsx";
+import { Ctx, useLocalStorage } from "./context/AppContext.jsx";
 import { S } from "./config/theme.js";
 import { REGIONS_DATA } from "./data/regions.js";
-import { Ctx, useLocalStorage } from "./context/AppContext.jsx";
 import { AppHeader } from "./components/AppHeader.jsx";
 import { CompareBar } from "./components/CompareBar.jsx";
 import { MapView } from "./views/MapView.jsx";
