@@ -1,5 +1,7 @@
 import { useState, useMemo, useEffect, useCallback, useContext } from "react";
-import { useCtx, StatBar, SimilarRegions } from "../context/AppContext.jsx";
+import { useCtx } from "../context/AppContext.jsx";
+import { StatBar } from "../components/StatBar.jsx";
+import { SimilarRegions } from "../components/SimilarRegions.jsx";
 import { S } from "../config/theme.js";
 import { REGIONS_DATA } from "../data/regions.js";
 import {
@@ -10,7 +12,7 @@ import {
   Building2, Hammer, Map
 } from "lucide-react";
 import { calcTotalCost, scorePlayas, allStats } from "../utils/scoring.js";
-import { idealistaURL } from "../config/constants.js";
+import { idealistaURL, protectedLabel } from "../config/constants.js";
 export const GameView = () => {
   const { filteredRegions, currentIndex, setCurrentIndex, filterProvince, setFilterProvince,
           maxBudget, setMaxBudget, hidePopRisk, setHidePopRisk, weights, setView, provinces,
@@ -392,8 +394,3 @@ export const GameView = () => {
   );
 };
 
-const SortIcon = ({ active, dir }) => (
-  <span className="ml-0.5 opacity-40" style={{ opacity: active ? 1 : 0.3 }}>
-    {active ? (dir === 'asc' ? '↑' : '↓') : '↕'}
-  </span>
-);

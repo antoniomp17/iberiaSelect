@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect, useCallback, useContext } from "react";
 import { useCtx } from "../context/AppContext.jsx";
+import { SortIcon } from "../components/SortIcon.jsx";
 import { S } from "../config/theme.js";
 import { REGIONS_DATA } from "../data/regions.js";
 import {
