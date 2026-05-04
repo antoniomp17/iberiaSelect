@@ -1,15 +1,12 @@
-import { useState, useMemo, useEffect, useCallback, useContext } from "react";
+import { useState, useEffect } from "react";
 import { useCtx } from "../context/AppContext.jsx";
 import { StatBar } from "../components/StatBar.jsx";
 import { SimilarRegions } from "../components/SimilarRegions.jsx";
 import { S } from "../config/theme.js";
 import { REGIONS_DATA } from "../data/regions.js";
 import {
-  Sun, Users, Home, Wifi, TrendingUp, ChevronRight, ChevronLeft, Star,
-  Filter, MapPin, Euro, ArrowUpRight, ArrowDownRight, AlertTriangle,
-  Sparkles, Mountain, Hospital, ExternalLink, Database, Search, Cloud, Droplets, Waves,
-  BookmarkCheck, StickyNote, Trash2, CheckCircle2, Eye, Calculator,
-  Building2, Hammer, Map
+  Sun, ArrowUpRight, ArrowDownRight, Mountain, Hammer, Waves, Search,
+  Calculator, BookmarkCheck, Eye, Trash2, Cloud, Droplets
 } from "lucide-react";
 import { calcTotalCost, scorePlayas, allStats, calcFinalScore } from "../utils/scoring.js";
 import { idealistaURL, protectedLabel } from "../config/constants.js";

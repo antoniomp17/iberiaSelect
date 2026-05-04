@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { useCtx } from "../context/Ctx.js";
+import { useCtx } from "../context/AppContext.jsx";
 import { S } from "../config/theme.js";
 import { findSimilarCheaper } from "../config/constants.js";
 import { calcFinalScore } from "../utils/scoring.js";

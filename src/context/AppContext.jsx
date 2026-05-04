@@ -1,15 +1,8 @@
-import { useState, useEffect, useMemo, useCallback } from "react";
-import { ChevronRight, Filter } from "lucide-react";
-import { idealistaURL, findSimilarCheaper } from "../config/constants.js";
-import { S } from "../config/theme.js";
-import { calcFinalScore } from "../utils/scoring.js";
-import { Ctx, useCtx } from "./Ctx.js";
+import { useState, useEffect, createContext, useContext, useCallback } from "react";
 
-export { Ctx, useCtx };
+export const Ctx = createContext(null);
+export const useCtx = () => useContext(Ctx);
 
-/* ====================================================================
-   HOOKS REUTILIZABLES
-   ==================================================================== */
 export const useLocalStorage = (key, defaultValue) => {
   const [value, setValue] = useState(() => {
     try {
@@ -26,4 +19,3 @@ export const useLocalStorage = (key, defaultValue) => {
   }, [key]);
   return [value, set];
 };
-

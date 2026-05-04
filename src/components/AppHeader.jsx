@@ -1,14 +1,5 @@
-import { useState, useMemo, useEffect, useCallback, useContext } from "react";
 import { useCtx } from "../context/AppContext.jsx";
 import { S } from "../config/theme.js";
-import { REGIONS_DATA } from "../data/regions.js";
-import {
-  Sun, Users, Home, Wifi, TrendingUp, ChevronRight, ChevronLeft, Star,
-  Filter, MapPin, Euro, ArrowUpRight, ArrowDownRight, AlertTriangle,
-  Sparkles, Mountain, Hospital, ExternalLink, Database, Search, Cloud, Droplets, Waves,
-  BookmarkCheck, StickyNote, Trash2, CheckCircle2, Eye, Calculator,
-  Building2, Hammer, Map
-} from "lucide-react";
 export const AppHeader = () => {
   const { view, setView, compareIds } = useCtx();
   const { ink, paper, accent } = S;

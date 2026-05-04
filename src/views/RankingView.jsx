@@ -1,15 +1,9 @@
-import { useState, useMemo, useEffect, useCallback, useContext } from "react";
+import { useState, useMemo } from "react";
 import { useCtx } from "../context/AppContext.jsx";
 import { SortIcon } from "../components/SortIcon.jsx";
 import { S } from "../config/theme.js";
 import { REGIONS_DATA } from "../data/regions.js";
-import {
-  Sun, Users, Home, Wifi, TrendingUp, ChevronRight, ChevronLeft, Star,
-  Filter, MapPin, Euro, ArrowUpRight, ArrowDownRight, AlertTriangle,
-  Sparkles, Mountain, Hospital, ExternalLink, Database, Search, Cloud, Droplets, Waves,
-  BookmarkCheck, StickyNote, Trash2, CheckCircle2, Eye, Calculator,
-  Building2, Hammer, Map
-} from "lucide-react";
+import { Sparkles, ExternalLink, Database } from "lucide-react";
 import { idealistaURL } from "../config/constants.js";
 import { calcTotalCost, allStats } from "../utils/scoring.js";
 export const RankingView = () => {
