@@ -11,7 +11,7 @@ import {
   BookmarkCheck, StickyNote, Trash2, CheckCircle2, Eye, Calculator,
   Building2, Hammer, Map
 } from "lucide-react";
-import { calcTotalCost, scorePlayas, allStats } from "../utils/scoring.js";
+import { calcTotalCost, scorePlayas, allStats, calcFinalScore } from "../utils/scoring.js";
 import { idealistaURL, protectedLabel } from "../config/constants.js";
 export const GameView = () => {
   const { filteredRegions, currentIndex, setCurrentIndex, filterProvince, setFilterProvince,
