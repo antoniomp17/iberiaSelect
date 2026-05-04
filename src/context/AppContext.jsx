@@ -1,7 +1,8 @@
 import { createContext, useContext, useState, useEffect, useMemo, useCallback } from "react";
 import { ChevronRight, Filter } from "lucide-react";
-import { idealistaURL } from "../config/constants.js";
+import { idealistaURL, findSimilarCheaper } from "../config/constants.js";
 import { S } from "../config/theme.js";
+import { calcFinalScore } from "../utils/scoring.js";
 
 export const Ctx = createContext(null);
 export const useCtx = () => useContext(Ctx);
@@ -30,7 +31,7 @@ export const useLocalStorage = (key, defaultValue) => {
    SUB-COMPONENTES (fuera de App — React los reutiliza correctamente)
    ==================================================================== */
 
-const StatBar = ({ value, max = 10, color, label }) => {
+export const StatBar = ({ value, max = 10, color, label }) => {
   const { ink } = S;
   return (
     <div className="space-y-1">

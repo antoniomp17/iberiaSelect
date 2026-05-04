@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useCallback, useContext } from "react";
-import { useCtx } from "../context/AppContext.jsx";
+import { useCtx, StatBar, SimilarRegions } from "../context/AppContext.jsx";
 import { S } from "../config/theme.js";
 import { REGIONS_DATA } from "../data/regions.js";
 import {
