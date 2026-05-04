@@ -61,7 +61,26 @@ export const PROVINCE_SLUGS = {
   'Melilla': 'melilla-melilla',
 };
 
-export const IDEALISTA_AFFILIATE = ''; // Rellenar con el ID de afiliado cuando esté disponible
+export const IDEALISTA_AFFILIATE = '';
+
+// ── Afiliación / Monetización ──────────────────────────────────────────────
+export const BOOKING_AID     = '';   // Rellenar: https://www.booking.com/affiliate-program
+export const IAHORRO_UTM     = 'iberiaselect_web';
+export const TRIOTECA_UTM    = 'iberiaselect_web';
+export const ADSENSE_CLIENT  = '';   // Rellenar: ca-pub-XXXXXXXXXXXXXXXX
+
+export const bookingUrl = (locationName) => {
+  const base = `https://www.booking.com/searchresults.es.html?ss=${encodeURIComponent(locationName + ', España')}&lang=es`;
+  return BOOKING_AID ? `${base}&aid=${BOOKING_AID}` : base;
+};
+
+export const iAhorroUrl = (priceM2, superficie = 80) => {
+  const price = Math.round(priceM2 * 0.55 * superficie);
+  return `https://www.iahorro.com/hipotecas/comparador/?utm_source=${IAHORRO_UTM}&utm_medium=cta&precio=${price}`;
+};
+
+export const triotecaUrl = () =>
+  `https://www.trioteca.com/?utm_source=${TRIOTECA_UTM}&utm_medium=cta`;
 
 export const IDEALISTA_PROVINCE_SLUGS = {
   'A Coruña':   'a-coruna',

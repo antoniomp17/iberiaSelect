@@ -1,8 +1,22 @@
+import { useState } from "react";
 import { useCtx } from "../context/AppContext.jsx";
 import { S } from "../config/theme.js";
 import { REGIONS_DATA } from "../data/regions.js";
 export const IntroView = () => {
   const { setView } = useCtx();
+  const [email, setEmail] = useState('');
+  const [emailSent, setEmailSent] = useState(false);
+
+  const handleEmailSubmit = async (e) => {
+    e.preventDefault();
+    if (!email) return;
+    // Brevo (ex-Sendinblue) form endpoint — rellenar con tu list ID cuando esté creada
+    // Por ahora guardamos en localStorage como placeholder
+    const pending = JSON.parse(localStorage.getItem('iberia-email-leads') || '[]');
+    pending.push({ email, date: new Date().toISOString() });
+    localStorage.setItem('iberia-email-leads', JSON.stringify(pending));
+    setEmailSent(true);
+  };
   const { ink, paper, accent, forest } = S;
   const minP = Math.min(...REGIONS_DATA.map(r => r.priceM2));
   const maxP = Math.max(...REGIONS_DATA.map(r => r.priceM2));
@@ -74,7 +88,40 @@ export const IntroView = () => {
         </button>
       </div>
 
-      <div className="mt-12 pt-5 border-t flex flex-wrap gap-x-6 gap-y-1 text-xs uppercase tracking-wider"
+      {/* ── Email capture ── */}
+      <div className="mt-10 p-6 border-2" style={{ borderColor: ink }}>
+        <div className="text-xs uppercase tracking-widest mb-1" style={{ ...S.fontBody, color: S.accent }}>
+          Novedades · Gratis
+        </div>
+        <h3 className="text-xl mb-1" style={{ ...S.fontDisplay, color: ink, fontWeight: 700 }}>
+          Alerta cuando bajen precios en tu comarca
+        </h3>
+        <p className="text-xs mb-4 leading-relaxed" style={{ ...S.fontBody, color: ink, opacity: 0.65 }}>
+          Sé el primero en enterarte de caídas de precio, nuevas comarcas y actualizaciones de datos.
+        </p>
+        {emailSent ? (
+          <p className="text-xs uppercase tracking-wider" style={{ ...S.fontBody, color: S.forest, fontWeight: 600 }}>
+            ✓ Apuntado. Te avisamos en cuanto haya novedades.
+          </p>
+        ) : (
+          <form onSubmit={handleEmailSubmit} className="flex gap-2">
+            <input
+              type="email" required value={email}
+              onChange={e => setEmail(e.target.value)}
+              placeholder="tu@email.com"
+              className="flex-1 px-3 py-2.5 text-xs outline-none"
+              style={{ ...S.fontBody, color: ink, background: '#F5F0E8', border: `1px solid #D6CFC0` }}
+            />
+            <button type="submit"
+              className="px-5 py-2.5 text-xs uppercase tracking-wider shrink-0 transition hover:opacity-90"
+              style={{ ...S.fontBody, background: ink, color: S.paper, fontWeight: 600 }}>
+              Avisarme
+            </button>
+          </form>
+        )}
+      </div>
+
+      <div className="mt-8 pt-5 border-t flex flex-wrap gap-x-6 gap-y-1 text-xs uppercase tracking-wider"
         style={{ ...S.fontBody, borderColor: ink, color: ink, opacity: 0.45 }}>
         <span>Idealista Q1 2026</span><span>Fotocasa Research</span>
         <span>INE 2024–2039</span><span>AEMET 1981–2010</span><span>MITECO 2025</span>

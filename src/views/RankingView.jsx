@@ -6,6 +6,7 @@ import { REGIONS_DATA } from "../data/regions.js";
 import { Sparkles, ExternalLink, Database } from "lucide-react";
 import { idealistaURL } from "../config/constants.js";
 import { calcTotalCost, allStats } from "../utils/scoring.js";
+import { AdSlot } from "../components/AdSlot.jsx";
 export const RankingView = () => {
   const { sortedRanking, setView, setCurrentIndex, shareUrl, setZonaId, setFilterProvince, favs, toggleFav, compareIds, toggleCompare } = useCtx();
   const { ink, paper, accent, forest } = S;
@@ -140,6 +141,8 @@ export const RankingView = () => {
             Pulsa ⊕ en cualquier fila para añadirla al comparador · máx. 3 zonas
           </p>
         )}
+
+        <AdSlot slot="0987654321" className="mb-6" />
 
         <div className="overflow-x-auto">
           <table className="w-full text-left" style={{ minWidth: 560 }}>

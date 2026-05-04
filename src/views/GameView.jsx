@@ -9,7 +9,8 @@ import {
   Calculator, BookmarkCheck, Eye, Trash2, Cloud, Droplets
 } from "lucide-react";
 import { calcTotalCost, scorePlayas, allStats, calcFinalScore } from "../utils/scoring.js";
-import { idealistaURL, protectedLabel } from "../config/constants.js";
+import { idealistaURL, protectedLabel, bookingUrl, iAhorroUrl } from "../config/constants.js";
+import { AdSlot } from "../components/AdSlot.jsx";
 export const GameView = () => {
   const { filteredRegions, currentIndex, setCurrentIndex, filterProvince, setFilterProvince,
           maxBudget, setMaxBudget, hidePopRisk, setHidePopRisk, weights, setView, provinces,
@@ -169,6 +170,28 @@ export const GameView = () => {
             </div>
             <ArrowUpRight size={14} className="transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
+
+          {/* ── CTAs de monetización ── */}
+          <div className="grid grid-cols-2 gap-2">
+            <a href={bookingUrl(r.name)} target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-2.5 px-3 py-2.5 group transition hover:opacity-80"
+              style={{ border: `1px solid #0071C2`, background: '#EEF6FF' }}>
+              <span className="text-lg leading-none">🏨</span>
+              <div>
+                <div className="text-[10px] uppercase tracking-wider" style={{ ...S.fontBody, color: '#0071C2', fontWeight: 600 }}>Visita antes de comprar</div>
+                <div className="text-[10px]" style={{ ...S.fontBody, color: '#0071C2', opacity: 0.75 }}>Alojamiento en {r.name}</div>
+              </div>
+            </a>
+            <a href={iAhorroUrl(r.priceM2)} target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-2.5 px-3 py-2.5 group transition hover:opacity-80"
+              style={{ border: `1px solid #00A86B`, background: '#EDFAF4' }}>
+              <span className="text-lg leading-none">🏦</span>
+              <div>
+                <div className="text-[10px] uppercase tracking-wider" style={{ ...S.fontBody, color: '#00A86B', fontWeight: 600 }}>Calcula tu hipoteca</div>
+                <div className="text-[10px]" style={{ ...S.fontBody, color: '#00A86B', opacity: 0.75 }}>Comparador gratuito</div>
+              </div>
+            </a>
+          </div>
 
           <div className="flex gap-2">
             <button onClick={() => setCurrentIndex(c => (c - 1 + filteredRegions.length) % filteredRegions.length)}
@@ -384,6 +407,7 @@ export const GameView = () => {
           </div>
         </div>
         </div>
+        <AdSlot slot="1234567890" className="mt-8" />
         <SimilarRegions region={r} />
       </div>
       )}
