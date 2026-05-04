@@ -173,7 +173,7 @@ export const GameView = () => {
 
           {/* ── CTAs de monetización ── */}
           <div className="grid grid-cols-2 gap-2">
-            <a href={bookingUrl(r.name)} target="_blank" rel="noopener noreferrer"
+            <a href={bookingUrl(r.name, r.province)} target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2.5 px-3 py-2.5 group transition hover:opacity-80"
               style={{ border: `1px solid #0071C2`, background: '#EEF6FF' }}>
               <span className="text-lg leading-none">🏨</span>

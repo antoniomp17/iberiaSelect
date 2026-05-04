@@ -70,9 +70,10 @@ const CJ_LINK_ID = '15734352';
 export const IAHORRO_UTM    = 'iberiaselect_web';
 export const ADSENSE_CLIENT = '';   // Rellenar: ca-pub-XXXXXXXXXXXXXXXX
 
-export const bookingUrl = (locationName) => {
+export const bookingUrl = (comarcaName, provinceName) => {
+  const query = provinceName ? `${comarcaName}, ${provinceName}, España` : `${comarcaName}, España`;
   const destination = encodeURIComponent(
-    `https://www.booking.com/searchresults.es.html?ss=${encodeURIComponent(locationName + ', España')}&lang=es`
+    `https://www.booking.com/searchresults.es.html?ss=${encodeURIComponent(query)}&lang=es`
   );
   return `https://www.anrdoezrs.net/click-${CJ_PID}-${CJ_LINK_ID}?url=${destination}`;
 };
